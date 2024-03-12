@@ -1,0 +1,6 @@
+@Gapplus.Api_HostAddress = http://localhost:5069
+
+GET {{Gapplus.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
