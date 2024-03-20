@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {}
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {}
   },
   "projects": {
-    "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
         "projectName": "Gapplus.Domain",
-        "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
+        "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

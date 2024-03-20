@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {}
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {}
   },
   "projects": {
-    "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj",
         "projectName": "Gapplus.Application",
-        "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj",
+        "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
-                "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj"
+              "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
+                "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj"
               }
             }
           }
@@ -123,14 +123,14 @@
         }
       }
     },
-    "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
         "projectName": "Gapplus.Domain",
-        "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
+        "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

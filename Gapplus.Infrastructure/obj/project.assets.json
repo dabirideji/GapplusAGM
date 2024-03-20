@@ -6916,11 +6916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+      "projectUniqueName": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
       "projectName": "Gapplus.Infrastructure",
-      "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+      "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Infrastructure\\obj\\",
+      "outputPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6938,11 +6938,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
-              "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj"
+            "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
+              "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj"
             },
-            "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
-              "projectPath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj"
+            "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
+              "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj"
             }
           }
         }
@@ -7036,12 +7036,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

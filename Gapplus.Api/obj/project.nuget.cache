@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4xHy/+oy6NWEvVOaTBtuJMrvtYVZD9nl8MI5rVkvyWn/N2uS8dhrGni+YJhiZMeM8eip9tEFLEr/D2a3XrWKrA==",
+  "dgSpecHash": "JfrvQUqzGo4zLYat9hLMvsbojbVqefz60SwVxOfbvwU/9XP7SSR5iUjlv2KW7xfy+joZIotZjk30WwN203UARA==",
   "success": true,
-  "projectFilePath": "c:\\xampp\\htdocs\\COURSES\\.NET\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
+  "projectFilePath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -163,12 +163,6 @@
     "C:\\Users\\USER\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

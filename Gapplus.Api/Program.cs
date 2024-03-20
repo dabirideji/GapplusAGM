@@ -1,6 +1,7 @@
 using BarcodeGenerator.Models;
 using BarcodeGenerator.Service;
 using Gapplus.Application.Contracts;
+using Gapplus.Application.Helpers;
 using Gapplus.Application.Interfaces;
 using Gapplus.Application.Interfaces.Contracts;
 using Gapplus.Application.Interfaces.IContracts;
@@ -15,7 +16,9 @@ var builder = WebApplication.CreateBuilder(args);
 //INJECTING AUTOMAPPER
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-
+Console.WriteLine("Start");
+Console.WriteLine(DatabaseManager.GetConnectionString());
+Console.WriteLine("End");
 
 builder.Services.AddSignalR();
 

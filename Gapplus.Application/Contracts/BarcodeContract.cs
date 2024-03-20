@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BarcodeGenerator.Models;
 using BarcodeGenerator.Service;
 using BarcodeGenerator.Util;
+using Gapplus.Application.Helpers;
 using Gapplus.Application.Interfaces.IContracts;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -32,25 +33,25 @@ namespace Gapplus.Application.Contracts
 
         {
 
+
+
+
             var companyinfo = ua.GetUserCompanyInfo();
             var UniqueAGMId = ua.RetrieveAGMUniqueID();
+
 
             List<BarcodeModel> multipleEntry = new List<BarcodeModel>();
             var shareholder = db.BarcodeStore.Find(id);
             var count = 0;
             string Message = "";
             var AgmEvent = db.Settings.FirstOrDefault(s => s.AGMID == UniqueAGMId);
-            if (AgmEvent == null)
-            {
-                return Task.FromResult<string>("AGMID Inconsistency.");
-            }
-            if (AgmEvent.StopAdmittance)
-            {
-                return Task.FromResult<string>("Admitance have been stopped");
-            }
-            if (!String.IsNullOrEmpty(shareholder.emailAddress))
-            {
-                string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
+            /// <summary>
+            /// /
+            /// 
+            /// 
+            /// 
+                string connStr = DatabaseManager.GetConnectionString();
 
                 SqlConnection conn =
                         new SqlConnection(connStr);
@@ -62,6 +63,33 @@ namespace Gapplus.Application.Contracts
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query2, conn);
                 SqlDataReader read = cmd.ExecuteReader();
+
+            /// </summary>
+            /// <typeparam name="BarcodeModel"></typeparam>
+            /// <returns></returns>
+            if (AgmEvent == null)
+            {
+                return Task.FromResult<string>("AGMID Inconsistency.");
+            }
+            if (AgmEvent.StopAdmittance)
+            {
+                return Task.FromResult<string>("Admitance have been stopped");
+            }
+            if (!String.IsNullOrEmpty(shareholder.emailAddress))
+            {
+                // // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                // string connStr = DatabaseManager.GetConnectionString();
+
+                // SqlConnection conn =
+                //         new SqlConnection(connStr);
+                // //string query2 = "select * from BarcodeModels WHERE CONTAINS(Name,'" + searchValue + "')";
+                // //string query2 = "select * from BarcodeModels WHERE emailAddress LIKE '%" + shareholder.emailAddress + "%'";
+
+                // //string query2 = "select * from BarcodeModels WHERE Company =  '" + companyinfo + "' AND  emailAddress = '" + shareholder.emailAddress + "' AND NotVerifiable = 'FALSE'";
+                // string query2 = "select * from BarcodeModels WHERE Company =  '" + companyinfo + "' AND  emailAddress = '" + shareholder.emailAddress + "'";
+                // conn.Open();
+                // SqlCommand cmd = new SqlCommand(query2, conn);
+                // SqlDataReader read = cmd.ExecuteReader();
 
                 while (read.Read())
                 {
