@@ -36,7 +36,7 @@ namespace BarcodeGenerator.Service
         EmailService _emailService = new EmailService();
         private static string currentYear = DateTime.Now.Year.ToString();
         // private static string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        private static string connStr = ConfigurationHelper.GetConnectionString();
+        private static string connStr = DatabaseManager.GetConnectionString();
 
         private SqlConnection connn =
                 new SqlConnection(connStr);

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj": {}
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj": {}
   },
   "projects": {
     "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -62,6 +65,22 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.3.0, )"
@@ -98,9 +117,25 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Spire.XLS": {
+              "target": "Package",
+              "version": "[14.3.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "WebMatrix.WebData": {
+              "target": "Package",
+              "version": "[2.0.30506, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
             }
           },
           "imports": [
@@ -132,6 +167,9 @@
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -172,6 +210,22 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.11, )"
             },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
@@ -221,9 +275,25 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Spire.XLS": {
+              "target": "Package",
+              "version": "[14.3.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "WebMatrix.WebData": {
+              "target": "Package",
+              "version": "[2.0.30506, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
             },
             "log4net": {
               "target": "Package",
@@ -250,15 +320,18 @@
         }
       }
     },
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj": {
+    "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
         "projectName": "Gapplus.Infrastructure",
-        "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+        "projectPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -311,6 +384,22 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.3.0, )"
@@ -347,9 +436,25 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Spire.XLS": {
+              "target": "Package",
+              "version": "[14.3.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "WebMatrix.WebData": {
+              "target": "Package",
+              "version": "[2.0.30506, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
             }
           },
           "imports": [

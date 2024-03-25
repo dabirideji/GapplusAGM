@@ -41,8 +41,8 @@ namespace BarcodeGenerator.Service
         public string GetUserCompanyInfo()
         {
             // var identity = HttpContext.Current.User.Identity.Name.Trim();
-            var identity ="";
-            UsersContext dbd = db;
+            // var identity ="";
+            var identity=SessionManager.GetSessionData<String>("Name");            UsersContext dbd = db;
             UserProfile user;
             string companyinfo = "";
             try

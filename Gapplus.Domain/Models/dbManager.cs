@@ -13,19 +13,14 @@ namespace BarcodeGenerator.Models
 {
     public class dbManager
     {
-        private readonly string connectionStringFromConfiguration ;
-           
 
-        public dbManager()
-        {
-            connectionStringFromConfiguration= ConfigurationHelper.GetConnectionString();
-        }
+
+      
 
         public List<string> GetBacodeModelCompanies()
         {
             // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-            string connStr = connectionStringFromConfiguration;
-
+            string connStr= DatabaseManager.GetConnectionString();
             SqlConnection conn = new SqlConnection(connStr);
             List<string> companies = new List<string>();
 
@@ -62,7 +57,7 @@ namespace BarcodeGenerator.Models
         public int GetCompanyCount(string companyinfo)
         {
             // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-            string connStr = connectionStringFromConfiguration;
+            string connStr = DatabaseManager.GetConnectionString();
 
             SqlConnection conn = new SqlConnection(connStr);
             int count = 0;
@@ -88,7 +83,7 @@ namespace BarcodeGenerator.Models
             // string connStr = ConfigurationManager.ConnectionStrings[
             //     "DefaultConnection"
             // ].ConnectionString;
-            string connStr = connectionStringFromConfiguration;
+            string connStr =  DatabaseManager.GetConnectionString();;
 
             SqlConnection conn = new SqlConnection(connStr);
             List<BarcodeModel> Shareholders = new List<BarcodeModel>();
@@ -140,7 +135,7 @@ namespace BarcodeGenerator.Models
             // string connStr = ConfigurationManager.ConnectionStrings[
             //     "DefaultConnection"
             // ].ConnectionString;
-            string connStr = connectionStringFromConfiguration;
+            string connStr =  DatabaseManager.GetConnectionString();;
 
             SqlConnection conn = new SqlConnection(connStr);
 

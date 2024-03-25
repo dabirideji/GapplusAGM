@@ -29,7 +29,7 @@ namespace BarcodeGenerator.Service
             db = _db;
         }
         // private static string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        private static string connStr =ConfigurationHelper.GetConnectionString();
+        private static string connStr =DatabaseManager.GetConnectionString();
         SqlConnection conn =
                   new SqlConnection(connStr);
 

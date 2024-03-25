@@ -21,12 +21,10 @@ namespace BarcodeGenerator.Service
     {
 
     private readonly IWebHostEnvironment _webHostEnvironment;
-    private readonly IConfiguration _configuration;
 
-    public DataUploadService(IWebHostEnvironment webHostEnvironment, IConfiguration configuration,UsersContext _db)
+    public DataUploadService(UsersContext _db,IWebHostEnvironment webHostEnvironment)
     {
         _webHostEnvironment = webHostEnvironment;
-        _configuration = configuration;
          db=_db;
          ua = new UserAdmin(db);
          dm = new dbManager();
@@ -36,7 +34,7 @@ namespace BarcodeGenerator.Service
         UsersContext db;
         UserAdmin ua;
         dbManager dm;
-        private static string connStr = ConfigurationHelper.GetConnectionString();
+        private static string connStr = DatabaseManager.GetConnectionString();
         string Companyinfo = "";
         string RegCode = "";
         private long FileUploadCount = 0;
@@ -353,7 +351,9 @@ namespace BarcodeGenerator.Service
             Functions.RetrieveProgress("Retrieving data from Excel...");
 
             // Read connection string from appsettings.json
-            string excelConnectionString = _configuration.GetConnectionString("ExcelConnection");
+            // string excelConnectionString = _configuration.GetConnectionString("ExcelConnection");
+            string excelConnectionString = DatabaseManager.GetConnectionString("ExcelConnection");
+
 
             // Rest of your logic for processing the Excel file
             // Make sure to replace references to HttpContext with appropriate ASP.NET Core equivalents

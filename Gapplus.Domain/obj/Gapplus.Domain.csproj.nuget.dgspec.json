@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -53,6 +56,22 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.11, )"
             },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
@@ -102,9 +121,25 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Spire.XLS": {
+              "target": "Package",
+              "version": "[14.3.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "WebMatrix.WebData": {
+              "target": "Package",
+              "version": "[2.0.30506, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
             },
             "log4net": {
               "target": "Package",

@@ -18,6 +18,12 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 Console.WriteLine("Start");
 Console.WriteLine(DatabaseManager.GetConnectionString());
+
+
+
+
+//adding an httpContextAccessor
+builder.Services.AddHttpContextAccessor();
 Console.WriteLine("End");
 
 builder.Services.AddSignalR();
@@ -38,8 +44,20 @@ builder.Services.AddSignalR();
 // b => b.MigrationsAssembly("Gapplus.Api")));
 
 
+// builder.Services.AddDbContext<UsersContext>(options =>
+//     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
+// b => b.MigrationsAssembly("Gapplus.Api")));
+
+builder.Services.AddDistributedMemoryCache(); // Example: In-memory distributed cache
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 builder.Services.AddDbContext<UsersContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Online"),
 b => b.MigrationsAssembly("Gapplus.Api")));
 
 
@@ -53,7 +71,9 @@ builder.Services.AddScoped<IClikapadContract, ClikapadContract>();
 
 
 
-
+builder.Services.AddScoped<ITempDataManager,TempDataManager>();
+builder.Services.AddScoped<IViewBagManager,ViewBagManager>();
+builder.Services.AddScoped<ICacheService,CacheService>();
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers();
@@ -88,19 +108,25 @@ builder.Services.AddCors(options =>
 
 
 
-builder.Services.AddScoped<IUserAdmin,UserAdmin>();
-builder.Services.AddScoped<IAGMManager,AGMManager>();
-builder.Services.AddScoped<IBarcodeContract,BarcodeContract>();
+builder.Services.AddScoped<IUserAdmin, UserAdmin>();
+builder.Services.AddScoped<IAGMManager, AGMManager>();
+builder.Services.AddScoped<IBarcodeContract, BarcodeContract>();
 
 
 
 
 
 var app = builder.Build();
+
+
+
+
+SessionInitializer.Initialize(app.Services.GetRequiredService<IHttpContextAccessor>());
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseCors();
+app.UseSession();
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();

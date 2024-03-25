@@ -506,5 +506,86 @@ namespace Gapplus.Application.Contracts
 
 
 
+
+
+
+
+
+   public async Task<BarcodeModel> Create(BarcodeModelDto model)
+        {
+            try
+            {
+                 
+              
+                if(model.Name==null){
+                    throw new Exception("NAME CANNOT BE NULL");
+                }
+               
+
+
+                string numberToEncode = model.ShareholderNum.ToString();
+
+                // barcodecs objbar = new barcodecs();
+               // string numberToEncode = objbar.generateBarcode();
+            //     int W = Convert.ToInt32(200);
+            //     int H = Convert.ToInt32(80);
+            //     BarcodeLib.Barcode b = new BarcodeLib.Barcode(numberToEncode);
+            //     b.Alignment = BarcodeLib.AlignmentPositions.LEFT;
+            //     BarcodeLib.TYPE type = BarcodeLib.TYPE.UNSPECIFIED;
+            //     type = BarcodeLib.TYPE.CODE128;
+
+            //     b.LabelPosition = BarcodeLib.LabelPositions.BOTTOMCENTER;
+            //     b.IncludeLabel = true;
+            //     b.Encode(type,
+            //   b.RawData.ToUpper(), Color.Black, Color.White, W, H);
+            //     using (MemoryStream Mmst = new MemoryStream())
+            //     {
+            //         b.SaveImage(Mmst, BarcodeLib.SaveTypes.JPG);
+            //         BarCode = Mmst.GetBuffer();
+
+            //     }
+                BarcodeModel objprod = new BarcodeModel()
+                {
+                    Name = model.Name,                   
+                    ShareholderNum = model.ShareholderNum,
+                    Barcode = numberToEncode,
+
+                    // BarcodeImage = BarCode
+                };
+                objprod.Holding=Convert.ToDouble(model.Holding);
+                objprod.PercentageHolding=(double)Convert.ToDouble(model.PercentageHolding);
+                objprod.BarcodeImage= new byte[]{};
+                objprod.ImageUrl="";
+                objprod.OnlineEventUrl=model.OnlineEventUrl;
+                objprod.ConsolidatedValue="Not Yet Set";
+                objprod.ConsolidatedParent="Not Yet Set";
+                objprod.accesscode=model.accesscode;
+                objprod.passwordToken="Not Yet Set";
+                objprod.Date=DateTime.Now.Year.ToString();
+                objprod.Sessionid="not yet set";
+                objprod.SessionVersion="not yet set";
+                objprod.Address=model.Address;
+                objprod.Proxyupload="not yet set";
+                objprod.emailAddress=model.emailAddress;
+                objprod.Company=model.Company;
+                // objprod.
+                db.BarcodeStore.Add(objprod);
+                db.SaveChanges();
+                return objprod;
+            }
+            catch
+            {
+               throw;
+            }
+        }
+
+
+
+
+
+
+
+
+
     }
 }
