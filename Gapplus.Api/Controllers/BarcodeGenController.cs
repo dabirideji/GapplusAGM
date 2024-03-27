@@ -2,11 +2,14 @@
 // using System.Collections.Generic;
 // using System.Linq;
 // using System.Web;
-// using System.Web.Mvc;
+// using Microsoft.AspNetCore.Mvc;
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     public class BarcodeGenController : Controller
+//         [ApiController]
+//         [Route("api/[controller]/[action]")]
+
+//     public class BarcodeGenController : ControllerBase
 //     {
         
 //         //

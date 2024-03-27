@@ -10,45 +10,25 @@ using Gapplus.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
-
 var builder = WebApplication.CreateBuilder(args);
 
-//INJECTING AUTOMAPPER
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-Console.WriteLine("Start");
-Console.WriteLine(DatabaseManager.GetConnectionString());
 
 
+#region EXTERNAL LIBRARIES AND PACKAGES
+    //INJECTING AUTOMAPPER
+    builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+    
+#endregion
 
-
-//adding an httpContextAccessor
+#region ADDING AND REGISTERING OF SERVICES
+//ADDING AND INJECTING SERVICES NEEDED 
 builder.Services.AddHttpContextAccessor();
-Console.WriteLine("End");
 
 builder.Services.AddSignalR();
 
-// builder.Services.AddScoped<IConfiguration>();
-//REGISTERING THE DB CONTEXT AND THE DATAABASES 
-
-//ONLINE SQL SERVER DATABASE
-// builder.Services.AddDbContext<GapplusDbContext>(options =>
-// options.UseSqlServer(builder.Configuration.GetConnectionString("Online"),
-// b => b.MigrationsAssembly("Gapplus.Api")
-// ));
-
-
-//OFFLINE SQLITE DATABASE
-// builder.Services.AddDbContext<GapplusDbContext>(options =>
-//     options.UseSqlite(builder.Configuration.GetConnectionString("Offline"),
-// b => b.MigrationsAssembly("Gapplus.Api")));
-
-
-// builder.Services.AddDbContext<UsersContext>(options =>
-//     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
-// b => b.MigrationsAssembly("Gapplus.Api")));
-
 builder.Services.AddDistributedMemoryCache(); // Example: In-memory distributed cache
+
+
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -56,28 +36,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-builder.Services.AddDbContext<UsersContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Online"),
-b => b.MigrationsAssembly("Gapplus.Api")));
 
-
-
-//REGISTER SERVICE
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-builder.Services.AddScoped<ICompanyContract, CompanyContract>();
-builder.Services.AddScoped<IUserContract, UserContract>();
-builder.Services.AddScoped<IClikapadContract, ClikapadContract>();
-
-
-
-builder.Services.AddScoped<ITempDataManager,TempDataManager>();
-builder.Services.AddScoped<IViewBagManager,ViewBagManager>();
-builder.Services.AddScoped<ICacheService,CacheService>();
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers();
+
+
 builder.Services.AddEndpointsApiExplorer();
+
+
 builder.Services.AddSwaggerGen(
      options =>
      {
@@ -91,10 +56,7 @@ builder.Services.AddSwaggerGen(
      });
 
 
-
-//REGISTERING CORS FOR COMPATIBILITY AND EASE IN CONSUMING
-
-// Add CORS
+    //  CORS FOR CROSS origin  RESOURCE SHARING
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
@@ -105,23 +67,67 @@ builder.Services.AddCors(options =>
     });
 });
 
+#endregion
 
+#region DATABASE CONNECTIONS AND CONFIGURATIONS
+
+//REGISTERING THE DB CONTEXT AND THE DATAABASES 
+
+//DEFAULT CONNECTION
+// builder.Services.AddDbContext<UsersContext>(options =>
+//     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
+// b => b.MigrationsAssembly("Gapplus.Api")));
+
+
+
+//OFFLINE SQLITE DATABASE {Deji test database }
+// builder.Services.AddDbContext<GapplusDbContext>(options =>
+//     options.UseSqlite(builder.Configuration.GetConnectionString("Offline"),
+// b => b.MigrationsAssembly("Gapplus.Api")));
+
+
+
+//ONLINE SQL SERVER DATABASE
+// MAIN DATABASE FOR LIVE UPDATES ANY SYNC BETWEEN DEVELOPERS {ONLINE SQL SERVER DATABASE }
+builder.Services.AddDbContext<UsersContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Online"),
+b => b.MigrationsAssembly("Gapplus.Api")));
+
+#endregion
+
+#region DEPENDENCY INJECTION AND INTERFACE REGISTERATIONS
+
+//REGISTER SERVICES AND INTERFACES
+//UNIT OF WORK. // NOT CURRENTLY IN USE.
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<ICompanyContract, CompanyContract>();
+builder.Services.AddScoped<IUserContract, UserContract>();
+builder.Services.AddScoped<IClikapadContract, ClikapadContract>();
+
+
+//VITAL SERVICES
+builder.Services.AddScoped<ITempDataManager, TempDataManager>();
+builder.Services.AddScoped<IViewBagManager, ViewBagManager>();
+builder.Services.AddScoped<ICacheService, CacheService>();
 
 
 builder.Services.AddScoped<IUserAdmin, UserAdmin>();
 builder.Services.AddScoped<IAGMManager, AGMManager>();
 builder.Services.AddScoped<IBarcodeContract, BarcodeContract>();
 
-
-
-
+#endregion
 
 var app = builder.Build();
 
+#region BUILD PIPELINE 
+//INITIALIZING MY STATIC SESSION MANAGER
+SessionInitializer
+.Initialize(app
+.Services
+.GetRequiredService<IHttpContextAccessor>()
+);
 
 
-
-SessionInitializer.Initialize(app.Services.GetRequiredService<IHttpContextAccessor>());
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
@@ -130,7 +136,6 @@ app.UseSession();
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
-
-// WebRootHelper.Initialize(app.Services.GetRequiredService<Microsoft.AspNetCore.Hosting.IWebHostEnvironment>());
-//STARTING THE APPLICATION
 app.Run();
+
+#endregion

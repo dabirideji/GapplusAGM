@@ -15,6 +15,8 @@ using System.Web;
 namespace BarcodeGenerator.Controllers
 {
     // [Authorize]
+    [ApiController]
+    [Route("api/[controller]/[action]")]
     public class AGMRealtimeReportController : ControllerBase
     {
 
@@ -35,7 +37,9 @@ public AGMRealtimeReportController(UsersContext context)
                   new SqlConnection(connStr);
         // GET: AGMRealtimeReport
 
-        public async Task<ActionResult> Index(int id)
+        [HttpGet]
+        [Route("Index/{id}")]
+        public async Task<ActionResult> Index([FromRoute]int id)
         {
             var response = await IndexAsync(id);
 
@@ -43,6 +47,7 @@ public AGMRealtimeReportController(UsersContext context)
             return Ok(response);
         }
 
+        [HttpGet("{id}")]
         public async Task<ActionResult> RealTimeIndex(int id)
         {
             var response = await IndexAsync(id);
@@ -51,7 +56,7 @@ public AGMRealtimeReportController(UsersContext context)
             return Ok(response);
         }
 
-        public Task<RealtimeDto> IndexAsync(int id)
+        private Task<RealtimeDto> IndexAsync(int id)
         {
             var companyinfo = ua.GetUserCompanyInfo();
             var UniqueAGMId = ua.RetrieveAGMUniqueID();
@@ -233,7 +238,7 @@ public AGMRealtimeReportController(UsersContext context)
             return Task.FromResult<RealtimeDto>(model);
         }
 
-        public void FetchAGMQuestionsAsync()
+        private void FetchAGMQuestionsAsync()
         {
             var companyinfo = ua.GetUserCompanyInfo();
             var UniqueAGMId = ua.RetrieveAGMUniqueID();
@@ -246,6 +251,7 @@ public AGMRealtimeReportController(UsersContext context)
         //    return Task.FromResult<IEnumerable<Question>>(resolutions);
         //}
 
+        [HttpGet]
         public async Task<ActionResult> ResolutionIndex()
         {
             var response = await ResolutionIndexAsync();
@@ -255,7 +261,7 @@ public AGMRealtimeReportController(UsersContext context)
             //return Json(response, JsonRequestBehavior.AllowGet);
         }
 
-
+    [HttpGet]
         public async Task<ActionResult> CustomRealtimeIndex()
         {
             var response = await CustomResolutionIndexAsync();
@@ -266,7 +272,7 @@ public AGMRealtimeReportController(UsersContext context)
         }
 
 
-        public Task<RealtimeDto> CustomResolutionIndexAsync()
+        private Task<RealtimeDto> CustomResolutionIndexAsync()
         {
             var companyinfo = ua.GetUserCompanyInfo();
             var UniqueAGMId = ua.RetrieveAGMUniqueID();
@@ -687,7 +693,7 @@ public AGMRealtimeReportController(UsersContext context)
             return Task.FromResult<RealtimeDto>(model);
         }
 
-        public Task<RealtimeDto> ResolutionIndexAsync()
+        private Task<RealtimeDto> ResolutionIndexAsync()
         {
             var companyinfo = ua.GetUserCompanyInfo();
             var UniqueAGMId = ua.RetrieveAGMUniqueID();
@@ -905,7 +911,7 @@ Convert.ToBase64String((byte[])eventSetting.Image) : "";
 
 
       
-
+        [HttpGet]
         public async Task<ActionResult> ResultionResult([FromServices] IViewBagManager _viewBagManager)
         {
             ReportViewModelDto response = new ReportViewModelDto();
@@ -947,7 +953,7 @@ Convert.ToBase64String((byte[])eventSetting.Image) : "";
 
 
 
-        public Task<ReportViewModelDto> ResolutionResultAsync()
+        private Task<ReportViewModelDto> ResolutionResultAsync()
         {
             var companyinfo = ua.GetUserCompanyInfo();
             var UniqueAGMId = ua.RetrieveAGMUniqueID();
