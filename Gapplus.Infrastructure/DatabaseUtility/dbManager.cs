@@ -14,9 +14,6 @@ namespace BarcodeGenerator.Models
     public class dbManager
     {
 
-
-      
-
         public List<string> GetBacodeModelCompanies()
         {
             // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;

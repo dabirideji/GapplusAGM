@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using BarcodeGenerator.Models;
 using Gapplus.Application.DTO.Company.Request;
 using Gapplus.Application.DTO.Company.Response;
 using Gapplus.Application.DTO.User.Request;
@@ -20,6 +21,7 @@ namespace Gapplus.Application.Helpers.AutoMapperProfiles
             CreateMap<UpdateUserDto, User>();
             CreateMap<ReadUserDto, User>().ReverseMap();
           
+            CreateMap<FakeBarCodeModelDto,BarcodeModel>();
           
            //COMPANY MAPPINGS
            CreateMap<CreateCompanyDto, Company>();

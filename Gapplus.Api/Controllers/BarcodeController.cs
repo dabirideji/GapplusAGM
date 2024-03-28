@@ -1,4 +1,5 @@
-﻿using BarcodeGenerator.Models;
+﻿using AutoMapper;
+using BarcodeGenerator.Models;
 using BarcodeGenerator.Service;
 using Gapplus.Application.Helpers;
 using Microsoft.AspNetCore.Mvc;
@@ -406,22 +407,29 @@ namespace BarcodeGenerator.Controllers
         // POST: /Barcode/Create
 
         [HttpPost]
-        public ActionResult Create([FromBody] BarcodeModelView model)
+        // public ActionResult Create([FromBody] BarcodeModelView model)
+        public ActionResult Create([FromBody] FakeBarCodeModelDto model,[FromServices]IMapper _mapper)
         {
             try
             {
                 // TODO: Add insert logic here
 
                 // barcodecs objbar = new barcodecs();      //todo
-                BarcodeModel objprod = new BarcodeModel()
-                {
-                    Name = model.FirstName,
 
-                    // Barcode = objbar.generateBarcode(), //todo
-                    Barcode = "",
-                    // BarcodeImage = objbar.getBarcodeImage(objbar.generateBarcode(), model.LastName.ToUpper()) //todo
-                    BarcodeImage = new byte[] { }
-                };
+
+
+                // BarcodeModel objprod = new BarcodeModel()
+                // {
+                //     Name = model.FirstName,
+
+                //     // Barcode = objbar.generateBarcode(), //todo
+                //     Barcode = "",
+                //     // BarcodeImage = objbar.getBarcodeImage(objbar.generateBarcode(), model.LastName.ToUpper()) //todo
+                //     BarcodeImage = new byte[] { }
+                // };
+
+                var objprod=_mapper.Map<BarcodeModel>(model);
+
                 db.BarcodeStore.Add(objprod);
                 db.SaveChanges();
                 // return Json("Success", JsonRequestBehavior.AllowGet);
