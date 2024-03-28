@@ -43,7 +43,8 @@ namespace BarcodeGenerator.Service
 
                 //Jvar IdsJson = Json.Parse(jvalues);
                 //var value = jvalues.Split(',');
-                string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                string connStr = DatabaseManager.GetConnectionString();
                 Int64 maxvalue = 0;
                 SqlConnection conn =
                         new SqlConnection(connStr);

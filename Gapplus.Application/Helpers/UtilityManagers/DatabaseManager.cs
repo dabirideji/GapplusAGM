@@ -24,6 +24,22 @@ namespace Gapplus.Application.Helpers
             var c = _configuration.GetConnectionString(connectionInstance);
             return c;
         }
+
+
+
+
+        // Method to retrieve a specific configuration value
+        public static string GetAppSetting(string key)
+        {
+            return _configuration[key];
+        }
+
+        // Method to retrieve a specific configuration value with type conversion
+        public static T GetAppSetting<T>(string key)
+        {
+            string value = _configuration[key];
+            return (T)Convert.ChangeType(value, typeof(T));
+        }
     }
 
 }

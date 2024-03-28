@@ -1,21 +1,14 @@
 ﻿using BarcodeGenerator.Models;
-using BarcodeGenerator.Util;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Web;
 using BarcodeGenerator.Barcode;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
+using Gapplus.Application.Helpers;
 
 
 
@@ -23,17 +16,18 @@ using Microsoft.AspNetCore.Hosting;
 namespace BarcodeGenerator.Service
 {
 
-    
-    public  class AGMRegistrationService
+
+    public class AGMRegistrationService
     {
         UsersContext db;
         UserAdmin ua;
+            string toEmailAddress=DatabaseManager.GetAppSetting("ToEmailAddress");
 
 
         public AGMRegistrationService(UsersContext context)
         {
-            db=context;
-            ua=new UserAdmin(db);
+            db = context;
+            ua = new UserAdmin(db);
         }
 
         public Task<AGMCompaniesResponse> GetActiveAGMCompaniesAsync()
@@ -41,11 +35,11 @@ namespace BarcodeGenerator.Service
             AGMCompaniesResponse response;
             try
             {
-               
-                var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, RegCode=o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
+
+                var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, RegCode = o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
                 if (companyNameList != null)
                 {
-                     response = new AGMCompaniesResponse
+                    response = new AGMCompaniesResponse
                     {
                         Code = "200",
                         Message = "",
@@ -63,7 +57,7 @@ namespace BarcodeGenerator.Service
                     };
                     return Task.FromResult<AGMCompaniesResponse>(response);
                 }
-                
+
 
             }
             catch (Exception e)
@@ -84,7 +78,7 @@ namespace BarcodeGenerator.Service
             AGMCompaniesResponse response;
             try
             {
-                var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false && s.CompanyName==company.Trim()).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID,RegCode=o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
+                var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false && s.CompanyName == company.Trim()).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, RegCode = o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
 
                 if (companyNameList != null)
                 {
@@ -101,7 +95,7 @@ namespace BarcodeGenerator.Service
                     response = new AGMCompaniesResponse
                     {
                         Code = "201",
-                        Message = "No Active AGM Available for"+" "+company,
+                        Message = "No Active AGM Available for" + " " + company,
                         Companies = new List<AGMCompanies>()
                     };
                     return Task.FromResult<AGMCompaniesResponse>(response);
@@ -230,11 +224,11 @@ namespace BarcodeGenerator.Service
                 {
                     //var response = SendEmailToShareHolder(barcodes, UniqueAGMId);
                     var response = SendEmailToShareHolderWithCalendar(barcode, UniqueAGMId);
-                    if(response=="success")
+                    if (response == "success")
                     {
                         return Task.FromResult<PreRegistrationResponse>(new PreRegistrationResponse() { Status = "success", ResponseCode = "00", ResponseMessage = "Barcode Information has been sent to your email" });
                     }
-     
+
                     //return Task.FromResult<PreRegistrationResponse>(new PreRegistrationResponse() { Status = "failed", ResponseCode = "05", ResponseMessage = "Shareholder details could not be found, kindly update your information" });
 
                 }
@@ -261,7 +255,7 @@ namespace BarcodeGenerator.Service
         //     //var requestUri = $"{Convert.ToString(ConfigurationManager.AppSettings["VotingBaseAddress"])}/agm/api/PreregistrationAPI/GetPreregistrationComfirmation";
         //     //var query = emailaddress;
         //     //var request = $"{requestUri}?{query}";
-           
+
         //     string body = string.Empty;
         //     string webRootPath = HttpContext.Current.Server.MapPath("~/MailTemplate/");
 
@@ -281,41 +275,41 @@ namespace BarcodeGenerator.Service
 
         //     return body;
         // }
- private string CreateBody(string logo, string name, string title, string number, string qrcode, string request, string accesscode)
-    {
-        // Get the service provider from the static accessor
-          var serviceProvider = new ServiceCollection()
-              .AddSingleton<IWebHostEnvironment>() // Register a dummy IWebHostEnvironment instance
-              .BuildServiceProvider();
-  
-          // Resolve the IWebHostEnvironment service
-          var webHostEnvironment = serviceProvider.GetRequiredService<IWebHostEnvironment>();
- 
-
-        string body = string.Empty;
-
-        // Get the path to the mail template
-        string webRootPath = webHostEnvironment.WebRootPath; // Assuming you have set up wwwroot as the web root
-        string emailTemplatePath = Path.Combine(webRootPath, "MailTemplate", "EmailTemplate.html");
-
-        // Read the email template
-        using (StreamReader reader = new StreamReader(emailTemplatePath))
+        private string CreateBody(string logo, string name, string title, string number, string qrcode, string request, string accesscode)
         {
-            body = reader.ReadToEnd();
+            // Get the service provider from the static accessor
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IWebHostEnvironment>() // Register a dummy IWebHostEnvironment instance
+                .BuildServiceProvider();
+
+            // Resolve the IWebHostEnvironment service
+            var webHostEnvironment = serviceProvider.GetRequiredService<IWebHostEnvironment>();
+
+
+            string body = string.Empty;
+
+            // Get the path to the mail template
+            string webRootPath = webHostEnvironment.WebRootPath; // Assuming you have set up wwwroot as the web root
+            string emailTemplatePath = Path.Combine(webRootPath, "MailTemplate", "EmailTemplate.html");
+
+            // Read the email template
+            using (StreamReader reader = new StreamReader(emailTemplatePath))
+            {
+                body = reader.ReadToEnd();
+            }
+
+            // Replace placeholders in the template with provided values
+            body = body.Replace("{0}", logo);
+            body = body.Replace("{1}", name);
+            body = body.Replace("{2}", title);
+            body = body.Replace("{3}", name);
+            body = body.Replace("{4}", number);
+            body = body.Replace("{5}", qrcode);
+            body = body.Replace("{6}", request);
+            body = body.Replace("{7}", accesscode);
+
+            return body;
         }
-
-        // Replace placeholders in the template with provided values
-        body = body.Replace("{0}", logo);
-        body = body.Replace("{1}", name);
-        body = body.Replace("{2}", title);
-        body = body.Replace("{3}", name);
-        body = body.Replace("{4}", number);
-        body = body.Replace("{5}", qrcode);
-        body = body.Replace("{6}", request);
-        body = body.Replace("{7}", accesscode);
-
-        return body;
-    }
         public Task<AGMAccesscodeResponse> GetShareholderAccessCodeAsync(PreregistrationDto post)
         {
             try
@@ -342,7 +336,7 @@ namespace BarcodeGenerator.Service
         public Task<int> GetPreregistrationAGMID(string company)
         {
             var companyAGMID = db.Settings.Where(s => s.CompanyName == company && s.ArchiveStatus == false).Select(o => o.AGMID).OrderByDescending(k => k).FirstOrDefault();
-            if(companyAGMID > 0)
+            if (companyAGMID > 0)
             {
                 return Task.FromResult<int>(companyAGMID);
             }
@@ -355,104 +349,117 @@ namespace BarcodeGenerator.Service
             var setting = db.Settings.SingleOrDefault(s => s.AGMID == agmid);
             //foreach (var barcode in barcodes)
             //{
-                                //settingmodel.CompanyName = qrcode;
-                //await _uow.CompleteAsync();
-                string companyName;
-                string Title = "";
-                string logo = "";
-                if (setting != null)
-                {
-                    companyName = setting.CompanyName;
-                    Title = setting.Title;
-                    //logo = setting.Image != null ? "data:image/jpg;base64," +
-                    //Convert.ToBase64String((byte[])setting.Image) : "";
-                }
-                else
-                {
-                    companyName = "";
-                }
+            //settingmodel.CompanyName = qrcode;
+            //await _uow.CompleteAsync();
+            string companyName;
+            string Title = "";
+            string logo = "";
+            if (setting != null)
+            {
+                companyName = setting.CompanyName;
+                Title = setting.Title;
+                //logo = setting.Image != null ? "data:image/jpg;base64," +
+                //Convert.ToBase64String((byte[])setting.Image) : "";
+            }
+            else
+            {
+                companyName = "";
+            }
 
 
-                string name = barcode.Name;
-                string number = barcode.ShareholderNum.ToString();
-                var qrgenerator = new Qrcode();
-                //byte[] qrcode;
-                string qrcode;
-                var value = new KeyValuePair<string, string>("company", barcode.Company);
-                //int agmid = UniqueAGMId;
-                //get AGMID to check expiration status
-                //try
-                //{
-                //    var _client = new VotingServiceClient();
-                //    var response = await _client.GetAsync<ServiceResponse<int>>($"/agm/api/PreregistrationAPI/GetPreregistrationAGMID", value);
-                //    if (!response.IsValid)
-                //    {
-                //        agmid = -1;
-                //    }
-                //    agmid = response.Object;
-                //}
-                //catch (Exception e)
-                //{
-                //    agmid = -1;
-                //}
+            string name = barcode.Name;
+            string number = barcode.ShareholderNum.ToString();
+            var qrgenerator = new Qrcode();
+            //byte[] qrcode;
+            string qrcode;
+            var value = new KeyValuePair<string, string>("company", barcode.Company);
+            //int agmid = UniqueAGMId;
+            //get AGMID to check expiration status
+            //try
+            //{
+            //    var _client = new VotingServiceClient();
+            //    var response = await _client.GetAsync<ServiceResponse<int>>($"/agm/api/PreregistrationAPI/GetPreregistrationAGMID", value);
+            //    if (!response.IsValid)
+            //    {
+            //        agmid = -1;
+            //    }
+            //    agmid = response.Object;
+            //}
+            //catch (Exception e)
+            //{
+            //    agmid = -1;
+            //}
 
-                //var valuesToEncode = new[]
-                //{
-                //       new KeyValuePair<string, string>("identity", barcode.emailAddress),
-                //       new KeyValuePair<string, string>("company", barcode.Company),
-                //       new KeyValuePair<string, int>("agmid", agmid)
+            //var valuesToEncode = new[]
+            //{
+            //       new KeyValuePair<string, string>("identity", barcode.emailAddress),
+            //       new KeyValuePair<string, string>("company", barcode.Company),
+            //       new KeyValuePair<string, int>("agmid", agmid)
 
-                //};
+            //};
 
-                //var encodedContent = new FormUrlEncodedContent(valuesToEncode);
-                //var query = await encodedContent.ReadAsStringAsync();
+            //var encodedContent = new FormUrlEncodedContent(valuesToEncode);
+            //var query = await encodedContent.ReadAsStringAsync();
 
-                var requesturl = barcode.OnlineEventUrl;
-                var meetingAccesscode = barcode.accesscode;
+            var requesturl = barcode.OnlineEventUrl;
+            var meetingAccesscode = barcode.accesscode;
 
-                if (string.IsNullOrEmpty(barcode.ImageUrl))
-                {
-                    qrcode = qrgenerator.GenerateMyQCCode(barcode.emailAddress, barcode.PhoneNumber);
-                    var bar = db.BarcodeStore.Find(barcode.Id);
-                    bar.ImageUrl = qrcode;
-                    db.SaveChanges();
-                }
-                else
-                {
-                    qrcode = barcode.ImageUrl;
-                }
-                //qrgenerator.ReadQRCode();
-                //string ImageUrl = barcode.BarcodeImage != null ? "data:image/jpg;base64," +
-                //Convert.ToBase64String((byte[])barcode.BarcodeImage) : "";
-                // string ImageUrl = qrcode != null ? "data:image/jpg;base64," +
-                //Convert.ToBase64String(qrcode) : "";
-                string ImageUrl = qrcode;
-                logo = $"{Convert.ToString(ConfigurationManager.AppSettings["baseAddress"])}/Images/logo.png";
+            if (string.IsNullOrEmpty(barcode.ImageUrl))
+            {
+                qrcode = qrgenerator.GenerateMyQCCode(barcode.emailAddress, barcode.PhoneNumber);
+                var bar = db.BarcodeStore.Find(barcode.Id);
+                bar.ImageUrl = qrcode;
+                db.SaveChanges();
+            }
+            else
+            {
+                qrcode = barcode.ImageUrl;
+            }
+            //qrgenerator.ReadQRCode();
+            //string ImageUrl = barcode.BarcodeImage != null ? "data:image/jpg;base64," +
+            //Convert.ToBase64String((byte[])barcode.BarcodeImage) : "";
+            // string ImageUrl = qrcode != null ? "data:image/jpg;base64," +
+            //Convert.ToBase64String(qrcode) : "";
+            string ImageUrl = qrcode;
+            // logo = $"{Convert.ToString(ConfigurationManager.AppSettings["baseAddress"])}/Images/logo.png";
+            logo = $"{DatabaseManager.GetAppSetting<string>("baseAddress")}/Images/logo.png";
 
-                //"https://drive.google.com/file/d/13h8oyK5QGIeMLmoAbAFCFhFYYFr8XbEQ/view?usp=sharing";
-                //var body = "<p>Email From: {0} ({1})</p><p>Message:</p><p>{2}</p>";
-                //                    var body = @"<div style='margin-top:100px;'><div style='position:relative;background-color:white;width:350px;height:350px;margin:20px 5px 2px 0px;padding:20px;'>
-                //        <img src='{0}' style='position:relative;float:right;width:100px;margin-left:40px;'/><div style='padding-left:10px;padding-top:10px;border-top:1px solid #4800ff;'><p style='font-weight:bold;'> {1} </p><p style='font-weight:bold;'>{2}
-                //        </p>
-                //        <p style='font-weight:bold;'>
-                //           {3}
-                //        </p>
-                //        </div>
-                //      <div style='width:100%;align-content:center;border-bottom:1px solid #4800ff;'>    
-                //         <img src='cid:EmbeddedContent_1' />
-                //       </div> 
-                //</div>
-                //    </div>";
-                //MailSettings mailsetting = await db.MailSettings.GetMailSettings();
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(ConfigurationManager.AppSettings["smtpUser"], ConfigurationManager.AppSettings["smtpPass"]);
-                var message = new MailMessage();
-                message.To.Add(new MailAddress(barcode.emailAddress));  // replace with valid value 
-                message.From = new MailAddress(ConfigurationManager.AppSettings["ToEmailAddress"]);  // replace with valid value
-                                                                                                     //message.Subject = "ShareHolder QR Code Registration Details";
-                message.Subject = "e-Accreditation Success!";
-                //message.Body = string.Format(body, logo, companyName, name, number, ImageUrl);
-                message.Body = CreateBody(logo, name, Title, number, ImageUrl, requesturl, meetingAccesscode);
-                message.IsBodyHtml = true;
+            //"https://drive.google.com/file/d/13h8oyK5QGIeMLmoAbAFCFhFYYFr8XbEQ/view?usp=sharing";
+            //var body = "<p>Email From: {0} ({1})</p><p>Message:</p><p>{2}</p>";
+            //                    var body = @"<div style='margin-top:100px;'><div style='position:relative;background-color:white;width:350px;height:350px;margin:20px 5px 2px 0px;padding:20px;'>
+            //        <img src='{0}' style='position:relative;float:right;width:100px;margin-left:40px;'/><div style='padding-left:10px;padding-top:10px;border-top:1px solid #4800ff;'><p style='font-weight:bold;'> {1} </p><p style='font-weight:bold;'>{2}
+            //        </p>
+            //        <p style='font-weight:bold;'>
+            //           {3}
+            //        </p>
+            //        </div>
+            //      <div style='width:100%;align-content:center;border-bottom:1px solid #4800ff;'>    
+            //         <img src='cid:EmbeddedContent_1' />
+            //       </div> 
+            //</div>
+            //    </div>";
+            //MailSettings mailsetting = await db.MailSettings.GetMailSettings();
+            // var smtpUser=ConfigurationManager.AppSettings["smtpUser"];
+            var smtpUser=DatabaseManager.GetAppSetting("smtpUser");
+
+
+            // var smtpPass=ConfigurationManager.AppSettings["smtpPass"];
+            var smtpPass=DatabaseManager.GetAppSetting("smtpPass");
+
+
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(smtpUser,smtpPass);
+            var message = new MailMessage();
+            message.To.Add(new MailAddress(barcode.emailAddress));  // replace with valid value 
+
+            // var toEmailAddress=ConfigurationManager.AppSettings["ToEmailAddress"];
+            var toEmailAddress=DatabaseManager.GetAppSetting("ToEmailAddress");
+
+            message.From = new MailAddress(toEmailAddress);  // replace with valid value
+                                                                                                 //message.Subject = "ShareHolder QR Code Registration Details";
+            message.Subject = "e-Accreditation Success!";
+            //message.Body = string.Format(body, logo, companyName, name, number, ImageUrl);
+            message.Body = CreateBody(logo, name, Title, number, ImageUrl, requesturl, meetingAccesscode);
+            message.IsBodyHtml = true;
 
             //Code to embed barcode image from database to sent image
             AlternateView htmlView = AlternateView.CreateAlternateViewFromString(
@@ -484,17 +491,24 @@ namespace BarcodeGenerator.Service
             //Send Image Asynchronously...
 
             using (var smtp = new SmtpClient())
-                {
-                    smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-                    smtp.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSsl"]);
-                    smtp.Host = ConfigurationManager.AppSettings["smtpServer"];
-                    smtp.Credentials = credentials;
-                    smtp.Port = int.Parse(ConfigurationManager.AppSettings["smtpPort"]);
-
-                    smtp.Send(message);
+            {
+                smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
 
 
-                }
+                // smtp.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSsl"]);
+                smtp.EnableSsl = DatabaseManager.GetAppSetting<bool>("EnableSsl");
+
+                // smtp.Host = ConfigurationManager.AppSettings["smtpServer"];
+                smtp.Host = DatabaseManager.GetAppSetting("smtpServer");
+
+                smtp.Credentials = credentials;
+                // smtp.Port = int.Parse(ConfigurationManager.AppSettings["smtpPort"]);
+                smtp.Port = DatabaseManager.GetAppSetting<int>("smtpPort");
+
+                smtp.Send(message);
+
+
+            }
 
             //}
             return "success";
@@ -506,80 +520,91 @@ namespace BarcodeGenerator.Service
             var setting = db.Settings.SingleOrDefault(s => s.AGMID == agmid);
             //foreach (var barcode in barcodes)
             //{
-                //settingmodel.CompanyName = qrcode;
-                //await _uow.CompleteAsync();
-                string companyName;
-                string Title = "";
-                string logo = "";
-                if (setting != null)
-                {
-                    companyName = setting.CompanyName;
-                    Title = setting.Title;
-                    //logo = setting.Image != null ? "data:image/jpg;base64," +
-                    //Convert.ToBase64String((byte[])setting.Image) : "";
-                }
-                else
-                {
-                    companyName = "";
-                }
+            //settingmodel.CompanyName = qrcode;
+            //await _uow.CompleteAsync();
+            string companyName;
+            string Title = "";
+            string logo = "";
+            if (setting != null)
+            {
+                companyName = setting.CompanyName;
+                Title = setting.Title;
+                //logo = setting.Image != null ? "data:image/jpg;base64," +
+                //Convert.ToBase64String((byte[])setting.Image) : "";
+            }
+            else
+            {
+                companyName = "";
+            }
 
 
-                string name = barcode.Name;
-                string number = barcode.ShareholderNum.ToString();
-                var qrgenerator = new Qrcode();
-                string qrcode;
-                var value = new KeyValuePair<string, string>("company", barcode.Company);
+            string name = barcode.Name;
+            string number = barcode.ShareholderNum.ToString();
+            var qrgenerator = new Qrcode();
+            string qrcode;
+            var value = new KeyValuePair<string, string>("company", barcode.Company);
 
-                var requesturl = barcode.OnlineEventUrl;
-                var meetingAccesscode = barcode.accesscode;
+            var requesturl = barcode.OnlineEventUrl;
+            var meetingAccesscode = barcode.accesscode;
 
-                if (string.IsNullOrEmpty(barcode.ImageUrl))
-                {
-                    qrcode = qrgenerator.GenerateMyQCCode(barcode.emailAddress, barcode.PhoneNumber);
-                    var bar = db.BarcodeStore.Find(barcode.Id);
-                    bar.ImageUrl = qrcode;
-                    db.SaveChanges();
-                }
-                else
-                {
-                    qrcode = barcode.ImageUrl;
-                }
+            if (string.IsNullOrEmpty(barcode.ImageUrl))
+            {
+                qrcode = qrgenerator.GenerateMyQCCode(barcode.emailAddress, barcode.PhoneNumber);
+                var bar = db.BarcodeStore.Find(barcode.Id);
+                bar.ImageUrl = qrcode;
+                db.SaveChanges();
+            }
+            else
+            {
+                qrcode = barcode.ImageUrl;
+            }
 
-                string ImageUrl = qrcode;
-                logo = $"{Convert.ToString(ConfigurationManager.AppSettings["baseAddress"])}/Images/logo.png";
+            string ImageUrl = qrcode;
+            // var baseAddress=ConfigurationManager.AppSettings["baseAddress"];
+            var baseAddress=DatabaseManager.GetAppSetting("baseAddress");
+            logo = $"{baseAddress}/Images/logo.png";
 
 
-                //MailSettings mailsetting = await db.MailSettings.GetMailSettings();
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(ConfigurationManager.AppSettings["smtpUser"], ConfigurationManager.AppSettings["smtpPass"]);
-                //var message = new MailMessage();
-                //message.To.Add(new MailAddress(barcode.emailAddress));  // replace with valid value 
-                //message.From = new MailAddress(ConfigurationManager.AppSettings["ToEmailAddress"]);  // replace with valid value
-                //                                                                                     //message.Subject = "ShareHolder QR Code Registration Details";
-                //message.Subject = "e-Accreditation Success!";
-                //message.Body = CreateBody(logo, name, Title, number, ImageUrl, requesturl, meetingAccesscode);
-                //message.IsBodyHtml = true;
+            //MailSettings mailsetting = await db.MailSettings.GetMailSettings();
 
-                //using (var smtp = new SmtpClient())
-                //{
-                //    smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-                //    smtp.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSsl"]);
-                //    smtp.Host = ConfigurationManager.AppSettings["smtpServer"];
-                //    smtp.Credentials = credentials;
-                //    smtp.Port = int.Parse(ConfigurationManager.AppSettings["smtpPort"]);
+            // var smtpUser=ConfigurationManager.AppSettings["smtpUser"];
+            var smtpUser=DatabaseManager.GetAppSetting("smtpUser");
 
-                //    smtp.Send(message);
+            // var smtpPass= ConfigurationManager.AppSettings["smtpPass"];
+            var smtpPass= DatabaseManager.GetAppSetting("smtpPass");
 
-                //}
-                string startTime1 = Convert.ToDateTime(setting.AgmDateTime).ToString("yyyyMMddTHHmmssZ");
-                string endTime1 = Convert.ToDateTime(setting.AgmEndDateTime).ToString("yyyyMMddTHHmmssZ");
+
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(smtpUser,smtpPass);
+            //var message = new MailMessage();
+            //message.To.Add(new MailAddress(barcode.emailAddress));  // replace with valid value 
+            //message.From = new MailAddress(ConfigurationManager.AppSettings["ToEmailAddress"]);  // replace with valid value
+            //                                                                                     //message.Subject = "ShareHolder QR Code Registration Details";
+            //message.Subject = "e-Accreditation Success!";
+            //message.Body = CreateBody(logo, name, Title, number, ImageUrl, requesturl, meetingAccesscode);
+            //message.IsBodyHtml = true;
+
+            //using (var smtp = new SmtpClient())
+            //{
+            //    smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+            //    smtp.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSsl"]);
+            //    smtp.Host = ConfigurationManager.AppSettings["smtpServer"];
+            //    smtp.Credentials = credentials;
+            //    smtp.Port = int.Parse(ConfigurationManager.AppSettings["smtpPort"]);
+
+            //    smtp.Send(message);
+
+            //}
+            string startTime1 = Convert.ToDateTime(setting.AgmDateTime).ToString("yyyyMMddTHHmmssZ");
+            string endTime1 = Convert.ToDateTime(setting.AgmEndDateTime).ToString("yyyyMMddTHHmmssZ");
             //SmtpClient sc = new SmtpClient("");
-                MailMessage msg = new MailMessage();
+            MailMessage msg = new MailMessage();
 
-                msg.From = new MailAddress(ConfigurationManager.AppSettings["ToEmailAddress"], "Coronation Registrars");
-                msg.To.Add(new MailAddress(barcode.emailAddress));
-                msg.Subject = "e-Accreditation Success!";
+            // msg.From = new MailAddress(ConfigurationManager.AppSettings["ToEmailAddress"], "Coronation Registrars");
+            msg.From = new MailAddress(toEmailAddress, "Coronation Registrars");
+            msg.To.Add(new MailAddress(barcode.emailAddress));
+            msg.Subject = "e-Accreditation Success!";
             msg.Body = CreateBody(logo, name, Title, number, ImageUrl, requesturl, meetingAccesscode);
-            
+
             //msg.Body = "Please Attend the meeting with this schedule";
             //AlternateView htmlView = AlternateView.CreateAlternateViewFromString(
             //                              msg.Body,
@@ -598,18 +623,18 @@ namespace BarcodeGenerator.Service
 
             DateTime startTime = DateTime.Now;
             DateTime endTime = DateTime.Now;
-            if (setting?.AgmDateTime!=null)
+            if (setting?.AgmDateTime != null)
             { startTime = (DateTime)setting?.AgmDateTime; }
 
-            if(setting?.AgmEndDateTime!=null)
+            if (setting?.AgmEndDateTime != null)
             {
                 endTime = (DateTime)setting?.AgmEndDateTime;
             }
-           
+
             string now = DateTime.Now.ToString("yyyyMMddTHHmmssZ");
 
             StringBuilder str = new StringBuilder();
-        
+
             str.AppendLine("VERSION:2.0");
             str.AppendLine("BEGIN:VCALENDAR");
             str.AppendLine("PRODID:-//Schedule a Meeting");
@@ -695,16 +720,25 @@ namespace BarcodeGenerator.Service
             //    //sc.Send(msg);
 
             using (var smtp = new SmtpClient())
-                {
-                    smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-                    smtp.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSsl"]);
-                    smtp.Host = ConfigurationManager.AppSettings["smtpServer"];
-                    smtp.Credentials = credentials;
-                    smtp.Port = int.Parse(ConfigurationManager.AppSettings["smtpPort"]);
+            {
 
-                    smtp.Send(msg);
 
-                }
+                  smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+
+
+                // smtp.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSsl"]);
+                smtp.EnableSsl = DatabaseManager.GetAppSetting<bool>("EnableSsl");
+
+                // smtp.Host = ConfigurationManager.AppSettings["smtpServer"];
+                smtp.Host = DatabaseManager.GetAppSetting("smtpServer");
+
+                smtp.Credentials = credentials;
+                // smtp.Port = int.Parse(ConfigurationManager.AppSettings["smtpPort"]);
+                smtp.Port = DatabaseManager.GetAppSetting<int>("smtpPort");
+
+                smtp.Send(msg);
+
+            }
             //}
             return "success";
         }
@@ -744,7 +778,7 @@ namespace BarcodeGenerator.Service
                     db.SaveChanges();
                 }
 
-                    if (!string.IsNullOrEmpty(companyinfo) && !string.IsNullOrEmpty(emailAddress))
+                if (!string.IsNullOrEmpty(companyinfo) && !string.IsNullOrEmpty(emailAddress))
                 {
                     var UniqueAGMId = ua.RetrieveAGMUniqueID(companyinfo);
                     if (UniqueAGMId != -1)
@@ -876,7 +910,7 @@ namespace BarcodeGenerator.Service
                 };
                 db.AppLogs.Add(MessageLog7);
                 db.SaveChanges();
-                return Task.FromResult <PreRegistrationResponse>(new PreRegistrationResponse()
+                return Task.FromResult<PreRegistrationResponse>(new PreRegistrationResponse()
                 {
                     Status = "Error",
                     ResponseCode = "500",
@@ -889,7 +923,7 @@ namespace BarcodeGenerator.Service
 
         public Task<PreRegistrationResponse> GetPreregistrationRegister(PreregistrationDto[] post)
         {
-            
+
             try
             {
                 AppLog log;
