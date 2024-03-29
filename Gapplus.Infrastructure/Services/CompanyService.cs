@@ -1,9 +1,6 @@
-
-
 using BarcodeGenerator.Models;
 using Gapplus.Application.Interfaces;
 using Gapplus.Domain;
-using Gapplus.Domain.Data;
 
 namespace Gapplus.Infrastructure.Services
 {

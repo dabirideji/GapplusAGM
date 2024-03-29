@@ -3,6 +3,7 @@ using BarcodeGenerator.Barcode;
 using BarcodeGenerator.Models;
 using BarcodeGenerator.Service;
 using Gapplus.Application.Helpers;
+using Gapplus.Application.Response;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -27,7 +29,7 @@ namespace BarcodeGenerator.Controllers
         private readonly ITempDataManager _tempDataManager;
         private readonly IWebHostEnvironment _webHostEnviroment;
 
-        public BarcodeController(UsersContext _db, ITempDataManager tempDataManager,IWebHostEnvironment webHostEnviroment)
+        public BarcodeController(UsersContext _db, ITempDataManager tempDataManager, IWebHostEnvironment webHostEnviroment)
         {
             _webHostEnviroment = webHostEnviroment;
             db = _db;
@@ -51,6 +53,36 @@ namespace BarcodeGenerator.Controllers
         public ActionResult Index()
         {
             return Ok();
+        }
+
+
+        [HttpPost]
+        public async Task<ActionResult> Login([FromBody] BarCodeLoginDto model)
+        {
+            try
+            {
+                var checkForUser = await db.BarcodeStore.FirstOrDefaultAsync(x => x.emailAddress == model.Email);
+                if (checkForUser == null)
+                {
+                    throw new Exception("INVALID EMAIL ADDRESS || NO SHAREHOLDER WITH THE PROVIDED  EMAIL");
+                }
+                //   var passwordCheck=BCrypt.Net.BCrypt.Verify(model.Password,checkForUser.password);
+                //   if(passwordCheck==false){
+                if (checkForUser.password != model.Password)
+                {
+                    throw new UnauthorizedAccessException("INVALID PASSWORD");
+                }
+                var x = new AutoDefaultResponse<BarcodeModel>();
+                var response = x.ConvertToGood("Login Successfull", checkForUser);
+
+                return Ok(response);
+            }
+            catch (System.Exception ex)
+            {
+                var x = new AutoDefaultResponse<String>();
+                return StatusCode(500, x.ConvertToBad($"LOGIN FAILED || {ex.Message}"));
+            }
+
         }
 
         [HttpGet]
@@ -375,16 +407,31 @@ namespace BarcodeGenerator.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> Details(int id)
         {
-            var response = await DetailsAsync(id);
+            try
+            {
+                var response = await DetailsAsync(id);
+                if (response == null)
+                {
+                    return NotFound("BARCODE NOT FOUND");
+                }
+                // return View(response);
+                return Ok(response);
+            }
+            catch (System.Exception ex)
+            {
 
-            // return View(response);
-            return Ok(response);
+                return StatusCode(500, ex.Message);
+            }
         }
 
 
-        private Task<BarcodeModel> DetailsAsync(int id)
+        private Task<BarcodeModel>? DetailsAsync(int id)
         {
             var barcode = db.BarcodeStore.Find(id);
+            if (barcode == null)
+            {
+                return Task.FromResult<BarcodeModel>(null);
+            }
             BarcodeModel model = new BarcodeModel();
 
 
@@ -411,45 +458,174 @@ namespace BarcodeGenerator.Controllers
         // POST: /Barcode/Create
 
         [HttpPost]
-        public ActionResult Create([FromBody] BarcodeModelView model)
+        // public ActionResult Create([FromBody] BarcodeModelView model)
         // public ActionResult Create([FromBody] FakeBarCodeModelDto model, [FromServices] IMapper _mapper)
+        // {
+        //     try
+        //     {
+        //         // TODO: Add insert logic here
+
+        //         barcodecs objbar = new barcodecs(_webHostEnviroment);      //todo
+
+
+
+        //         BarcodeModel objprod = new BarcodeModel()
+        //         {
+        //             Name = model.FirstName,
+
+        //             Barcode = objbar.generateBarcode(), //todo
+        //             BarcodeImage = objbar.getBarcodeImage(objbar.generateBarcode(), model.LastName.ToUpper()) //todo
+
+
+        //             // Barcode = "",
+        //             // BarcodeImage = new byte[] { }
+        //         };
+        //         // objprod.Company=ua.GetUserCompanyInfo();
+
+        //         // objprod.BarcodeImage = new byte[] {};
+
+        //         // var objprod = _mapper.Map<BarcodeModel>(model);
+
+        //         db.BarcodeStore.Add(objprod);
+        //         db.SaveChanges();
+        //         // return Json("Success", JsonRequestBehavior.AllowGet);
+        //         return Ok("success");
+        //     }
+        //     catch(Exception ex)
+        //     {
+        //         // return Json("Failed", JsonRequestBehavior.AllowGet);
+        //         return BadRequest($"Failed: {ex.Message}");
+        //     }
+        // }
+
+
+        public ActionResult Create([FromBody] FakeBarCodeModelDto model, [FromServices] IMapper _mapper)
         {
             try
             {
                 // TODO: Add insert logic here
 
-                barcodecs objbar = new barcodecs(_webHostEnviroment);      //todo
+                barcodecs objbar = new barcodecs(_webHostEnviroment);
+
+                // BarcodeModel objprod = new BarcodeModel();
+                // objprod.Name = model.FirstName + " " + model.LastName; // Combine first name and last name
+                // objprod.Company = model.Company; // Map company
+                // objprod.Holding = model.Holding; // Map holding
+                // objprod.Address = model.Address; // Map address
+                // objprod.RegCode = model.RegCode; // Map registration code
+                // objprod.Barcode = objbar.generateBarcode(); // Generate barcode
+                // // objprod.BarcodeImage = objbar.getBarcodeImage(objprod.Barcode, model.LastName.ToUpper()); // Generate barcode image
+                // objprod.BarcodeImage = new byte []{};
+                // objprod.ImageUrl = model.ImageUrl; // Map image URL
+                // objprod.OnlineEventUrl = model.OnlineEventUrl; // Map online event URL
+                // objprod.Proxyupload = model.Proxyupload; // Map proxy upload
+
+                // // Map the rest of the properties accordingly
+
+                // objprod.accesscode = model.accesscode; // Map access code
+                // objprod.Date = model.Date; // Map date
+                // objprod.Sessionid = model.Sessionid; // Map session ID
+                // objprod.SessionVersion = model.SessionVersion; // Map session version
 
 
 
-                BarcodeModel objprod = new BarcodeModel()
-                {
-                    Name = model.FirstName,
+                BarcodeModel objprod = new BarcodeModel();
 
-                    Barcode = objbar.generateBarcode(), //todo
-                    BarcodeImage = objbar.getBarcodeImage(objbar.generateBarcode(), model.LastName.ToUpper()) //todo
-                   
-                   
-                    // Barcode = "",
-                    // BarcodeImage = new byte[] { }
-                };
+                // Combine first name and last name
+                objprod.Name = !string.IsNullOrEmpty(model.FirstName) && !string.IsNullOrEmpty(model.LastName)
+                    ? model.FirstName + " " + model.LastName
+                    : "null"; // Handle null case if either first name or last name is null or empty
 
-                // var objprod = _mapper.Map<BarcodeModel>(model);
+                // Map company
+                objprod.Company = model.Company;
+
+                // Map holding
+                objprod.Holding = model.Holding;
+
+                // Map address
+                objprod.Address = model.Address;
+
+                // Map registration code
+                objprod.RegCode = model.RegCode;
+
+                objprod.emailAddress = model.emailAddress;
+                objprod.password = model.password;
+                objprod.passwordToken = model.passwordToken;
+
+                // Generate barcode
+                objprod.Barcode = objbar.generateBarcode();
+
+                // Generate barcode image
+                // Note: Replace this line with your logic to generate barcode image
+                objprod.BarcodeImage = new byte[] { }; // Example: You can leave it empty for now
+
+                // Map image URL
+                objprod.ImageUrl = model.ImageUrl;
+
+                // Map online event URL
+                objprod.OnlineEventUrl = model.OnlineEventUrl;
+
+                // Map proxy upload
+                objprod.Proxyupload = model.Proxyupload;
+
+                // Map other properties similarly...
+
+                // Map access code
+                objprod.accesscode = model.accesscode;
+
+                // Map date
+                objprod.Date = model.Date;
+
+                // Map session ID
+                objprod.Sessionid = model.Sessionid;
+
+                // Map session version
+                objprod.SessionVersion = model.SessionVersion;
+
+                objprod.ConsolidatedValue = "";
+                objprod.ConsolidatedParent = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Barcode = "",
+                // BarcodeImage = new byte[] { }
+                // };
+                // objprod.Company=ua.GetUserCompanyInfo();
+
                 // objprod.BarcodeImage = new byte[] {};
 
 
                 db.BarcodeStore.Add(objprod);
                 db.SaveChanges();
                 // return Json("Success", JsonRequestBehavior.AllowGet);
-                return Ok("success");
+                var x = new AutoDefaultResponse<BarcodeModel>();
+                // 
+                // return Ok("success");
+                return Ok(x.ConvertToGood("BarCode Model Created Successfully", objprod));
             }
-            catch
+            catch (Exception ex)
             {
                 // return Json("Failed", JsonRequestBehavior.AllowGet);
-                return BadRequest("Failed");
+                var x = new AutoDefaultResponse<string>();
+                // 
+                // return Ok("success");
+                var response = x.ConvertToGood("BarCode Model Failed to Create");
+                return StatusCode((int)HttpStatusCode.InternalServerError, response);
+                // return BadRequest($"Failed: {ex.Message}");
             }
         }
-
 
 
         [HttpGet]
@@ -684,5 +860,11 @@ namespace BarcodeGenerator.Controllers
                 return Ok();
             }
         }
+    }
+
+    public class BarCodeLoginDto
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -13,6 +13,8 @@ public class FakeBarCodeModelDto
     
         // public int Id { get; set; }
         // public Int64 SN { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Name { get; set; }
         public string Company { get; set; }
         public double Holding { get; set; }
@@ -26,7 +28,6 @@ public class FakeBarCodeModelDto
 
 
         public int RegCode { get; set; }
-        public byte[]? BarcodeImage { get; set; }=new byte[]{};
         public string Barcode { get; set; }
         public string ImageUrl { get; set; }
         public string OnlineEventUrl { get; set; }

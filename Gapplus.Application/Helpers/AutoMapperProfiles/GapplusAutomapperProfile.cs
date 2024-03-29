@@ -12,22 +12,21 @@ using Gapplus.Domain;
 
 namespace Gapplus.Application.Helpers.AutoMapperProfiles
 {
-    public class GapplusAutomapperProfile:Profile
+  public class GapplusAutomapperProfile : Profile
+  {
+    public GapplusAutomapperProfile()
     {
-        public GapplusAutomapperProfile()
-        {
-          //USER MAPPINGS
-            CreateMap<CreateUserDto, User>();
-            CreateMap<UpdateUserDto, User>();
-            CreateMap<ReadUserDto, User>().ReverseMap();
-          
-            CreateMap<FakeBarCodeModelDto,BarcodeModel>();
-          
-           //COMPANY MAPPINGS
-           CreateMap<CreateCompanyDto, Company>();
-           CreateMap<UpdateCompanyDto, Company>();
-           CreateMap<ReadCompanyDto, Company>().ReverseMap();
+      //USER MAPPINGS
+      CreateMap<CreateUserDto, User>();
+      CreateMap<UpdateUserDto, User>();
+      CreateMap<ReadUserDto, User>().ReverseMap();
+
+
+      //COMPANY MAPPINGS
+      CreateMap<CreateCompanyDto, Company>();
+      CreateMap<UpdateCompanyDto, Company>();
+      CreateMap<ReadCompanyDto, Company>().ReverseMap();
     }
-            
-        }
+
+  }
 }
