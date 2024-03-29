@@ -22,9 +22,11 @@ namespace BarcodeGenerator.Controllers
         _tempDataManager = tempDataManager;
             _AGMService =new AGMRegistrationService(context);
         }
+
+
         // GET: AGMRegistration
 
-        [HttpGet]
+        [HttpGet("GetActiveAgm")]
         public async Task<ActionResult> Index()
         {
             AccreditationResponse model = new AccreditationResponse();

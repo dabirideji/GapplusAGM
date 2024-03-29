@@ -37,7 +37,8 @@ namespace BarcodeGenerator.Service
             {
 
                 var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, RegCode = o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
-                if (companyNameList != null)
+                // if (companyNameList != null)
+                if (companyNameList != null && companyNameList.Count()!=0)
                 {
                     response = new AGMCompaniesResponse
                     {

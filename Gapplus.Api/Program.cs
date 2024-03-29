@@ -73,25 +73,28 @@ builder.Services.AddCors(options =>
 
 //REGISTERING THE DB CONTEXT AND THE DATAABASES 
 
-//DEFAULT CONNECTION
+// ##DEFAULT CONNECTION
+
 // builder.Services.AddDbContext<UsersContext>(options =>
 //     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
 // b => b.MigrationsAssembly("Gapplus.Api")));
 
 
 
-//OFFLINE SQLITE DATABASE {Deji test database }
-// builder.Services.AddDbContext<GapplusDbContext>(options =>
-//     options.UseSqlite(builder.Configuration.GetConnectionString("Offline"),
-// b => b.MigrationsAssembly("Gapplus.Api")));
-
-
-
-//ONLINE SQL SERVER DATABASE
-// MAIN DATABASE FOR LIVE UPDATES ANY SYNC BETWEEN DEVELOPERS {ONLINE SQL SERVER DATABASE }
+// ##OFFLINE SQLITE DATABASE {Deji test database }
 builder.Services.AddDbContext<UsersContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Online"),
+    options.UseSqlite(builder.Configuration.GetConnectionString("Offline"),
 b => b.MigrationsAssembly("Gapplus.Api")));
+
+
+
+
+// ##ONLINE SQL SERVER DATABASE
+// MAIN DATABASE FOR LIVE UPDATES ANY SYNC BETWEEN DEVELOPERS {ONLINE SQL SERVER DATABASE }
+
+// builder.Services.AddDbContext<UsersContext>(options =>
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("Online"),
+// b => b.MigrationsAssembly("Gapplus.Api")));
 
 #endregion
 

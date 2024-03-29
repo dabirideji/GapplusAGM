@@ -34,6 +34,10 @@ namespace BarcodeGenerator.Barcode
                 Random rnd = new Random();
                 while (length-- > 0)
                 {
+                    if(length==0){
+                return rs.ToString();
+
+                    }
                     int index = (int)(rnd.NextDouble() * charPool.Length);
                     if (charPool[index] != "-")
                     {

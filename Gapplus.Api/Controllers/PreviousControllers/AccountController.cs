@@ -7,22 +7,16 @@
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     // [Authorize]
-//     // [InitializeSimpleMembership]
-//     // [HandleError]
+    
 //     public class AccountController : ControllerBase
 //     {
-//         //
-//         // GET: /Account/Login
 //         private UsersContext db;
-
-
-
 //         public AccountController(UsersContext context)
 //         {
-//             db = context;
-
+//         db = context;
 //         }
+      
+      
 //         //
 //         // POST: /Account/Login
 
