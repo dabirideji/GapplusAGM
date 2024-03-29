@@ -1,0 +1,1071 @@
+[
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AccessEncryptIndex",
+    "RelativePath": "api/Accreditation/AccessEncryptIndex",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AccreditationConfirmation",
+    "RelativePath": "api/Accreditation/AccreditationConfirmation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.accredationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AccreditationConfirmation",
+    "RelativePath": "api/Accreditation/AccreditationConfirmation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AccreditationIndex",
+    "RelativePath": "api/Accreditation/AccreditationIndex",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyinfo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "aElapsedTimeAsync",
+    "RelativePath": "api/Accreditation/aElapsedTime",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.TimeSpan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "aElapsedTime",
+    "RelativePath": "api/Accreditation/aElapsedTime/GetElapsedTime",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "aElapsedTimeEventLoadingAsync",
+    "RelativePath": "api/Accreditation/aElapsedTimeEventLoading",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.TimeSpan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AGMEvent",
+    "RelativePath": "api/Accreditation/AGMEvent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AGMQuestionAsync",
+    "RelativePath": "api/Accreditation/AGMQuestion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "question",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "shareholdernum",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.APIMessageLog",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AGMStageLogin",
+    "RelativePath": "api/Accreditation/AGMStageLogin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyinfo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "AutoAdmittance",
+    "RelativePath": "api/Accreditation/AutoAdmittance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "shareholderNum",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "DangoteEncryptIndex",
+    "RelativePath": "api/Accreditation/DangoteEncryptIndex",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "EventLoadingPageAsync",
+    "RelativePath": "api/Accreditation/EventLoadingPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.EventLoadingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "EventLoadingPage",
+    "RelativePath": "api/Accreditation/EventLoadingPage/EventLoadingPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "ExternalAdmission",
+    "RelativePath": "api/Accreditation/ExternalAdmission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "GetShareholderConsolidatedAccounts",
+    "RelativePath": "api/Accreditation/GetShareholderConsolidatedAccounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "Index",
+    "RelativePath": "api/Accreditation/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "JoinOngoingVotingResolution",
+    "RelativePath": "api/Accreditation/JoinOngoingVotingResolution",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "shareholdernum",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "LoginConfirmation",
+    "RelativePath": "api/Accreditation/LoginConfirmation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "Logout",
+    "RelativePath": "api/Accreditation/Logout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "TermsCondition",
+    "RelativePath": "api/Accreditation/TermsCondition",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AccreditationController",
+    "Method": "VotingResponse",
+    "RelativePath": "api/Accreditation/VotingResponse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.VoteModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRealtimeReportController",
+    "Method": "CustomRealtimeIndex",
+    "RelativePath": "api/AGMRealtimeReport/CustomRealtimeIndex",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRealtimeReportController",
+    "Method": "Index",
+    "RelativePath": "api/AGMRealtimeReport/Index/Index/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRealtimeReportController",
+    "Method": "RealTimeIndex",
+    "RelativePath": "api/AGMRealtimeReport/RealTimeIndex/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRealtimeReportController",
+    "Method": "ResolutionIndex",
+    "RelativePath": "api/AGMRealtimeReport/ResolutionIndex",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRealtimeReportController",
+    "Method": "ResultionResult",
+    "RelativePath": "api/AGMRealtimeReport/ResultionResult",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRegistrationController",
+    "Method": "Index",
+    "RelativePath": "api/AGMRegistration/Index",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "find",
+        "Type": "BarcodeGenerator.Models.SearchModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRegistrationController",
+    "Method": "Index",
+    "RelativePath": "api/AGMRegistration/Index/GetActiveAgm",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMVotingController",
+    "Method": "AuthenticateWebVoting",
+    "RelativePath": "api/AGMVoting/AuthenticateWebVoting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BarcodeGenerator.Models.accredationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMVotingController",
+    "Method": "Index",
+    "RelativePath": "api/AGMVoting/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMVotingController",
+    "Method": "TakeResolution",
+    "RelativePath": "api/AGMVoting/TakeResolution",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PostResolution",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMVotingController",
+    "Method": "Vote",
+    "RelativePath": "api/AGMVoting/Vote",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "AjaxHandler",
+    "RelativePath": "api/Barcode/AjaxHandler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "AjaxHandlerNonShareholder",
+    "RelativePath": "api/Barcode/AjaxHandlerNonShareholder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Create",
+    "RelativePath": "api/Barcode/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BarcodeGenerator.Models.FakeBarCodeModelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "CreateNonShareholder",
+    "RelativePath": "api/Barcode/CreateNonShareholder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "CreateNonShareholder",
+    "RelativePath": "api/Barcode/CreateNonShareholder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BarcodeGenerator.Models.Facilitators",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Delete",
+    "RelativePath": "api/Barcode/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "collection",
+        "Type": "Microsoft.AspNetCore.Http.FormCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Details",
+    "RelativePath": "api/Barcode/Details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Edit",
+    "RelativePath": "api/Barcode/Edit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Edit",
+    "RelativePath": "api/Barcode/Edit/id",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "collection",
+        "Type": "BarcodeGenerator.Models.Facilitators",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Index",
+    "RelativePath": "api/Barcode/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeController",
+    "Method": "Login",
+    "RelativePath": "api/Barcode/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BarcodeGenerator.Controllers.BarCodeLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeAPIController",
+    "Method": "GetBarcode",
+    "RelativePath": "api/BarcodeAPI/GetBarcode/GetBarcode/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Net.Http.HttpResponseMessage",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.BarcodeAPIController",
+    "Method": "Post",
+    "RelativePath": "api/BarcodeAPI/Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.ReturnValue",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Net.Http.HttpResponseMessage",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ClikapadAPIController",
+    "Method": "ChecIfClikapadExist",
+    "RelativePath": "api/ClikapadAPI/ChecIfClikapadExist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ClikapadAPIController",
+    "Method": "GetAGMID",
+    "RelativePath": "api/ClikapadAPI/GetAGMID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ClikapadAPIController",
+    "Method": "VotingResponse",
+    "RelativePath": "api/ClikapadAPI/VotingResponse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.ClikapadReceiveDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "ConsolidateIndex",
+    "RelativePath": "api/Consolidation/ConsolidateIndex",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PostSelectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "ConsolidateRequest",
+    "RelativePath": "api/Consolidation/ConsolidateRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PostSelectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "Index",
+    "RelativePath": "api/Consolidation/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "RegularizeEmail",
+    "RelativePath": "api/Consolidation/RegularizeEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PostSelectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "RegularizeName",
+    "RelativePath": "api/Consolidation/RegularizeName",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PostSelectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "RegularizePhoneNumber",
+    "RelativePath": "api/Consolidation/RegularizePhoneNumber",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PostSelectModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ConsolidationController",
+    "Method": "SearchRequest",
+    "RelativePath": "api/Consolidation/SearchRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.SearchModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.CoronationVirtualController",
+    "Method": "ConfirmShareholderToken",
+    "RelativePath": "api/CoronationVirtual/ConfirmShareholderToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BarcodeGenerator.Models.ModelDTO.PreregistrationRegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.CoronationVirtualController",
+    "Method": "CoronationVirtual",
+    "RelativePath": "api/CoronationVirtual/CoronationVirtual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.CoronationVirtualController",
+    "Method": "Index",
+    "RelativePath": "api/CoronationVirtual/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.CoronationVirtualController",
+    "Method": "TokenComfirmation",
+    "RelativePath": "api/CoronationVirtual/TokenComfirmation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BarcodeGenerator.Models.ModelDTO.RequestViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.DashboardController",
+    "Method": "Index",
+    "RelativePath": "api/Dashboard/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.DashboardController",
+    "Method": "PresentCount",
+    "RelativePath": "api/Dashboard/PresentCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.DashboardController",
+    "Method": "ResolutionChart",
+    "RelativePath": "api/Dashboard/ResolutionChart/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.DashboardController",
+    "Method": "VotingBoard",
+    "RelativePath": "api/Dashboard/VotingBoard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.VoteController",
+    "Method": "Index",
+    "RelativePath": "Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.VoteController",
+    "Method": "VoteCollection",
+    "RelativePath": "VoteCollection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

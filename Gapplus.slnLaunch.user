@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "Gapplus.Api\\Gapplus.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Gapplus.Web\\Gapplus.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

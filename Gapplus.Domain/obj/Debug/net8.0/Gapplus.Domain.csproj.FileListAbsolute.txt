@@ -1,0 +1,15 @@
+C:\GitRepo\GapplusAGM\Gapplus.Domain\bin\Debug\net8.0\Gapplus.Domain.deps.json
+C:\GitRepo\GapplusAGM\Gapplus.Domain\bin\Debug\net8.0\Gapplus.Domain.runtimeconfig.json
+C:\GitRepo\GapplusAGM\Gapplus.Domain\bin\Debug\net8.0\Gapplus.Domain.dll
+C:\GitRepo\GapplusAGM\Gapplus.Domain\bin\Debug\net8.0\Gapplus.Domain.pdb
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.csproj.AssemblyReference.cache
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.AssemblyInfoInputs.cache
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.AssemblyInfo.cs
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.csproj.CoreCompileInputs.cache
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.sourcelink.json
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.dll
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\refint\Gapplus.Domain.dll
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.pdb
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\Gapplus.Domain.genruntimeconfig.cache
+C:\GitRepo\GapplusAGM\Gapplus.Domain\obj\Debug\net8.0\ref\Gapplus.Domain.dll

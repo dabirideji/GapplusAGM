@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "Olo+DW3/aaEXgbZaVFT/gyIbicEZsgoTT9PHbGE8p40qh/tsKcMwEojkobyDBvJIlbwATehDOUMImsCgSQEJDw==",
+  "dgSpecHash": "GAtJT10IgbUcGsMrznTb+S2mbJ5yfDAIZ+HDcfsrqD1QTQnpF9egVywEORQwmGrwOorDFoIm57exsxoUEfuyWw==",
   "success": true,
   "projectFilePath": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.3\\microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\EFEZEINO\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
