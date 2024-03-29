@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using BarcodeGenerator.Barcode;
 using BarcodeGenerator.Models;
 using BarcodeGenerator.Service;
 using Gapplus.Application.Helpers;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,9 +25,11 @@ namespace BarcodeGenerator.Controllers
 
 
         private readonly ITempDataManager _tempDataManager;
+        private readonly IWebHostEnvironment _webHostEnviroment;
 
-        public BarcodeController(UsersContext _db, ITempDataManager tempDataManager)
+        public BarcodeController(UsersContext _db, ITempDataManager tempDataManager,IWebHostEnvironment webHostEnviroment)
         {
+            _webHostEnviroment = webHostEnviroment;
             db = _db;
             ua = new UserAdmin(db);
             _tempDataManager = tempDataManager;
@@ -407,28 +411,32 @@ namespace BarcodeGenerator.Controllers
         // POST: /Barcode/Create
 
         [HttpPost]
-        // public ActionResult Create([FromBody] BarcodeModelView model)
-        public ActionResult Create([FromBody] FakeBarCodeModelDto model,[FromServices]IMapper _mapper)
+        public ActionResult Create([FromBody] BarcodeModelView model)
+        // public ActionResult Create([FromBody] FakeBarCodeModelDto model, [FromServices] IMapper _mapper)
         {
             try
             {
                 // TODO: Add insert logic here
 
-                // barcodecs objbar = new barcodecs();      //todo
+                barcodecs objbar = new barcodecs(_webHostEnviroment);      //todo
 
 
 
-                // BarcodeModel objprod = new BarcodeModel()
-                // {
-                //     Name = model.FirstName,
+                BarcodeModel objprod = new BarcodeModel()
+                {
+                    Name = model.FirstName,
 
-                //     // Barcode = objbar.generateBarcode(), //todo
-                //     Barcode = "",
-                //     // BarcodeImage = objbar.getBarcodeImage(objbar.generateBarcode(), model.LastName.ToUpper()) //todo
-                //     BarcodeImage = new byte[] { }
-                // };
+                    Barcode = objbar.generateBarcode(), //todo
+                    BarcodeImage = objbar.getBarcodeImage(objbar.generateBarcode(), model.LastName.ToUpper()) //todo
+                   
+                   
+                    // Barcode = "",
+                    // BarcodeImage = new byte[] { }
+                };
 
-                var objprod=_mapper.Map<BarcodeModel>(model);
+                // var objprod = _mapper.Map<BarcodeModel>(model);
+                // objprod.BarcodeImage = new byte[] {};
+
 
                 db.BarcodeStore.Add(objprod);
                 db.SaveChanges();

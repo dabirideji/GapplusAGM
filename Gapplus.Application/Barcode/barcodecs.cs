@@ -11,11 +11,19 @@ using System.Configuration;
 using System.Data;
 using System.IO;
 using System.Web;
+using Microsoft.AspNetCore.Hosting;
 
 namespace BarcodeGenerator.Barcode
 {
     public class barcodecs
     {
+        private IWebHostEnvironment _webHostEnvironment;
+
+        public barcodecs(IWebHostEnvironment webHostEnvironment)
+    {
+        _webHostEnvironment = webHostEnvironment;
+    }
+
         public string generateBarcode()
         {
             try
@@ -65,9 +73,23 @@ namespace BarcodeGenerator.Barcode
 
 
 
-    
+   public byte[] getBarcodeImage(string barcode, string fontFileName)
+        {
+            try
+            {
+                BarCode39 barcodeGenerator = new BarCode39();
+                int barSize = 24;
+                string fontFile = Path.Combine(_webHostEnvironment.WebRootPath, "fonts", fontFileName);
 
-
+                return barcodeGenerator.Code39($"*{barcode}*", barSize, true, "", fontFile);
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception or log it
+                Console.WriteLine($"Error generating barcode: {ex.Message}");
+                return null;
+            }
+        }
 
 
 

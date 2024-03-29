@@ -26,7 +26,7 @@ public class FakeBarCodeModelDto
 
 
         public int RegCode { get; set; }
-        public byte[] BarcodeImage { get; set; }
+        public byte[]? BarcodeImage { get; set; }=new byte[]{};
         public string Barcode { get; set; }
         public string ImageUrl { get; set; }
         public string OnlineEventUrl { get; set; }

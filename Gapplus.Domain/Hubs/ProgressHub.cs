@@ -9,4 +9,8 @@ namespace BarcodeGenerator.Hubs
     public class ProgressHub: Hub
     {
     }
+
+    public class Dej:PersistentConnection{
+
+    }
 }
