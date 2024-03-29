@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {}
+    "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {
+    "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
+        "projectUniqueName": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
         "projectName": "Gapplus.Web",
-        "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\",
+        "projectPath": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
+        "packagesPath": "C:\\Users\\EFEZEINO\\.nuget\\packages\\",
+        "outputPath": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EFEZEINO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,15 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
