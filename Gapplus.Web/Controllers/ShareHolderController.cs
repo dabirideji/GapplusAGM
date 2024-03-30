@@ -1,4 +1,5 @@
-﻿using Gapplus.Web.DTO.ShareHolder;
+﻿using Gapplus.Application.Response;
+using Gapplus.Web.DTO.ShareHolder;
 using Gapplus.Web.RefitContracts;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -15,6 +16,7 @@ namespace Gapplus.Web.Controllers
         private readonly HttpClient _client;
         public ShareHolderController(HttpClient cl)
         {
+            RefitClient=RestService.For<IShareHolderContract>("http://localhost:5069/api/Barcode");
             _client = cl;
             _client.BaseAddress = new Uri("http://localhost:5069/api/Barcode");
             
@@ -28,6 +30,16 @@ namespace Gapplus.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto login)  
         {
+
+            var refitLogin=await RefitClient.Login(login);
+            if(refitLogin.IsSuccessStatusCode){
+                var ResponseData=JsonConvert.DeserializeObject<DefaultResponse<ShareHolderViewModel>>(await refitLogin.Content.ReadAsStringAsync());
+                var data=ResponseData.Data;
+                ViewBag.Name=data.Name;
+                ViewBag.Email=data.emailAddress;
+                return View();
+            }
+
                 var JsonString=JsonConvert.SerializeObject(login);
             StringContent content = new StringContent(JsonString, Encoding.UTF8, "application/json");
 

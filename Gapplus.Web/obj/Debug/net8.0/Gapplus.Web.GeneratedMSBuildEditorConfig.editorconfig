@@ -10,32 +10,32 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gapplus.Web
 build_property.RootNamespace = Gapplus.Web
-build_property.ProjectDir = C:\GitRepo\GapplusAGM\Gapplus.Web\
+build_property.ProjectDir = C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\GitRepo\GapplusAGM\Gapplus.Web
+build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Home/Index.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Home/Privacy.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/Error.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_DashboardHeader.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_DashboardHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmRIZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_Footer.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -43,11 +43,11 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PdmVyVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/ShareHolder/Login.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -55,18 +55,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcU2hhcmVIb2xkaW5nc0Rhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/ShareHolder/SignIn.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/_ViewImports.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/_ViewStart.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3cuw1e6htv
