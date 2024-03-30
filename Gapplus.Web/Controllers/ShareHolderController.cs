@@ -51,5 +51,13 @@ namespace Gapplus.Web.Controllers
         
         }
 
+
+
+        public IActionResult ShareHoldingsDashboard()
+        {
+            return View();
+        }
+
+
     }
 }
