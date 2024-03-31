@@ -59,5 +59,15 @@ namespace Gapplus.Web.Controllers
         }
 
 
+        public IActionResult AllAGMPage()
+        {
+            return View();
+        }
+
+
+        public IActionResult BoardOfDirectors()
+        {
+            return View();
+        }
     }
 }

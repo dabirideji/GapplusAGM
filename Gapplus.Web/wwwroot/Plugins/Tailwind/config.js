@@ -14,7 +14,8 @@ tailwind.config = {
 				darkLightBlue:"#ECF4FF"
 			},
 			backgroundImage:theme=>({
-				'primColor':'linear-gradient(to right,#FF8200,#FF002B)'
+				'primColor': 'linear-gradient(to right,#FF8200,#FF002B)',
+				'secColor': 'linear-gradient(to right, #fabe8d , #fa909d )'
 			}),
 			gradientColorStops: theme=>({'custom-gradient':`linear-gradient(to right, ${theme('colors.#00000080')} 50%, ${theme('colors.#00000000')} 0%)`,}),
 			screens: {
