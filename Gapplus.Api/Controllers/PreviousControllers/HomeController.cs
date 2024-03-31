@@ -1,73 +1,73 @@
-﻿// using BarcodeGenerator.Models;
-// using BarcodeGenerator.Service;
-// using System;
-// using System.Collections.Generic;
-// using System.Linq;
-// using System.Threading.Tasks;
-// using System.Web;
-// using System.Web.Mvc;
+﻿using BarcodeGenerator.Models;
+using BarcodeGenerator.Service;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
-// namespace BarcodeGenerator.Controllers
-// {
-//       [Authorize]
-//     public class HomeController : Controller
-//     {
-//         UsersContext db = new UsersContext();
-//         //private static string companyinfo = UserAdmin.GetUserCompanyInfo();
+namespace BarcodeGenerator.Controllers
+{
+      [Authorize]
+    public class HomeController : Controller
+    {
+        UsersContext db = new UsersContext();
+        //private static string companyinfo = UserAdmin.GetUserCompanyInfo();
 
-//         //private int RetrieveAGMUniqueID()
-//         //{
-//         //    var AGMUniqueID = db.Settings.Where(s => s.CompanyName == companyinfo).OrderByDescending(ai => ai.AGMID).First().AGMID;
+        //private int RetrieveAGMUniqueID()
+        //{
+        //    var AGMUniqueID = db.Settings.Where(s => s.CompanyName == companyinfo).OrderByDescending(ai => ai.AGMID).First().AGMID;
 
-//         //    return AGMUniqueID;
-//         //}
+        //    return AGMUniqueID;
+        //}
 
-//         public async Task<ActionResult> Index()
-//         {
-//             var response = await IndexAsync();
+        public async Task<ActionResult> Index()
+        {
+            var response = await IndexAsync();
 
-//             return View(response);
+            return View(response);
 
-//         }
+        }
 
-//         private Task<UserProfile> IndexAsync()
-//         {
-//             var user = db.UserProfiles.SingleOrDefault(u => u.UserName == User.Identity.Name);
-//             return Task.FromResult<UserProfile>(user);
-//         }
+        private Task<UserProfile> IndexAsync()
+        {
+            var user = db.UserProfiles.SingleOrDefault(u => u.UserName == User.Identity.Name);
+            return Task.FromResult<UserProfile>(user);
+        }
 
 
-//         public ActionResult Success()
-//         {
-//             ViewBag.Message = "Barcode Information has been sent to your email";
+        public ActionResult Success()
+        {
+            ViewBag.Message = "Barcode Information has been sent to your email";
 
-//             return View();
-//         }
+            return View();
+        }
 
-//         public ActionResult Failure()
-//         {
-//             ViewBag.Message = "Barcode Information Couldn't be sent to email";
+        public ActionResult Failure()
+        {
+            ViewBag.Message = "Barcode Information Couldn't be sent to email";
 
-//             return View();
-//         }
+            return View();
+        }
 
-//         public ActionResult Wrong()
-//         {
+        public ActionResult Wrong()
+        {
 
-//             ViewBag.Message = "The number entered doesn't exist. Please retry with the correct number.";
-//             return View();
+            ViewBag.Message = "The number entered doesn't exist. Please retry with the correct number.";
+            return View();
 
-//         }
+        }
 
-//         public ActionResult ResolutionChart(int id)
-//         {
+        public ActionResult ResolutionChart(int id)
+        {
 
-//             ViewBag.presentcount = db.Present.Count();
+            ViewBag.presentcount = db.Present.Count();
 
-//             ViewBag.shareholders = db.BarcodeStore.Count();
-//             var question = db.Question.ToList();
-//             return PartialView(question);
+            ViewBag.shareholders = db.BarcodeStore.Count();
+            var question = db.Question.ToList();
+            return PartialView(question);
 
-//         }
-//     }
-// }
+        }
+    }
+}
