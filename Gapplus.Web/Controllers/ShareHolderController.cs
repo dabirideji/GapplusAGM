@@ -69,5 +69,10 @@ namespace Gapplus.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult DocumentPage()
+        {
+            return View();
+        }
     }
 }

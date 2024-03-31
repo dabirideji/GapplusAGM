@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+}
+
+<html class="overflow-x-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="~/Plugins/Tailwind/tailwind.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+
+
+<body class="overflow-x-none">
+    @Html.Partial("_DashBoardHeader")
+    @Html.Partial("_DetailsPage")
+
+
+   <section class="px-[100px]">
+        <div class="flex mt-[20px] mb-[20px]">
+            <div class="mr-[10px]">
+                <p class="text-[10px] font-[900]">Board of Directors</p>
+            </div>
+            <div>
+                <p class="text-[10px] font-[900] text-lightGrey">
+                    Documents
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="grid grid-cols-5 ">
+            <div class=" bg-darkLightBlue  focus:bg-darkLightBlue rounded-[5px] p-[10px] cursor-pointer">
+                <img src="~/Plugins/Images/fxemoji_documentdocument-icon.png" alt="" class="w-[30px] h-[30px] mb-[3px]">
+                <p class="font-[700] text-[10px] mb-[3px]">Meeting Guideline. pdf</p>
+                <p class="text-[8px] text-lightGrey">Date created: 24, Sept. 2022</p>
+            </div>
+            <div class=" hover:bg-darkLightBlue focus:bg-darkLightBlue rounded-[5px] p-[10px] cursor-pointer">
+                <img src="~/Plugins/Images/fxemoji_documentdocument-icon.png" alt="" class="w-[30px] h-[30px] mb-[3px]">
+                <p class="font-[700] text-[10px] mb-[3px]">Meeting Guideline. pdf</p>
+                <p class="text-[8px] text-lightGrey">Date created: 24, Sept. 2022</p>
+            </div>
+            <div class=" hover:bg-darkLightBlue focus:bg-darkLightBlue rounded-[5px] p-[10px] cursor-pointer">
+                <img src="~/Plugins/Images/fxemoji_documentdocument-icon.png" alt="" class="w-[30px] h-[30px] mb-[3px]">
+                <p class="font-[700] text-[10px] mb-[3px]">Meeting Guideline. pdf</p>
+                <p class="text-[8px] text-lightGrey">Date created: 24, Sept. 2022</p>
+            </div>
+        </div>
+   </section>
+    @Html.Partial("_Footer")
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
