@@ -74,5 +74,41 @@ namespace Gapplus.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult RegisterPage()
+        {
+            return View();
+        }
+        public IActionResult RegisterPage2()
+        {
+            return View();
+        }
+
+        public IActionResult RegisterPage3()
+        {
+            return View();
+        }
+
+        public IActionResult RegisterPage4()
+        {
+            return View();
+        }
+
+
+        public IActionResult ReviewAndConfirmPage()
+        {
+            return View();
+        }
+
+        public IActionResult SuccessPage()
+        {
+            return View();
+        }
+
+
+        public IActionResult MeetingLoginPage()
+        {
+            return View();
+        }
     }
 }

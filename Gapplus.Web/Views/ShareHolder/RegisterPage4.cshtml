@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+
+<html class="overflow-x-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="~/Plugins/Tailwind/tailwind.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body class="overflow-x-none">
+    @Html.Partial("_DashBoardHeader")
+    @Html.Partial("_BannerPage")
+    <section class="px-[100px]">
+        <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
+            <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">
+            <p class="text-[9px] font-[900]">Attendance</p>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[40%] mx-auto">
+
+            <h2 class="font-[900] text-[15px] text-shrink text-center">
+                Register for Annual General Meeting
+            </h2>
+            <p class="text-[13px] text-center text-lightBlue mb-[20px]">This service is only available to shareholders.</p>
+
+            <div class="self-start mt-[5px]">
+                <div class="mb-[10px] w-full flex  items-center ">
+                    <input type="checkbox" class="mr-[3px]">
+                    <p class="text-[11px] font-[700] text-darkGrey">Onsite</p>
+
+
+                </div>
+                <div class="mb-[10px] w-full flex  items-center ">
+                    <input type="checkbox" class="mr-[3px]">
+                    <p class="text-[11px] font-[700] text-darkGrey">Remote</p>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="flex items-center mt-[20px] h-[20px] justify-between w-full px-[5px]">
+                <div class="flex items-center border p-[10px] mr-[3px] w-[40%]">
+                    <img src="~/Plugins/Images/arrow-leftprevious icon.svg" alt="" class="w-[12px] h-[12px] mr-[3px]">
+                    <p class="text-lightGrey text-[10px] font-[700]">Previous</p>
+                </div>
+                <div class="bg-primColor   flex items-center justify-center text-white text-[10px] w-[70%] p-[10px]">
+                    <button class="mr-[5px] text-[10px]">Next</button>
+                    <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] h-9px] text-white">
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    @Html.Partial("_Footer")
+</body>
+
+</html>
