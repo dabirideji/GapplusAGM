@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<html class="overflow-x-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="~/Plugins/Tailwind/tailwind.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body class="overflow-x-none">
+    @Html.Partial("_DashBoardHeader")
+    @Html.Partial("_BannerPage")
+<section>
+     <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
+            <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">
+            <p class="text-[9px] font-[900]">Register your details</p>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[40%] mx-auto">
+            
+            <h2 class="font-[900] text-[15px] text-shrink text-center">
+                Register Coronation E-Meeting
+            </h2>
+            <p class="text-[13px] text-center text-lightBlue mb-[20px]">This service is only available to shareholders.</p>
+        <form action="" class=" mt-[10px] w-full flex flex-col justify-center items-center px-[40px]" >
+            <div class="mb-[10px] w-full md:flex ">
+               <input type="text" placeholder="First Name" class="border mr-[5px] mb-[10px] md:mb-[0] w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+                <input type="" name="" id=""   class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none " placeholder="Last Name">
+            </div>
+            <div class="w-full mb-[10px]">
+                <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
+                <input type="Enter your email" name="" id=" " placeholder="Email" class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+            </div>
+            <div class="w-full">
+                <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
+                <input type="" name="" id=" " placeholder="Mobile Number" class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+            </div>
+           <div class="flex items-center mt-[20px] h-[20px] justify-between w-full ">
+            <div class="flex items-center border justify-center p-[8px] mr-[3px] w-[30%] text-center h-[40px]">
+                <img src="~/Plugins/Images/arrow-leftprevious icon.svg" alt="" class="w-[12px] h-[12px] mr-[3px]">
+                <p class="text-lightGrey text-center text-[10px] font-[700]">Previous</p>
+              </div>
+              <div class="bg-primColor   flex items-center justify-center text-white text-[10px] w-[70%] p-[8px] h-[40px]">
+                <button class="mr-[5px] text-[10px]">Next</button>
+                <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] [h-9px] text-white" >
+              </div>
+           
+           </div>
+           
+            
+        
+            
+        </form>
+        </div>
+</section>
+
+ @Html.Partial("_Footer")
+</body>
+
+                </html>

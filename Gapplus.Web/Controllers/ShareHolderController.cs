@@ -51,5 +51,64 @@ namespace Gapplus.Web.Controllers
         
         }
 
+
+
+        public IActionResult ShareHoldingsDashboard()
+        {
+            return View();
+        }
+
+
+        public IActionResult AllAGMPage()
+        {
+            return View();
+        }
+
+
+        public IActionResult BoardOfDirectors()
+        {
+            return View();
+        }
+
+        public IActionResult DocumentPage()
+        {
+            return View();
+        }
+
+        public IActionResult RegisterPage()
+        {
+            return View();
+        }
+        public IActionResult RegisterPage2()
+        {
+            return View();
+        }
+
+        public IActionResult RegisterPage3()
+        {
+            return View();
+        }
+
+        public IActionResult RegisterPage4()
+        {
+            return View();
+        }
+
+
+        public IActionResult ReviewAndConfirmPage()
+        {
+            return View();
+        }
+
+        public IActionResult SuccessPage()
+        {
+            return View();
+        }
+
+
+        public IActionResult MeetingLoginPage()
+        {
+            return View();
+        }
     }
 }
