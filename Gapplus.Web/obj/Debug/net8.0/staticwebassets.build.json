@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mn1h3h54y+eVMf+t0hz6+uGBSSYyJxVONfxJ+Nq39Tk=",
+  "Hash": "39inKMh/1UVC21H5g3Fpw0Y9yeq7VnJeR8kTx5H8F8M=",
   "Source": "Gapplus.Web",
   "BasePath": "_content/Gapplus.Web",
   "Mode": "Default",
@@ -2143,6 +2143,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png"
+    },
+    {
+      "Identity": "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\wwwroot\\Plugins\\Images\\Iconbackback.svg",
+      "SourceId": "Gapplus.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\wwwroot\\",
+      "BasePath": "_content/Gapplus.Web",
+      "RelativePath": "Plugins/Images/Iconbackback.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Iconbackback.svg"
     },
     {
       "Identity": "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\wwwroot\\Plugins\\Images\\Iconnext-icon.svg",
