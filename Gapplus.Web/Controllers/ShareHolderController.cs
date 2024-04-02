@@ -38,21 +38,22 @@ namespace Gapplus.Web.Controllers
                 var data = ResponseData.Data;
                 ViewBag.Name = data.Name;
                 ViewBag.Email = data.emailAddress;
-                return RedirectToAction("ShareHoldingsDashboard");
+                return RedirectToAction("ShareHoldingsDashboard",data);
             }
             return Ok("Login Failed");
         }
 
 
 
-           public async Task<IActionResult> ShareHoldingsDashboard()
+           public async Task<IActionResult> ShareHoldingsDashboard(ShareHolderViewModel data)
         {
             var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
             var response=await refitClient.GetActiveAgm();
             if(response.IsSuccessStatusCode){
                 // var responseData=Js
             }
-
+             ViewBag.Name = data.Name;
+                ViewBag.Email = data.emailAddress;
             return View();
         }
 
