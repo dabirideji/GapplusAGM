@@ -26,8 +26,8 @@ namespace BarcodeGenerator.Controllers
 
         // GET: AGMRegistration
 
-        [HttpGet("GetActiveAgm")]
-        public async Task<ActionResult> Index()
+        [HttpGet]
+        public async Task<ActionResult> GetActiveAgm()
         {
             AccreditationResponse model = new AccreditationResponse();
             try
@@ -35,14 +35,17 @@ namespace BarcodeGenerator.Controllers
                 
 
                 //var response = await _client.GetAsync<ServiceResponse<List<string>>>($"{ApiRoutes.getcompany}");
-                var response = await _AGMService.GetActiveAGMCompaniesAsync();
+                // var response = await _AGMService.GetActiveAGMCompaniesAsync();
+
+                var response=await _AGMService.GenerateAgmEvent(3);
                 if (response==null)
                 {
 
                     model.companies = new List<AGMCompanies>();
                 }
 
-                model.companies = response.Companies ?? new List<AGMCompanies>();
+                // model.companies = response.Companies ?? new List<AGMCompanies>(); 
+                model.companies=response;
 
             }
             catch

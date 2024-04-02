@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pie Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="~/Plugins/Tailwind/tailwind.js"></script>
+  <script src="Plugins/Tailwind/tailwind.js"></script>
+  <script src="~/Plugins/Tailwind/config.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bg-red h-[300px] w-[300px]">
+    <canvas id="myChart"></canvas>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    /**
+     * Append items to an array.
+     * 
+     * This function appends the specified items to the end of the provided array.
+     * 
+     * @param {Array} arrayToBeAppended - The array to which items will be appended.
+     * @param {...*} items - The items to be appended to the array.
+     * @returns {void}
+     */
+    function addItemsToArray(arrayToBeAppended = [], ...items) {
+      console.log("started");
+      if (!Array.isArray(arrayToBeAppended)) {
+        console.error("The first argument must be an array.");
+        return;
+      }
+      items.forEach(item => {
+        arrayToBeAppended.push(item);
+      });
+      console.log(arrayToBeAppended);
+    }
+    
+    const ctx = document.getElementById('myChart');
+
+    let labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
+    let actualData = [12, 19, 3, 5, 2, 3]
+
+    let data = {
+      labels: labels,
+      datasets: [{
+        data: actualData,
+        // borderColor: "rgb(66,135,245)",
+        backgroundColor: ["#ff8200", "#ff9b33", "#ffb466", "#ffcd99", "#ffe6cc", "#fff3e6"]
+        // fill:true,
+        // label: '# of Votes',
+        // borderWidth: 1,
+      }]
+    };
+
+    let configuration = {
+      type: 'pie',
+      data: data,
+      options: {
+        plugins: {
+          legend: {
+            display: false,
+            position: "left"
+          }
+        },
+        cutout: "50%",
+        title: {
+          display: true,
+          text: "AGM Shareholdings"
+        }
+        // scales: {
+        //   y: {
+        //     beginAtZero: true
+        //   }
+        // }
+      }
+    }
+
+    new Chart(ctx, configuration);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

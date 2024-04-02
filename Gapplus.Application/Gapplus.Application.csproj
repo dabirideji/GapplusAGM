@@ -31,6 +31,8 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Spire.XLS" Version="14.3.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="25.1.37" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="WebMatrix.WebData" Version="2.0.30506" />
     <PackageReference Include="ZXing.Net" Version="0.16.9" />

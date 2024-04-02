@@ -3,29 +3,33 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web.Http;
-//using System.Web.Mvc;
 using System.Diagnostics;
 using System.Threading;
-using System.Data.Entity;
 using BarcodeGenerator.Service;
-using System.Web.Http.Description;
-using Swashbuckle.Swagger.Annotations;
 using BarcodeGenerator.Models.ModelDTO;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BarcodeGenerator.Controllers
 {
-    [ApiExplorerSettings(IgnoreApi = true)]
-    public class PreregistrationAPIController : ApiController
+    // [ApiExplorerSettings(IgnoreApi = true)]
+    [ApiController]
+    [Route("api/[controller]/[action]")]
+    public class PreregistrationAPIController : ControllerBase
     {
-        AGMRegistrationService _AGMService = new AGMRegistrationService();
-        PreregistrationService _preregistrationService = new PreregistrationService();
-        UsersContext db = new UsersContext();
+        AGMRegistrationService _AGMService ;
+        PreregistrationService _preregistrationService ;
+        UsersContext db;
+          public PreregistrationAPIController(UsersContext context)
+        {
+            db=context;
+            _AGMService = new AGMRegistrationService(db);
+             _preregistrationService = new PreregistrationService(db);
+        }
+           
         //UserAdmin ua = new UserAdmin();
 
         // GET api/<controller>
@@ -38,48 +42,96 @@ namespace BarcodeGenerator.Controllers
 
 
 
-        [HttpGet]
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(200, "", Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(500, "Server Error", Type = typeof(AGMCompaniesResponse))]
-        public async Task<List<AGMCompanies>> GetActiveAGMCompanies()
+        // [HttpGet]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(200, "", Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(500, "Server Error", Type = typeof(AGMCompaniesResponse))]
+        // public async Task<List<AGMCompanies>> GetActiveAGMCompanies()
+        // {
+
+        //     var response = await GetActiveAGMCompaniesAsync();
+
+        //     return response;
+        // }
+
+
+
+        // [HttpGet]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(200, "", Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(201, "No Active AGM Available", Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(500, "Server Error", Type = typeof(AGMCompaniesResponse))]
+        // public async Task<AGMCompaniesResponse> GetActiveAGMCompany(string company)
+        // {
+        //     var response = await _AGMService.GetActiveAGMCompanyAsync(company);
+
+        //     return response;
+        // }
+
+
+        // private Task<List<AGMCompanies>> GetActiveAGMCompaniesAsync()
+        // {
+        //     try
+        //     {
+        //         var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
+
+        //         return Task.FromResult<List<AGMCompanies>>(companyNameList);
+
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return Task.FromResult<List<AGMCompanies>>(new List<AGMCompanies>());
+        //     }
+
+        // }
+
+
+
+
+ [HttpGet("{company}")]
+        [ProducesResponseType(typeof(AGMCompaniesResponse), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(AGMCompaniesResponse), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(AGMCompaniesResponse), (int)HttpStatusCode.InternalServerError)]
+        public async Task<ActionResult<AGMCompaniesResponse>> GetActiveAGMCompany(string company)
         {
-
-            var response = await GetActiveAGMCompaniesAsync();
-
-            return response;
+            try
+            {
+                var response = await _AGMService.GetActiveAGMCompanyAsync(company);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                var response =new AGMCompaniesResponse();
+                return StatusCode((int)HttpStatusCode.InternalServerError);
+            }
         }
-
-
-        [HttpGet]
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(200, "", Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(201, "No Active AGM Available", Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(500, "Server Error", Type = typeof(AGMCompaniesResponse))]
-        public async Task<AGMCompaniesResponse> GetActiveAGMCompany(string company)
-        {
-            var response = await _AGMService.GetActiveAGMCompanyAsync(company);
-
-            return response;
-        }
-
 
         private Task<List<AGMCompanies>> GetActiveAGMCompaniesAsync()
         {
             try
             {
-                var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
+                var companyNameList = db.Settings.Where(s => !s.ArchiveStatus)
+                                                   .Select(o => new AGMCompanies 
+                                                   { 
+                                                       company = o.CompanyName, 
+                                                       description = o.Description, 
+                                                       agmid = o.AGMID, 
+                                                       venue = o.Venue, 
+                                                       dateTime = o.AgmDateTime, 
+                                                       EnddateTime = o.AgmEndDateTime 
+                                                   })
+                                                   .Distinct()
+                                                   .OrderBy(k => k.company)
+                                                   .ToList();
 
                 return Task.FromResult<List<AGMCompanies>>(companyNameList);
-
             }
             catch (Exception e)
             {
                 return Task.FromResult<List<AGMCompanies>>(new List<AGMCompanies>());
             }
-
         }
-
 
         [HttpPost]
         public async Task<AGMAccesscodeResponse> GetShareholderAccessCode([FromBody] PreregistrationDto post)
@@ -164,7 +216,7 @@ namespace BarcodeGenerator.Controllers
         //    return new HttpRequestResponse();
         //}
 
-        public async Task<PreRegistrationResponse> GetPreregistrationComfirmation(VoteModel query)
+        private async Task<PreRegistrationResponse> GetPreregistrationComfirmation(VoteModel query)
         {
             return await _AGMService.GetPreregistrationComfirmationAsync(query);
         }
@@ -334,8 +386,8 @@ namespace BarcodeGenerator.Controllers
 
             //}
 
-            [HttpPost]
-        public async Task<PreRegistrationResponse> GetPreregistrationRegister([FromBody] PreregistrationDto[] post)
+            // [HttpPost]
+        private async Task<PreRegistrationResponse> GetPreregistrationRegister([FromBody] PreregistrationDto[] post)
         {
             return await _AGMService.GetPreregistrationRegister(post);
 

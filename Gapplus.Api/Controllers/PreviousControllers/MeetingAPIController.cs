@@ -3,22 +3,32 @@ using BarcodeGenerator.Models;
 using BarcodeGenerator.Models.ModelDTO;
 using BarcodeGenerator.Service;
 using BarcodeGenerator.Util;
-using Swashbuckle.Swagger.Annotations;
+// using Swashbuckle.Swagger.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BarcodeGenerator.Controllers
 {
-    public class MeetingAPIController : ApiController
+    [ApiController]
+    [Route("api/[controller]/[action]")]
+    public class MeetingAPIController : ControllerBase
+    // public class MeetingAPIController
     {
-        UsersContext db = new UsersContext();
-        UserAdmin ua = new UserAdmin();
-        AGMRegistrationService _AGMService = new AGMRegistrationService();
+
+        public MeetingAPIController(UsersContext context)
+        {
+            db=context;
+            ua = new UserAdmin(db);
+            _AGMService = new AGMRegistrationService(db);
+        }
+        UsersContext db;
+        UserAdmin ua;
+        AGMRegistrationService _AGMService;
         // GET api/<controller>
 
         ///<summary>
@@ -26,10 +36,10 @@ namespace BarcodeGenerator.Controllers
         ///</summary>
         ///<returns>
         ///</returns>
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(GenericAPIResponseDTO<string>))]
-        [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(GenericAPIResponseDTO<string>))]
-        [SwaggerResponse(200, "Success", Type = typeof(GenericAPIResponseDTO<string>))]
-        [SwaggerResponse(500, "Server Error", Type = typeof(GenericAPIResponseDTO<string>))]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(GenericAPIResponseDTO<string>))]
+        // [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(GenericAPIResponseDTO<string>))]
+        // [SwaggerResponse(200, "Success", Type = typeof(GenericAPIResponseDTO<string>))]
+        // [SwaggerResponse(500, "Server Error", Type = typeof(GenericAPIResponseDTO<string>))]
         [HttpGet]
         public async Task<GenericAPIResponseDTO<string>> GetQRCode(string emailAddress)
         {
@@ -93,9 +103,9 @@ namespace BarcodeGenerator.Controllers
         }
 
         [HttpPost]
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(JoinVotingResponse))]      
-        [SwaggerResponse(205, "Generic API Error", Type = typeof(JoinVotingResponse))]
-        [SwaggerResponse(200, "Login Success", Type = typeof(JoinVotingResponse))]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(JoinVotingResponse))]      
+        // [SwaggerResponse(205, "Generic API Error", Type = typeof(JoinVotingResponse))]
+        // [SwaggerResponse(200, "Login Success", Type = typeof(JoinVotingResponse))]
         public async Task<JoinVotingResponse> JoinVotingOnMobile([FromBody] JoinVotingDTO post)
         {
             var response = await JoinVotingOnMobileAsync(post.Company, post.ShareholderNum);
@@ -289,10 +299,10 @@ namespace BarcodeGenerator.Controllers
         ///</summary>
         ///<returns>
         ///</returns>
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
-        [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
-        [SwaggerResponse(200, "Success", Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
-        [SwaggerResponse(500, "Server Error", Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
+        // [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
+        // [SwaggerResponse(200, "Success", Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
+        // [SwaggerResponse(500, "Server Error", Type = typeof(GenericAPIListResponseDTO<AGMCompaniesResponse>))]
         [HttpGet]
         public async Task<GenericAPIListResponseDTO<AGMCompanies>> GetActiveAGMCompanies()
         {
@@ -331,10 +341,10 @@ namespace BarcodeGenerator.Controllers
 
 
         [HttpGet]
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(200, "", Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(201, "No Active AGM Available", Type = typeof(AGMCompaniesResponse))]
-        [SwaggerResponse(500, "Server Error", Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(200, "", Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(201, "No Active AGM Available", Type = typeof(AGMCompaniesResponse))]
+        // [SwaggerResponse(500, "Server Error", Type = typeof(AGMCompaniesResponse))]
         public async Task<AGMCompaniesResponse> GetActiveAGMCompany(string company)
         {
             var response = await _AGMService.GetActiveAGMCompanyAsync(company);
@@ -349,10 +359,10 @@ namespace BarcodeGenerator.Controllers
         ///</summary>
         ///<returns>
         ///</returns>
-        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
-        [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
-        [SwaggerResponse(200, "Success", Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
-        [SwaggerResponse(500, "Server Error", Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
+        // [SwaggerResponse(HttpStatusCode.OK, Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
+        // [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
+        // [SwaggerResponse(200, "Success", Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
+        // [SwaggerResponse(500, "Server Error", Type = typeof(GenericAPIResponseDTO<AGMAccesscodeResponse>))]
         [HttpPost]
         public async Task<GenericAPIResponseDTO<AGMAccesscodeResponse>> FetchLiveMeetingAccessUrl([FromBody] MeetingAccesscodeDTO post)
         {

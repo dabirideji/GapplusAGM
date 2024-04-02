@@ -16,10 +16,10 @@ namespace Gapplus.Web.Controllers
         private readonly HttpClient _client;
         public ShareHolderController(HttpClient cl)
         {
-            RefitClient=RestService.For<IShareHolderContract>("http://localhost:5069/api/Barcode");
+            RefitClient = RestService.For<IShareHolderContract>("http://localhost:5069/api/Barcode");
             _client = cl;
             _client.BaseAddress = new Uri("http://localhost:5069/api/Barcode");
-            
+
         }
         public IActionResult Index()
         {
@@ -28,33 +28,31 @@ namespace Gapplus.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginDto login)  
+        public async Task<IActionResult> Login(LoginDto login)
         {
 
-            var refitLogin=await RefitClient.Login(login);
-            if(refitLogin.IsSuccessStatusCode){
-                var ResponseData=JsonConvert.DeserializeObject<DefaultResponse<ShareHolderViewModel>>(await refitLogin.Content.ReadAsStringAsync());
-                var data=ResponseData.Data;
-                ViewBag.Name=data.Name;
-                ViewBag.Email=data.emailAddress;
-                return View();
+            var refitLogin = await RefitClient.Login(login);
+            if (refitLogin.IsSuccessStatusCode)
+            {
+                var ResponseData = JsonConvert.DeserializeObject<DefaultResponse<ShareHolderViewModel>>(await refitLogin.Content.ReadAsStringAsync());
+                var data = ResponseData.Data;
+                ViewBag.Name = data.Name;
+                ViewBag.Email = data.emailAddress;
+                return RedirectToAction("ShareHoldingsDashboard");
             }
-
-                var JsonString=JsonConvert.SerializeObject(login);
-            StringContent content = new StringContent(JsonString, Encoding.UTF8, "application/json");
-
-            var request = await _client.PostAsync("http://localhost:5069/api/Barcode/Login", content);
-            if (request.IsSuccessStatusCode) {
-                return View();
-            }
-            return Ok();
-        
+            return Ok("Login Failed");
         }
 
 
 
-        public IActionResult ShareHoldingsDashboard()
+           public async Task<IActionResult> ShareHoldingsDashboard()
         {
+            var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
+            var response=await refitClient.GetActiveAgm();
+            if(response.IsSuccessStatusCode){
+                // var responseData=Js
+            }
+
             return View();
         }
 

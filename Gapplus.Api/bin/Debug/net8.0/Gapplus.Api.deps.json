@@ -29,7 +29,9 @@
           "Newtonsoft.Json": "13.0.3",
           "Spire.XLS": "14.3.3",
           "Swashbuckle.AspNetCore": "6.4.0",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0",
           "Swashbuckle.AspNetCore.Filters": "8.0.1",
+          "Syncfusion.XlsIO.Net.Core": "25.1.37",
           "System.Data.SqlClient": "4.8.6",
           "WebMatrix.WebData": "2.0.30506",
           "ZXing.Net": "0.16.9"
@@ -1414,9 +1416,20 @@
       "Swashbuckle.AspNetCore/6.4.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "6.4.0",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.4.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.4.0"
+        }
+      },
+      "Swashbuckle.AspNetCore.Annotations/6.5.0": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0"
+        },
+        "runtime": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "assemblyVersion": "6.5.0.0",
+            "fileVersion": "6.5.0.0"
+          }
         }
       },
       "Swashbuckle.AspNetCore.Filters/8.0.1": {
@@ -1425,7 +1438,7 @@
           "Microsoft.OpenApi": "1.4.3",
           "Scrutor": "3.3.0",
           "Swashbuckle.AspNetCore.Filters.Abstractions": "8.0.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.4.0"
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0"
         },
         "runtime": {
           "lib/net5.0/Swashbuckle.AspNetCore.Filters.dll": {
@@ -1442,25 +1455,25 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.4.0": {
+      "Swashbuckle.AspNetCore.Swagger/6.5.0": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "assemblyVersion": "6.4.0.0",
-            "fileVersion": "6.4.0.0"
+          "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "6.5.0.0",
+            "fileVersion": "6.5.0.0"
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/6.4.0": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "6.4.0"
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0"
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "assemblyVersion": "6.4.0.0",
-            "fileVersion": "6.4.0.0"
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "6.5.0.0",
+            "fileVersion": "6.5.0.0"
           }
         }
       },
@@ -1469,6 +1482,34 @@
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "assemblyVersion": "6.4.0.0",
             "fileVersion": "6.4.0.0"
+          }
+        }
+      },
+      "Syncfusion.Compression.Net.Core/25.1.37": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "25.1.37.0",
+            "fileVersion": "25.1.37.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/25.1.37": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "25.1.37.0",
+            "fileVersion": "25.1.37.0"
+          }
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/25.1.37": {
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "25.1.37",
+          "Syncfusion.Licensing": "25.1.37"
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.XlsIO.Portable.dll": {
+            "assemblyVersion": "25.1.37.0",
+            "fileVersion": "25.1.37.0"
           }
         }
       },
@@ -1853,6 +1894,8 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.2",
           "Newtonsoft.Json": "13.0.3",
           "Spire.XLS": "14.3.3",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+          "Syncfusion.XlsIO.Net.Core": "25.1.37",
           "System.Data.SqlClient": "4.8.6",
           "WebMatrix.WebData": "2.0.30506",
           "ZXing.Net": "0.16.9"
@@ -1881,6 +1924,8 @@
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Spire.XLS": "14.3.3",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+          "Syncfusion.XlsIO.Net.Core": "25.1.37",
           "System.Data.SqlClient": "4.8.6",
           "WebMatrix.WebData": "2.0.30506",
           "ZXing.Net": "0.16.9",
@@ -1910,6 +1955,8 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.2",
           "Newtonsoft.Json": "13.0.3",
           "Spire.XLS": "14.3.3",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+          "Syncfusion.XlsIO.Net.Core": "25.1.37",
           "System.Data.SqlClient": "4.8.6",
           "WebMatrix.WebData": "2.0.30506",
           "ZXing.Net": "0.16.9"
@@ -2745,6 +2792,13 @@
       "path": "swashbuckle.aspnetcore/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.6.4.0.nupkg.sha512"
     },
+    "Swashbuckle.AspNetCore.Annotations/6.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EcHd1z2pEdnpaBMTI9qjVxk6mFVGVMZ1n0ySC3fjrkXCQQ8O9fMdt9TxPJRKyjiTiTjvO9700jKjmyl+hPBinQ==",
+      "path": "swashbuckle.aspnetcore.annotations/6.5.0",
+      "hashPath": "swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore.Filters/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2759,19 +2813,19 @@
       "path": "swashbuckle.aspnetcore.filters.abstractions/8.0.1",
       "hashPath": "swashbuckle.aspnetcore.filters.abstractions.8.0.1.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.Swagger/6.4.0": {
+    "Swashbuckle.AspNetCore.Swagger/6.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nl4SBgGM+cmthUcpwO/w1lUjevdDHAqRvfUoe4Xp/Uvuzt9mzGUwyFCqa3ODBAcZYBiFoKvrYwz0rabslJvSmQ==",
-      "path": "swashbuckle.aspnetcore.swagger/6.4.0",
-      "hashPath": "swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512"
+      "sha512": "sha512-XWmCmqyFmoItXKFsQSwQbEAsjDKcxlNf1l+/Ki42hcb6LjKL8m5Db69OTvz5vLonMSRntYO1XLqz0OP+n3vKnA==",
+      "path": "swashbuckle.aspnetcore.swagger/6.5.0",
+      "hashPath": "swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/6.4.0": {
+    "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lXhcUBVqKrPFAQF7e/ZeDfb5PMgE8n5t6L5B6/BQSpiwxgHzmBcx8Msu42zLYFTvR5PIqE9Q9lZvSQAcwCxJjw==",
-      "path": "swashbuckle.aspnetcore.swaggergen/6.4.0",
-      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512"
+      "sha512": "sha512-Y/qW8Qdg9OEs7V013tt+94OdPxbRdbhcEbw4NiwGvf4YBcfhL/y7qp/Mjv/cENsQ2L3NqJ2AOu94weBy/h4KvA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.5.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.SwaggerUI/6.4.0": {
       "type": "package",
@@ -2779,6 +2833,27 @@
       "sha512": "sha512-1Hh3atb3pi8c+v7n4/3N80Jj8RvLOXgWxzix6w3OZhB7zBGRwsy7FWr4e3hwgPweSBpwfElqj4V4nkjYabH9nQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Net.Core/25.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TPB6/t7XITsfrvNFWiz8sna+Swc/CVihjF5M7we0KcZsHPmtRJtK+CEjCBSEITbUBby2Z7S2o5s3UIthxewXvg==",
+      "path": "syncfusion.compression.net.core/25.1.37",
+      "hashPath": "syncfusion.compression.net.core.25.1.37.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/25.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Fu08NMF7nE8mw1HZ9yoZphB8ML8EBNQGxL50xTuRqfTpOHRSg+8h8NQmtDlEWh4UBZ35K+52qD5AJxnKbY2bg==",
+      "path": "syncfusion.licensing/25.1.37",
+      "hashPath": "syncfusion.licensing.25.1.37.nupkg.sha512"
+    },
+    "Syncfusion.XlsIO.Net.Core/25.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-73sVdgH1McPeYKr+cmlCsyyCF5OAiOpmK1GfEoC71SD83Q39A/LvQEujX/mqkIxo4vu8yMa4iQNpoYAy+y8Yjw==",
+      "path": "syncfusion.xlsio.net.core/25.1.37",
+      "hashPath": "syncfusion.xlsio.net.core.25.1.37.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",
