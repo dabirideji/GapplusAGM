@@ -1,26 +1,62 @@
 ﻿// using BarcodeGenerator.Models;
 // using BarcodeGenerator.Service;
+// using Microsoft.AspNetCore.Mvc;
 // using Syncfusion.XlsIO;
 // using System;
 // using System.Collections.Generic;
 // using System.Configuration;
 // using System.Data;
-// using System.Data.Entity;
 // using System.Data.SqlClient;
 // using System.IO;
 // using System.Linq;
 // using System.Threading.Tasks;
 // using System.Web;
-// using System.Web.Mvc;
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     public class PresentController : Controller
+//     [ApiController]
+//     [Route("api/[controller]/[action]")]
+//     public class PresentController : ControllerBase
 //     {
-//         //
-//         // GET: /Present/
-//         UsersContext db = new UsersContext();
-//         UserAdmin ua = new UserAdmin();
+
+//          private readonly IViewBagManager _viewBagManager;
+
+//         public PresentController(UsersContext context, IViewBagManager viewBagManager)
+//         {
+//             db = context;
+//             _viewBagManager = viewBagManager;
+//         }
+
+
+
+
+
+
+
+
+//         UsersContext db;
+//         UserAdmin ua;
+
+//         private static string currentYear = DateTime.Now.Year.ToString();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //         //private static string companyinfo = UserAdmin.GetUserCompanyInfo();
 
 //         //private static int RetrieveAGMUniqueID()
@@ -33,28 +69,63 @@
 
 //         //private static int UniqueAGMId = RetrieveAGMUniqueID();
 
-//         private static string currentYear = DateTime.Now.Year.ToString();
 
-//         public async Task<ActionResult> Index()
+
+
+
+
+
+
+
+
+//         // public async Task<ActionResult> Index()
+//         // {
+//         //     //ViewBag.presentcount = db.Present.Count();
+//         //     //ViewBag.feedbackcount = db.ShareholderFeedback.Count();
+//         //     //ViewBag.shareholders = db.BarcodeStore.Count();
+//         //     var returnUrl = HttpContext.Request.Url.AbsolutePath;
+//         //     string returnvalue = "";
+//         //     if (HttpContext.Request.QueryString.Count > 0)
+//         //     {
+//         //         returnvalue = HttpContext.Request.QueryString["rel"].ToString();
+//         //     }
+//         //     ViewBag.value = returnvalue.Trim();
+//         //     var response = await IndexAsync();
+//         //     if (String.IsNullOrEmpty(response.Company))
+//         //     {
+//         //         return RedirectToAction("GetCompanyInfo", "Account", new { returnUrl = returnUrl, returnValue = returnvalue.Trim() });
+//         //     }
+
+//         //     return PartialView(response);
+
+
+//         // }
+
+
+//           [HttpGet]
+//         public async Task<IActionResult> Index()
 //         {
 //             //ViewBag.presentcount = db.Present.Count();
 //             //ViewBag.feedbackcount = db.ShareholderFeedback.Count();
 //             //ViewBag.shareholders = db.BarcodeStore.Count();
-//             var returnUrl = HttpContext.Request.Url.AbsolutePath;
+//             var returnUrl = HttpContext.Request.Path; // Get the path
 //             string returnvalue = "";
-//             if (HttpContext.Request.QueryString.Count > 0)
+//             if (HttpContext.Request.Query.ContainsKey("rel")) // Check if query string contains 'rel'
 //             {
-//                 returnvalue = HttpContext.Request.QueryString["rel"].ToString();
+//                 returnvalue = HttpContext.Request.Query["rel"].ToString(); // Retrieve 'rel' value from query string
 //             }
-//             ViewBag.value = returnvalue.Trim();
+//         //     ViewBag.value = returnvalue.Trim();
+//                 _viewBagManager.SetValue("value",returnvalue.Trim());
 //             var response = await IndexAsync();
 //             if (String.IsNullOrEmpty(response.Company))
 //             {
 //                 return RedirectToAction("GetCompanyInfo", "Account", new { returnUrl = returnUrl, returnValue = returnvalue.Trim() });
 //             }
 
-//             return PartialView(response);
+//             // return PartialView(response);
+//             return Ok(response);
 //         }
+
 
 //         public Task<PresentViewModel> IndexAsync()
 //         {

@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "1vcwDh/UIFgs6qak8BlimT/FqvpWS22rUnlsytzDMHc=",
+  "Hash": "A2p+vZTnD89tg0rUoJT3HJn+jFjb86G9c0lWzeTwjVo=",
   "Source": "Gapplus.Api",
   "BasePath": "_content/Gapplus.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Gapplus.Api\\wwwroot",
+      "Source": "Gapplus.Api",
+      "ContentRoot": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\wwwroot\\",
+      "BasePath": "_content/Gapplus.Api",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

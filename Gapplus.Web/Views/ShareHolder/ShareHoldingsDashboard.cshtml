@@ -1,14 +1,18 @@
 ﻿@{
     Layout = null;
+    var header=new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+    header.Username=@ViewBag.Name;
+    header.Email=@ViewBag.Email;
 }
 
 <html class="overflow-x-none">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Shareholder | Dashboard</title>
     <script src="~/Plugins/Tailwind/tailwind.js"></script>
     <script src="~/Plugins/Tailwind/config.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -17,7 +21,7 @@
 
 
 <body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader")
+    @Html.Partial("_DashBoardHeader",header)
     @Html.Partial("_OverView")
     <section class="md:px-[100px] px-[20px]">
         <div class="mt-[20px] flex flex-col md:flex-row items-center justify-center">
@@ -29,7 +33,9 @@
                     <p class="text-[10px] font-[700] md:text-[12px]">All Holdings</p>
                 </div>
                 <div class="mt-[5px] flex flex-col justify-center items-center mb-[15px]">
-                    <div class="w-[150px] h-[150px] rounded-full bg-orange text-center"></div>
+                    <div class="w-[150px] h-[150px] rounded-full bg-transparent text-center">
+                  <canvas id="myChart"></canvas>
+                    </div>
                     <div class="text-lightGrey text-[10px] font-[500] mt-[10px] md:text-[12px]">
                         Value of Holdings
                     </div>
@@ -226,6 +232,8 @@
     </section>
 
     @Html.Partial("_Footer")
+
+    <script src="~/Plugins/ChartJS/chart.js"></script>
 </body>
 
 

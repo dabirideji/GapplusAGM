@@ -30,12 +30,45 @@ namespace BarcodeGenerator.Service
             ua = new UserAdmin(db);
         }
 
+
+
+
+
+/// <summary>
+/// DEJI ADDED THIS FOR GENERATING FAKE AGMS
+/// </summary>
+/// <param name="NumberOfAgm"></param>
+/// <returns>"AGMCompaniesResponse"</returns>////
+        public async Task<List<AGMCompanies>> GenerateAgmEvent(int NumberOfAgm=1){
+
+
+
+    List<AGMCompanies> res=new ();
+            for (int x=0;x<=NumberOfAgm;x++){
+            AGMCompanies company=new();
+            company.agmid=x;
+            company.company=$"agm company {x}";
+            company.description=$"agm description {x}";
+            company.RegCode=x;
+            company.venue=$"agm venue {x}";
+            company.dateTime=DateTime.Now;
+           Random random = new Random();
+int randomDays = random.Next(1, 16); // Generates a random number between 1 and 15
+DateTime futureDate = DateTime.Now.AddDays(randomDays);
+company.EnddateTime = futureDate;
+            res.Add(company);
+            }
+            // response.Code="200";
+            // response.Message="Fake Agms Added  Successfully";
+            // return response;
+            return res;
+        }
+
         public Task<AGMCompaniesResponse> GetActiveAGMCompaniesAsync()
         {
             AGMCompaniesResponse response;
             try
             {
-
                 var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, RegCode = o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
                 // if (companyNameList != null)
                 if (companyNameList != null && companyNameList.Count()!=0)
@@ -72,6 +105,49 @@ namespace BarcodeGenerator.Service
                 return Task.FromResult<AGMCompaniesResponse>(response);
             }
         }
+
+        // public Task<AGMCompaniesResponse> GetActiveAGMCompaniesAsync()
+        // {
+        //     AGMCompaniesResponse response;
+        //     try
+        //     {
+
+        //         var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, RegCode = o.RegCode, venue = o.Venue, dateTime = o.AgmDateTime, EnddateTime = o.AgmEndDateTime }).Distinct().OrderBy(k => k.company).ToList();
+        //         // if (companyNameList != null)
+        //         if (companyNameList != null && companyNameList.Count()!=0)
+        //         {
+        //             response = new AGMCompaniesResponse
+        //             {
+        //                 Code = "200",
+        //                 Message = "",
+        //                 Companies = companyNameList
+        //             };
+        //             return Task.FromResult<AGMCompaniesResponse>(response);
+        //         }
+        //         else
+        //         {
+        //             response = new AGMCompaniesResponse
+        //             {
+        //                 Code = "200",
+        //                 Message = "No Active AGM Available",
+        //                 Companies = new List<AGMCompanies>()
+        //             };
+        //             return Task.FromResult<AGMCompaniesResponse>(response);
+        //         }
+
+
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         response = new AGMCompaniesResponse
+        //         {
+        //             Code = "500",
+        //             Message = "Service not available at this time.",
+        //             Companies = new List<AGMCompanies>()
+        //         };
+        //         return Task.FromResult<AGMCompaniesResponse>(response);
+        //     }
+        // }
 
 
         public Task<AGMCompaniesResponse> GetActiveAGMCompanyAsync(string company)

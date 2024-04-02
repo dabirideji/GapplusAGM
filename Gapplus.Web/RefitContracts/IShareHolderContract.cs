@@ -8,5 +8,16 @@ namespace Gapplus.Web.RefitContracts
         [Post("/Login")]
         Task<HttpResponseMessage> Login([Body] LoginDto login);
 
+
+
     }
+    public interface IAGMContract
+    {
+        [Get("/GetActiveAgm")]
+        Task<HttpResponseMessage> GetActiveAgm();
+
+
+
+    }
+
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 is_global = true
 build_property.RefitInternalNamespace = Gapplus.Web
 build_property.TargetFramework = net8.0
@@ -142,3 +143,129 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/GitRepo/GapplusAGM/Gapplus.WEb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3cuw1e6htv
+=======
+is_global = true
+build_property.RefitInternalNamespace = Gapplus.Web
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Gapplus.Web
+build_property.RootNamespace = Gapplus.Web
+build_property.ProjectDir = c:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\USER\Desktop\GapplusAGM\Gapplus.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_BannerPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYW5uZXJQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_DashboardHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmRIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_DetailsPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZXRhaWxzUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_OverView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PdmVyVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_SignInHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWduSW5IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/AllAGMPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcQWxsQUdNUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/BoardOfDirectors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcQm9hcmRPZkRpcmVjdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/DocumentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcRG9jdW1lbnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/MeetingLoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcTWVldGluZ0xvZ2luUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/RegisterPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcUmVnaXN0ZXJQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/Registerpage2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcUmVnaXN0ZXJwYWdlMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/RegisterPage3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcUmVnaXN0ZXJQYWdlMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/RegisterPage4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcUmVnaXN0ZXJQYWdlNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/ReviewAndConfirmPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcUmV2aWV3QW5kQ29uZmlybVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/ShareHoldingsDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcU2hhcmVIb2xkaW5nc0Rhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/ShareHolder/SuccessPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcU3VjY2Vzc1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/USER/Desktop/GapplusAGM/Gapplus.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3cuw1e6htv
+>>>>>>> 59cdfbce24c2149c20430481e6de718ed6e554f0

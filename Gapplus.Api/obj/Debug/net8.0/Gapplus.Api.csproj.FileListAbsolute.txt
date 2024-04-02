@@ -440,3 +440,8 @@ C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\refint\Gapplus.Api
 C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.pdb
 C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.genruntimeconfig.cache
 C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\ref\Gapplus.Api.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Gapplus.Api.staticwebassets.runtime.json
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Compression.Portable.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Licensing.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.XlsIO.Portable.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
