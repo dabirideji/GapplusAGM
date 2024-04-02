@@ -1,0 +1,212 @@
+﻿@{
+    Layout = null;
+}
+
+<html class="overflow-x-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="~/Plugins/Tailwind/tailwind.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body class="overflow-x-none bg-black font-[lato] bg-white flex relative">
+    @Html.Partial("_MeetingSideBar")
+
+
+    <section id="messageSection" class="">
+        @Html.Partial("_MeetingHeader")
+
+
+
+
+        <section id="votingSection px-[30px] my-[10px] border border-black">
+            <nav class="mb-8 pt-8 border border-transparent border-b-slate-300 mb-[30px]">
+                <ul class="flex justify-around h-8 m-2 mb-0  ">
+                    <li class="flex justify-center w-full border border-transparent border-b-[#FF8200] border-b-2">
+                        <span class="mr-1">
+                            <img src="/Plugins/Images/solar_home-2-bold.png"
+                                 class="h-4 w-4 inline">
+                        </span>
+                        Home
+                    </li>
+                    <li class="flex justify-center  w-full text-grey-300">
+                        <span class="
+                        mr-1">
+                            <img src="/Plugins/Images/ant-design_message-filled.png"
+                                 class="h-4 w-4 inline">
+                        </span>Message
+                    </li>
+                    <li class="flex justify-center  w-full">
+                        <span class="mr-1">
+                            <img src="/Plugins/Images/material-symbols_voting-chip-rounded.png"
+                                 class="h-4 w-4 inline">
+                        </span>Voting
+                    </li>
+                    <li class="flex justify-center  w-full ">
+                        <span class="mr-1">
+                            <img src="/Plugins/Images/ion_documents.png" class="h-4 w-4 inline">
+                        </span>Documents
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex text-center justify-start mb-12 shadow ">
+                <nav class="">
+                    <span class="mr-24 text-[18px] border border-transparent border-b-[#FF8200] text-[#FF8200] font-[700]  inline-block w-40">Resolutions</span>
+                    <span class="w-40 text-[#94A3B8]">Voting</span>
+                </nav>
+            </div>
+            <div class="flex flex-col h-full hidden">
+
+
+
+                <div class=" rounded-md h-full flex flex-col">
+
+
+
+                    <div class="flex flex-col ml-4 py-8 ">
+                        <h1 class="font-bold">Note:</h1>
+                        <p class="text-slate-500">
+                            You can only vote on active resolutions when voting commences
+                            at the meeting venue
+                        </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="flex w-full shadow-md my-1 h-16 rounded justify-between">
+                        <div class=" w-[240px] ml-2 pl-8 font-semibold pt-4">
+                            <span>Resolution 1:</span>
+                        </div>
+                        <div class=" w-full text-center flex items-center justify-center font-[400]">
+                            <span>To pay dividends to Shareholders</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex w-full shadow-md my-1 h-16 rounded justify-between">
+                        <div class=" w-[240px] ml-2 pl-8 font-semibold pt-4">
+                            <span>Resolution 2:</span>
+                        </div>
+                        <div class=" w-full text-center flex items-center justify-center font-[400]">
+                            <span>To pay dividends to Shareholders</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex w-full shadow-md my-1 h-16 rounded justify-between">
+                        <div class=" w-[240px] ml-2 pl-8 font-semibold pt-4">
+                            <span>Resolution 3:</span>
+                        </div>
+                        <div class=" w-full text-center flex items-center justify-center font-[400]">
+                            <span>To pay dividends to Shareholders</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex w-full shadow-md my-1 h-16 rounded justify-between">
+                        <div class=" w-[240px] ml-2 pl-8 font-semibold pt-4">
+                            <span>Resolution 4:</span>
+                        </div>
+                        <div class=" w-full text-center flex items-center justify-center font-[400]">
+                            <span>To pay dividends to Shareholders</span>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+            @* voting section *@
+            <div class="mb-[20px] h-screen">
+                <div>
+                    <p class="font-[700]">
+                        Note
+                    </p>
+                    <div class="text-darkGrey">You have 10 seconds to vote on each resolution and you may change your vote within that period. Your last vote will be recorded and submitted </div>
+                </div>
+                <div class="flex h-[70px]  shadow-md items-center px-[20px] my-[20px] rounded-[5px]">
+                    <div class="font-[700] self-start">
+                        Resolution 1:
+                    </div>
+                    <div class="self-center mx-auto text-[13px] font-[700]">
+                        To pay dividends to Shareholders
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between items-center border h-[60px] items-center px-[15px] bg-[#E0F2FE] rounded-[10px] mb-[15px]">
+                        <div class="flex items-center">
+                            <img src="~/Plugins/Images/likevote.svg" class="w-[30px] h-[30px] mr-[5px]" />
+                            <p class="text-[#59CBE8] font-[700] mt-[5px] text-[13px]">For</p>
+                        </div>
+                        <input type="radio" name="vote"/>
+                    </div>
+                    <div class="flex justify-between items-center border h-[60px] items-center px-[15px] bg-[#FFE2E5] rounded-[10px] mb-[15px]">
+                        <div class="flex items-center">
+                            <img src="~/Plugins/Images/Vectorunlike.svg" class="w-[30px] h-[30px] mr-[5px]" />
+                            <p class="text-[#FF002B] font-[700] text-[13px]">Against</p>
+                        </div>
+                        <input type="radio" name="vote" />
+                    </div>
+
+                    <div class="flex justify-between items-center border h-[60px] items-center px-[15px] bg-[#F1F5F9] rounded-[10px] mb-[15px]">
+                        <div class="flex items-center">
+                            <img src="~/Plugins/Images/Vectoragainst.svg" class="w-[30px] h-[30px] mr-[5px]" />
+                            <p class="text-[#64748B] font-[700] text-[13px]">Abstain</p>
+                        </div>
+                        <input type="radio" name="vote" />
+                    </div>
+
+                    <div class="flex items-center mt-[5px] h-[20px] justify-between px-[5px] w-[40%] mx-auto">
+                        <div class="flex items-center justify-center border p-[10px] mr-[3px] w-[40%]">
+                            <img src="~/Plugins/Images/Iconbackback.svg" class="h-[10px] w-[10px] mr-[5px]">
+                            <p class="text-lightGrey text-[10px] font-[700]">Previous</p>
+                        </div>
+                        <div class="bg-primColor   flex items-center justify-center text-white text-[10px] w-[70%] p-[10px]">
+                            <button class="mr-[5px] text-[10px]">Next</button>
+                            <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] h-9px] text-white">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            @* voting section end *@
+        </section>
+
+
+
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+

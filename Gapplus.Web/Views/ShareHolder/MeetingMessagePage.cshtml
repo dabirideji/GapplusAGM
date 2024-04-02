@@ -1,0 +1,204 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html class="overflow-x-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="~/Plugins/Tailwind/tailwind.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body class="overflow-x-none bg-black font-[lato] bg-white flex relative">
+    @Html.Partial("_MeetingSideBar")
+   
+  
+    <section id="messageSection" class="">
+         @Html.Partial("_MeetingHeader")
+        
+
+
+        <div class="flex flex-col h-full border mx-[30px] rounded-[10px] my-[30px] px-[10px] mb-[50px]">
+            
+            <nav class="mb-8 pt-8 border border-transparent border-b-slate-300 ">
+                <ul class="flex justify-around h-8 m-2 mb-0  ">
+                    <li class="flex items-center justify-center w-full border border-transparent border-b-[#FF8200] border-b-2">
+                        <span class="mr-1">
+                            <img src="~/Plugins/Images/solar_home-2-bold.png"
+                                 class="h-4 w-4 inline">
+                        </span>
+                        Home
+                    </li>
+                    <li class="flex justify-center items-center  w-full text-lightGrey">
+                        <span class="
+                        mr-1">
+                            <img src="~/Plugins/Images/ant-design_message-filled.png "
+                                 class="h-4 w-4 inline">
+                        </span>Message
+                    </li>
+                    <li class="flex justify-center items-center  w-full text-lightGrey">
+                        <span class="mr-1">
+                            <img src="~/Plugins/Images/material-symbols_voting-chip-rounded.png"
+                                 class="h-4 w-4 inline">
+                        </span>Voting, Resolution & Polls
+                    </li>
+                    <li class="flex justify-center items-center  w-full text-lightGrey">
+                        <span class="mr-1">
+                            <img src="~/Plugins/Images/ion_documents.png" class="h-4 w-4 inline">
+                        </span>Documents
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex justify-end  ">
+                <input type="text" placeholder=" Search Message "
+                       class="border placeholder:pl-2  h-[36px] rounded-[5px] border-grey-500 w-[40%] mr-0 ml-auto self-end">
+            </div>
+            <div class="flex text-center justify-start mb-8 ">
+                <nav class="">
+                    <span class="mr-24 text-[18px] border border-transparent border-b-[#FF8200] text-[#FF8200] font-[700]  inline-block w-40">
+                        All
+                        Messages
+                    </span>
+                    <span class="w-40 text-[#94A3B8]">My Messages</span>
+                </nav>
+            </div>
+
+
+            <div class=" rounded-md h-full flex flex-col">
+
+
+
+                <div class="flex">
+                    <img src="~/Plugins/Images/avatar.png" class="rounded-full bg- h-8 w-8 mt-1">
+                    <div class="flex flex-col bg-slate-300 text-sm  rounded-md ml-1 mt-1 p-1">
+                        <span>Jav</span>
+                        <span>
+                            I'm down Any ideas??<span class="self-end ml-1 text-[10px]">
+                                11:45pm
+                            </span>
+                        </span>
+
+
+                    </div>
+                </div>
+
+
+                <div class="flex">
+                    <img src="~/Plugins/Images/avatar.png" class="rounded-full bg- h-8 w-8 mt-1">
+                    <div class="flex ml-8 flex-row bg-slate-300 text-sm items-center rounded-md ml-1 mt-1 p-1">
+                        <span>Jav</span>
+                        <span class="">
+                            Lemme Know<span class="self-end ml-1 text-[10px]">
+                                11:45pm
+                            </span>
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="flex  w-full justify-end">
+                    <img src="~/Plugins/Images/avatar.png" class="rounded-full bg- h-8 w-8 mt-1">
+                    <div class="flex flex-col bg-orange text-sm  rounded-md ml-1 mt-1 p-1">
+                        <span>Jav</span>
+                        <span>
+                            I'm down Any ideas??<span class="self-end ml-1 text-[10px]">
+                                11:45pm
+                            </span>
+                        </span>
+
+
+                    </div>
+                </div>
+
+                <div class="flex w-full justify-end">
+                    <img src="~/Plugins/Images/avatar.png" class="rounded-full bg- h-8 w-8 mt-1">
+                    <div class="flex flex-col bg-orange text-sm  rounded-md ml-1 mt-1 p-1">
+                        <span>Jav</span>
+                        <span>
+                            I'm down Any ideas??<span class="self-end ml-1 text-[10px]">
+                                11:45pm
+                            </span>
+                        </span>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="flex">
+                    <img src="~/Plugins/Images/avatar.png" class="rounded-full bg- h-8 w-8 mt-1">
+                    <div class="flex flex-col bg-slate-300 text-sm  rounded-md ml-1 mt-1 p-1">
+                        <span>Jav</span>
+                        <span>
+                            I'm down Any ideas??<span class="self-end ml-1 text-[10px]">
+                                11:45pm
+                            </span>
+                        </span>
+
+
+                    </div>
+                </div>
+
+
+                <div class="flex">
+                    <img src="~/Plugins/Images/avatar.png" class="rounded-full bg- h-8 w-8 mt-1">
+                    <div class="flex ml-8 flex-row bg-slate-300 text-sm items-center rounded-md ml-1 mt-1 p-1">
+                        <span>Jav</span>
+                        <span class="">
+                            Lemme Know<span class="self-end ml-1 text-[10px]">
+                                11:45pm
+                            </span>
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+             <div class=" bottom-0 w-full sticky">
+            <div class="flex justify-center ">
+                <input type="text" placeholder="Ask a question" class=" outline-none border border-lightGrey w-[100%] rounded-[5px] h-[40px] p-[10px] mr-[5px]">
+                <div class=" bg-primColor w-[50px] rounded-[5px] flex items-center justify-center">
+                    <img src="~/Plugins/Images/Vectorsend.svg" alt="" class="">
+                </div>
+
+            </div>
+            <p class="text-lightGrey">0/1000</p>
+        </div>
+        </div>
+       
+    </section>
+   
+</body>
+
+</html>
+
+
+
+
+

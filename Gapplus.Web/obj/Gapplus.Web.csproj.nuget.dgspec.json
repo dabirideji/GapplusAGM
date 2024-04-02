@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {}
+    "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\Gapplus.Web.csproj": {}
   },
   "projects": {
-    "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {
+    "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\Gapplus.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
+        "projectUniqueName": "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\Gapplus.Web.csproj",
         "projectName": "Gapplus.Web",
-        "projectPath": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
+        "projectPath": "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\Gapplus.Web.csproj",
         "packagesPath": "C:\\Users\\EFEZEINO\\.nuget\\packages\\",
-        "outputPath": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\obj\\",
+        "outputPath": "C:\\GitRepo\\GapplusAGM\\Gapplus.WEb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EFEZEINO\\AppData\\Roaming\\NuGet\\NuGet.Config",
