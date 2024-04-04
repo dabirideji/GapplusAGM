@@ -1,5 +1,7 @@
-﻿using Gapplus.Application.Response;
+﻿using BarcodeGenerator.Models;
+using Gapplus.Application.Response;
 using Gapplus.Web.DTO.ShareHolder;
+using Gapplus.Web.Models;
 using Gapplus.Web.RefitContracts;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -43,19 +45,21 @@ namespace Gapplus.Web.Controllers
             return Ok("Login Failed");
         }
 
-
-
            public async Task<IActionResult> ShareHoldingsDashboard(ShareHolderViewModel data)
         {
             var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
             var response=await refitClient.GetActiveAgm();
             if(response.IsSuccessStatusCode){
-                // var responseData=Js
-            }
+                var responseData=JsonConvert.DeserializeObject<Gapplus.Web.Models.AccreditationResponse>(await response.Content.ReadAsStringAsync());
              ViewBag.Name = data.Name;
                 ViewBag.Email = data.emailAddress;
-            return View();
+                ShareholderDashboardViewModel dashboardData=new();
+                dashboardData.companies=responseData.companies;
+            return View("ShareHoldingsDashboard",dashboardData);
+            }
+            return Unauthorized("INVALID LOGIN CREDENTIALS");
         }
+
 
 
         public IActionResult AllAGMPage()
