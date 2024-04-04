@@ -68,7 +68,11 @@ namespace Gapplus.Web.Controllers
             return View();
         }
 
-
+    public PartialViewResult GetAgmPartialViews()
+{
+    // Your logic here
+    return PartialView("_AllAgms");
+}
         public IActionResult BoardOfDirectors()
         {
             return View();
