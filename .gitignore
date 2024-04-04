@@ -1,0 +1,7 @@
+# Ignore generated files and build artifacts
+**/obj/
+**/bin/
+**/project.razor.vscode.bin
+**/*.cache
+**/*.editorconfig
+**/*.AssemblyInfo.cs
