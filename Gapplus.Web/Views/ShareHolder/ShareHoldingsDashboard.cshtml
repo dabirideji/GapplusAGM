@@ -23,7 +23,7 @@
 <body class="overflow-x-hidden">
     @Html.Partial("_DashBoardHeader",header)
     @Html.Partial("_OverView")
-    <section class="md:px-[100px] px-[20px]">
+    <section class="md:px-[100px] px-[20px] " id="dashBody">
         <div class="mt-[20px] flex flex-col md:flex-row items-center justify-center">
             <div class="border rounded-[4px] p-[20px] w-full md:w-[60%] h-full mr-[20px] ">
                 <div class="flex items-center">
@@ -131,7 +131,7 @@
                         <p class="text-[10px] font-[700]">Location: Online</p>
                     </div>
                     <div class="mt-[20px] flex items-center">
-                        <div class="flex bg-orange w-[150px] items-center text-white justify-center p-[5px]">
+                        <div class="flex bg-secColor w-[150px] items-center text-white justify-center p-[5px]">
                             <button class="text-[13px] mr-[3px]">Join</button>
                             <img src="~/Plugins/Images/tabler_external-linkjoin-btn-arrow.svg"
                                  alt=""
@@ -234,6 +234,8 @@
     @Html.Partial("_Footer")
 
     <script src="~/Plugins/ChartJS/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <script src="~/js/Dashboard.js"></script>
 </body>
 
 

@@ -433,6 +433,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard.js"
+    },
+    {
       "Id": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
