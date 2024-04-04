@@ -45,6 +45,11 @@ namespace Gapplus.Web.Controllers
             return Ok("Login Failed");
         }
 
+
+// private ShareHolderViewModel GetShareHolderData(){
+
+// }
+
         public async Task<IActionResult> ShareHoldingsDashboard(ShareHolderViewModel data)
         {
             var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
@@ -65,6 +70,7 @@ namespace Gapplus.Web.Controllers
 
         public IActionResult AllAGMPage()
         {
+
             return View();
         }
 
