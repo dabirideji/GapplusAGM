@@ -1,6 +1,12 @@
 ﻿@{
     Layout = null;
 }
+@{
+    Layout = null;
+    var header=new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+    header.Username=@ViewBag.Name;
+    header.Email=@ViewBag.Email;
+}
 
 <html class="overflow-x-none">
 <head>
@@ -17,7 +23,7 @@
 
 
 <body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader")
+    @Html.Partial("_DashBoardHeader",header)
     @Html.Partial("_DetailsPage")
 
 

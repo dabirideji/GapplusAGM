@@ -40,22 +40,23 @@ namespace Gapplus.Web.Controllers
                 var data = ResponseData.Data;
                 ViewBag.Name = data.Name;
                 ViewBag.Email = data.emailAddress;
-                return RedirectToAction("ShareHoldingsDashboard",data);
+                return RedirectToAction("ShareHoldingsDashboard", data);
             }
             return Ok("Login Failed");
         }
 
-           public async Task<IActionResult> ShareHoldingsDashboard(ShareHolderViewModel data)
+        public async Task<IActionResult> ShareHoldingsDashboard(ShareHolderViewModel data)
         {
             var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
-            var response=await refitClient.GetActiveAgm();
-            if(response.IsSuccessStatusCode){
-                var responseData=JsonConvert.DeserializeObject<Gapplus.Web.Models.AccreditationResponse>(await response.Content.ReadAsStringAsync());
-             ViewBag.Name = data.Name;
+            var response = await refitClient.GetActiveAgm();
+            if (response.IsSuccessStatusCode)
+            {
+                var responseData = JsonConvert.DeserializeObject<Gapplus.Web.Models.AccreditationResponse>(await response.Content.ReadAsStringAsync());
+                ViewBag.Name = data.Name;
                 ViewBag.Email = data.emailAddress;
-                ShareholderDashboardViewModel dashboardData=new();
-                dashboardData.companies=responseData.companies;
-            return View("ShareHoldingsDashboard",dashboardData);
+                ShareholderDashboardViewModel dashboardData = new();
+                dashboardData.companies = responseData.companies;
+                return View("ShareHoldingsDashboard", dashboardData);
             }
             return Unauthorized("INVALID LOGIN CREDENTIALS");
         }

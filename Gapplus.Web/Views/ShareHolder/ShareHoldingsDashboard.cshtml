@@ -16,6 +16,118 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
 
 
@@ -32,7 +144,231 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     header.Username = @ViewBag.Name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,7 +523,7 @@
                     </div>
                     <div class="mt-[20px] flex items-center">
                         <div class="flex bg-orange w-[150px] items-center text-white justify-center p-[5px]">
-                            <button class="text-[13px] mr-[3px]">Join</button>
+                            <a class="text-[13px] mr-[3px]" href="" id="joinMeetingLink"><button class="" id="joinMeetingButton">Join</button></a>
                             <img src="~/Plugins/Images/tabler_external-linkjoin-btn-arrow.svg" alt=""
                                 class="w-[10px] h-[10px] mr-[3px]" />
                         </div>
@@ -320,46 +656,80 @@
 
 
 
+/*
+
+
+function updateAgmCountdownTime(startDateTime, endDateTime) {
+    const updateTimer = () => {
+        const now = new Date();
+        const start = new Date(startDateTime);
+        const end = new Date(endDateTime);
+
+        if (now > end) {
+            document.getElementById('countdown').innerText = 'AGM has passed';
+        } else if (now >= start && now <= end) {
+            document.getElementById('countdown').innerText = 'AGM is currently ongoing';
+        } else {
+            const timeLeft = end - now;
+            document.getElementById('countdown').innerText = formatTimeLeft(timeLeft) + ' till AGM';
+        }
+        
+        // Call updateTimer again after 1 second
+        setTimeout(updateTimer, 1000);
+    };
+
+    // Initial call to start the countdown
+    updateTimer();
+}
+
+*/
+
+function updateAgmCountdownTime(startDateTime, endDateTime) {
+    const updateTimer = () => {
+        const now = new Date();
+        const start = new Date(startDateTime);
+        const end = new Date(endDateTime);
+
+        if (now > end) {
+            document.getElementById('countdown').innerText = 'AGM has passed';
+        } else if (now >= start && now <= end) {
+            document.getElementById('countdown').innerText = 'AGM is currently ongoing';
+        } else {
+            const timeLeft = end - now;
+            document.getElementById('countdown').innerText = formatTimeLeft(timeLeft) + ' till AGM';
+        }
+        
+        // Call updateTimer again after 1 second
+        setTimeout(updateTimer, 1000);
+    };
+
+    // Initial call to start the countdown
+    updateTimer();
+}
+
+
+// Function to format AGM start datetime
+function formatAgmTime(datetimeString) {
+    // Parse the datetime string to a Date object
+    var datetime = new Date(datetimeString);
+
+    // Define options for formatting
+    var options = {
+        month: "long", // Full month name (e.g., "November")
+        day: "numeric", // Numeric day of the month (e.g., "22")
+        hour: "numeric", // Numeric hour (e.g., "10")
+        minute: "2-digit", // Two-digit minute (e.g., "00")
+        hour12: true, // Use 12-hour clock (true) or 24-hour clock (false)
+        timeZoneName: "short" // Abbreviated time zone name (e.g., "GMT")
+    };
+
+    // Format the datetime using Intl.DateTimeFormat
+    return new Intl.DateTimeFormat("en-US", options).format(datetime);
+}
 
 
 
-
-
-            function updateAgmCountdownTime(startDateTime, endDateTime) {
-
-
-        @*
-                    if(agm==null){
-                    return;
-                    }
-
-
-                    var startDateTime=agm.dateTime;
-                    var endDateTime=agm.enddateTime; *@
-
-    const now = new Date();
-                const start = new Date(startDateTime);
-                const end = new Date(endDateTime);
-
-                if (now >= start && now <= end) {
-                    document.getElementById('countdown').innerText = 'AGM is currently ongoing';
-                } else if (now > end) {
-                    document.getElementById('countdown').innerText = 'AGM has passed';
-                } else {
-                    const timeLeft = end - now;
-                    document.getElementById('countdown').innerText = formatTimeLeft(timeLeft) + ' till AGM';
-                }
-            }
-
-        // Example usage:
-        @* const startDateTime = "2024-04-03T23:51:58.9564891+01:00";
-            const endDateTime = "2024-04-04T23:51:58.9564891+01:00";
-            updateCountdown(startDateTime, endDateTime); *@
-
-            // Update the countdown every second
-
-
-
+/*
             function formatAgmTime(datetimeString) {
                 // Parse the datetime string to a Date object
                 var datetime = new Date(datetimeString);
@@ -378,11 +748,15 @@
                 return new Intl.DateTimeFormat("en-US", options).format(datetime);
             }
 
+    
+  */  
+    
+    
         // Assuming agms is an array containing AGM objects
         var currentIndex = 0; // Start with the first AGM
-var header = @Html.Raw(Json.Serialize(header));
+        var header = @Html.Raw(Json.Serialize(header));
 
-console.log(header);
+        console.log(header);
 
 
         console.log("done");
@@ -402,22 +776,43 @@ console.log(header);
 
             var object = {
                 emailAddress: header.email,
-                company: agm.company
+        @* company: agm.company *@
+                company: "string"
+        }
+        var settings = ApiConsumeSettings("POST", object)
+        var meetingLinkApiUrl = "MeetingAPI/FetchLiveMeetingAccessUrl";
+        var requestToFetchMeetingUrl = consume(meetingLinkApiUrl, settings);
+
+
+        document.getElementById("agmLocation").innerText = agm.venue;
+        let joinButton=document.getElementById("joinMeetingButton");
+        let joinLink=document.getElementById("joinMeetingLink");
+        requestToFetchMeetingUrl.then(x => {
+            let url=x.responseData.meetingurl;
+            if (url.trim()==""||url==null)
+            {
+                joinLink.setAttribute("href","javascript:void(0)");
             }
-            var settings = ApiConsumeSettings("POST", object)
-            var meetingLinkApiUrl = "MeetingAPI/FetchLiveMeetingAccessUrl";
-            var requestToFetchMeetingUrl = consume(meetingLinkApiUrl, settings);
-
-
-            document.getElementById("agmLocation").innerText = agm.venue;
-            requestToFetchMeetingUrl.then(x => {
+            else{
+                @* //ADDING THE  MEETING URL TO THE LINK
+                url=new URL(url);
+                console.log("the url should be checked later ,right now we are still mocking the data");
+                joinLink.setAttribute("href",url); *@
+   try {
+       url= new URL(url);
+        // No error means the URL is valid
+        joinLink.setAttribute("href", url);
+    } catch (error) {
+        console.error("Invalid URL:", url);
+        // Handle invalid URL (e.g., display an error message)
+    }
+                
+                            }
                 console.log(x);
-            })
-            setInterval(() => {
-                updateAgmCountdownTime(agm.dateTime, agm.enddateTime);
-            }, 1000);
-
-
+        })
+        setInterval(() => {
+            updateAgmCountdownTime(agm.dateTime,agm.enddateTime);
+        }, 1000);
         }
 
         // Function to handle next button click

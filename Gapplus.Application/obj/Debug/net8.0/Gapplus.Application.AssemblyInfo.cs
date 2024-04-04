@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gapplus.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da73917f8b703db9767994c6f73ada273dcc3f5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+742c40e40653193edd95833e26ef9e65992de7d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gapplus.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gapplus.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
