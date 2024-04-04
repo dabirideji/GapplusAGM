@@ -1,7 +1,16 @@
 ﻿@{
     Layout = null;
-}
 
+    var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+
+    header.Username = @ViewBag.Name;
+
+    header.Email = @ViewBag.Email;
+
+    var banner = new Gapplus.Web.DTO.ShareHolder.BannerHeaderModel();
+
+    banner.ImageUrl = @ViewBag.banerImageUrl;
+}
 <html class="overflow-x-none">
 <head>
     <meta charset="UTF-8">
@@ -16,8 +25,8 @@
 </head>
 
 <body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader")
-    @Html.Partial("_BannerPage")
+    @Html.Partial("_DashBoardHeader", header)
+    @Html.Partial("_BannerPage", banner)
     <section class="px-[100px]">
         <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
             <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">

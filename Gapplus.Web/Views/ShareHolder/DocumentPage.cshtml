@@ -1,9 +1,20 @@
 ﻿@{
     Layout = null;
 }
+@{
+    Layout = null;
+
+    var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+
+    header.Username = @ViewBag.Name;
+
+    header.Email = @ViewBag.Email;
+}
 
 <html class="overflow-x-none">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
@@ -11,17 +22,19 @@
     <script src="~/Plugins/Tailwind/config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 
 <body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader")
+
+    @Html.Partial("_DashBoardHeader", header)
     @Html.Partial("_DetailsPage")
 
 
-   <section class="px-[100px]">
+    <section class="px-[100px]">
         <div class="flex mt-[20px] mb-[20px]">
             <div class="mr-[10px]">
                 <p class="text-[10px] font-[900]">Board of Directors</p>
@@ -53,32 +66,9 @@
                 <p class="text-[8px] text-lightGrey">Date created: 24, Sept. 2022</p>
             </div>
         </div>
-   </section>
+    </section>
     @Html.Partial("_Footer")
 </body>
 
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

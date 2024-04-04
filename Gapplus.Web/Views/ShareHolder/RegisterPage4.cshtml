@@ -1,8 +1,19 @@
 ﻿@{
     Layout = null;
+
+    var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+
+    header.Username = @ViewBag.Name;
+
+    header.Email = @ViewBag.Email;
+
+    var banner = new Gapplus.Web.DTO.ShareHolder.BannerHeaderModel();
+
+    banner.ImageUrl = @ViewBag.banerImageUrl;
 }
 
 <html class="overflow-x-none">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +22,14 @@
     <script src="~/Plugins/Tailwind/config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader")
-    @Html.Partial("_BannerPage")
+    @Html.Partial("_DashBoardHeader", header)
+    @Html.Partial("_BannerPage", banner)
     <section class="px-[100px]">
         <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
             <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">
@@ -28,7 +40,8 @@
             <h2 class="font-[900] text-[15px] text-shrink text-center">
                 Register for Annual General Meeting
             </h2>
-            <p class="text-[13px] text-center text-lightBlue mb-[20px]">This service is only available to shareholders.</p>
+            <p class="text-[13px] text-center text-lightBlue mb-[20px]">This service is only available to shareholders.
+            </p>
 
             <div class="self-start mt-[5px]">
                 <div class="mb-[10px] w-full flex  items-center ">

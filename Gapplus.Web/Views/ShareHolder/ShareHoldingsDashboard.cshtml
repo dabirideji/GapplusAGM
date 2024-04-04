@@ -1,22 +1,802 @@
-﻿@{
+﻿@model Gapplus.Web.Models.ShareholderDashboardViewModel
+@{
     Layout = null;
-    var header=new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
-    header.Username=@ViewBag.Name;
-    header.Email=@ViewBag.Email;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    header.Username = @ViewBag.Name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    header.Email = @ViewBag.Email;
 }
 
 <html class="overflow-x-hidden">
 <head>
+    <script>
+        var dashboardData = @Html.Raw(Json.Serialize(Model));
+        console.log(dashboardData);
+        var allAgm = dashboardData.companies;
+        console.log(allAgm);
+
+
+
+
+        console.log("done");
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shareholder | Dashboard</title>
     <script src="~/Plugins/Tailwind/tailwind.js"></script>
     <script src="~/Plugins/Tailwind/config.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/Plugins/Utils/UtilityFunctions.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 
@@ -25,16 +805,15 @@
     @Html.Partial("_OverView")
     <section class="md:px-[100px] px-[20px] " id="dashBody">
         <div class="mt-[20px] flex flex-col md:flex-row items-center justify-center">
-            <div class="border rounded-[4px] p-[20px] w-full md:w-[60%] h-full mr-[20px] ">
+            <div class="border rounded-[4px] p-[20px] w-full md:w-[60%] h-full mr-[20px] " id="">
                 <div class="flex items-center">
-                    <img src="~/Plugins/Images/Vectorround -broken.svg"
-                         alt=""
-                         class="w-[10px] h-[10px] mr-[8px] md:w-[12px] md:h-[12px]" />
+                    <img src="~/Plugins/Images/Vectorround -broken.svg" alt=""
+                        class="w-[10px] h-[10px] mr-[8px] md:w-[12px] md:h-[12px]" />
                     <p class="text-[10px] font-[700] md:text-[12px]">All Holdings</p>
                 </div>
                 <div class="mt-[5px] flex flex-col justify-center items-center mb-[15px]">
                     <div class="w-[150px] h-[150px] rounded-full bg-transparent text-center">
-                  <canvas id="myChart"></canvas>
+                        <canvas id="myChart"></canvas>
                     </div>
                     <div class="text-lightGrey text-[10px] font-[500] mt-[10px] md:text-[12px]">
                         Value of Holdings
@@ -84,51 +863,43 @@
             </div>
 
             <!-- secondframe -->
-            <div class="border md:w-[40%] w-full mt-[10px] md:mt-[0] p-[20px] relative">
+            <div class="border md:w-[40%] w-full mt-[10px] md:mt-[0] p-[20px] relative flex flex-col" id="agmContainer">
                 <div class="flex flex-col md:flex-row">
                     <div class="flex items-center">
-                        <img src="~/Plugins/Images/ic_outline-pendingcircle-dot.svg"
-                             alt=""
-                             class="w-[10px] h-[10px] mr-[10px]" />
+                        <img src="~/Plugins/Images/ic_outline-pendingcircle-dot.svg" alt=""
+                            class="w-[10px] h-[10px] mr-[10px]" />
                         <p class="text-[10px] text-offBlack font-[600]">Pending AGMs</p>
                     </div>
                     <div class="">
-                        <p class="text-[8px] flex items-center px-[3px] font-[700] border absolute top-0 right-0 h-[40px]">
+                        <p id="countdown"
+                            class="text-[8px] flex items-center px-[3px] font-[700] border absolute top-0 right-0 h-[40px]">
                             3 days, 4 hours, 34 minutes till AGM
                         </p>
                     </div>
                 </div>
                 <div class="mt-[40px]">
-                    <img src="~/Plugins/Images/access_bankaccessBank.png"
-                         alt=""
-                         class="mx-auto w-[200px]" />
+                    <img src="~/Plugins/Images/access_bankaccessBank.png" alt="" class="mx-auto w-[200px]" />
                 </div>
 
                 <div class="flex items-center mt-[70px]">
-                    <img src="~/Plugins/Images/Vectorleft-arrow.png"
-                         alt=""
-                         class="w-[5px]" />
+                    <img src="~/Plugins/Images/Vectorleft-arrow.png" alt="" class="w-[5px] cursor-pointer"
+                        onclick="showPreviousAgm()" id="accordionPreviousButton" />
                     <div class="w-full h-[1px] bg-[#CBD5E1] mx-[10px]"></div>
-                    <img src="~/Plugins/Images/Vectorright-arrow.svg"
-                         alt=""
-                         class="w-[5px]" />
+                    <img src="~/Plugins/Images/Vectorright-arrow.svg" alt="" class="w-[5px] cursor-pointer"
+                        onclick="showNextAgm()" id="accordionNextButton" />
                 </div>
 
                 <div class="pl-[10px] mt-[15px]">
-                    <h3 class="text-[13px] font-[700] mb-[7px]">Access Bank AGM</h3>
+                    <h3 class="text-[13px] font-[700] mb-[7px] capitalize" id="agmCompanyTitle">Access Bank AGM</h3>
                     <div class="flex items-center mb-[5px]">
-                        <img src="~/Plugins/Images/Frame 1000007560calender.svg"
-                             alt=""
-                             class="w-[20px] mr-[3px]" />
-                        <p class="text-[10px] font-[700]">
-                            Date: November 22, 10:00am GMT
+                        <img src="~/Plugins/Images/Frame 1000007560calender.svg" alt="" class="w-[20px] mr-[3px]" />
+                        <p class="text-[10px] font-[700]" id="agmTime">
+                            Date: <span id="agmDate"> November 22, 10:00am GMT</span>
                         </p>
                     </div>
                     <div class="flex items-center">
-                        <img src="~/Plugins/Images/Frame 1000007560location.svg"
-                             alt=""
-                             class="w-[20px] mr-[3px]" />
-                        <p class="text-[10px] font-[700]">Location: Online</p>
+                        <img src="~/Plugins/Images/Frame 1000007560location.svg" alt="" class="w-[20px] mr-[3px]" />
+                        <p class="text-[10px] font-[700]">Location: <span id="agmLocation">Online</span></p>
                     </div>
                     <div class="mt-[20px] flex items-center">
                         <div class="flex bg-secColor w-[150px] items-center text-white justify-center p-[5px]">
@@ -137,18 +908,14 @@
                                  alt=""
                                  class="w-[10px] h-[10px] mr-[3px]" />
                         </div>
-                        <img src="~/Plugins/Images/Frame 1000007549tag-icon.svg"
-                             alt=""
-                             class="w-[30px] h-[30px] ml-[3px]" />
-                        <img src="~/Plugins/Images/Frame 1000007550like-icon.svg"
-                             alt=""
-                             class="w-[30px] h-[30px] ml-[3px]" />
+                        <img src="~/Plugins/Images/Frame 1000007549tag-icon.svg" alt=""
+                            class="w-[30px] h-[30px] ml-[3px]" />
+                        <img src="~/Plugins/Images/Frame 1000007550like-icon.svg" alt=""
+                            class="w-[30px] h-[30px] ml-[3px]" />
                     </div>
                 </div>
                 <div class="w-full flex justify-center mt-[10px]">
-                    <img src="~/Plugins/Images/Frame 26scroll.svg"
-                         alt=""
-                         class="w-[30px] h-[30px]" />
+                    <img src="~/Plugins/Images/Frame 26scroll.svg" alt="" class="w-[30px] h-[30px]" />
                 </div>
             </div>
             <!-- secondframe -->
@@ -157,9 +924,8 @@
         <!-- table box -->
         <div class="border mt-[20px] md:px-[50px] py-[20px] mb-[60px] overflow-x-auto">
             <div class="flex items-center mb-[20px]">
-                <img src="~/Plugins/Images/Group 39662internal-holding-icon.svg"
-                     alt=""
-                     class="w-[30px] h-[30px] mr-[3px]" />
+                <img src="~/Plugins/Images/Group 39662internal-holding-icon.svg" alt=""
+                    class="w-[30px] h-[30px] mr-[3px]" />
                 <p class="font-[700] text-[12px]">Internal Holdings</p>
             </div>
             <table class="w-full text-left text-[10px] border-seperate border-spacing-2  overflow-x-auto">
@@ -231,7 +997,240 @@
         <!-- table row -->
     </section>
 
-    @Html.Partial("_Footer")
+
+    <script>
+
+
+        function formatTimeLeft(timeLeft) {
+            let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            return `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+        }
+
+        function showNextAgm() {
+            console.log("show next clicked");
+            if (currentIndex < allAgm.length - 1) { // Check if not at the end of the array
+                currentIndex++; // Move to the next AGM
+                updateAccordion(allAgm[currentIndex]); // Update accordion with new AGM data
+            }
+        }
+
+        // Function to handle previous button click
+        function showPreviousAgm() {
+            console.log("show previous clicked");
+
+            if (currentIndex > 0) { // Check if not at the beginning of the array
+                currentIndex--; // Move to the previous AGM
+                updateAccordion(allAgm[currentIndex]); // Update accordion with new AGM data
+            }
+        }
+
+
+        @*
+            document.getElementById("accordionNextButton").addEventListener("click", showNextAgm());
+            document.getElementById("accordionPreviousButton").addEventListener("click", showPreviousAgm); *@
+
+
+
+
+
+            /*
+
+
+            function updateAgmCountdownTime(startDateTime, endDateTime) {
+                const updateTimer = () => {
+                    const now = new Date();
+                    const start = new Date(startDateTime);
+                    const end = new Date(endDateTime);
+
+                    if (now > end) {
+                        document.getElementById('countdown').innerText = 'AGM has passed';
+                    } else if (now >= start && now <= end) {
+                        document.getElementById('countdown').innerText = 'AGM is currently ongoing';
+                    } else {
+                        const timeLeft = end - now;
+                        document.getElementById('countdown').innerText = formatTimeLeft(timeLeft) + ' till AGM';
+                    }
+
+                    // Call updateTimer again after 1 second
+                    setTimeout(updateTimer, 1000);
+                };
+
+                // Initial call to start the countdown
+                updateTimer();
+            }
+
+            */
+
+
+
+            function getAllAgmsPartialVieiws() {
+                // Create a new XMLHttpRequest object
+                var xhr = new XMLHttpRequest();
+
+                // Configure the request
+                xhr.open("GET", "/ShareHolder/GetAgmPartialViews", true);
+
+                // Set up a callback function to handle the response
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        // Update the container with the partial view HTML
+                        document.getElementById("partialContainer").innerHTML = xhr.responseText;
+                    } else {
+                        // Handle error if any
+                        console.error("Request failed. Status: " + xhr.status);
+                    }
+                };
+
+                // Send the request
+                xhr.send();
+            }
+
+
+        function updateAgmCountdownTime(startDateTime, endDateTime) {
+            const updateTimer = () => {
+                const now = new Date();
+                const start = new Date(startDateTime);
+                const end = new Date(endDateTime);
+
+                if (now > end) {
+                    document.getElementById('countdown').innerText = 'AGM has passed';
+                } else if (now >= start && now <= end) {
+                    document.getElementById('countdown').innerText = 'AGM is currently ongoing';
+                } else {
+                    const timeLeft = end - now;
+                    document.getElementById('countdown').innerText = formatTimeLeft(timeLeft) + ' till AGM';
+                }
+
+                // Call updateTimer again after 1 second
+                setTimeout(updateTimer, 1000);
+            };
+
+            // Initial call to start the countdown
+            updateTimer();
+        }
+
+
+        // Function to format AGM start datetime
+        function formatAgmTime(datetimeString) {
+            // Parse the datetime string to a Date object
+            var datetime = new Date(datetimeString);
+
+            // Define options for formatting
+            var options = {
+                month: "long", // Full month name (e.g., "November")
+                day: "numeric", // Numeric day of the month (e.g., "22")
+                hour: "numeric", // Numeric hour (e.g., "10")
+                minute: "2-digit", // Two-digit minute (e.g., "00")
+                hour12: true, // Use 12-hour clock (true) or 24-hour clock (false)
+                timeZoneName: "short" // Abbreviated time zone name (e.g., "GMT")
+            };
+
+            // Format the datetime using Intl.DateTimeFormat
+            return new Intl.DateTimeFormat("en-US", options).format(datetime);
+        }
+
+
+
+        /*
+                    function formatAgmTime(datetimeString) {
+                        // Parse the datetime string to a Date object
+                        var datetime = new Date(datetimeString);
+
+                        // Define options for formatting
+                        var options = {
+                            month: "long", // Full month name (e.g., "November")
+                            day: "numeric", // Numeric day of the month (e.g., "22")
+                            hour: "numeric", // Numeric hour (e.g., "10")
+                            minute: "2-digit", // Two-digit minute (e.g., "00")
+                            hour12: true, // Use 12-hour clock (true) or 24-hour clock (false)
+                            timeZoneName: "short" // Abbreviated time zone name (e.g., "GMT")
+                        };
+
+                        // Format the datetime using Intl.DateTimeFormat
+                        return new Intl.DateTimeFormat("en-US", options).format(datetime);
+                    }
+
+
+          */
+
+
+        // Assuming agms is an array containing AGM objects
+        var currentIndex = 0; // Start with the first AGM
+        var header = @Html.Raw(Json.Serialize(header));
+
+        console.log(header);
+
+
+        console.log("done");
+        // Function to update the accordion content with AGM data
+        function updateAccordion(agm) {
+            console.log("statt")
+            console.log(agm);
+        @* showActivityIndicatorForPage("agmContainer",4); *@
+                // Update accordion with AGM data
+                showActivityIndicatorForPage("agmContainer", .5);
+            // For example:
+            document.getElementById("agmCompanyTitle").innerText = agm.company;
+
+            let formattedAgmTime = formatAgmTime(agm.dateTime);
+            document.getElementById("agmDate").innerText = formattedAgmTime;
+            // Update other elements as needed
+
+            var object = {
+                emailAddress: header.email,
+        @* company: agm.company *@
+                company: "string"
+        }
+        var settings = ApiConsumeSettings("POST", object)
+        var meetingLinkApiUrl = "MeetingAPI/FetchLiveMeetingAccessUrl";
+        var requestToFetchMeetingUrl = consume(meetingLinkApiUrl, settings);
+
+
+        document.getElementById("agmLocation").innerText = agm.venue;
+        let joinButton = document.getElementById("joinMeetingButton");
+        let joinLink = document.getElementById("joinMeetingLink");
+        requestToFetchMeetingUrl.then(x => {
+            let url = x.responseData.meetingurl;
+            if (url.trim() == "" || url == null) {
+                joinLink.setAttribute("href", "javascript:void(0)");
+            }
+            else {
+        @* //ADDING THE  MEETING URL TO THE LINK
+                    url=new URL(url);
+                    console.log("the url should be checked later ,right now we are still mocking the data");
+                    joinLink.setAttribute("href",url); *@
+   try {
+                    url = new URL(url);
+                    // No error means the URL is valid
+                    joinLink.setAttribute("href", url);
+                } catch (error) {
+                    console.error("Invalid URL:", url);
+                    // Handle invalid URL (e.g., display an error message)
+                }
+
+            }
+            console.log(x);
+        })
+        setInterval(() => {
+            updateAgmCountdownTime(agm.dateTime, agm.enddateTime);
+        }, 1000);
+        }
+
+        // Function to handle next button click
+
+
+        updateAccordion(allAgm[currentIndex]);
+    </script>
+
+
+
+
+    @* @Html.Partial("_Footer",null) *@
+    <partial name="_Footer" />
 
     <script src="~/Plugins/ChartJS/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
@@ -239,4 +1238,4 @@
 </body>
 
 
-        </html>
+</html>

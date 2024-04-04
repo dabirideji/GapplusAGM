@@ -10,4 +10,8 @@ namespace Gapplus.Web.DTO.ShareHolder
         public string Username { get; set; }
         public string Email { get; set; }
     }
+    public class BannerHeaderModel
+    {
+        public string ImageUrl { get; set; }
+    }
 }
