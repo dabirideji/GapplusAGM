@@ -1,14 +1,14 @@
 @model Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto
 
-<section class="md:px-[100px] py-[10px]">
+<section class="md:px-[100px] py-[10px] px-[10px]">
     <div class="flex items-center">
         <div class="bg-ash w-[50px] h-[50px] rounded-full shrink mr-[5px]"></div>
         <div>
             <h1 class="font-bold text-[14px]">@Model.Username</h1>
-            <p class="text-[10px]">@Model.Email</p>
+            <p class="text-[10px] md:text-[12px] text-lightGrey">@Model.Email</p>
         </div>
     </div>
-    <div class="flex text-[13px] font-[500] scrollbar-none justify-between text-shrink mt-[30px] text-lightGrey overflow-x-auto">
+    <div class="flex text-[13px] font-[500] scrollbar-none justify-between text-shrink mt-[30px] text-lightGrey overflow-x-auto  pb-[20px] border-b">
         <div class="text-shrink flex items-center hover:text-orange cursor-pointer mr-[15%] md:mr-[0]">
             <img src="~/Plugins/Images/Vectorhome.png "
                  alt=""

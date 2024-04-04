@@ -5,7 +5,7 @@
     header.Email=@ViewBag.Email;
 }
 
-<html class="overflow-x-none">
+<html class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 </head>
 
 
-<body class="overflow-x-none">
+<body class="overflow-x-hidden">
     @Html.Partial("_DashBoardHeader",header)
     @Html.Partial("_OverView")
     <section class="md:px-[100px] px-[20px]">
@@ -163,18 +163,18 @@
                 <p class="font-[700] text-[12px]">Internal Holdings</p>
             </div>
             <table class="w-full text-left text-[10px] border-seperate border-spacing-2  overflow-x-auto">
-                <tr class="text-[12px] ">
-                    <th class="text-lightGrey pl-[5px]">Holdings</th>
-                    <th class="text-lightGrey">Units</th>
-                    <th class="text-lightGrey">PRICE</th>
-                    <th class="text-lightGrey">Market Value</th>
+                <tr class="text-[12px] w-full">
+                    <th class="text-lightGrey pl-[5px] ">Holdings</th>
+                    <th class="text-lightGrey">Units </th>
+                    <th class="text-lightGrey ">PRICE</th>
+                    <th class="text-lightGrey  whitespace-nowrap">Market Value</th>
                 </tr>
                 <tr class="h-[20px]"></tr>
                 <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px] ">
-                    <td class="pl-[5px]">MTN NIGERIA COMMUNICATION PLC</td>
-                    <td>1,200</td>
-                    <td>120.50</td>
-                    <td>N10,000,000.00</td>
+                    <td class="pl-[5px] mr-[5px]">MTN NIGERIA COMMUNICATION PLC</td>
+                    <td class="">1,200</td>
+                    <td class="">120.50</td>
+                    <td class="">N10,000,000.00</td>
                 </tr>
                 <tr class="h-[10px]"></tr>
                 <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
