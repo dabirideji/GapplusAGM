@@ -202,7 +202,6 @@ C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.GeneratedMSBuildE
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.AssemblyInfoInputs.cache
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.AssemblyInfo.cs
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.csproj.CoreCompileInputs.cache
-C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.sourcelink.json
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\staticwebassets.build.json

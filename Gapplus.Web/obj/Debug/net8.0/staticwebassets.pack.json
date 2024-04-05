@@ -425,6 +425,10 @@
       "PackagePath": "staticwebassets\\Plugins\\Tailwind\\tailwind.js"
     },
     {
+      "Id": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Utils\\UtilityFunctions.js",
+      "PackagePath": "staticwebassets\\Plugins\\Utils\\UtilityFunctions.js"
+    },
+    {
       "Id": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

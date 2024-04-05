@@ -1,6 +1,8 @@
-﻿
-@{
+﻿@{
     Layout = null;
+    var header=new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+    header.Username=@ViewBag.Name;
+    header.Email=@ViewBag.Email;
 }
 
 <html class="overflow-x-none">
@@ -17,14 +19,15 @@
 </head>
 
 <body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader")
+    @Html.Partial("_DashBoardHeader",header)
     @Html.Partial("_BannerPage")
 <section>
     <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
             <img src="Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">
             <p class="text-[9px] font-[900]">Register your details</p>
         </div>
-        <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[40%] mx-auto">
+       <div class="modal-fullscreen-lg-down flex justify-center">
+            <div class="flex flex-col items-center justify-center h-full mt-[50px] md:w-[40%] w-[80%] mx-auto">
             
             <h2 class="font-[900] text-[15px] text-shrink text-center">
                 Register Coronation E-Meeting
@@ -73,6 +76,7 @@ Browse
             
         </form>
         </div>
+       </div>
 </section>
 
  @Html.Partial("_Footer")
