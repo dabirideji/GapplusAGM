@@ -83,6 +83,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcRG9jdW1lbnRQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/ShareHolder/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcSG9tZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitRepo/GapplusAGM/Gapplus.Web/Views/ShareHolder/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVIb2xkZXJcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
