@@ -37,7 +37,7 @@ namespace BarcodeGenerator.Controllers
                 //var response = await _client.GetAsync<ServiceResponse<List<string>>>($"{ApiRoutes.getcompany}");
                 // var response = await _AGMService.GetActiveAGMCompaniesAsync();
 
-                var response=await _AGMService.GenerateAgmEvent(15);
+                var response=await _AGMService.GenerateAgmEvent(3);
                 if (response==null)
                 {
 
