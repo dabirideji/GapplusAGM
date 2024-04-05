@@ -90,7 +90,37 @@ private async Task<ShareHolderViewModel?> GetShareHolderData(){
         return data;
     }
 
-        public async Task<PartialViewResult> GetAgmPartialViewsAsync()
+        // [Route("GetAgmRegisterPartialView/${PageNum}")]
+        public async Task<PartialViewResult?> GetAgmRegisterPartialView([FromQuery]int PageNum)
+        {
+            // var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
+            // var response = await refitClient.GetActiveAgm();
+            // var responseData=new Gapplus.Web.Models.AccreditationResponse();
+            // if (response.IsSuccessStatusCode)
+            // {
+                // responseData = JsonConvert.DeserializeObject<Gapplus.Web.Models.AccreditationResponse>(await response.Content.ReadAsStringAsync());
+                // await GetDataAndSetViewBag();
+            // }
+            
+            if(PageNum<=0||PageNum>=5){
+                return null;
+            }
+            return PartialView($"_AgmRegisterPage{PageNum}");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public async Task<PartialViewResult> GetAgmPartialViews()
         {
             var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
             var response = await refitClient.GetActiveAgm();
@@ -117,33 +147,45 @@ private async Task<ShareHolderViewModel?> GetShareHolderData(){
             return View();
         }
 
-        public IActionResult RegisterPage()
+        public async Task<IActionResult> RegisterPage()
         {
-            return View();
-        }
-        public IActionResult RegisterPage2()
-        {
-            return View();
-        }
+            
+                await GetDataAndSetViewBag();
 
-        public IActionResult RegisterPage3()
-        {
             return View();
         }
-
-        public IActionResult RegisterPage4()
+        public async Task<IActionResult> RegisterPage2()
         {
+                await GetDataAndSetViewBag();
             return View();
         }
 
-
-        public IActionResult ReviewAndConfirmPage()
+        public async Task<IActionResult> RegisterPage3()
         {
+                await GetDataAndSetViewBag();
+
             return View();
         }
 
-        public IActionResult SuccessPage()
+        public async Task<IActionResult> RegisterPage4()
         {
+                await GetDataAndSetViewBag();
+
+            return View();
+        }
+
+
+        public async Task<IActionResult> ReviewAndConfirmPage()
+        {
+                await GetDataAndSetViewBag();
+
+            return View();
+        }
+
+        public async Task<IActionResult> SuccessPage()
+        {
+                await GetDataAndSetViewBag();
+
             return View();
         }
 

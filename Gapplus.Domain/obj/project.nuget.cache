@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSJTfrGcVIUcCkDwK4PN7gxZUqUJc40uYyOJXLV3ce3IDoXQzG7Ef+0CvwnZ7xClnIErAvHNQu6e1ChX6TBStw==",
+  "dgSpecHash": "TVn+oSMhmcHtPixuEN8c2eJSoyaKRJ2sRjEF64NL1xw6V4/svCG5n7uNOLFesWtLQ5yDEx5pgDcm49Sui126xQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
