@@ -38,27 +38,36 @@ namespace Gapplus.Web.Controllers
             {
                 var ResponseData = JsonConvert.DeserializeObject<DefaultResponse<ShareHolderViewModel>>(await refitLogin.Content.ReadAsStringAsync());
                 var data = ResponseData.Data;
+                HttpContext.Session.SetString("ShareHolderData",JsonConvert.SerializeObject(data));
                 ViewBag.Name = data.Name;
                 ViewBag.Email = data.emailAddress;
-                return RedirectToAction("ShareHoldingsDashboard", data);
+                // return RedirectToAction("ShareHoldingsDashboard", data);
+                return RedirectToAction("ShareHoldingsDashboard");
             }
             return Ok("Login Failed");
         }
 
 
-// private ShareHolderViewModel GetShareHolderData(){
+private async Task<ShareHolderViewModel?> GetShareHolderData(){
+    var shareholderData=HttpContext.Session.GetString("ShareHolderData");
+    if(shareholderData==null){
+        return null;
+    }
+    var data=JsonConvert.DeserializeObject<ShareHolderViewModel>(shareholderData);
+    return data;
+}
 
-// }
 
-        public async Task<IActionResult> ShareHoldingsDashboard(ShareHolderViewModel data)
+
+
+        public async Task<IActionResult> ShareHoldingsDashboard()
         {
             var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
             var response = await refitClient.GetActiveAgm();
             if (response.IsSuccessStatusCode)
             {
                 var responseData = JsonConvert.DeserializeObject<Gapplus.Web.Models.AccreditationResponse>(await response.Content.ReadAsStringAsync());
-                ViewBag.Name = data.Name;
-                ViewBag.Email = data.emailAddress;
+               await GetDataAndSetViewBag();
                 ShareholderDashboardViewModel dashboardData = new();
                 dashboardData.companies = responseData.companies;
                 return View("ShareHoldingsDashboard", dashboardData);
@@ -74,11 +83,30 @@ namespace Gapplus.Web.Controllers
             return View();
         }
 
-    public PartialViewResult GetAgmPartialViews()
-{
-    // Your logic here
-    return PartialView("_AllAgms");
-}
+    private async Task<ShareHolderViewModel?> GetDataAndSetViewBag(){
+    var data=await GetShareHolderData();
+        ViewBag.Name=data.Name??"";
+        ViewBag.Email=data.emailAddress;
+        return data;
+    }
+
+        public async Task<PartialViewResult> GetAgmPartialViewsAsync()
+        {
+            var refitClient = RestService.For<IAGMContract>("http://localhost:5069/api/AGMRegistration");
+            var response = await refitClient.GetActiveAgm();
+            var responseData=new Gapplus.Web.Models.AccreditationResponse();
+            if (response.IsSuccessStatusCode)
+            {
+                responseData = JsonConvert.DeserializeObject<Gapplus.Web.Models.AccreditationResponse>(await response.Content.ReadAsStringAsync());
+                await GetDataAndSetViewBag();
+            }
+            return PartialView("_AllAgms",responseData);
+        }
+
+
+
+
+
         public IActionResult BoardOfDirectors()
         {
             return View();
