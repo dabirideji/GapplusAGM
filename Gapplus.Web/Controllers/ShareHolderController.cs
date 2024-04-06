@@ -108,6 +108,11 @@ private async Task<ShareHolderViewModel?> GetShareHolderData(){
             return PartialView($"_AgmRegisterPage{PageNum}");
         }
 
+        public async Task<PartialViewResult?> GetReviewAndConfirmPartialView()
+        {
+                   return PartialView("_ReviewAndConfirmPage");
+        }
+
 
 
 

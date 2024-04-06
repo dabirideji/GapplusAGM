@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1v12Lk4jkZG9txTt5Dz2xmqhIKwcCdEvLUKbKXJnkHd2nwNWSDAFByJkP4iTva1TJQF+hdwdE+DaAZOga6xLGw==",
+  "dgSpecHash": "adQZuXfAFi6PGGM09dexKKAwxMM0+oSYIeV5iKjeEJsiNDZEvvJU4KZeXexJp0B1mtuo+IIHUJZjhoz9PFRhMw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\Gapplus.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.3\\microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",

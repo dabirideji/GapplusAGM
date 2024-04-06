@@ -1,26 +1,76 @@
-         <div class="mb-[10px] w-full md:flex  md:items-center">
-               <input type="text" value="Upload Shareholder Certificate" placeholder="" class="border text-[darkGrey] placeholder- mr-[3px] mb-[10px] w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
-              <div class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[40px]">
-                <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
-                <button class="text-[10px]">
-Browse
-                </button>
-              </div>
-               
-            </div>
-            <div class="mb-[10px] w-full md:flex  md:items-center ">
-               <input type="text" value="Upload Shareholder Certificate" placeholder="" class="border text-[darkGrey] placeholder- mr-[3px] mb-[10px] w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
-              <div class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[40px]">
-                <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
-                <button class="text-[10px]">
-Browse
-                </button>
-              </div>
-               
-            </div>
+@* <div class="mb-[10px] w-full md:flex  md:items-center">
+  <input type="file" onchange="addFileData(this,'shareHolderCertificate')" id="shareHolderCertificate"
+    value="Upload Shareholder Certificate" placeholder=""
+    class="border text-[darkGrey] placeholder- mr-[3px] mb-[10px] w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
+  <div class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[40px]">
+    <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
+    <button class="text-[10px]">
+      Browse
+    </button>
+  </div>
+
+</div> *@
+
+
+            
+<div class="mb-[10px] w-full md:flex  md:items-center ">
+
+
+  <input type="text" disabled  id="shareHolderCertificateDisplayName"
+    value="Upload Shareholder Certificate" placeholder="Upload Shareholder Certificate"
+    class="border text-[darkGrey] placeholder- mr-[3px] mb-[10px] w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
+
+
+  <label for="shareHolderCertificate"
+ 
+    class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[40px] cursor-pointer">
+    <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
+    <span id="" class="text-[10px] ">Browse</span>
+    <input  onchange="addFileData(this,'shareHolderCertificate')" type="file" id="shareHolderCertificate" placeholder="Browse" class="text-[10px] hidden" />
+  </label>
+
+
+
+</div>
+            
+
+
+<div class="mb-[10px] w-full md:flex  md:items-center ">
+
+
+  <input type="text" disabled  id="shareHolderPassportDisplayName"
+    value="Upload Shareholder Passport" placeholder="Upload Shareholder Passport"
+    class="border text-[darkGrey] placeholder- mr-[3px] mb-[10px] w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
+
+
+  <label for="shareHolderPassport"
+ 
+    class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[40px] cursor-pointer">
+    <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
+    <span id="" class="text-[10px] ">Browse</span>
+    <input  onchange="addFileData(this,'shareHolderPassport')" type="file" id="shareHolderPassport" placeholder="Browse" class="text-[10px] hidden" />
+  </label>
+
+
+
+</div>
+
+
+
+            
+
+
+
+
+            @* <label for="fileInput" class="inline-block bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">
+  <input type="file"  class="hidden" />
+</label> *@
+
+
+
             <div class="w-full mb-[10px]">
-                <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
-                <input type="Enter your email" name="" id=" " placeholder="Email" class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+                <label for="identificationNumber" ></label class="text-[13px] block font-[400] mb-[3px]">
+                <input type="text" name="" id="identificationNumber" onchange="addData(this,'identificationNumber')" placeholder="ID Number" class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
             </div>
 
 

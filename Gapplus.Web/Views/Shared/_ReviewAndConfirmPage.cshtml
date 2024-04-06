@@ -1,0 +1,91 @@
+ @{
+    Layout = null;
+}
+@{
+    Layout = null;
+    var header=new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+    header.Username=@ViewBag.Name;
+    header.Email=@ViewBag.Email;
+}
+ 
+ @Html.Partial("_DashBoardHeader",header)
+    @Html.Partial("_BannerPage")
+
+ <section class="px-[100px]">
+        <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
+            <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">
+            <p class="text-[9px] font-[900]">Attendance</p>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[50%] mx-auto">
+
+            <h2 class="font-[900] text-[20px] text-shrink text-center mb-[30px]">
+                Review & Confirm details
+            </h2>
+
+
+            <div class="w-full ">
+                <div class="mb-[30px]">
+                    <div class="flex justify-between ">
+                        <p class="font-[900] text-[15px] mb-[5px]">Registration details</p>
+                        <p class="text-[12px] font-[700] text-orange ">Edit</p>
+                    </div>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">First name: <span class="font-[500] ml-[5px]" id="firstNameConfirmDisplay">Emmanuel</span></p>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">Last name:<span class="font-[500] ml-[5px]"  id="lastNameConfirmDisplay">Diete-Spiff</span></p>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">Email:<span class="font-[500] ml-[5px]"  id="emailConfirmDisplay">emmanueldietespiff@gmail.com</span></p>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">Mobile number:<span class="font-[500] ml-[5px]"  id="phoneNumberConfirmDisplay">+234 91 2345 6789</span></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="mb-[30px]">
+                    <div class="flex justify-between ">
+                        <p class="font-[900] text-[15px] mb-[5px]">Document details</p>
+                        <p class="text-[12px] font-[700] text-orange ">Edit</p>
+                    </div>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">Shareholder Certificate: <span class="font-[500] ml-[5px]"  id="certificateConfirmDisplay">Emmanuel</span></p>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">Identification:<span class="font-[500] ml-[5px]"  id="passportConfirmDisplay">Diete-Spiff</span></p>
+                    <p class="font-[900] mb-[7px] text-[12px] text-[900]">Identification Number:<span class="font-[500] ml-[5px]"  id="identificationConfirmDisplay">emmanueldietespiff@gmail.com</span></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="mb-[30px]">
+                    <div class="flex justify-between ">
+                        <p class="font-[900] text-[15px] mb-[5px]">Proxy details</p>
+                        <p class="text-[12px] font-[700] text-orange ">Edit</p>
+                    </div>
+                    <p class="font-[900] mb-[7px] text-[12px] ">Proxy :<span class=" ml-[5px] font-[500]"  id="proxyConfirmDisplay">Diete-Spiff</span></p>
+                    <p class="font-[900] mb-[7px] text-[12px] "  id="proxySummaryConfirmDisplay">proxy extra details</p>
+                </div>
+                <div class="mb-[30px]">
+                    <div class="flex justify-between ">
+                        <p class="font-[900] text-[15px] mb-[5px]">Attendance details</p>
+                        <p class="text-[12px] font-[700] text-orange ">Edit</p>
+                    </div>
+
+                    <p class="font-[900] mb-[7px] text-[12px] ">Attendance <span class=" ml-[5px] font-[500] capitalize"  id="attendanceTypeConfirmDisplay">Remote</span></p>
+
+                    <p></p>
+                    <p></p>
+                </div>
+
+            </div>
+
+
+
+            <div class="flex items-center mt-[5px] h-[20px] justify-between w-full px-[5px]">
+                <div class="flex items-center justify-center border p-[10px] mr-[3px] w-[40%]">
+
+                    <p class="text-lightGrey text-[10px] font-[700]">Cancel</p>
+                </div>
+                <div class="bg-primColor   flex items-center justify-center text-white text-[10px] w-[70%] p-[10px]">
+                    <button class="mr-[5px] text-[10px]">Confirm</button>
+                    <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] h-9px] text-white">
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
