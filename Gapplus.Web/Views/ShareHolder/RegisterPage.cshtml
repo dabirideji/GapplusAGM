@@ -206,7 +206,9 @@
 
 
 
-
+function showPageWithData(){
+    
+}
 
 
 
@@ -505,6 +507,8 @@ function incrementWizard() {
 
     function showPage(page) {
         let pageNum = page;
+        currentPage=page;
+        console.log("showing page"+page)
 
         // Check if pageNum is valid
         if (!(pageNum > 0 && pageNum <= 4)) {
@@ -524,9 +528,9 @@ function incrementWizard() {
                        let wizardImage=document.getElementById("wizardImage");
                     let p=(currentPage*2)-2;
                     console.log("pnum",p);
-                    wizardImage.setAttribute("src",`/Plugins/Images/wizard-${p!=0?p:""}0.png`);
                     // Update the container with the partial view HTML
                     document.getElementById("partialContainer").innerHTML = xhr.responseText;
+                    wizardImage.setAttribute("src",`/Plugins/Images/wizard-${p!=0?p:""}0.png`);
                     performDataValidationAndRestore();
                  
 
