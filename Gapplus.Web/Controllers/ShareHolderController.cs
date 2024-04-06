@@ -4,6 +4,7 @@ using Gapplus.Web.DTO.ShareHolder;
 using Gapplus.Web.Models;
 using Gapplus.Web.RefitContracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 using Refit;
 using System.Text;
@@ -105,6 +106,8 @@ private async Task<ShareHolderViewModel?> GetShareHolderData(){
             if(PageNum<=0||PageNum>=5){
                 return null;
             }
+
+            ViewBag.currentAgmRegistrationPage=PageNum;
             return PartialView($"_AgmRegisterPage{PageNum}");
         }
 

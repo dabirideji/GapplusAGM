@@ -401,6 +401,30 @@
       "PackagePath": "staticwebassets\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-0.png",
+      "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-0.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-100.png",
+      "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-100.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-20.png",
+      "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-20.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-40.png",
+      "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-40.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-60.png",
+      "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-60.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-80.png",
+      "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-80.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Tailwind\\config.js",
       "PackagePath": "staticwebassets\\Plugins\\Tailwind\\config.js"
     },
