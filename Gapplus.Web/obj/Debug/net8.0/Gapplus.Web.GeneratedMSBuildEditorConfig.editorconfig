@@ -31,6 +31,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_AgmRegisterPage1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZ21SZWdpc3RlclBhZ2UxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_AgmRegisterPage2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZ21SZWdpc3RlclBhZ2UyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_AgmRegisterPage3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZ21SZWdpc3RlclBhZ2UzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_AgmRegisterPage4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZ21SZWdpc3RlclBhZ2U0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_AgmRegistrationWizard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZ21SZWdpc3RyYXRpb25XaXphcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_AllAgms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BbGxBZ21zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -61,6 +81,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_OverView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PdmVyVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_RegisterationNextAndPrevious.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWdpc3RlcmF0aW9uTmV4dEFuZFByZXZpb3VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_ReviewAndConfirmPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXZpZXdBbmRDb25maXJtUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/GitRepo/GapplusAGM/Gapplus.Web/Views/Shared/_SignInHeader.cshtml]
