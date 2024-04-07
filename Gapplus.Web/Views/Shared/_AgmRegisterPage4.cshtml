@@ -1,0 +1,42 @@
+ @* <div class="self-start mt-[5px]">
+                <div class="mb-[10px] w-full flex  items-center ">
+                    <input type="radio" name="attendType" class="mr-[3px]">
+                    <p class="text-[11px] font-[700] text-darkGrey">Onsite</p>
+
+                </div>
+                <div class="mb-[10px] w-full flex  items-center ">
+                    <input type="radio" name="attendType" class="mr-[3px]">
+                    <p class="text-[11px] font-[700] text-darkGrey">Remote</p>
+
+
+                </div>
+            </div> *@
+
+
+                          <div class="self-start mt-[5px]">
+    <div class="mb-[10px] w-full flex  items-center ">
+        <input type="radio" name="attendType" id="onsiteRadio" onchange="addRadioData(this, 'attendType')" class="mr-[3px]">
+        <p class="text-[11px] font-[700] text-darkGrey">Onsite</p>
+    </div>
+    <div class="mb-[10px] w-full flex  items-center ">
+        <input type="radio" name="attendType" id="remoteRadio" onchange="addRadioData(this, 'attendType')" class="mr-[3px]">
+        <p class="text-[11px] font-[700] text-darkGrey">Remote</p>
+    </div>
+</div>
+
+
+ @* <partial name="_RegisterationNextAndPrevious" /> *@
+
+
+
+ <div class="flex items-center mt-[20px] h-[20px] justify-between w-full ">
+            <div class="flex items-center border justify-center p-[8px] mr-[3px] w-[30%] text-center h-[40px]">
+                <img src="~/Plugins/Images/arrow-leftprevious icon.svg" alt="" class="w-[12px] h-[12px] mr-[3px]">
+                <p class="text-lightGrey text-center text-[10px] font-[700] cursor-pointer" onclick="showPreviousPage()">Previous</p>
+              </div>
+              <div class="bg-primColor   flex items-center justify-center text-white text-[10px] w-[70%] p-[8px] h-[40px]">
+                <button type="button" onclick="showReviewAndConfirmPage()" class="mr-[5px] text-[10px]">Next</button>
+                <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] [h-9px] text-white" >
+              </div>
+           
+           </div> 

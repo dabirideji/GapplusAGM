@@ -3,12 +3,16 @@
 }
 @{
     Layout = null;
-    var header=new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
-    header.Username=@ViewBag.Name;
-    header.Email=@ViewBag.Email;
+
+    var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+
+    header.Username = @ViewBag.Name;
+
+    header.Email = @ViewBag.Email;
 }
 
 <html class="overflow-x-none">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +21,13 @@
     <script src="~/Plugins/Tailwind/config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
 
-<body class="overflow-x-none">
-    @Html.Partial("_DashBoardHeader",header)
+<body class="overflow-x-none" id="mainBody">
+    @Html.Partial("_DashBoardHeader", header)
     @Html.Partial("_BannerPage")
 <section>
      <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
@@ -35,27 +40,38 @@
             <h2 class="font-[900] text-[15px] text-shrink text-center">
                 Register Coronation E-Meeting
             </h2>
-            <p class="text-[13px] text-center text-lightBlue mb-[20px]">This service is only available to shareholders.</p>
-        <form action="" class=" mt-[10px] w-full flex flex-col justify-center items-center px-[40px]" >
-            <div class="mb-[10px] w-full md:flex ">
-               <input type="text" placeholder="First Name" class="border mr-[5px] mb-[10px] md:mb-[0] w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
-                <input type="" name="" id=""   class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none " placeholder="Last Name">
-            </div>
-            <div class="w-full mb-[10px]">
+            <p class="text-[13px] text-center text-lightBlue mb-[20px]">This service is only available to shareholders.
+            </p>
+            <form action="" enctype="multipart/form-data"
+                class=" mt-[10px] w-full flex flex-col justify-center items-center px-[40px]" id="partialContainer">
+                @* <div class="mb-[10px] w-full md:flex ">
+                <input type="text" onchange="addData(this,'firstname')" placeholder="First Name" class="border mr-[5px]
+                mb-[10px] md:mb-[0] w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#c]
+                rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+                <input type="" name="" id="" onchange="addData(this,'lastname')" class="border w-full h-[40px]
+                focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px]
+                placeholder:text-[13px] outline-none " placeholder="Last Name">
+                </div>
+                <div class="w-full mb-[10px]">
                 <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
-                <input type="Enter your email" name="" id=" " placeholder="Email" class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
-            </div>
-            <div class="w-full">
+                <input type="Enter your email" name="" id=" " onchange="addData(this,'email')" placeholder="Email"
+                class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD]
+                rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+                </div>
+                <div class="w-full">
                 <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
-                <input type="" name="" id=" " placeholder="Mobile Number" class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD] rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
-            </div>
-           <div class="flex items-center mt-[20px] h-[20px] justify-between w-full ">
-            <div class="flex items-center border justify-center p-[8px] mr-[3px] w-[30%] text-center h-[40px]">
+                <input type="" name="" id=" " onchange="addData(this,'phonenumber')" placeholder="Mobile Number"
+                class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD]
+                rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
+                </div>
+                <div class="flex items-center mt-[20px] h-[20px] justify-between w-full ">
+                <div class="flex items-center border justify-center p-[8px] mr-[3px] w-[30%] text-center h-[40px]">
                 <img src="~/Plugins/Images/arrow-leftprevious icon.svg" alt="" class="w-[12px] h-[12px] mr-[3px]">
-                <p class="text-lightGrey text-center text-[10px] font-[700]">Previous</p>
-              </div>
-              <div class="bg-primColor   flex items-center justify-center text-white text-[10px] w-[70%] p-[8px] h-[40px]">
-                <button class="mr-[5px] text-[10px]">Next</button>
+                <p class="text-lightGrey text-center text-[10px] font-[700]" onclick="showPreviousPage()">Previous</p>
+                </div>
+                <div class="bg-primColor flex items-center justify-center text-white text-[10px] w-[70%] p-[8px]
+                h-[40px]">
+                <button type="button" class="mr-[5px] text-[10px]" onclick="showNextPage()">Next</button>
                 <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] [h-9px] text-white" >
               </div>
            
@@ -69,7 +85,632 @@
        </div>
 </section>
 
- @Html.Partial("_Footer")
+                </div> *@
+                <partial name="_AgmRegisterPage1" />
+
+
+
+            </form>
+        </div>
+    </section>
+
+    @Html.Partial("_Footer")
 </body>
 
-                </html>
+
+<script>
+    var data = {};
+
+
+
+
+
+    //VALIDATIONS 
+
+    function validateField(field) {
+        if (field.value == null || field.value.trim() == "") {
+            return false;
+        }
+        return true;
+    }
+
+    function performDataValidationAndRestore() {
+        var page = currentPage;
+        var fields = [];
+        console.log(currentPage)
+        console.log(data);
+
+        if (currentPage == 1) {
+            var firstname = getOrSetElement("firstName", data.firstName);
+            var lastName = getOrSetElement("lastName", data.lastName);
+            var email = getOrSetElement("email", data.email);
+            var phoneNumber = getOrSetElement("phoneNumber", data.phoneNumber);
+            fields.push(firstname, lastName, email, phoneNumber);
+            @* setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber); *@
+            setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber);
+            console.log(data);
+        }
+
+
+        if (currentPage == 2) {
+            console.log(data)
+            var shareHolderCertificate = getOrSetFileDisplayName("shareHolderCertificate", data.shareHolderCertificate);
+            var shareHolderPassport = getOrSetFileDisplayName("shareHolderPassport", data.shareHolderPassport);
+            var identificationNumber = getOrSetElement("identificationNumber", data.identificationNumber);
+            fields.push(shareHolderCertificate, shareHolderPassport, identificationNumber);
+            setCriteriaForIncrement(data.shareHolderCertificate.name, data.shareHolderPassport.name, identificationNumber.value);
+            @* setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber); *@
+
+            console.log(data);
+        }
+
+
+        if (currentPage == 3) {
+            console.log(data)
+            var proxySelection = getOrSetCheckedElement("proxySelection", data.proxySelection);
+            fields.push(proxySelection);
+            setCriteriaForIncrement(data.proxySelection);
+
+            console.log(data);
+        }
+
+
+        if (currentPage == 4) {
+            console.log(data)
+            var proxySelection = getOrSetRadioElement(data.attendType);
+            fields.push(proxySelection);
+              setCriteriaForIncrement(data.attendType);
+            console.log(data);
+        }
+
+
+        if (currentPage == 5) {
+            console.log(data);
+            setConfirmData("firstName", data.firstName);
+            setConfirmData("lastName", data.lastName);
+            setConfirmData("email", data.email);
+            setConfirmData("phoneNumber", data.phoneNumber);
+            setConfirmData("certificate", data.shareHolderCertificate.name);
+            setConfirmData("passport", data.shareHolderPassport.name);
+            setConfirmData("identification", data.identificationNumber);
+            setConfirmData("proxy", data.proxySelection ? "Proxy Selected" : "None");
+            setConfirmData("proxySummary", data.proxySelection ? "The following meeting will be attended via proxy" : "Proxy not needed");
+
+            let radioName = data.attendType;
+            let trimmedName = radioName.substring(0, radioName.length - 5);
+
+            setConfirmData("attendanceType", trimmedName);
+
+
+    @* var proxySelection=getOrSetRadioElement(data.attendType);
+                fields.push(proxySelection);
+                console.log(data); *@
+    }
+
+
+        fields.forEach(x => {
+            if (x != null) {
+                let check = validateField(x);
+                if (!check) {
+                    throw new Error("INVALID DATA PASSED || ONE OR MORE FIELDS IS REQUIRED")
+                }
+            }
+        });
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+function showPageWithData(){
+    
+}
+
+
+
+
+
+
+var group = {};
+
+function setCriteriaForIncrement(...items) {
+    let currentArray = [];
+    items.forEach(x => {
+        if (x !== null && x !== undefined && x.trim() !== "") {
+            currentArray.push(x);
+        }
+    });
+    group[currentPage] = currentArray;
+    console.log(group);
+}
+
+function checkPageAndCheckGroupItemsWhetherToIncrement() {
+    let currentGroup = group[currentPage];
+    console.log(group);
+    let wizardImage = document.getElementById("wizardImage");
+    var imageUrl = wizardImage.src;
+
+    // Extract the current page number from the image URL
+    let imageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+
+    let check = true;
+    currentGroup.forEach(x => {
+        if (x == null || x.trim() == "" || x == undefined) {
+            check = false;
+        }
+    });
+
+    if (check) {
+        incrementWizard();
+    } else if (imageNumber <= 0 || imageNumber == null) {
+        return;
+    } else if (!check) {
+        decrementWizard();
+    }
+}
+
+function constantlyCheckAndUpdateWizard() {
+    checkPageAndCheckGroupItemsWhetherToIncrement();
+}
+
+
+
+
+
+
+@* 
+setInterval(constantlyCheckAndUpdateWizard, 10000); *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* 
+var group={};
+
+
+
+
+
+
+function setCriteriaForIncrement(...items) {
+    let currentArray=[];
+    items.forEach(x=>{
+        if(x!=null||x!=undefined){
+            currentArray.push(x);
+        }
+    })
+    group[currentPage] = currentArray;
+    console.log(group);
+}
+
+
+
+
+
+
+{
+   
+}
+
+
+function checkPageAndCheckGroupItemsWhetherToIncrement()
+{
+    let currentGroup=group[currentPage];
+    console.log(group)
+    let wizardImage = document.getElementById("wizardImage");
+    var imageUrl = wizardImage.src;
+
+    // Extract the current page number from the image URL
+    let imageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+
+
+let check=true;
+    currentGroup.forEach(x=>{
+        if(x==null||x.trim()==""||x==undefined){
+            check=false;
+        }
+    })
+
+
+    if(check==true&&imageNumber<currentPage){
+        incrementWizard();
+    }
+    else if(imageNumber<=0||imageNumber==null){
+        return;
+    }
+    else if(imageNumber>currentPage&&check==false){
+        decrementWizard();
+    }
+}
+
+
+
+
+
+
+
+
+
+function constantlyCheckAndUpdateWizard() {
+    for (const key in group) {
+        if (Object.hasOwnProperty.call(group, key)) {
+
+            @* setCriteriaForIncrement(...group[key]); 
+        }
+    }
+}
+*@
+
+
+
+
+
+
+
+
+
+
+@* 
+setInterval(checkPageAndCheckGroupItemsWhetherToIncrement,1000);
+ *@
+
+
+
+
+
+
+
+
+
+
+
+  function decrementWizard() {
+    let wizardImage = document.getElementById("wizardImage");
+    var imageUrl = wizardImage.src;
+
+    // Extract the current page number from the image URL
+    let currentPageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+
+    // Check if the current page number is greater than 0
+    if (currentPageNumber > 0) {
+        // Decrement the current page number by 20
+        let newPageNumber = currentPageNumber - 20;
+
+        // Update the image URL with the new page number
+        let newImageUrl = imageUrl.replace(`wizard-${currentPageNumber}`, `wizard-${newPageNumber}`);
+
+        // Set the updated image URL to the image element
+        wizardImage.src = newImageUrl;
+
+        console.log(newImageUrl);
+    }
+}
+
+
+
+
+function incrementWizard() {
+    let wizardImage = document.getElementById("wizardImage");
+    var imageUrl = wizardImage.src;
+
+    // Extract the current page number from the image URL
+    let currentPageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+
+    // Increment the current page number by 20
+    let newPageNumber = currentPageNumber + 20;
+
+    // Update the image URL with the new page number
+    let newImageUrl = imageUrl.replace(`wizard-${currentPageNumber}`, `wizard-${newPageNumber}`);
+
+    // Set the updated image URL to the image element
+    wizardImage.src = newImageUrl;
+
+    console.log(newImageUrl);
+}
+
+@* incrementWizard(); *@
+
+
+    function setConfirmData(id, data) {
+        var element = document.getElementById(`${id}ConfirmDisplay`);
+        if (element != null) {
+            element.innerHTML = data;
+        }
+    }
+
+    function getOrSetRadioElement(itemToBeChecked = null) {
+
+        var element = document.getElementById(itemToBeChecked);
+        console.log(element)
+        if (itemToBeChecked !== null) {
+            element.checked = true;
+        }
+        return element;
+    }
+
+    function getOrSetCheckedElement(id, preferredValue = null) {
+        var element = document.getElementById(id);
+        if (preferredValue !== null) {
+            element.checked = preferredValue;
+        }
+        return element;
+    }
+
+
+    function getOrSetElement(id, preferredValue = null) {
+        var element = document.getElementById(id);
+        if (preferredValue !== null) {
+            element.value = preferredValue;
+        }
+        return element;
+    }
+
+
+
+
+
+
+
+    function getOrSetFileDisplayName(id, preferredValue = null) {
+        var element = document.getElementById(`${id}DisplayName`);
+        if (preferredValue !== null) {
+            if (element != null) {
+                element.value = preferredValue.name;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var currentPage = 1;
+
+    function showPage(page) {
+        let pageNum = page;
+        currentPage=page;
+        console.log("showing page"+page)
+
+        // Check if pageNum is valid
+        if (!(pageNum > 0 && pageNum <= 4)) {
+            return;
+        }
+
+        // Create a new XMLHttpRequest object
+        try {
+            var xhr = new XMLHttpRequest();
+            @* var dejinp = document.getElementById("dej"); *@
+            // Configure the request
+            xhr.open("GET", `/ShareHolder/GetAgmRegisterPartialView?PageNum=${pageNum}`, true);
+
+            // Set up a callback function to handle the response
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                       let wizardImage=document.getElementById("wizardImage");
+                    let p=(currentPage*2)-2;
+                    console.log("pnum",p);
+                    // Update the container with the partial view HTML
+                    document.getElementById("partialContainer").innerHTML = xhr.responseText;
+                    wizardImage.setAttribute("src",`/Plugins/Images/wizard-${p!=0?p:""}0.png`);
+                    performDataValidationAndRestore();
+                 
+
+                } else {
+                    // Handle error if any
+                    console.error("Request failed. Status: " + xhr.status);
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        }
+        catch (e) {
+            console.error(e)
+        }
+
+    }
+
+
+
+    function showReviewAndConfirmPage() {
+        showNextPage();
+        console.log("pageis cirr", currentPage)
+
+
+
+        try {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", `/ShareHolder/GetReviewAndConfirmPartialView`, true);
+
+            // Set up a callback function to handle the response
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Update the container with the partial view HTML
+                    document.getElementById("mainBody").innerHTML = xhr.responseText;
+                    performDataValidationAndRestore();
+
+                } else {
+                    // Handle error if any
+                    console.error("Request failed. Status: " + xhr.status);
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        }
+        catch (e) {
+            console.error(e);
+        }
+
+    }
+
+
+
+    function showPreviousPage() {
+        if (currentPageIsValid()) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    }
+
+    function showNextPage() {
+        console.log(currentPage)
+        currentPage++;
+        if (currentPageIsValid()) {
+            showPage(currentPage);
+        }
+    }
+
+    function currentPageIsValid() {
+        return currentPage > 0 && currentPage <= 4;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function setData(key = null, value = null) {
+        if (key != null && value != null && key.trim() !== "") {
+            data[key] = value;
+        }
+    }
+
+
+
+
+    function addFileData(x, key = "file") {
+        const file = x.files[0];
+
+        console.log(file);
+        var displayElement = document.getElementById(`${key}DisplayName`);
+        if (displayElement != null) {
+            displayElement.value = file.name;
+        }
+        // Create a FormData object
+    @* const formData = new FormData(); *@
+
+            // Append the file to the FormData object
+    @* formData.append(key, file); *@
+
+    @* console.log(formData); *@
+            setData(key, file);
+        console.log(x);
+        return;
+        // Make a POST request to the API endpoint
+        fetch('https://example.com/api/upload', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('File uploaded successfully:', data);
+            })
+            .catch(error => {
+                console.error('There was a problem uploading the file:', error);
+            });
+
+
+
+
+    }
+
+
+
+
+
+    function addCheckData(x, key = null) {
+        setData(key, x.checked);
+        console.log(data);
+    }
+
+    function addRadioData(radioButton, key = null) {
+        if (radioButton.checked) {
+    @* setData(key, radioButton.value); *@
+                setData(key, radioButton.id);
+            console.log(data);
+        }
+    }
+
+
+    function addData(x, key = null) {
+        setData(key, x.value);
+        console.log(data);
+    }
+
+</script>
+
+</html>

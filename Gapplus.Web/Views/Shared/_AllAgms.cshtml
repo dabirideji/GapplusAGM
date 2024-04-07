@@ -26,7 +26,7 @@
             </div>
 
             <div class="pl-[10px] mt-[10px]">
-                <h3 class="text-[10px] font-[900] mb-[7px]">@agm.company</h3>
+                <h3 class="text-[10px] font-[900] mb-[7px] capitalize">@agm.company</h3>
                 <div class="flex items-center mb-[5px]">
                     <img src="~/Plugins/Images/Frame 1000007560calender.svg" alt="" class="w-[20px] mr-[3px]" />
                     <p class="text-[10px] font-[700] text-shrink wrap-none">
@@ -39,7 +39,9 @@
                 </div>
                 <div class="mt-[25px] flex items-center">
                     <div class="flex bg-primColor w-[150px] items-center text-white justify-center p-[5px]">
-                        <button class="text-[13px] mr-[3px]">Register</button>
+                        <a href="/ShareHolder/BoardOfDirectors?AgmCompany=@(agm.company)" class="text-[13px] mr-[3px]">
+                        <button >Register</button>
+                        </a>
                         <img src="~/Plugins/Images/tabler_external-linkjoin-btn-arrow.svg" alt=""
                             class="w-[10px] h-[10px] mr-[3px]" />
                     </div>

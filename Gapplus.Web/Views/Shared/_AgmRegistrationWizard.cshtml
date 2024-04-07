@@ -1,0 +1,11 @@
+@{
+    Layout = null;
+    var pageNum = @ViewBag.currentAgmRegistrationPage;
+    pageNum=2*pageNum;
+}
+
+<div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
+    <img src="~/Plugins/Images/wizard-@(pageNum)0.png" alt="" class="t w-[60px] mb-[5px]">
+    @* <img src="~/Plugins/Images/wizard-0.png" alt="" class="t w-[60px] mb-[5px]"> *@
+    <p class="text-[9px] font-[900]">Register your details</p>
+</div>
