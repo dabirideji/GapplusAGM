@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.api\\Gapplus.Api.csproj": {}
+    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.api\\Gapplus.Api.csproj": {
+    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.api\\Gapplus.Api.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
         "projectName": "Gapplus.Api",
-        "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.api\\Gapplus.Api.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.api\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

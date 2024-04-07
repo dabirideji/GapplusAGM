@@ -168,8 +168,8 @@
             setConfirmData("certificate", data.shareHolderCertificate.name);
             setConfirmData("passport", data.shareHolderPassport.name);
             setConfirmData("identification", data.identificationNumber);
-            setConfirmData("proxy", data.proxySelection ? "Proxy Selected" : "None");
-            setConfirmData("proxySummary", data.proxySelection ? "The following meeting will be attended via proxy" : "Proxy not needed");
+            setConfirmData("proxy", data.proxySelection ? "None":"Proxy Selected");
+            setConfirmData("proxySummary", data.proxySelection ? "Proxy not needed": "The following meeting will be attended via proxy");
 
             let radioName = data.attendType;
             let trimmedName = radioName.substring(0, radioName.length - 5);
@@ -639,6 +639,70 @@ function incrementWizard() {
         }
     }
 
+
+function Register(){
+console.log("started the function Register");
+
+var formData = new FormData();
+
+// Directly set properties on the FormData object
+@* formData.attendType = data.attendType;
+formData.email = data.email;
+formData.firstName = data.firstName;
+formData.identificationNumber = data.identificationNumber;
+formData.lastName = data.lastName; *@
+
+// Logging FormData to see its content
+console.log(formData);
+@* formData.append('phoneNumber', data.phoneNumber);
+formData.append('proxySelection',data.proxySelection); *@
+
+
+const dto = {
+    AttendType: '', // String
+    Email: '', // String
+    FirstName: '', // String
+    IdentificationNumber: '', // String
+    LastName: '', // String
+    PhoneNumber: '', // String
+    ProxySelection: false // Boolean
+};
+// Append file uploads to the FormData object
+formData.sch=data.shareHolderCertificate;
+
+@* formData.append('shareHolderCertificate', data.shareHolderCertificateFile);
+formData.append('shareHolderPassport', data.shareHolderPassportFile); *@
+
+var d={};
+d.sch=formData.sch;   
+
+console.log(formData);
+// Make a POST request to the API endpoint
+fetch(`http://localhost:5069/api/AGMRegistration/RegisterAGM/string`, {
+  method: 'POST',
+  headers:{
+    "Content-Type":"multipart/form-data"
+    @* "Content-Type":"application/json" *@
+  },
+
+
+  body: d
+  @* body: JSON.stringify(dto) *@
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
+  return response.json();
+})
+.then(data => {
+  console.log('API response:', data);
+})
+.catch(error => {
+  console.error('There was a problem with the request:', error);
+});
+
+}
 
 
 
