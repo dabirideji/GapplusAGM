@@ -28,13 +28,13 @@
 </head>
 
 
-<body class="overflow-x-none">
+<body class="overflow-x-hidden">
 
     @Html.Partial("_DashBoardHeader", header)
     @Html.Partial("_DetailsPage")
 
 
-    <section class="px-[100px]">
+    <section class="md:px-[100px] px-[20px]">
         <div class="flex mt-[20px] mb-[20px]">
             <div class="mr-[10px]">
                 <p class="text-[10px] font-[900]">Board of Directors</p>
@@ -49,7 +49,7 @@
 
 
 
-        <div class="grid grid-cols-5 ">
+        <div class="grid md:grid-cols-5 grid-cols-2 ">
             <div class=" bg-darkLightBlue  focus:bg-darkLightBlue rounded-[5px] p-[10px] cursor-pointer">
                 <img src="~/Plugins/Images/fxemoji_documentdocument-icon.png" alt="" class="w-[30px] h-[30px] mb-[3px]">
                 <p class="font-[700] text-[10px] mb-[3px]">Meeting Guideline. pdf</p>

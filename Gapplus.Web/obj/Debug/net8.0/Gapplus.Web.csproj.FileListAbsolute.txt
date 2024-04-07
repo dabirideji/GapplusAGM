@@ -77,3 +77,6 @@ C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\obj\Debug\net8.0\ref\Gapplus.Web.dl
 c:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 c:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 c:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\GitRepo\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\GitRepo\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\GitRepo\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll

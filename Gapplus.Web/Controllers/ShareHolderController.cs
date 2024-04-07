@@ -202,5 +202,19 @@ private async Task<ShareHolderViewModel?> GetShareHolderData(){
         {
             return View();
         }
+
+        public IActionResult MeetingMessagePage()
+        {
+            return View();
+        }
+
+        public IActionResult MeetingPage()
+        {
+            return View("MeetingPage");
+        }
+        public IActionResult MeetingResolutionPage()
+        {
+            return View();
+        }
     }
 }

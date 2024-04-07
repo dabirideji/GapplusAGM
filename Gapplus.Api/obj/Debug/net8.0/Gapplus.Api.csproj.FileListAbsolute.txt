@@ -202,7 +202,6 @@ C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.GeneratedMSBuildE
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.AssemblyInfoInputs.cache
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.AssemblyInfo.cs
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.csproj.CoreCompileInputs.cache
-C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.sourcelink.json
 C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\staticwebassets.build.json
@@ -445,3 +444,7 @@ C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Compres
 C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Licensing.dll
 C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.XlsIO.Portable.dll
 C:\Users\USER\Desktop\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Compression.Portable.dll
+C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Licensing.dll
+C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.XlsIO.Portable.dll

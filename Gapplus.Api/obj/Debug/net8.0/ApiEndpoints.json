@@ -464,6 +464,16 @@
   },
   {
     "ContainingType": "BarcodeGenerator.Controllers.AGMRegistrationController",
+    "Method": "GetActiveAgm",
+    "RelativePath": "api/AGMRegistration/GetActiveAgm",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRegistrationController",
     "Method": "Index",
     "RelativePath": "api/AGMRegistration/Index",
     "HttpMethod": "POST",
@@ -476,16 +486,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BarcodeGenerator.Controllers.AGMRegistrationController",
-    "Method": "Index",
-    "RelativePath": "api/AGMRegistration/Index/GetActiveAgm",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -1041,6 +1041,460 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ErrorController",
+    "Method": "Error",
+    "RelativePath": "api/Error/Error",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ErrorController",
+    "Method": "Index",
+    "RelativePath": "api/Error/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.ErrorController",
+    "Method": "NotFound",
+    "RelativePath": "api/Error/NotFound",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.EventMessagesController",
+    "Method": "CreateAGMQuestion",
+    "RelativePath": "api/EventMessages/CreateAGMQuestion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BarcodeGenerator.Models.AGMQuestionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.EventMessagesController",
+    "Method": "Index",
+    "RelativePath": "api/EventMessages/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.EventMessagesController",
+    "Method": "SendFeedbackToCustomerService",
+    "RelativePath": "api/EventMessages/SendFeedbackToCustomerService",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BarcodeGenerator.Models.AGMQuestionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.GenMVCBarcodeController",
+    "Method": "Create",
+    "RelativePath": "api/GenMVCBarcode/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collection",
+        "Type": "Microsoft.AspNetCore.Http.FormCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.GenMVCBarcodeController",
+    "Method": "Delete",
+    "RelativePath": "api/GenMVCBarcode/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "collection",
+        "Type": "Microsoft.AspNetCore.Http.FormCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.GenMVCBarcodeController",
+    "Method": "Edit",
+    "RelativePath": "api/GenMVCBarcode/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "collection",
+        "Type": "Microsoft.AspNetCore.Http.FormCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.GenMVCBarcodeController",
+    "Method": "Index",
+    "RelativePath": "api/GenMVCBarcode/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.GenMVCBarcodeController",
+    "Method": "Index",
+    "RelativePath": "api/GenMVCBarcode/Index",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Microsoft.AspNetCore.Http.IFormCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.MeetingAPIController",
+    "Method": "FetchLiveMeetingAccessUrl",
+    "RelativePath": "api/MeetingAPI/FetchLiveMeetingAccessUrl",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.ModelDTO.MeetingAccesscodeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.ModelDTO.GenericAPIResponseDTO\u00601[[BarcodeGenerator.Models.AGMAccesscodeResponse, Gapplus.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.MeetingAPIController",
+    "Method": "GetActiveAGMCompanies",
+    "RelativePath": "api/MeetingAPI/GetActiveAGMCompanies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.ModelDTO.GenericAPIListResponseDTO\u00601[[BarcodeGenerator.Models.AGMCompanies, Gapplus.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.MeetingAPIController",
+    "Method": "GetActiveAGMCompany",
+    "RelativePath": "api/MeetingAPI/GetActiveAGMCompany",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.AGMCompaniesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.MeetingAPIController",
+    "Method": "GetQRCode",
+    "RelativePath": "api/MeetingAPI/GetQRCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.ModelDTO.GenericAPIResponseDTO\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.MeetingAPIController",
+    "Method": "JoinVotingOnMobile",
+    "RelativePath": "api/MeetingAPI/JoinVotingOnMobile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.JoinVotingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.JoinVotingResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.PreregistrationAPIController",
+    "Method": "ConfirmPreregistrationResults",
+    "RelativePath": "api/PreregistrationAPI/ConfirmPreregistrationResults",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.List\u00601[[BarcodeGenerator.Models.ModelDTO.PreregistrationResultDto, Gapplus.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.ModelDTO.GenericResponseDto\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.PreregistrationAPIController",
+    "Method": "ConfirmShareholderCompanyAndEmail",
+    "RelativePath": "api/PreregistrationAPI/ConfirmShareholderCompanyAndEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BarcodeGenerator.Models.ModelDTO.PreregistrationRegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.ModelDTO.GenericResponseDto\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.PreregistrationAPIController",
+    "Method": "ConfirmShareholderToken",
+    "RelativePath": "api/PreregistrationAPI/ConfirmShareholderToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BarcodeGenerator.Models.ModelDTO.PreregistrationRegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.APIMessageLog",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.PreregistrationAPIController",
+    "Method": "GetActiveAGMCompany",
+    "RelativePath": "api/PreregistrationAPI/GetActiveAGMCompany/{company}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.AGMCompaniesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "BarcodeGenerator.Models.AGMCompaniesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "BarcodeGenerator.Models.AGMCompaniesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.PreregistrationAPIController",
+    "Method": "GetPreregistrationAGMID",
+    "RelativePath": "api/PreregistrationAPI/GetPreregistrationAGMID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BarcodeGenerator.Controllers.PreregistrationAPIController",
+    "Method": "GetShareholderAccessCode",
+    "RelativePath": "api/PreregistrationAPI/GetShareholderAccessCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "BarcodeGenerator.Models.PreregistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BarcodeGenerator.Models.AGMAccesscodeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BarcodeGenerator.Controllers.VoteController",

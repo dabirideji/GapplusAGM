@@ -2758,7 +2758,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
-      "RelativePath": "Plugins/Images/Vectorcall-icon.svg",
+      "RelativePath": "Plugins/Images/Vectoragainst.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2769,7 +2769,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorcall-icon.svg"
+      "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectoragainst.svg"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcall.svg",

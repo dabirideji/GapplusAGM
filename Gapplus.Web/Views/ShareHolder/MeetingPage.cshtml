@@ -1,0 +1,155 @@
+﻿@{
+    Layout = null;
+}
+
+<html class="overflow-x-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="~/Plugins/Tailwind/tailwind.js"></script>
+    <script src="~/Plugins/Tailwind/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body class="overflow-x-none bg-black font-[lato] bg-white flex relative">
+    @Html.Partial("_MeetingSideBar")
+
+
+    <section id="messageSection" class="">
+        @Html.Partial("_MeetingHeader")
+
+
+
+        <nav class="mb-8 pt-8 border border-transparent border-b-slate-300 ">
+            <ul class="flex justify-around h-8 m-2 mb-0  ">
+                <li class="flex justify-center w-full border border-transparent border-b-[#FF8200] border-b-2">
+                    <span class="mr-1">
+                        <img src="~/Plugins/Images/solar_home-2-bold.png"
+                             class="h-4 w-4 inline">
+                    </span>
+                    Home
+                </li>
+                <li class="flex justify-center  w-full text-grey-300">
+                    <span class="
+                        mr-1">
+                        <img src="~/Plugins/Images/ant-design_message-filled.png"
+                             class="h-4 w-4 inline">
+                    </span>Message
+                </li>
+                <li class="flex justify-center  w-full">
+                    <span class="mr-1">
+                        <img src="~/Plugins/Images/material-symbols_voting-chip-rounded.png"
+                             class="h-4 w-4 inline">
+                    </span>Voting
+                </li>
+                <li class="flex justify-center  w-full ">
+                    <span class="mr-1">
+                        <img src="~/Plugins/Images/ion_documents.png" class="h-4 w-4 inline">
+                    </span>Documents
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <h2 class="text-lg  font-bold "> Zenith- Annual General Meeting</h2>
+            <p class="my-[10px]">
+                11:00 am – Friday 12th June 2024 <br>
+                Welcome to the Annual General Meeting
+            </p>
+
+            <a href="https://snjdkd.csn" class="text-black font-semibold underline ">Visit our webpage</a>
+
+            <h2 class="font-semibold mt-4">BROADCAST</h2>
+            <p class="font-semibold">
+                The AGM will be broadcast in video format with presentation slides:
+                <ul class="list-disc text-left ml-[0] px-[18px]">
+                    <li class="ml-[0]">
+                        If using a mobile device h the presentation. <br>This can be minimised by pressing the same
+                        button.
+                    </li>
+                    <li>
+                        If viewing through a browser, the broadcast will appear automatically. Please ensure you
+                        click
+                        'Play' if required, ensure the player is unmuted and your sound levels are high.
+                    </li>
+                </ul>
+
+                <div class="font-[500]">
+                    <div class="font-semibold">
+                        QUESTIONS
+                    </div>
+                    <p>
+                        (1) You can submit questions before and during the meeting until the Chairman concludes the Q&A
+                        part
+                        of the meeting:
+                        <ul class="list-disc px-[18px]">
+                            <li>
+                                Select the messaging icon at the top of the screen.
+                                Type your question using the chat function at the top of the screen.
+                                Click the orange arrow to submit your question.
+                            </li>
+                        </ul>
+
+                    </p>
+                    <p>
+                        (2) Questions may be moderated before being passed to the Chairman. This is to combine questions
+                        from the various question sources, to avoid repetition and to ensure an orderly meeting. We will
+                        endeavour to answer all questions posed but may combine questions that are similar in nature.
+                    </p>
+                    <p>
+                        (3) You should note that submitting a question will not guarantee that your question is answered
+                        during the meeting.
+                    </p>
+
+                    (4) We will publish questions and answers on our website after the AGM.
+            </p>
+            VOTING
+            (1) Voting online via this website will be enabled when the Chairman opens the poll.
+            (2) At any time while the poll is open, you may vote on any or all of the resolutions set out in
+            the
+            Notice of Annual General Meeting.
+            (3) Once the poll is open, the list of resolutions will appear on screen along with the voting
+            choices. Please note:
+            To vote, select the choice that corresponds with how you wish to vote.
+            The choice will change colour from white to orange and a confirmation message will appear to
+            show
+            your vote has been received. Please note there is no “submit” button.
+            If you make a mistake or wish to change your voting instruction, simply make a revised choice.
+            You may change or cancel your vote at any time until the poll is closed. If you wish to cancel
+            your
+            “live” vote and not submit a vote to the meeting, please press “Cancel”.
+            (4) The “Vote withheld” option enables you to withhold your vote on any resolution. A vote
+            withheld
+            is not a vote in law and will not be counted in the calculation of the proportion of votes “For”
+            or
+            “Against” a resolution.
+            (5) The poll will remain open for 30 minutes after the AGM has formally closed (unless extended
+            at
+            the discretion of the Chairman).
+
+            DOCUMENTS
+            (1) The documents section contains the:
+            Lumi - AGM Mobile Factsheet
+            IML Connector Factsheet
+            (2) Selecting the documents icon from the navigation bar will display the documents. Selecting a
+            document will open it to view.
+
+            HELP
+            If you need help during the meeting, please ask a question using the chat function or call the
+            helpdesk 0479 11 22 33.
+        </div>
+
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+

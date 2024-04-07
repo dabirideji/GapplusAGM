@@ -1,6 +1,6 @@
 [
   {
     "type": "sqlite",
-    "path": "c:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Data\\Gapplus.sqlite"
+    "path": "c:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Data\\Gapplus.sqlite"
   }
 ]
