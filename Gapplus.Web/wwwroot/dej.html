@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <!-- <input type="file"> -->
+    <input type="file" id="f">
+
+
+
+    
+    <button>Upload</button>
+    
+    <script>
+    
+    const btn = document.querySelector('button');
+    
+    btn.addEventListener('click', () => {
+    
+        // Get all inputs in DOM with attribute type of value "file":
+        const fileInputs = document.querySelectorAll('input[type="file"]');
+        
+        // Push the file for each input into an array:
+        const files = [];
+        fileInputs.forEach((fileInput) => files.push(fileInput.files[0]));
+    
+        // Append each file in files array to FormData object:
+        const fd = new FormData();
+
+
+        var fl=document.getElementById("f");
+        fd.append("file",fl.files[0],fl.files[0].name);
+        fd.append("Name","deji");
+        fd.append("age","21");
+        fd.append("class","ss2");
+        console.log(fd)
+        // Upload the FormData object:
+        fetch('http://localhost:5069/api/AGMRegistration/Register', {
+            method: "POST",
+            body: fd,
+        })
+        .then(res => res.json())
+        .then(res => console.log(res))
+    
+    })
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form id="registrationForm" enctype="multipart/form-data">
+        <label for="attendType">Attend Type:</label>
+        <input type="text" id="attendType" name="attendType" value="deji" required><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="deji@deji.deij" required><br>
+    
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" value="deji" required><br>
+    
+        <label for="identificationNumber">Identification Number:</label>
+        <input type="text" id="identificationNumber"  value="deji" name="identificationNumber" required><br>
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" value="deji" required><br>
+    
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" value="deji" required><br>
+    
+        <label for="proxySelection">Proxy Selection:</label>
+        <input type="checkbox" checked id="proxySelection" name="proxySelection"><br>
+    
+        <label for="shareHolderCertificate">Share Holder Certificate:</label>
+        <input type="file" id="shareHolderCertificate" name="shareHolderCertificate" required><br>
+    
+        <label for="shareHolderPassport">Share Holder Passport:</label>
+        <input type="file" id="shareHolderPassport" name="shareHolderPassport" required><br>
+    
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    
+    <script>
+        function submitForm() {
+            console.log("function started");
+            const form = document.getElementById('registrationForm');
+            const formData = new FormData();
+
+            // Append text fields to formData
+            formData.append("attendType", form.attendType.value);
+            formData.append("email", form.email.value);
+            formData.append("firstName", form.firstName.value);
+            formData.append("identificationNumber", form.identificationNumber.value);
+            formData.append("lastName", form.lastName.value);
+            formData.append("phoneNumber", form.phoneNumber.value);
+            formData.append("proxySelection", form.proxySelection.checked);
+
+            // Append files to formData
+            formData.append("shareHolderCertificate", form.shareHolderCertificate.files[0]);
+            formData.append("shareHolderPassport", form.shareHolderPassport.files[0]);
+
+            console.log(formData);
+
+            fetch('http://localhost:5069/api/AGMRegistration/Register', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('API response:', data);
+            })
+            .catch(error => {
+                console.error('There was a problem with the request:', error);
+            });
+        }
+    </script> -->
+</body>
+</html>

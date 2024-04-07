@@ -7,7 +7,7 @@ const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
 let localTracks = []
 let remoteUsers = {}
 
-let  joinAndDisplayLocalStream = async () => {
+let  joinAndDisplayLocalStream = async function(){
         console.log("this function called");
     client.on('user-published', handleUserJoined)
     
@@ -33,7 +33,7 @@ async function joinStream(){
     document.getElementById('stream-controls').style.display = 'flex'
 }
 
-let handleUserJoined = async (user, mediaType) => {
+let handleUserJoined = async function(user, mediaType) {
     remoteUsers[user.uid] = user 
     await client.subscribe(user, mediaType)
 
@@ -56,12 +56,12 @@ let handleUserJoined = async (user, mediaType) => {
     }
 }
 
-let handleUserLeft = async (user) => {
+let handleUserLeft = async function (user){
     delete remoteUsers[user.uid]
     document.getElementById(`user-container-${user.uid}`).remove()
 }
 
-let leaveAndRemoveLocalStream = async () => {
+let leaveAndRemoveLocalStream = async function(){
     for(let i = 0; localTracks.length > i; i++){
         localTracks[i].stop()
         localTracks[i].close()
@@ -73,7 +73,7 @@ let leaveAndRemoveLocalStream = async () => {
     document.getElementById('video-streams').innerHTML = ''
 }
 
-let toggleMic = async (e) => {
+let toggleMic = async function(e){
     if (localTracks[0].muted){
         await localTracks[0].setMuted(false)
         e.target.innerText = 'Mic on'
@@ -85,7 +85,7 @@ let toggleMic = async (e) => {
     }
 }
 
-let toggleCamera = async (e) => {
+let toggleCamera = async function (e){
     if(localTracks[1].muted){
         await localTracks[1].setMuted(false)
         e.target.innerText = 'Camera on'
@@ -101,5 +101,4 @@ document.getElementById('join-btn').addEventListener('click', joinStream)
 document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLocalStream)
 document.getElementById('mic-btn').addEventListener('click', toggleMic)
 document.getElementById('camera-btn').addEventListener('click', toggleCamera)
-setTimeout(async()=>{await joinStream},1000
-)
+// setTimeout(async()=>{ console.log("up to som");await joinStream},1000)
