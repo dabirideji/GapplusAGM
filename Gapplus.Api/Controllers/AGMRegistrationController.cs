@@ -17,45 +17,46 @@ namespace BarcodeGenerator.Controllers
         AGMRegistrationService _AGMService;
 
         ITempDataManager _tempDataManager;
-        public AGMRegistrationController(UsersContext context,ITempDataManager tempDataManager)
+        public AGMRegistrationController(UsersContext context, ITempDataManager tempDataManager)
         {
-        _tempDataManager = tempDataManager;
-            _AGMService =new AGMRegistrationService(context);
+            _tempDataManager = tempDataManager;
+            _AGMService = new AGMRegistrationService(context);
         }
 
 
 
 
 
-public class AgmRegistrationDto
-{
-    public string AttendType { get; set; }
-    public string Email { get; set; }
-    public string FirstName { get; set; }
-    public string IdentificationNumber { get; set; }
-    public string LastName { get; set; }
-    public string PhoneNumber { get; set; }
-    public bool ProxySelection { get; set; }
-    // // Add properties for file uploads (e.g., IFormFile)
-    // public IFormFile ShareHolderCertificate { get; set; }
-    // public IFormFile ShareHolderPassport { get; set; }
-}
+        public class AgmRegistrationDto
+        {
+            public string AttendType { get; set; }
+            public string Email { get; set; }
+            public string FirstName { get; set; }
+            public string IdentificationNumber { get; set; }
+            public string LastName { get; set; }
+            public string PhoneNumber { get; set; }
+            public string ProxySelection { get; set; }
+            public IFormFile ShareHolderPassport { get; set; }
+            public IFormFile ShareHolderCertificate { get; set; }
+            // // Add properties for file uploads (e.g., IFormFile)
+            // public IFormFile file { get; set; }
+        }
 
- [HttpPost]
-    public async Task<IActionResult> Register([FromForm]AgmRegistrationDto name,IFormFile file)
-    {
-      try
-      {
-        Console.WriteLine("got here");
-          // Process data, image, and document (explained later)
-          return Ok("Data received successfully!");
-      }
-      catch (System.Exception ex)
-      {
-        
-        return StatusCode(500,ex.Message);
-      }
-    }
+        [HttpPost]
+        public async Task<IActionResult> Register([FromForm] AgmRegistrationDto registrationData)
+        {
+            try
+            {
+                Console.WriteLine("got here");
+                // Process data, image, and document (explained later)
+                return Ok("Data received successfully!");
+            }
+            catch (System.Exception ex)
+            {
+
+                return StatusCode(500, ex.Message);
+            }
+        }
 
 
 
@@ -72,9 +73,11 @@ public class AgmRegistrationDto
 
 
         [HttpPost("{company}")]
-        public async Task<IActionResult> RegisterAGM([FromRoute]string company){
+        public async Task<IActionResult> RegisterAGM([FromRoute] string company)
+        {
             // var x=new AutoDefaultResponse<AgmCompanies>();
-            if(!ModelState.IsValid){
+            if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
             }
             try
@@ -111,7 +114,7 @@ public class AgmRegistrationDto
             {
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
-    
+
         }
 
 
@@ -131,20 +134,20 @@ public class AgmRegistrationDto
             AccreditationResponse model = new AccreditationResponse();
             try
             {
-                
+
 
                 //var response = await _client.GetAsync<ServiceResponse<List<string>>>($"{ApiRoutes.getcompany}");
                 // var response = await _AGMService.GetActiveAGMCompaniesAsync();
 
-                var response=await _AGMService.GenerateAgmEvent(15);
-                if (response==null)
+                var response = await _AGMService.GenerateAgmEvent(15);
+                if (response == null)
                 {
 
                     model.companies = new List<AGMCompanies>();
                 }
 
                 // model.companies = response.Companies ?? new List<AGMCompanies>(); 
-                model.companies=response;
+                model.companies = response;
 
             }
             catch
@@ -186,7 +189,7 @@ public class AgmRegistrationDto
                 else if (response.ResponseCode == "00")
                 {
                     // TempData["Message"] = response.ResponseMessage;
-                    _tempDataManager.SetTempData("Message",response.ResponseMessage);
+                    _tempDataManager.SetTempData("Message", response.ResponseMessage);
 
                     // return RedirectToAction("Success", "Register");
                     return Ok("Success");
@@ -194,7 +197,7 @@ public class AgmRegistrationDto
                 }
                 // TempData["Message"] = "Barcode Information Couldn't be sent to email";
 
-                _tempDataManager.SetTempData("Message","Barcode Information Couldn't be sent to email");
+                _tempDataManager.SetTempData("Message", "Barcode Information Couldn't be sent to email");
 
                 // return RedirectToAction("Wrong", "Register");
                 return BadRequest("Failed to Send Mail");
@@ -203,7 +206,7 @@ public class AgmRegistrationDto
             catch (Exception e)
             {
                 // TempData["Message"] = "Barcode Information Couldn't be sent to email";
-                _tempDataManager.SetTempData("Message","Barcode Information Couldn't be sent to email");
+                _tempDataManager.SetTempData("Message", "Barcode Information Couldn't be sent to email");
                 // return RedirectToAction("Failure", "Register");
                 return BadRequest("Failed to send mail");
 

@@ -1,17 +1,328 @@
 ﻿@{
     Layout = null;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     header.Username = @ViewBag.Name;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     header.Email = @ViewBag.Email;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     var banner = new Gapplus.Web.DTO.ShareHolder.BannerHeaderModel();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     banner.ImageUrl = @ViewBag.banerImageUrl;
 }
 <html class="overflow-x-none">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +331,9 @@
     <script src="~/Plugins/Tailwind/config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body class="overflow-x-none">
@@ -29,8 +341,9 @@
     @Html.Partial("_BannerPage", banner)
     <section class="px-[100px]">
         <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
-            <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]">
-            <p class="text-[9px] font-[900]">Attendance</p>
+            @* <img src="~/Plugins/Images/Group 1432circle-percent.svg" alt="" class="t w-[60px] mb-[5px]"> *@
+            <img src="~/Plugins/Images/wizard-100.png" alt="" id="wizardImage" class=" w-[60px] mb-[5px]">
+            <p class="text-[9px] font-[900]">Success</p>
         </div>
         <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[50%] mx-auto">
 
@@ -40,14 +353,17 @@
             <div class="flex flex-col items-center">
                 <img src="~/Plugins/Images/Frame 1Success-sign.svg" alt="" class="w-[80px] h-[80px]">
                 <p class="text-[15px] font-[900]">Success</p>
-                <p class="text-lightGrey text-[11px] text-center">Your AGM registration has been <br> successfully completed</p>
+                <p class="text-lightGrey text-[11px] text-center">Your AGM registration has been <br> successfully
+                    completed</p>
             </div>
 
 
             <div class="flex items-center mt-[45px] h-[20px] justify-center w-full px-[5px]">
 
-                <div class=" bg-gradient-to-r from-[#FF8200]  to-[#FF002B] flex items-center justify-center text-white text-[10px] w-[70%] p-[8px]">
-                    <button class="mr-[5px] text-[10px]">Confirm</button>
+                <div
+                    class=" bg-gradient-to-r from-[#FF8200]  to-[#FF002B] flex items-center justify-center text-white text-[10px] w-[70%] p-[8px]">
+                    <button class="mr-[5px] text-[10px]"
+                        onclick="redirectToMeetingLogin()">Confirm</button>
                     <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] h-9px] text-white">
                 </div>
 
@@ -59,19 +375,11 @@
 
         </div>
     </section>
-   
+
     @Html.Partial("_Footer")
 </body>
+<script>
+    function redirectToMeetingLogin() { console.log('icy'); window.location.href = '/ShareHolder/MeetingLoginPage' }
+</script>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-

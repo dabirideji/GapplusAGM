@@ -4,9 +4,15 @@
 @{
     Layout = null;
 
+
+
     var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
 
+
+
     header.Username = @ViewBag.Name;
+
+
 
     header.Email = @ViewBag.Email;
 }
@@ -17,6 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+<script src="~/Plugins/Utils/UtilityFunctions.js"></script>
     <script src="~/Plugins/Tailwind/tailwind.js"></script>
     <script src="~/Plugins/Tailwind/config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,14 +37,14 @@
     @Html.Partial("_DashBoardHeader", header)
     @Html.Partial("_BannerPage")
     <section>
-      
+
         @* @Html.Partial("_AgmRegistrationWizard") *@
 
-<div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
-    <img src="~/Plugins/Images/wizard-0.png" alt="" id="wizardImage" class=" w-[60px] mb-[5px]">
-    @* <img src="~/Plugins/Images/wizard-0.png" alt="" class="t w-[60px] mb-[5px]"> *@
-    <p class="text-[9px] font-[900]">Register your details</p>
-</div>
+        <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
+            <img src="~/Plugins/Images/wizard-0.png" alt="" id="wizardImage" class=" w-[60px] mb-[5px]">
+            @* <img src="~/Plugins/Images/wizard-0.png" alt="" class="t w-[60px] mb-[5px]"> *@
+            <p class="text-[9px] font-[900]">Register your details</p>
+        </div>
 
 
         <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[40%] mx-auto">
@@ -121,8 +128,8 @@
             var email = getOrSetElement("email", data.email);
             var phoneNumber = getOrSetElement("phoneNumber", data.phoneNumber);
             fields.push(firstname, lastName, email, phoneNumber);
-            @* setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber); *@
-            setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber);
+    @* setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber); *@
+                setCriteriaForIncrement(data.firstName, data.lastName, data.email, data.phoneNumber);
             console.log(data);
         }
 
@@ -134,9 +141,9 @@
             var identificationNumber = getOrSetElement("identificationNumber", data.identificationNumber);
             fields.push(shareHolderCertificate, shareHolderPassport, identificationNumber);
             setCriteriaForIncrement(data.shareHolderCertificate.name, data.shareHolderPassport.name, identificationNumber.value);
-            @* setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber); *@
+    @* setCriteriaForIncrement(data.firstName,data.lastName,data.email,data.phoneNumber); *@
 
-            console.log(data);
+                console.log(data);
         }
 
 
@@ -154,7 +161,7 @@
             console.log(data)
             var proxySelection = getOrSetRadioElement(data.attendType);
             fields.push(proxySelection);
-              setCriteriaForIncrement(data.attendType);
+            setCriteriaForIncrement(data.attendType);
             console.log(data);
         }
 
@@ -168,8 +175,8 @@
             setConfirmData("certificate", data.shareHolderCertificate.name);
             setConfirmData("passport", data.shareHolderPassport.name);
             setConfirmData("identification", data.identificationNumber);
-            setConfirmData("proxy", data.proxySelection ? "None":"Proxy Selected");
-            setConfirmData("proxySummary", data.proxySelection ? "Proxy not needed": "The following meeting will be attended via proxy");
+            setConfirmData("proxy", data.proxySelection ? "None" : "Proxy Selected");
+            setConfirmData("proxySummary", data.proxySelection ? "Proxy not needed" : "The following meeting will be attended via proxy");
 
             let radioName = data.attendType;
             let trimmedName = radioName.substring(0, radioName.length - 5);
@@ -206,64 +213,64 @@
 
 
 
-function showPageWithData(){
-    
-}
+    function showPageWithData() {
 
-
-
-
-
-
-var group = {};
-
-function setCriteriaForIncrement(...items) {
-    let currentArray = [];
-    items.forEach(x => {
-        if (x !== null && x !== undefined && x.trim() !== "") {
-            currentArray.push(x);
-        }
-    });
-    group[currentPage] = currentArray;
-    console.log(group);
-}
-
-function checkPageAndCheckGroupItemsWhetherToIncrement() {
-    let currentGroup = group[currentPage];
-    console.log(group);
-    let wizardImage = document.getElementById("wizardImage");
-    var imageUrl = wizardImage.src;
-
-    // Extract the current page number from the image URL
-    let imageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
-
-    let check = true;
-    currentGroup.forEach(x => {
-        if (x == null || x.trim() == "" || x == undefined) {
-            check = false;
-        }
-    });
-
-    if (check) {
-        incrementWizard();
-    } else if (imageNumber <= 0 || imageNumber == null) {
-        return;
-    } else if (!check) {
-        decrementWizard();
     }
-}
-
-function constantlyCheckAndUpdateWizard() {
-    checkPageAndCheckGroupItemsWhetherToIncrement();
-}
 
 
 
 
 
 
-@* 
-setInterval(constantlyCheckAndUpdateWizard, 10000); *@
+    var group = {};
+
+    function setCriteriaForIncrement(...items) {
+        let currentArray = [];
+        items.forEach(x => {
+            if (x !== null && x !== undefined && x.trim() !== "") {
+                currentArray.push(x);
+            }
+        });
+        group[currentPage] = currentArray;
+        console.log(group);
+    }
+
+    function checkPageAndCheckGroupItemsWhetherToIncrement() {
+        let currentGroup = group[currentPage];
+        console.log(group);
+        let wizardImage = document.getElementById("wizardImage");
+        var imageUrl = wizardImage.src;
+
+        // Extract the current page number from the image URL
+        let imageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+
+        let check = true;
+        currentGroup.forEach(x => {
+            if (x == null || x.trim() == "" || x == undefined) {
+                check = false;
+            }
+        });
+
+        if (check) {
+            incrementWizard();
+        } else if (imageNumber <= 0 || imageNumber == null) {
+            return;
+        } else if (!check) {
+            decrementWizard();
+        }
+    }
+
+    function constantlyCheckAndUpdateWizard() {
+        checkPageAndCheckGroupItemsWhetherToIncrement();
+    }
+
+
+
+
+
+
+    @*
+        setInterval(constantlyCheckAndUpdateWizard, 10000); *@
 
 
 
@@ -290,64 +297,64 @@ setInterval(constantlyCheckAndUpdateWizard, 10000); *@
 
 
 
-@* 
-var group={};
+    @*
+        var group={};
 
 
 
 
 
 
-function setCriteriaForIncrement(...items) {
-    let currentArray=[];
-    items.forEach(x=>{
+        function setCriteriaForIncrement(...items) {
+        let currentArray=[];
+        items.forEach(x=>{
         if(x!=null||x!=undefined){
-            currentArray.push(x);
+        currentArray.push(x);
         }
-    })
-    group[currentPage] = currentArray;
-    console.log(group);
-}
+        })
+        group[currentPage] = currentArray;
+        console.log(group);
+        }
 
 
 
 
 
 
-{
-   
-}
+        {
+
+        }
 
 
-function checkPageAndCheckGroupItemsWhetherToIncrement()
-{
-    let currentGroup=group[currentPage];
-    console.log(group)
-    let wizardImage = document.getElementById("wizardImage");
-    var imageUrl = wizardImage.src;
+        function checkPageAndCheckGroupItemsWhetherToIncrement()
+        {
+        let currentGroup=group[currentPage];
+        console.log(group)
+        let wizardImage = document.getElementById("wizardImage");
+        var imageUrl = wizardImage.src;
 
-    // Extract the current page number from the image URL
-    let imageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+        // Extract the current page number from the image URL
+        let imageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
 
 
-let check=true;
-    currentGroup.forEach(x=>{
+        let check=true;
+        currentGroup.forEach(x=>{
         if(x==null||x.trim()==""||x==undefined){
-            check=false;
+        check=false;
         }
-    })
+        })
 
 
-    if(check==true&&imageNumber<currentPage){
+        if(check==true&&imageNumber<currentPage){
         incrementWizard();
-    }
-    else if(imageNumber<=0||imageNumber==null){
+        }
+        else if(imageNumber<=0||imageNumber==null){
         return;
-    }
-    else if(imageNumber>currentPage&&check==false){
+        }
+        else if(imageNumber>currentPage&&check==false){
         decrementWizard();
-    }
-}
+        }
+        }
 
 
 
@@ -357,15 +364,68 @@ let check=true;
 
 
 
-function constantlyCheckAndUpdateWizard() {
-    for (const key in group) {
+        function constantlyCheckAndUpdateWizard() {
+        for (const key in group) {
         if (Object.hasOwnProperty.call(group, key)) {
 
-            @* setCriteriaForIncrement(...group[key]); 
+        @* setCriteriaForIncrement(...group[key]);
         }
-    }
-}
-*@
+        }
+        }
+        *@
+
+        function Register() {
+
+
+            console.log("started register function");
+            const fd = new FormData();
+            fd.append("ShareHolderCertificate", data.shareHolderCertificate, data.shareHolderCertificate.name);
+            fd.append("ShareHolderPassport", data.shareHolderPassport, data.shareHolderPassport.name);
+    @* fd.append("Name",data.name); *@
+                fd.append("AttendType", data.attendType);
+            fd.append("PhoneNumber", data.phoneNumber);
+            fd.append("ProxySelection", String(data.proxySelection));
+            fd.append("Email", data.email);
+            fd.append("FirstName", data.firstName);
+            fd.append("IdentificationNumber", data.identificationNumber);
+            fd.append("LastName", data.lastName);
+            console.log(fd);
+
+    @* return; *@
+showActivityIndicatorForPage(null,20)
+                // Upload the FormData object:
+                fetch('http://localhost:5069/api/AGMRegistration/Register', {
+                    method: "POST",
+                    body: fd,
+                })
+                    .then(res => {
+
+    @* res.json() *@
+            return res;
+                    }
+
+                    )
+                    .then(res => {
+                        console.log(res);
+                        window.location.href = "/ShareHolder/SuccessPage";
+
+
+                    }
+
+
+                    )
+        }
+
+
+
+
+
+
+
+
+    @*
+        setInterval(checkPageAndCheckGroupItemsWhetherToIncrement,1000);
+        *@
 
 
 
@@ -376,31 +436,41 @@ function constantlyCheckAndUpdateWizard() {
 
 
 
-@* 
-setInterval(checkPageAndCheckGroupItemsWhetherToIncrement,1000);
- *@
+
+        function decrementWizard() {
+            let wizardImage = document.getElementById("wizardImage");
+            var imageUrl = wizardImage.src;
+
+            // Extract the current page number from the image URL
+            let currentPageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
+
+            // Check if the current page number is greater than 0
+            if (currentPageNumber > 0) {
+                // Decrement the current page number by 20
+                let newPageNumber = currentPageNumber - 20;
+
+                // Update the image URL with the new page number
+                let newImageUrl = imageUrl.replace(`wizard-${currentPageNumber}`, `wizard-${newPageNumber}`);
+
+                // Set the updated image URL to the image element
+                wizardImage.src = newImageUrl;
+
+                console.log(newImageUrl);
+            }
+        }
 
 
 
 
+    function incrementWizard() {
+        let wizardImage = document.getElementById("wizardImage");
+        var imageUrl = wizardImage.src;
 
+        // Extract the current page number from the image URL
+        let currentPageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
 
-
-
-
-
-
-  function decrementWizard() {
-    let wizardImage = document.getElementById("wizardImage");
-    var imageUrl = wizardImage.src;
-
-    // Extract the current page number from the image URL
-    let currentPageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
-
-    // Check if the current page number is greater than 0
-    if (currentPageNumber > 0) {
-        // Decrement the current page number by 20
-        let newPageNumber = currentPageNumber - 20;
+        // Increment the current page number by 20
+        let newPageNumber = currentPageNumber + 20;
 
         // Update the image URL with the new page number
         let newImageUrl = imageUrl.replace(`wizard-${currentPageNumber}`, `wizard-${newPageNumber}`);
@@ -410,39 +480,16 @@ setInterval(checkPageAndCheckGroupItemsWhetherToIncrement,1000);
 
         console.log(newImageUrl);
     }
-}
+
+    @* incrementWizard(); *@
 
 
-
-
-function incrementWizard() {
-    let wizardImage = document.getElementById("wizardImage");
-    var imageUrl = wizardImage.src;
-
-    // Extract the current page number from the image URL
-    let currentPageNumber = parseInt(imageUrl.match(/wizard-(\d+)/)[1]);
-
-    // Increment the current page number by 20
-    let newPageNumber = currentPageNumber + 20;
-
-    // Update the image URL with the new page number
-    let newImageUrl = imageUrl.replace(`wizard-${currentPageNumber}`, `wizard-${newPageNumber}`);
-
-    // Set the updated image URL to the image element
-    wizardImage.src = newImageUrl;
-
-    console.log(newImageUrl);
-}
-
-@* incrementWizard(); *@
-
-
-    function setConfirmData(id, data) {
-        var element = document.getElementById(`${id}ConfirmDisplay`);
-        if (element != null) {
-            element.innerHTML = data;
+        function setConfirmData(id, data) {
+            var element = document.getElementById(`${id}ConfirmDisplay`);
+            if (element != null) {
+                element.innerHTML = data;
+            }
         }
-    }
 
     function getOrSetRadioElement(itemToBeChecked = null) {
 
@@ -507,8 +554,8 @@ function incrementWizard() {
 
     function showPage(page) {
         let pageNum = page;
-        currentPage=page;
-        console.log("showing page"+page)
+        currentPage = page;
+        console.log("showing page" + page)
 
         // Check if pageNum is valid
         if (!(pageNum > 0 && pageNum <= 4)) {
@@ -518,21 +565,21 @@ function incrementWizard() {
         // Create a new XMLHttpRequest object
         try {
             var xhr = new XMLHttpRequest();
-            @* var dejinp = document.getElementById("dej"); *@
-            // Configure the request
-            xhr.open("GET", `/ShareHolder/GetAgmRegisterPartialView?PageNum=${pageNum}`, true);
+    @* var dejinp = document.getElementById("dej"); *@
+                // Configure the request
+                xhr.open("GET", `/ShareHolder/GetAgmRegisterPartialView?PageNum=${pageNum}`, true);
 
             // Set up a callback function to handle the response
             xhr.onload = function () {
                 if (xhr.status === 200) {
-                       let wizardImage=document.getElementById("wizardImage");
-                    let p=(currentPage*2)-2;
-                    console.log("pnum",p);
+                    let wizardImage = document.getElementById("wizardImage");
+                    let p = (currentPage * 2) - 2;
+                    console.log("pnum", p);
                     // Update the container with the partial view HTML
                     document.getElementById("partialContainer").innerHTML = xhr.responseText;
-                    wizardImage.setAttribute("src",`/Plugins/Images/wizard-${p!=0?p:""}0.png`);
+                    wizardImage.setAttribute("src", `/Plugins/Images/wizard-${p != 0 ? p : ""}0.png`);
                     performDataValidationAndRestore();
-                 
+
 
                 } else {
                     // Handle error if any
@@ -640,69 +687,6 @@ function incrementWizard() {
     }
 
 
-function Register(){
-console.log("started the function Register");
-
-var formData = new FormData();
-
-// Directly set properties on the FormData object
-@* formData.attendType = data.attendType;
-formData.email = data.email;
-formData.firstName = data.firstName;
-formData.identificationNumber = data.identificationNumber;
-formData.lastName = data.lastName; *@
-
-// Logging FormData to see its content
-console.log(formData);
-@* formData.append('phoneNumber', data.phoneNumber);
-formData.append('proxySelection',data.proxySelection); *@
-
-
-const dto = {
-    AttendType: '', // String
-    Email: '', // String
-    FirstName: '', // String
-    IdentificationNumber: '', // String
-    LastName: '', // String
-    PhoneNumber: '', // String
-    ProxySelection: false // Boolean
-};
-// Append file uploads to the FormData object
-formData.sch=data.shareHolderCertificate;
-
-@* formData.append('shareHolderCertificate', data.shareHolderCertificateFile);
-formData.append('shareHolderPassport', data.shareHolderPassportFile); *@
-
-var d={};
-d.sch=formData.sch;   
-
-console.log(formData);
-// Make a POST request to the API endpoint
-fetch(`http://localhost:5069/api/AGMRegistration/RegisterAGM/string`, {
-  method: 'POST',
-  headers:{
-    "Content-Type":"multipart/form-data"
-    @* "Content-Type":"application/json" *@
-  },
-
-
-  body: d
-  @* body: JSON.stringify(dto) *@
-})
-.then(response => {
-  if (!response.ok) {
-    throw new Error('Network response was not ok');
-  }
-  return response.json();
-})
-.then(data => {
-  console.log('API response:', data);
-})
-.catch(error => {
-  console.error('There was a problem with the request:', error);
-});
-
-}
 
 
 
@@ -771,5 +755,6 @@ fetch(`http://localhost:5069/api/AGMRegistration/RegisterAGM/string`, {
     }
 
 </script>
+
 
 </html>

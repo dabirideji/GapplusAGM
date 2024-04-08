@@ -35,15 +35,43 @@
         fileInputs.forEach((fileInput) => files.push(fileInput.files[0]));
     
         // Append each file in files array to FormData object:
-        const fd = new FormData();
 
 
-        var fl=document.getElementById("f");
-        fd.append("file",fl.files[0],fl.files[0].name);
-        fd.append("Name","deji");
-        fd.append("age","21");
-        fd.append("class","ss2");
-        console.log(fd)
+
+
+
+
+
+
+
+//         const data = {
+//   AttendType: "attendTypeValue",
+//   Email: "emailValue",
+//   FirstName: "firstNameValue",
+//   IdentificationNumber: "identificationNumberValue",
+//   LastName: "lastNameValue",
+//   PhoneNumber: "phoneNumberValue",
+//   ProxySelection: true // or false based on your requirement
+// };
+
+// public IFormFile ShareHolderCertificate { get; set; }
+    // public IFormFile file { get; set; }
+    // public IFormFile ShareHolderPassport { get; set; }
+
+
+    const fd = new FormData();
+var fl=document.getElementById("f");
+fd.append("ShareHolderCertificate",fl.files[0],fl.files[0].name);
+fd.append("ShareHolderPassport",fl.files[0],fl.files[0].name);
+fd.append("Name","deji");
+fd.append("AttendType","21");
+fd.append("PhoneNumber","21");
+fd.append("Email","ss2");
+fd.append("FirstName","ss2");
+fd.append("IdentificationNumber","ss2");
+fd.append("LastName","ss2");
+console.log(fd)
+data.file=fd;
         // Upload the FormData object:
         fetch('http://localhost:5069/api/AGMRegistration/Register', {
             method: "POST",
