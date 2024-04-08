@@ -489,6 +489,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BarcodeGenerator.Controllers.AGMRegistrationController",
+    "Method": "RegisterAGM",
+    "RelativePath": "api/AGMRegistration/RegisterAGM/{company}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "company",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "sch",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BarcodeGenerator.Controllers.AGMVotingController",
     "Method": "AuthenticateWebVoting",
     "RelativePath": "api/AGMVoting/AuthenticateWebVoting",

@@ -7,5 +7,14 @@
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Gapplus.Api\\wwwroot",
+      "Source": "Gapplus.Api",
+      "ContentRoot": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\wwwroot\\",
+      "BasePath": "_content/Gapplus.Api",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

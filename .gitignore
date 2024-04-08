@@ -5,3 +5,10 @@
 **/*.cache
 **/*.editorconfig
 **/*.AssemblyInfo.cs
+
+# Ignore all files within specific directories
+Gapplus.Api/bin/Debug/net8.0/
+Gapplus.Api/obj/Debug/net8.0/
+
+# Ignore specific directories
+.vs/Gapplus/

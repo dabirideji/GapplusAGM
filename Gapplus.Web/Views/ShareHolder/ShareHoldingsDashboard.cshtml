@@ -794,21 +794,20 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet" />
 </head>
 
 
-<body class="overflow-x-hidden">
-    @Html.Partial("_DashBoardHeader",header)
+<body class="overflow-x-hidden" id="partialContainer">
+    @Html.Partial("_DashBoardHeader", header)
     @Html.Partial("_OverView")
     <section class="md:px-[100px] px-[20px] " id="dashBody">
         <div class="mt-[20px] flex flex-col md:flex-row items-center justify-center">
             <div class="border rounded-[4px] p-[20px] w-full md:w-[60%] h-full mr-[20px] " id="">
                 <div class="flex items-center">
                     <img src="~/Plugins/Images/Vectorround -broken.svg" alt=""
-                        class="w-[10px] h-[10px] mr-[8px] md:w-[12px] md:h-[12px]" />
+                         class="w-[10px] h-[10px] mr-[8px] md:w-[12px] md:h-[12px]" />
                     <p class="text-[10px] font-[700] md:text-[12px]">All Holdings</p>
                 </div>
                 <div class="mt-[5px] flex flex-col justify-center items-center mb-[15px]">
@@ -867,12 +866,12 @@
                 <div class="flex flex-col md:flex-row">
                     <div class="flex items-center">
                         <img src="~/Plugins/Images/ic_outline-pendingcircle-dot.svg" alt=""
-                            class="w-[10px] h-[10px] mr-[10px]" />
+                             class="w-[10px] h-[10px] mr-[10px]" />
                         <p class="text-[10px] text-offBlack font-[600]">Pending AGMs</p>
                     </div>
                     <div class="">
                         <p id="countdown"
-                            class="text-[8px] flex items-center px-[3px] font-[700] border absolute top-0 right-0 h-[40px]">
+                           class="text-[8px] flex items-center px-[3px] font-[700] border absolute top-0 right-0 h-[40px]">
                             3 days, 4 hours, 34 minutes till AGM
                         </p>
                     </div>
@@ -883,10 +882,10 @@
 
                 <div class="flex items-center mt-[70px]">
                     <img src="~/Plugins/Images/Vectorleft-arrow.png" alt="" class="w-[5px] cursor-pointer"
-                        onclick="showPreviousAgm()" id="accordionPreviousButton" />
+                         onclick="showPreviousAgm()" id="accordionPreviousButton" />
                     <div class="w-full h-[1px] bg-[#CBD5E1] mx-[10px]"></div>
                     <img src="~/Plugins/Images/Vectorright-arrow.svg" alt="" class="w-[5px] cursor-pointer"
-                        onclick="showNextAgm()" id="accordionNextButton" />
+                         onclick="showNextAgm()" id="accordionNextButton" />
                 </div>
 
                 <div class="pl-[10px] mt-[15px]">
@@ -909,9 +908,9 @@
                                  class="w-[10px] h-[10px] mr-[3px]" />
                         </div>
                         <img src="~/Plugins/Images/Frame 1000007549tag-icon.svg" alt=""
-                            class="w-[30px] h-[30px] ml-[3px]" />
+                             class="w-[30px] h-[30px] ml-[3px]" />
                         <img src="~/Plugins/Images/Frame 1000007550like-icon.svg" alt=""
-                            class="w-[30px] h-[30px] ml-[3px]" />
+                             class="w-[30px] h-[30px] ml-[3px]" />
                     </div>
                 </div>
                 <div class="w-full flex justify-center mt-[10px]">
@@ -925,7 +924,7 @@
         <div class="border mt-[20px] md:px-[50px] py-[20px] mb-[60px] overflow-x-auto">
             <div class="flex items-center mb-[20px]">
                 <img src="~/Plugins/Images/Group 39662internal-holding-icon.svg" alt=""
-                    class="w-[30px] h-[30px] mr-[3px]" />
+                     class="w-[30px] h-[30px] mr-[3px]" />
                 <p class="font-[700] text-[12px]">Internal Holdings</p>
             </div>
             <table class="w-full text-left text-[10px] border-seperate border-spacing-2  overflow-x-auto">
@@ -1203,7 +1202,7 @@
                     url=new URL(url);
                     console.log("the url should be checked later ,right now we are still mocking the data");
                     joinLink.setAttribute("href",url); *@
-   try {
+           try {
                     url = new URL(url);
                     // No error means the URL is valid
                     joinLink.setAttribute("href", url);
@@ -1218,7 +1217,7 @@
         setInterval(() => {
             updateAgmCountdownTime(agm.dateTime, agm.enddateTime);
         }, 1000);
-        }
+                }
 
         // Function to handle next button click
 
@@ -1234,7 +1233,7 @@
 
     <script src="~/Plugins/ChartJS/chart.js"></script>
 
-    
+
 </body>
 
 

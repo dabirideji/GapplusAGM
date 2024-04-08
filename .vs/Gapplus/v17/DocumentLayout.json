@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\GitRepo\\GapplusAGM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shared\\_overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shared\\_overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\shareholdingsdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\shareholdingsdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shared\\_agmregisterpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shared\\_agmregisterpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3174FD2D-D71A-4494-82A4-6CA8D3B6399A}|Gapplus.Api\\Gapplus.Api.csproj|c:\\gitrepo\\gapplusagm\\gapplus.api\\controllers\\barcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\controllers\\shareholdercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\controllers\\shareholdercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\shareholdingsdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\shareholdingsdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shared\\_overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shared\\_overview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\allagmpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\documentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -110,10 +110,6 @@
       "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\successpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3174FD2D-D71A-4494-82A4-6CA8D3B6399A}|Gapplus.Api\\Gapplus.Api.csproj|c:\\gitrepo\\gapplusagm\\gapplus.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3174FD2D-D71A-4494-82A4-6CA8D3B6399A}|Gapplus.Api\\Gapplus.Api.csproj|solutionrelative:gapplus.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -162,12 +158,24 @@
       "RelativeMoniker": "D:0:0:{3174FD2D-D71A-4494-82A4-6CA8D3B6399A}|Gapplus.Api\\Gapplus.Api.csproj|solutionrelative:gapplus.api\\gapplus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:1:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\meetingresolutionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:1:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\meetingresolutionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:1:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:1:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\meetingresolutionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:2:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\meetingresolutionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\meetingresolutionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\meetingresolutionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:1:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:2:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|c:\\gitrepo\\gapplusagm\\gapplus.web\\views\\shareholder\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:2:0:{24453186-1329-4923-92AE-C8F87B383137}|Gapplus.Web\\Gapplus.Web.csproj|solutionrelative:gapplus.web\\views\\shareholder\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -177,24 +185,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.js",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
-              "RelativeDocumentMoniker": "Gapplus.Web\\wwwroot\\js\\Dashboard.js",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
-              "RelativeToolTip": "Gapplus.Web\\wwwroot\\js\\Dashboard.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-04T07:37:58.363Z",
+              "DocumentIndex": 0,
+              "Title": "_AgmRegisterPage1.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_AgmRegisterPage1.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_AgmRegisterPage1.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_AgmRegisterPage1.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_AgmRegisterPage1.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T19:04:39.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "BarcodeController.cs",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Controllers\\BarcodeController.cs",
+              "RelativeDocumentMoniker": "Gapplus.Api\\Controllers\\BarcodeController.cs",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Controllers\\BarcodeController.cs",
+              "RelativeToolTip": "Gapplus.Api\\Controllers\\BarcodeController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAawDwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T15:10:25.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllAGMPage.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
+              "ViewState": "AQIAABoBAAAAYGZmZmYkwAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-30T12:36:47.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShareHoldingsDashboard.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
+              "ViewState": "AQIAABoDAAAAMzMzM7MwwCEDAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-30T06:15:35.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_OverView.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
+              "ViewState": "AQIAACsAAACAAAAAAAARwDMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-30T06:22:05.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShareHolderController.cs",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Controllers\\ShareHolderController.cs",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Controllers\\ShareHolderController.cs",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Controllers\\ShareHolderController.cs",
+              "RelativeToolTip": "Gapplus.Web\\Controllers\\ShareHolderController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAvwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T13:48:01.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "BoardOfDirectors.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\BoardOfDirectors.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\BoardOfDirectors.cshtml",
@@ -206,68 +278,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BarcodeController.cs",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Controllers\\BarcodeController.cs",
-              "RelativeDocumentMoniker": "Gapplus.Api\\Controllers\\BarcodeController.cs",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Controllers\\BarcodeController.cs",
-              "RelativeToolTip": "Gapplus.Api\\Controllers\\BarcodeController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAawDwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T15:10:25.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AllAGMPage.cshtml",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
-              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\AllAGMPage.cshtml",
-              "ViewState": "AQIAABoBAAAAYGZmZmYkwAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-30T12:36:47.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShareHoldingsDashboard.cshtml",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
-              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\ShareHoldingsDashboard.cshtml",
-              "ViewState": "AQIAAMkEAAAAAAAAAAAAANMEAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-30T06:15:35.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_OverView.cshtml",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
-              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_OverView.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAC8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-30T06:22:05.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShareHolderController.cs",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Controllers\\ShareHolderController.cs",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Controllers\\ShareHolderController.cs",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Controllers\\ShareHolderController.cs",
-              "RelativeToolTip": "Gapplus.Web\\Controllers\\ShareHolderController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAvwCIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T13:48:01.533Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "Dashboard.js",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
+              "RelativeDocumentMoniker": "Gapplus.Web\\wwwroot\\js\\Dashboard.js",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
+              "RelativeToolTip": "Gapplus.Web\\wwwroot\\js\\Dashboard.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-04T07:37:58.363Z"
             },
             {
               "$type": "Document",
@@ -283,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Registerpage2.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\Registerpage2.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\Registerpage2.cshtml",
@@ -295,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 39,
               "Title": "RegisterPage.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage.cshtml",
@@ -307,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "HomePage.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\HomePage.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\HomePage.cshtml",
@@ -315,12 +334,11 @@
               "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\HomePage.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T14:13:37.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T14:13:37.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RegisterPage4.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage4.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage4.cshtml",
@@ -344,14 +362,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "MeetingResolutionPage.cshtml",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\MeetingResolutionPage.cshtml",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\MeetingResolutionPage.cshtml",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\MeetingResolutionPage.cshtml",
-              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\MeetingResolutionPage.cshtml",
+              "DocumentIndex": 38,
+              "Title": "Gapplus.Api.csproj",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
+              "RelativeDocumentMoniker": "Gapplus.Api\\Gapplus.Api.csproj",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
+              "RelativeToolTip": "Gapplus.Api\\Gapplus.Api.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-03-31T18:55:50.37Z"
             },
             {
@@ -368,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "MeetingResolutionPage.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\MeetingResolutionPage.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\MeetingResolutionPage.cshtml",
@@ -536,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 41,
               "Title": "RegisterPage3.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage3.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage3.cshtml",
@@ -548,103 +566,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Program.cs",
               "RelativeDocumentMoniker": "Gapplus.Api\\Program.cs",
               "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Program.cs",
               "RelativeToolTip": "Gapplus.Api\\Program.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAawI0AAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAA//////8gwBMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T16:25:08.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RegisterPage3.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage3.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage3.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage3.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage3.cshtml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAawI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-29T15:42:12.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "_DetailsPage.cshtml",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
-              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
+              "DocumentIndex": 43,
+              "Title": "RegisterPage.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\ShareHolder\\RegisterPage.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\ShareHolder\\RegisterPage.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-31T15:49:05.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
+              "DocumentIndex": 28,
+              "Title": "_DetailsPage.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_DetailsPage.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-31T15:50:04.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "config.js",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
-              "RelativeDocumentMoniker": "Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
-              "RelativeToolTip": "Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
+              "DocumentIndex": 29,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-30T12:49:48.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IShareHolderContract.cs",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
-              "RelativeDocumentMoniker": "Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
-              "RelativeToolTip": "Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
+              "DocumentIndex": 32,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
+              "RelativeToolTip": "Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-29T15:15:26.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
-              "RelativeToolTip": "Gapplus.Web\\DTO\\ShareHolder\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T15:13:01.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "Gapplus.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T15:13:01.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "config.js",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
+              "RelativeDocumentMoniker": "Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
+              "RelativeToolTip": "Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-03-30T06:02:47.835Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IShareHolderContract.cs",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
+              "RelativeDocumentMoniker": "Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
+              "RelativeToolTip": "Gapplus.Web\\RefitContracts\\IShareHolderContract.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T15:32:29.774Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "Group 12design.svg",
+              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
+              "RelativeDocumentMoniker": "Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
+              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
+              "RelativeToolTip": "Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-03-29T14:22:38.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Gapplus.Web\\Views\\_ViewStart.cshtml",
               "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "Gapplus.Web\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-29T15:32:29.774Z"
+              "WhenOpened": "2024-03-29T15:06:06.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "Gapplus.Domain.csproj",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj",
               "RelativeDocumentMoniker": "Gapplus.Domain\\Gapplus.Domain.csproj",
@@ -652,40 +706,16 @@
               "RelativeToolTip": "Gapplus.Domain\\Gapplus.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-29T14:22:38.792Z"
+              "WhenOpened": "2024-03-29T14:22:36.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Group 12design.svg",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
-              "RelativeDocumentMoniker": "Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
-              "RelativeToolTip": "Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-03-29T15:06:06.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Gapplus.Application.csproj",
               "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj",
               "RelativeDocumentMoniker": "Gapplus.Application\\Gapplus.Application.csproj",
               "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj",
               "RelativeToolTip": "Gapplus.Application\\Gapplus.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-29T14:22:36.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Gapplus.Api.csproj",
-              "DocumentMoniker": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
-              "RelativeDocumentMoniker": "Gapplus.Api\\Gapplus.Api.csproj",
-              "ToolTip": "C:\\GitRepo\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
-              "RelativeToolTip": "Gapplus.Api\\Gapplus.Api.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-03-29T14:22:29.143Z"

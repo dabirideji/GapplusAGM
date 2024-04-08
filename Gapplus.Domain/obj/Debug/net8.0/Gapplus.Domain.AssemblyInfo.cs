@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gapplus.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa60aa81181f5211afe5fe55a4f1ccd967371d78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c1810b8cd06bce520d12f5210a0abcd0d0b36a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gapplus.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gapplus.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

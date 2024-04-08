@@ -5,12 +5,14 @@
 // using System.Linq;
 // using System.Threading.Tasks;
 // using System.Web;
-// using System.Web.Mvc;
+// using Microsoft.AspNetCore.Mvc;
 
 // namespace BarcodeGenerator.Controllers
 // {
-//       [Authorize]
-//     public class HomeController : Controller
+//     [ApiController]
+//     [Route("api/[controller]/[action]")]
+//     //   [Authorize]
+//     public class HomeController : ControllerBase
 //     {
 //         UsersContext db = new UsersContext();
 //         //private static string companyinfo = UserAdmin.GetUserCompanyInfo();
@@ -59,6 +61,7 @@
 
 //         }
 
+// [HttpGet("{id}")]
 //         public ActionResult ResolutionChart(int id)
 //         {
 
@@ -66,7 +69,8 @@
 
 //             ViewBag.shareholders = db.BarcodeStore.Count();
 //             var question = db.Question.ToList();
-//             return PartialView(question);
+//             // return PartialView(question);
+//             return Ok();
 
 //         }
 //     }
