@@ -2,776 +2,15 @@
 @{
     Layout = null;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var header = new Gapplus.Web.DTO.ShareHolder.ShareHolderDashboardHeaderDto();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     header.Username = @ViewBag.Name;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     header.Email = @ViewBag.Email;
 }
 
-<html class="overflow-x-none">
+<html class="overflow-x-hidden">
 
 <head>
     <script>
@@ -801,205 +40,216 @@
 </head>
 
 
-<body class="overflow-x-none" id="partialContainer">
-    @Html.Partial("_DashBoardHeader", header)
+<body class="overflow-x-hidden" id="partialContainer" >
+
+    <section class="md:px-[100px] px-[20px] py-[20px]">
+        @Html.Partial("_DashBoardHeader", header)
 
 
-    @* @Html.Partial("_OverView",null); *@
-    <partial name="_OverView" />
-    <section class="md:px-[100px] px-[20px]" >
-        <div class="mt-[20px] flex flex-col md:flex-row items-center justify-center">
-            <div class="border rounded-[4px] p-[20px] w-full md:w-[60%] h-full mr-[20px] " id="">
-                <div class="flex items-center">
-                    <img src="~/Plugins/Images/Vectorround -broken.svg" alt=""
-                        class="w-[10px] h-[10px] mr-[8px] md:w-[12px] md:h-[12px]" />
-                    <p class="text-[10px] font-[700] md:text-[12px]">All Holdings</p>
-                </div>
-                <div class="mt-[5px] flex flex-col justify-center items-center mb-[15px]">
-                    <div class="w-[150px] h-[150px] rounded-full bg-transparent text-center">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                    <div class="text-lightGrey text-[10px] font-[500] mt-[10px] md:text-[12px]">
-                        Value of Holdings
-                    </div>
-                    <div class="font-[700] text-[12px] md:text-[14px]">₦1,500,000,000.00</div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 mt-[20px]">
-                    <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px] mb-[10px]">
-                        <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
-                            MTN NIGERIA COMMUNICATION PLC
-                        </p>
-                        <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
-                            ₦1,000,000,000.00
-                        </p>
-                    </div>
-                    <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
-                        <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
-                            LEGACY ACCESS BANK PLC
-                        </p>
-                        <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
-                            ₦200,000,000.00
-                        </p>
-                    </div>
-                    <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
-                        <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
-                            LEGACY ACCESS BANK PLC
-                        </p>
-                        <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
-                            ₦150,000,000.00
-                        </p>
-                    </div>
-                    <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
-                        <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
-                            DANGOTE CEMENT PLC
-                        </p>
-                        <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
-                            ₦100,000,000.00
-                        </p>
-                    </div>
-                    <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
-                        <p class="text-lightGrey text-[8px] font-[500] md:text-[10px] ">
-                            TRANSCORP NIGERIA
-                        </p>
-                        <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">₦50,000,000.00</p>
-                    </div>
-                </div>
-            </div>
+        @* @Html.Partial("_OverView",null); *@
+        <partial name="_OverView" />
 
-            <!-- secondframe -->
-            <div class="border md:w-[40%] w-full mt-[10px] md:mt-[0] p-[20px] relative flex flex-col" id="agmContainer">
-                <div class="flex flex-col md:flex-row">
+
+
+        <section >
+            <div class="mt-[20px] flex flex-col md:flex-row items-center justify-center">
+                <div class="border rounded-[4px] p-[20px] w-full md:w-[60%] h-full md:mr-[20px] " id="">
                     <div class="flex items-center">
-                        <img src="~/Plugins/Images/ic_outline-pendingcircle-dot.svg" alt=""
-                            class="w-[10px] h-[10px] mr-[10px]" />
-                        <p class="text-[10px] text-offBlack font-[600]">Pending AGMs</p>
+                        <img src="~/Plugins/Images/Vectorround -broken.svg" alt=""
+                             class="w-[10px] h-[10px] mr-[8px] md:w-[12px] md:h-[12px]" />
+                        <p class="text-[10px] font-[700] md:text-[12px]">All Holdings</p>
                     </div>
-                    <div class="">
-                        <p id="countdown"
-                            class="text-[8px] flex items-center px-[3px] font-[700] border absolute top-0 right-0 h-[40px]">
-                            3 days, 4 hours, 34 minutes till AGM
-                        </p>
-                    </div>
-                </div>
-                <div class="mt-[40px]">
-                    <img src="~/Plugins/Images/access_bankaccessBank.png" alt="" class="mx-auto w-[200px]" />
-                </div>
-
-                <div class="flex items-center mt-[70px]">
-                    <img src="~/Plugins/Images/Vectorleft-arrow.png" alt="" class="w-[5px] cursor-pointer"
-                        onclick="showPreviousAgm()" id="accordionPreviousButton" />
-                    <div class="w-full h-[1px] bg-[#CBD5E1] mx-[10px]"></div>
-                    <img src="~/Plugins/Images/Vectorright-arrow.svg" alt="" class="w-[5px] cursor-pointer"
-                        onclick="showNextAgm()" id="accordionNextButton" />
-                </div>
-
-                <div class="pl-[10px] mt-[15px]">
-                    <h3 class="text-[13px] font-[700] mb-[7px] capitalize" id="agmCompanyTitle">Access Bank AGM</h3>
-                    <div class="flex items-center mb-[5px]">
-                        <img src="~/Plugins/Images/Frame 1000007560calender.svg" alt="" class="w-[20px] mr-[3px]" />
-                        <p class="text-[10px] font-[700]" id="agmTime">
-                            Date: <span id="agmDate"> November 22, 10:00am GMT</span>
-                        </p>
-                    </div>
-                    <div class="flex items-center">
-                        <img src="~/Plugins/Images/Frame 1000007560location.svg" alt="" class="w-[20px] mr-[3px]" />
-                        <p class="text-[10px] font-[700]">Location: <span id="agmLocation">Online</span></p>
-                    </div>
-                    <div class="mt-[20px] flex items-center">
-                        <div class="flex bg-orange w-[150px] items-center text-white justify-center p-[5px]">
-                            <a class="text-[13px] mr-[3px]" href="" id="joinMeetingLink"><button class=""
-                                    id="joinMeetingButton">Join</button></a>
-                            <img src="~/Plugins/Images/tabler_external-linkjoin-btn-arrow.svg" alt=""
-                                class="w-[10px] h-[10px] mr-[3px]" />
+                    <div class="mt-[5px] flex flex-col justify-center items-center mb-[15px]">
+                        <div class="w-[150px] h-[150px] rounded-full bg-transparent text-center">
+                            <canvas id="myChart"></canvas>
                         </div>
-                        <img src="~/Plugins/Images/Frame 1000007549tag-icon.svg" alt=""
-                            class="w-[30px] h-[30px] ml-[3px]" />
-                        <img src="~/Plugins/Images/Frame 1000007550like-icon.svg" alt=""
-                            class="w-[30px] h-[30px] ml-[3px]" />
+                        <div class="text-lightGrey text-[10px] font-[500] mt-[10px] md:text-[12px]">
+                            Value of Holdings
+                        </div>
+                        <div class="font-[700] text-[12px] md:text-[14px]">₦1,500,000,000.00</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 mt-[20px]">
+                        <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px] mb-[10px]">
+                            <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
+                                MTN NIGERIA COMMUNICATION PLC
+                            </p>
+                            <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
+                                ₦1,000,000,000.00
+                            </p>
+                        </div>
+                        <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
+                            <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
+                                LEGACY ACCESS BANK PLC
+                            </p>
+                            <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
+                                ₦200,000,000.00
+                            </p>
+                        </div>
+                        <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
+                            <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
+                                LEGACY ACCESS BANK PLC
+                            </p>
+                            <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
+                                ₦150,000,000.00
+                            </p>
+                        </div>
+                        <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
+                            <p class="text-lightGrey text-[8px] font-[500] md:text-[10px]">
+                                DANGOTE CEMENT PLC
+                            </p>
+                            <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">
+                                ₦100,000,000.00
+                            </p>
+                        </div>
+                        <div class="border-l-orange border-l-[2px] pl-[5px] h-[26px]  mb-[10px]">
+                            <p class="text-lightGrey text-[8px] font-[500] md:text-[10px] ">
+                                TRANSCORP NIGERIA
+                            </p>
+                            <p class="text-[10px] font-[700] text-darkGrey md:text-[12px]">₦50,000,000.00</p>
+                        </div>
                     </div>
                 </div>
-                <div class="w-full flex justify-center mt-[10px]">
-                    <img src="~/Plugins/Images/Frame 26scroll.svg" alt="" class="w-[30px] h-[30px]" />
+
+                <!-- secondframe -->
+                <div class="border md:w-[40%] w-full mt-[10px] md:mt-[0] p-[20px] relative flex flex-col" id="agmContainer">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="flex items-center">
+                            <img src="~/Plugins/Images/ic_outline-pendingcircle-dot.svg" alt=""
+                                 class="w-[10px] h-[10px] mr-[10px]" />
+                            <p class="text-[10px] text-offBlack font-[600]">Pending AGMs</p>
+                        </div>
+                        <div class="">
+                            <p id="countdown"
+                               class="text-[8px] flex items-center px-[3px] font-[700] border absolute top-0 right-0 h-[40px]">
+                                3 days, 4 hours, 34 minutes till AGM
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-[40px]">
+                        <img src="~/Plugins/Images/access_bankaccessBank.png" alt="" class="mx-auto w-[200px]" />
+                    </div>
+
+                    <div class="flex items-center mt-[70px]">
+                        <img src="~/Plugins/Images/Vectorleft-arrow.png" alt="" class="w-[5px] cursor-pointer"
+                             onclick="showPreviousAgm()" id="accordionPreviousButton" />
+                        <div class="w-full h-[1px] bg-[#CBD5E1] mx-[10px]"></div>
+                        <img src="~/Plugins/Images/Vectorright-arrow.svg" alt="" class="w-[5px] cursor-pointer"
+                             onclick="showNextAgm()" id="accordionNextButton" />
+                    </div>
+
+                    <div class="pl-[10px] mt-[15px]">
+                        <h3 class="text-[13px] font-[700] mb-[7px] capitalize" id="agmCompanyTitle">Access Bank AGM</h3>
+                        <div class="flex items-center mb-[5px]">
+                            <img src="~/Plugins/Images/Frame 1000007560calender.svg" alt="" class="w-[20px] mr-[3px]" />
+                            <p class="text-[10px] font-[700]" id="agmTime">
+                                Date: <span id="agmDate"> November 22, 10:00am GMT</span>
+                            </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="~/Plugins/Images/Frame 1000007560location.svg" alt="" class="w-[20px] mr-[3px]" />
+                            <p class="text-[10px] font-[700]">Location: <span id="agmLocation">Online</span></p>
+                        </div>
+                        <div class="mt-[20px] flex items-center">
+                            <div class="flex bg-orange w-[150px] items-center text-white justify-center p-[5px]">
+                                <a class="text-[13px] mr-[3px]" href="" id="joinMeetingLink">
+                                    <button class=""
+                                            id="joinMeetingButton">
+                                        Join
+                                    </button>
+                                </a>
+                                <img src="~/Plugins/Images/tabler_external-linkjoin-btn-arrow.svg" alt=""
+                                     class="w-[10px] h-[10px] mr-[3px]" />
+                            </div>
+                            <img src="~/Plugins/Images/Frame 1000007549tag-icon.svg" alt=""
+                                 class="w-[30px] h-[30px] ml-[3px]" />
+                            <img src="~/Plugins/Images/Frame 1000007550like-icon.svg" alt=""
+                                 class="w-[30px] h-[30px] ml-[3px]" />
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center mt-[10px]">
+                        <img src="~/Plugins/Images/Frame 26scroll.svg" alt="" class="w-[30px] h-[30px]" />
+                    </div>
                 </div>
+                <!-- secondframe -->
             </div>
-            <!-- secondframe -->
-        </div>
 
-        <!-- table box -->
-        <div class="border mt-[20px] md:px-[50px] py-[20px] mb-[60px] overflow-x-auto">
-            <div class="flex items-center mb-[20px]">
-                <img src="~/Plugins/Images/Group 39662internal-holding-icon.svg" alt=""
-                    class="w-[30px] h-[30px] mr-[3px]" />
-                <p class="font-[700] text-[12px]">Internal Holdings</p>
+            <!-- table box -->
+            <div class="border mt-[20px] md:px-[50px] py-[20px] mb-[60px] overflow-x-auto ">
+                <div class="flex items-center mb-[20px]">
+                    <img src="~/Plugins/Images/Group 39662internal-holding-icon.svg" alt=""
+                         class="w-[30px] h-[30px] mr-[3px]" />
+                    <p class="font-[700] text-[12px]">Internal Holdings</p>
+                </div>
+                <table class="w-full text-left text-[10px] border-seperate border-spacing-2  overflow-x-auto">
+                    <tr class="text-[12px] ">
+                        <th class="text-lightGrey pl-[5px] whitespace-nowrap">Holdings</th>
+                        <th class="text-lightGrey  whitespace-nowrap">Units</th>
+                        <th class="text-lightGrey  whitespace-nowrap">PRICE</th>
+                        <th class="text-lightGrey  whitespace-nowrap">Market Value</th>
+                    </tr>
+                    <tr class="h-[20px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px] ">
+                        <td class="pl-[5px]  whitespace-nowrap">MTN NIGERIA COMMUNICATION PLC</td>
+                        <td>1,200</td>
+                        <td>120.50</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
+                        <td class="pl-[5px]  whitespace-nowrap">LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
+                        <td class="pl-[5px]  whitespace-nowrap">LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
+                        <td class="pl-[5px]  whitespace-nowrap">LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
+                        <td class="pl-[5px]  whitespace-nowrap">LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
+                        <td class="pl-[5px]  whitespace-nowrap">LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]  whitespace-nowrap">
+                        <td>LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                    <tr class="h-[10px]"></tr>
+                    <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]  whitespace-nowrap">
+                        <td>LEGACY ACCESS BANK PLC</td>
+                        <td>1,000</td>
+                        <td>10.00</td>
+                        <td>N10,000,000.00</td>
+                    </tr>
+                </table>
             </div>
-            <table class="w-full text-left text-[10px] border-seperate border-spacing-2  overflow-x-auto">
-                <tr class="text-[12px] ">
-                    <th class="text-lightGrey pl-[5px]">Holdings</th>
-                    <th class="text-lightGrey">Units</th>
-                    <th class="text-lightGrey">PRICE</th>
-                    <th class="text-lightGrey">Market Value</th>
-                </tr>
-                <tr class="h-[20px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px] ">
-                    <td class="pl-[5px]">MTN NIGERIA COMMUNICATION PLC</td>
-                    <td>1,200</td>
-                    <td>120.50</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td class="pl-[5px]">LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td class="pl-[5px]">LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td class="pl-[5px]">LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td class="pl-[5px]">LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td class="pl-[5px]">LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td>LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-                <tr class="h-[10px]"></tr>
-                <tr class="font-[700] mb-[100px] bg-orange bg-opacity-10 h-[40px]">
-                    <td>LEGACY ACCESS BANK PLC</td>
-                    <td>1,000</td>
-                    <td>10.00</td>
-                    <td>N10,000,000.00</td>
-                </tr>
-            </table>
-        </div>
-        <!-- table row -->
+            <!-- table row -->
+        </section>
     </section>
+    
 
 
     <script>

@@ -17,7 +17,7 @@
     header.Email = @ViewBag.Email;
 }
 
-<html class="overflow-x-none">
+<html class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -33,21 +33,22 @@
         rel="stylesheet" />
 </head>
 
-<body class="overflow-x-none" id="mainBody">
-    @Html.Partial("_DashBoardHeader", header)
+<body class="overflow-x-hidden" id="mainBody">
+<section class="md:px-[100px] px-[20px] py-[20px] ">
+@Html.Partial("_DashBoardHeader", header)
     @Html.Partial("_BannerPage")
-    <section>
+    <section class="relative">
 
         @* @Html.Partial("_AgmRegistrationWizard") *@
 
-        <div class="float-right m-[30px] flex items-center flex-col mb-[30px]">
+        <div class="absolute right-0 flex items-center flex-col mb-[30px] top-5 ">
             <img src="~/Plugins/Images/wizard-0.png" alt="" id="wizardImage" class=" w-[60px] mb-[5px]">
             @* <img src="~/Plugins/Images/wizard-0.png" alt="" class="t w-[60px] mb-[5px]"> *@
             <p class="text-[9px] font-[900]">Register your details</p>
         </div>
 
 
-        <div class="flex flex-col items-center justify-center h-full mt-[50px] w-[40%] mx-auto">
+        <div class="flex flex-col items-center justify-center py-[80px]  w-[90%] md:w-[500px] mx-auto">
 
             <h2 class="font-[900] text-[15px] text-shrink text-center">
                 Register Coronation E-Meeting
@@ -56,38 +57,7 @@
             </p>
             <form action="" enctype="multipart/form-data"
                 class=" mt-[10px] w-full flex flex-col justify-center items-center px-[40px]" id="partialContainer">
-                @* <div class="mb-[10px] w-full md:flex ">
-                <input type="text" onchange="addData(this,'firstname')" placeholder="First Name" class="border mr-[5px]
-                mb-[10px] md:mb-[0] w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#c]
-                rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
-                <input type="" name="" id="" onchange="addData(this,'lastname')" class="border w-full h-[40px]
-                focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px]
-                placeholder:text-[13px] outline-none " placeholder="Last Name">
-                </div>
-                <div class="w-full mb-[10px]">
-                <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
-                <input type="Enter your email" name="" id=" " onchange="addData(this,'email')" placeholder="Email"
-                class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD]
-                rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
-                </div>
-                <div class="w-full">
-                <label for="Password" ></label class="text-[13px] block font-[400] mb-[3px]">
-                <input type="" name="" id=" " onchange="addData(this,'phonenumber')" placeholder="Mobile Number"
-                class="border w-full h-[40px] focus:border-orange placeholder:text-[#667085] border-[#D0D5DD]
-                rounded-[5px] px-[10px] placeholder:text-[13px] outline-none ">
-                </div>
-                <div class="flex items-center mt-[20px] h-[20px] justify-between w-full ">
-                <div class="flex items-center border justify-center p-[8px] mr-[3px] w-[30%] text-center h-[40px]">
-                <img src="~/Plugins/Images/arrow-leftprevious icon.svg" alt="" class="w-[12px] h-[12px] mr-[3px]">
-                <p class="text-lightGrey text-center text-[10px] font-[700]" onclick="showPreviousPage()">Previous</p>
-                </div>
-                <div class="bg-primColor flex items-center justify-center text-white text-[10px] w-[70%] p-[8px]
-                h-[40px]">
-                <button type="button" class="mr-[5px] text-[10px]" onclick="showNextPage()">Next</button>
-                <img src="~/Plugins/Images/Iconnext-icon.svg" alt="" class="w-[9px] [h-9px] text-white" >
-                </div>
-
-                </div> *@
+                
                 <partial name="_AgmRegisterPage1" />
 
 
@@ -95,6 +65,8 @@
             </form>
         </div>
     </section>
+</section>
+    
 
     @Html.Partial("_Footer")
 </body>
@@ -381,7 +353,7 @@
             const fd = new FormData();
             fd.append("ShareHolderCertificate", data.shareHolderCertificate, data.shareHolderCertificate.name);
             fd.append("ShareHolderPassport", data.shareHolderPassport, data.shareHolderPassport.name);
-    @* fd.append("Name",data.name); *@
+
                 fd.append("AttendType", data.attendType);
             fd.append("PhoneNumber", data.phoneNumber);
             fd.append("ProxySelection", String(data.proxySelection));
@@ -391,7 +363,7 @@
             fd.append("LastName", data.lastName);
             console.log(fd);
 
-    @* return; *@
+    
 showActivityIndicatorForPage(null,20)
                 // Upload the FormData object:
                 fetch('http://localhost:5069/api/AGMRegistration/Register', {
@@ -399,8 +371,6 @@ showActivityIndicatorForPage(null,20)
                     body: fd,
                 })
                     .then(res => {
-
-    @* res.json() *@
             return res;
                     }
 

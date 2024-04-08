@@ -22,11 +22,13 @@
 
 
 <body class="overflow-x-hidden">
-    @Html.Partial("_DashBoardHeader",header)
+
+    
+   
+   <section  class=" md:px-[100px] px-[20px] py-[20px]">
+   @Html.Partial("_DashBoardHeader",header)
     @Html.Partial("_DetailsPage")
-   
-   
-    <section class=" md:px-[100px] px-[20px] my-[20px]">
+<section>
        
 
         <div class="flex mt-[20px] mb-[20px]">
@@ -146,6 +148,8 @@
         </div>
 
     </section>
+   </section>
+    
     @Html.Partial("_Footer")
 </body>
 

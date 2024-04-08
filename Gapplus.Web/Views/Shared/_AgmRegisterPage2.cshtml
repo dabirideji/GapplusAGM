@@ -13,17 +13,17 @@
 
 
             
-<div class="mb-[10px] w-full md:flex  md:items-center ">
+<div class="mb-[10px] w-full flex  items-center mb-[10px]">
 
 
   <input type="text" disabled  id="shareHolderCertificateDisplayName"
     value="Upload Shareholder Certificate" placeholder="Upload Shareholder Certificate"
-    class="border text-[darkGrey] placeholder- mr-[3px] mb-[10px] w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
+    class="border text-[darkGrey] placeholder- mr-[3px]  w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
 
 
   <label for="shareHolderCertificate"
  
-    class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[40px] cursor-pointer">
+    class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[38px] cursor-pointer">
     <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
     <span id="" class="text-[10px] ">Browse</span>
     <input  onchange="addFileData(this,'shareHolderCertificate')" type="file" id="shareHolderCertificate" placeholder="Browse" class="text-[10px] hidden" />
@@ -32,9 +32,38 @@
 
 
 </div>
+
+
+
+<div class="mb-[10px] w-full flex  items-center mb-[10px]">
+
+
+  <input type="text" disabled  id="shareHolderPassportDisplayName"
+    value="Upload Shareholder Passport" placeholder="Upload Shareholder Passport"
+    class="border text-[darkGrey] placeholder- mr-[3px]  w-[60%] md:mb-[0] w-full h-[40px] text-[10px] focus:border-orange placeholder:text-[#667085] border-[#c] rounded-[5px] px-[10px] placeholder:text-[10px] outline-none ">
+
+
+  <label for="shareHolderPassport"
+ 
+    class="flex items-center bg-primColor w-[50%] rounded-[5px] justify-center h-[38px] cursor-pointer">
+    <img src="~/Plugins/Images/ph_folder-open-fillfolder-icon.svg" alt="" class="w-[12px] h-[12px] mr-[5px]">
+    <span id="" class="text-[10px] ">Browse</span>
+    <input  onchange="addFileData(this,'shareHolderPassport')" type="file" id="shareHolderPassport" placeholder="Browse" class="text-[10px] hidden" />
+  </label>
+
+
+
+</div>
             
 
 
+
+
+
+
+
+
+<!-- 
 <div class="mb-[10px] w-full md:flex  md:items-center ">
 
 
@@ -53,7 +82,7 @@
 
 
 
-</div>
+</div> -->
 
 
 

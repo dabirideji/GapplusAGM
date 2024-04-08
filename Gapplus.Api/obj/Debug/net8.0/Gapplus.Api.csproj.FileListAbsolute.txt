@@ -448,3 +448,4 @@ C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annota
 C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Compression.Portable.dll
 C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.Licensing.dll
 C:\GitRepo\GapplusAGM\Gapplus.Api\bin\Debug\net8.0\Syncfusion.XlsIO.Portable.dll
+C:\GitRepo\GapplusAGM\Gapplus.Api\obj\Debug\net8.0\Gapplus.Api.MvcApplicationPartsAssemblyInfo.cs
