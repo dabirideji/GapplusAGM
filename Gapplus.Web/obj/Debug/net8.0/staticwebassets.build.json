@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j92IioLyiSl+qASw0/oSyZ51enwivxZvDHBzrQp+17Q=",
+  "Hash": "O1qND+vaMYx2IeKq/CPNcttVPP8ftWWljzGSOPSES4Q=",
   "Source": "Gapplus.Web",
   "BasePath": "_content/Gapplus.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Gapplus.Web\\wwwroot",
       "Source": "Gapplus.Web",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Gapplus.Web.styles.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Gapplus.Web.styles.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Gapplus.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Gapplus.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Gapplus.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Gapplus.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Gapplus.Web.bundle.scp.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Gapplus.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Gapplus.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Gapplus.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\css\\site.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\dej.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\dej.html",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "dej.html",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\dej.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\favicon.ico",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\js\\Dashboard.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "js/Dashboard.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Dashboard.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\site.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\PieChart.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\PieChart.html",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "PieChart.html",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\PieChart.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\AgoraRTC_N-4.7.3.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\AgoraRTC_N-4.7.3.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Agora/AgoraRTC_N-4.7.3.js",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Agora\\AgoraRTC_N-4.7.3.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\index.html",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\index.html",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Agora/index.html",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Agora\\index.html"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\main.css",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\main.css",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Agora/main.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Agora\\main.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\main.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\main.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Agora/main.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Agora\\main.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\ChartJS\\chart.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\ChartJS\\chart.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/ChartJS/chart.js",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\ChartJS\\chart.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\access_bankaccessBank.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\access_bankaccessBank.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/access_bankaccessBank.png",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\access_bankaccessBank.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\AccessLogo.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\AccessLogo.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/AccessLogo.svg",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\AccessLogo.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\AirtelLofo.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\AirtelLofo.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/AirtelLofo.svg",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\AirtelLofo.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ant-design_message-filled.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ant-design_message-filled.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ant-design_message-filled.png",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ant-design_message-filled.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ant-design_question-circle-filledquestion mark.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ant-design_question-circle-filledquestion mark.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ant-design_question-circle-filledquestion mark.png",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ant-design_question-circle-filledquestion mark.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\AradelLogo.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\AradelLogo.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/AradelLogo.svg",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\AradelLogo.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\arrow-leftprevious icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\arrow-leftprevious icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/arrow-leftprevious icon.svg",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\arrow-leftprevious icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\avatar.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\avatar.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/avatar.png",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\avatar.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\back.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\back.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/back.png",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\back.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\BarLogo.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\BarLogo.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/BarLogo.png",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\BarLogo.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\carbon_location-filledkocation-icon.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\carbon_location-filledkocation-icon.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/carbon_location-filledkocation-icon.png",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\carbon_location-filledkocation-icon.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Check iconcheck.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Check iconcheck.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Check iconcheck.svg",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Check iconcheck.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Check icontick.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Check icontick.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Check icontick.svg",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Check icontick.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Contentrainbow.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Contentrainbow.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Contentrainbow.png",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Contentrainbow.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\coronationLogo.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\coronationLogo.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/coronationLogo.svg",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\coronationLogo.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Corronation-Logo-Black.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Corronation-Logo-Black.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Corronation-Logo-Black.png",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Corronation-Logo-Black.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\dangoteLogo.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\dangoteLogo.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/dangoteLogo.svg",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\dangoteLogo.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\DanielAllenProfileImage.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\DanielAllenProfileImage.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/DanielAllenProfileImage.png",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\DanielAllenProfileImage.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\dark-globe.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\dark-globe.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/dark-globe.png",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\dark-globe.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\eyeeye.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\eyeeye.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/eyeeye.png",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\eyeeye.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\fe_logoutlogout-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\fe_logoutlogout-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/fe_logoutlogout-icon.svg",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\fe_logoutlogout-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconaccessible .svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconaccessible .svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconaccessible .svg",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconaccessible .svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconcal.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconcal.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconcal.svg",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconcal.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconcomprehensive.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconcomprehensive.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconcomprehensive.svg",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconcomprehensive.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconinter.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconinter.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconinter.svg",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconinter.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconintui.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconintui.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconintui.svg",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconintui.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconpre-meeting.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconpre-meeting.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconpre-meeting.svg",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconpre-meeting.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconproxy.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconproxy.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconproxy.svg",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconproxy.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconsecurity.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconsecurity.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconsecurity.svg",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconsecurity.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconvirtual.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconvirtual.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Featured iconvirtual.svg",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Featured iconvirtual.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007549tag-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007549tag-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007549tag-icon.svg",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007549tag-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007550like-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007550like-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007550like-icon.svg",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007550like-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007560calender.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007560calender.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007560calender.svg",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007560calender.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007560location.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007560location.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007560location.svg",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007560location.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007566first-man-img.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007566first-man-img.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007566first-man-img.png",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007566first-man-img.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007603.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007603.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007603.png",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007603.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007611.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007611.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1000007611.png",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1000007611.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1Success-sign.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1Success-sign.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 1Success-sign.svg",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 1Success-sign.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 26scroll.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 26scroll.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Frame 26scroll.svg",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Frame 26scroll.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\fxemoji_documentdocument-icon.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\fxemoji_documentdocument-icon.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/fxemoji_documentdocument-icon.png",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\fxemoji_documentdocument-icon.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 12back.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12back.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 12back.svg",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 12back.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 12design.svg",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 12design.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 1432circle-percent.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 1432circle-percent.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 1432circle-percent.svg",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 1432circle-percent.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 27171.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 27171.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 27171.png",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 27171.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 27171Sl-logo.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 27171Sl-logo.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 27171Sl-logo.png",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 27171Sl-logo.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 39662internal-holding-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 39662internal-holding-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 39662internal-holding-icon.svg",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 39662internal-holding-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 42record.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 42record.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Group 42record.svg",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Group 42record.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ic_outline-pendingcircle-dot.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ic_outline-pendingcircle-dot.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ic_outline-pendingcircle-dot.svg",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ic_outline-pendingcircle-dot.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ic_round-facebookfacebook-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ic_round-facebookfacebook-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ic_round-facebookfacebook-icon.svg",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ic_round-facebookfacebook-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ic_round-keyboard-arrow-rightright-angle.png",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Iconbackback.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Iconbackback.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Iconbackback.svg",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Iconbackback.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Iconnext-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Iconnext-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Iconnext-icon.svg",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Iconnext-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Iconsearch.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Iconsearch.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Iconsearch.png",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Iconsearch.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\image 1coro.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\image 1coro.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/image 1coro.png",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\image 1coro.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\image 1coronationLogo-white.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\image 1coronationLogo-white.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/image 1coronationLogo-white.png",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\image 1coronationLogo-white.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\image 1group-image.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\image 1group-image.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/image 1group-image.png",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\image 1group-image.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ImageForTheMetingProfile.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ImageForTheMetingProfile.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ImageForTheMetingProfile.png",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ImageForTheMetingProfile.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ion_documents.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ion_documents.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ion_documents.png",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ion_documents.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ion_logo-linkedinlinkden-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ion_logo-linkedinlinkden-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ion_logo-linkedinlinkden-icon.svg",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ion_logo-linkedinlinkden-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\landing-banner.jpg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\landing-banner.jpg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/landing-banner.jpg",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\landing-banner.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\LanguageAndLogout.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\LanguageAndLogout.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/LanguageAndLogout.png",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\LanguageAndLogout.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\likevote.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\likevote.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/likevote.svg",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\likevote.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\lockpadlock.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\lockpadlock.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/lockpadlock.png",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\lockpadlock.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Logomark.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Logomark.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Logomark.png",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Logomark.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Mask groupvideoman.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Mask groupvideoman.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Mask groupvideoman.png",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Mask groupvideoman.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\material-symbols_voting-chip-rounded.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\material-symbols_voting-chip-rounded.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/material-symbols_voting-chip-rounded.png",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\material-symbols_voting-chip-rounded.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\maximize-2broken-circle.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\maximize-2broken-circle.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/maximize-2broken-circle.svg",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\maximize-2broken-circle.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\MtnnLogo.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\MtnnLogo.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/MtnnLogo.svg",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\MtnnLogo.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ooui_settingssettings.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ooui_settingssettings.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ooui_settingssettings.png",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ooui_settingssettings.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Pagination numbersnumbers.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Pagination numbersnumbers.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Pagination numbersnumbers.svg",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Pagination numbersnumbers.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ph_folder-open-fillfolder-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ph_folder-open-fillfolder-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ph_folder-open-fillfolder-icon.svg",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ph_folder-open-fillfolder-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Rectangle.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Rectangle.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Rectangle.svg",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Rectangle.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ri_arrow-drop-down-linedrop-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ri_arrow-drop-down-linedrop-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/ri_arrow-drop-down-linedrop-icon.svg",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\ri_arrow-drop-down-linedrop-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\section.subscribe.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\section.subscribe.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/section.subscribe.svg",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\section.subscribe.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\solar_home-2-bold.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\solar_home-2-bold.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/solar_home-2-bold.png",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\solar_home-2-bold.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\soundsound-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\soundsound-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/soundsound-icon.svg",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\soundsound-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Success Markgood-logo.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Success Markgood-logo.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Success Markgood-logo.png",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Success Markgood-logo.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\tabler_external-linkjoin-btn-arrow.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\tabler_external-linkjoin-btn-arrow.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/tabler_external-linkjoin-btn-arrow.svg",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\tabler_external-linkjoin-btn-arrow.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\TextImageForTheHomeSection.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\TextImageForTheHomeSection.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/TextImageForTheHomeSection.png",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\TextImageForTheHomeSection.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/uil_instagram-altinstagram-icon.svg",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vector (1).svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vector (1).svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vector (1).svg",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vector (1).svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vector.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vector.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vector.svg",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vector.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectoragainst.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectoragainst.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectoragainst.svg",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectoragainst.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorcall-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcall-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorcall-icon.svg",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorcall-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorcall.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcall.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorcall.svg",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorcall.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorcontact-arrow.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcontact-arrow.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorcontact-arrow.svg",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorcontact-arrow.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectordark-arrow.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectordark-arrow.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectordark-arrow.svg",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectordark-arrow.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\VectordownArrow.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\VectordownArrow.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/VectordownArrow.png",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\VectordownArrow.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectoremail-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectoremail-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectoremail-icon.svg",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectoremail-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\VectorfaceRightArrow.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\VectorfaceRightArrow.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/VectorfaceRightArrow.svg",
       "AssetKind": "All",
@@ -3057,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\VectorfaceRightArrow.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorfeatures.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorfeatures.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorfeatures.png",
       "AssetKind": "All",
@@ -3076,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorfeatures.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorgmail.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorgmail.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorgmail.svg",
       "AssetKind": "All",
@@ -3095,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorgmail.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorhome.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorhome.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorhome.png",
       "AssetKind": "All",
@@ -3114,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorhome.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorlang-icon.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorlang-icon.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorlang-icon.svg",
       "AssetKind": "All",
@@ -3133,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorlang-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorleft-arrow.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorleft-arrow.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorleft-arrow.png",
       "AssetKind": "All",
@@ -3152,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorleft-arrow.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectormeetings.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectormeetings.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectormeetings.png",
       "AssetKind": "All",
@@ -3171,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectormeetings.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectornotification.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectornotification.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectornotification.png",
       "AssetKind": "All",
@@ -3190,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectornotification.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorright-arrow.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorright-arrow.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorright-arrow.svg",
       "AssetKind": "All",
@@ -3209,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorright-arrow.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorround -broken.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorround -broken.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorround -broken.svg",
       "AssetKind": "All",
@@ -3228,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorround -broken.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorsend.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorsend.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorsend.svg",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorsend.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorunlike.svg",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorunlike.svg",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/Vectorunlike.svg",
       "AssetKind": "All",
@@ -3266,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\Vectorunlike.svg"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-0.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-0.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/wizard-0.png",
       "AssetKind": "All",
@@ -3285,10 +3285,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\wizard-0.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-100.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-100.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/wizard-100.png",
       "AssetKind": "All",
@@ -3304,10 +3304,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\wizard-100.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-20.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-20.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/wizard-20.png",
       "AssetKind": "All",
@@ -3323,10 +3323,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\wizard-20.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-40.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-40.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/wizard-40.png",
       "AssetKind": "All",
@@ -3342,10 +3342,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\wizard-40.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-60.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-60.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/wizard-60.png",
       "AssetKind": "All",
@@ -3361,10 +3361,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\wizard-60.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-80.png",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-80.png",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Images/wizard-80.png",
       "AssetKind": "All",
@@ -3380,10 +3380,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Images\\wizard-80.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Tailwind\\config.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Tailwind/config.js",
       "AssetKind": "All",
@@ -3399,10 +3399,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Tailwind\\config.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Tailwind\\tailwind.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\tailwind.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Tailwind/tailwind.js",
       "AssetKind": "All",
@@ -3418,10 +3418,10 @@
       "OriginalItemSpec": "wwwroot\\Plugins\\Tailwind\\tailwind.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Utils\\UtilityFunctions.js",
+      "Identity": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Utils\\UtilityFunctions.js",
       "SourceId": "Gapplus.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\",
       "BasePath": "_content/Gapplus.Web",
       "RelativePath": "Plugins/Utils/UtilityFunctions.js",
       "AssetKind": "All",

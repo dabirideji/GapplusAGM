@@ -116,6 +116,9 @@
         return true;
     }
 
+
+
+
     function performDataValidationAndRestore() {
         var page = currentPage;
         var fields = [];
@@ -381,8 +384,7 @@
             const fd = new FormData();
             fd.append("ShareHolderCertificate", data.shareHolderCertificate, data.shareHolderCertificate.name);
             fd.append("ShareHolderPassport", data.shareHolderPassport, data.shareHolderPassport.name);
-    @* fd.append("Name",data.name); *@
-                fd.append("AttendType", data.attendType);
+            fd.append("AttendType", data.attendType);
             fd.append("PhoneNumber", data.phoneNumber);
             fd.append("ProxySelection", String(data.proxySelection));
             fd.append("Email", data.email);
@@ -391,7 +393,6 @@
             fd.append("LastName", data.lastName);
             console.log(fd);
 
-    @* return; *@
 showActivityIndicatorForPage(null,20)
                 // Upload the FormData object:
                 fetch('http://localhost:5069/api/AGMRegistration/Register', {
@@ -400,20 +401,15 @@ showActivityIndicatorForPage(null,20)
                 })
                     .then(res => {
 
-    @* res.json() *@
             return res;
                     }
 
                     )
-                    .then(res => {
+                    .then(res => 
+                        {
                         console.log(res);
                         window.location.href = "/ShareHolder/SuccessPage";
-
-
-                    }
-
-
-                    )
+                        })
         }
 
 

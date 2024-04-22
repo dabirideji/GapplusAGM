@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\Gapplus.Web.csproj": {}
+    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\Gapplus.Web.csproj": {
+    "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\Gapplus.Web.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
         "projectName": "Gapplus.Web",
-        "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\Gapplus.Web.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\Gapplus.Web.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

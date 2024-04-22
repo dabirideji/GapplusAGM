@@ -1,719 +1,719 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Gapplus.Web.bundle.scp.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Gapplus.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\Gapplus.Web.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\PieChart.html",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\PieChart.html",
       "PackagePath": "staticwebassets\\PieChart.html"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\AgoraRTC_N-4.7.3.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\AgoraRTC_N-4.7.3.js",
       "PackagePath": "staticwebassets\\Plugins\\Agora\\AgoraRTC_N-4.7.3.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\index.html",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\index.html",
       "PackagePath": "staticwebassets\\Plugins\\Agora\\index.html"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\main.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\main.css",
       "PackagePath": "staticwebassets\\Plugins\\Agora\\main.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Agora\\main.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Agora\\main.js",
       "PackagePath": "staticwebassets\\Plugins\\Agora\\main.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\ChartJS\\chart.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\ChartJS\\chart.js",
       "PackagePath": "staticwebassets\\Plugins\\ChartJS\\chart.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\AccessLogo.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\AccessLogo.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\AccessLogo.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\AirtelLofo.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\AirtelLofo.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\AirtelLofo.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\AradelLogo.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\AradelLogo.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\AradelLogo.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\BarLogo.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\BarLogo.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\BarLogo.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Check iconcheck.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Check iconcheck.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Check iconcheck.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Check icontick.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Check icontick.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Check icontick.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Contentrainbow.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Contentrainbow.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Contentrainbow.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Corronation-Logo-Black.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Corronation-Logo-Black.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Corronation-Logo-Black.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\DanielAllenProfileImage.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\DanielAllenProfileImage.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\DanielAllenProfileImage.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconaccessible .svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconaccessible .svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconaccessible .svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconcal.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconcal.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconcal.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconcomprehensive.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconcomprehensive.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconcomprehensive.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconinter.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconinter.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconinter.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconintui.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconintui.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconintui.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconpre-meeting.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconpre-meeting.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconpre-meeting.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconproxy.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconproxy.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconproxy.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconsecurity.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconsecurity.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconsecurity.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Featured iconvirtual.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Featured iconvirtual.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Featured iconvirtual.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007549tag-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007549tag-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007549tag-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007550like-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007550like-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007550like-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007560calender.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007560calender.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007560calender.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007560location.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007560location.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007560location.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007566first-man-img.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007566first-man-img.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007566first-man-img.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007603.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007603.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007603.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1000007611.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1000007611.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1000007611.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 1Success-sign.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 1Success-sign.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 1Success-sign.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Frame 26scroll.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Frame 26scroll.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Frame 26scroll.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 12back.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12back.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 12back.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 12design.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 12design.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 1432circle-percent.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 1432circle-percent.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 1432circle-percent.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 27171.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 27171.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 27171.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 27171Sl-logo.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 27171Sl-logo.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 27171Sl-logo.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 39662internal-holding-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 39662internal-holding-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 39662internal-holding-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Group 42record.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Group 42record.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Group 42record.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Iconbackback.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Iconbackback.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Iconbackback.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Iconnext-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Iconnext-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Iconnext-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Iconsearch.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Iconsearch.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Iconsearch.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ImageForTheMetingProfile.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ImageForTheMetingProfile.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ImageForTheMetingProfile.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\LanguageAndLogout.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\LanguageAndLogout.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\LanguageAndLogout.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Logomark.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Logomark.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Logomark.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Mask groupvideoman.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Mask groupvideoman.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Mask groupvideoman.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\MtnnLogo.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\MtnnLogo.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\MtnnLogo.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Pagination numbersnumbers.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Pagination numbersnumbers.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Pagination numbersnumbers.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Rectangle.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Rectangle.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Rectangle.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Success Markgood-logo.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Success Markgood-logo.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Success Markgood-logo.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\TextImageForTheHomeSection.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\TextImageForTheHomeSection.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\TextImageForTheHomeSection.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vector (1).svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vector (1).svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vector (1).svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vector.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vector.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vector.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectoragainst.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectoragainst.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectoragainst.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorcall-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcall-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorcall-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorcall.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcall.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorcall.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorcontact-arrow.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorcontact-arrow.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorcontact-arrow.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectordark-arrow.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectordark-arrow.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectordark-arrow.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\VectordownArrow.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\VectordownArrow.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\VectordownArrow.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectoremail-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectoremail-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectoremail-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\VectorfaceRightArrow.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\VectorfaceRightArrow.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\VectorfaceRightArrow.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorfeatures.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorfeatures.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorfeatures.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorgmail.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorgmail.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorgmail.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorhome.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorhome.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorhome.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorlang-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorlang-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorlang-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorleft-arrow.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorleft-arrow.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorleft-arrow.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectormeetings.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectormeetings.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectormeetings.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectornotification.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectornotification.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectornotification.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorright-arrow.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorright-arrow.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorright-arrow.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorround -broken.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorround -broken.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorround -broken.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorsend.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorsend.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorsend.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\Vectorunlike.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\Vectorunlike.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\Vectorunlike.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\access_bankaccessBank.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\access_bankaccessBank.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\access_bankaccessBank.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ant-design_message-filled.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ant-design_message-filled.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ant-design_message-filled.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ant-design_question-circle-filledquestion mark.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ant-design_question-circle-filledquestion mark.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ant-design_question-circle-filledquestion mark.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\arrow-leftprevious icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\arrow-leftprevious icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\arrow-leftprevious icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\avatar.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\avatar.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\avatar.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\back.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\back.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\back.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\carbon_location-filledkocation-icon.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\carbon_location-filledkocation-icon.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\carbon_location-filledkocation-icon.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\coronationLogo.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\coronationLogo.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\coronationLogo.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\dangoteLogo.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\dangoteLogo.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\dangoteLogo.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\dark-globe.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\dark-globe.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\dark-globe.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\eyeeye.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\eyeeye.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\eyeeye.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\fe_logoutlogout-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\fe_logoutlogout-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\fe_logoutlogout-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\fxemoji_documentdocument-icon.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\fxemoji_documentdocument-icon.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\fxemoji_documentdocument-icon.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ic_outline-pendingcircle-dot.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ic_outline-pendingcircle-dot.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ic_outline-pendingcircle-dot.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ic_round-facebookfacebook-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ic_round-facebookfacebook-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ic_round-facebookfacebook-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ic_round-keyboard-arrow-rightright-angle.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\image 1coro.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\image 1coro.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\image 1coro.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\image 1coronationLogo-white.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\image 1coronationLogo-white.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\image 1coronationLogo-white.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\image 1group-image.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\image 1group-image.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\image 1group-image.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ion_documents.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ion_documents.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ion_documents.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ion_logo-linkedinlinkden-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ion_logo-linkedinlinkden-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ion_logo-linkedinlinkden-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\landing-banner.jpg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\landing-banner.jpg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\landing-banner.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\likevote.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\likevote.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\likevote.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\lockpadlock.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\lockpadlock.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\lockpadlock.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\material-symbols_voting-chip-rounded.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\material-symbols_voting-chip-rounded.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\material-symbols_voting-chip-rounded.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\maximize-2broken-circle.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\maximize-2broken-circle.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\maximize-2broken-circle.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ooui_settingssettings.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ooui_settingssettings.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ooui_settingssettings.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ph_folder-open-fillfolder-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ph_folder-open-fillfolder-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ph_folder-open-fillfolder-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\ri_arrow-drop-down-linedrop-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\ri_arrow-drop-down-linedrop-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\ri_arrow-drop-down-linedrop-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\section.subscribe.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\section.subscribe.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\section.subscribe.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\solar_home-2-bold.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\solar_home-2-bold.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\solar_home-2-bold.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\soundsound-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\soundsound-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\soundsound-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\tabler_external-linkjoin-btn-arrow.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\tabler_external-linkjoin-btn-arrow.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\tabler_external-linkjoin-btn-arrow.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg",
       "PackagePath": "staticwebassets\\Plugins\\Images\\uil_instagram-altinstagram-icon.svg"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-0.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-0.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-0.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-100.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-100.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-100.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-20.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-20.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-20.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-40.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-40.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-40.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-60.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-60.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-60.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Images\\wizard-80.png",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Images\\wizard-80.png",
       "PackagePath": "staticwebassets\\Plugins\\Images\\wizard-80.png"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Tailwind\\config.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\config.js",
       "PackagePath": "staticwebassets\\Plugins\\Tailwind\\config.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Tailwind\\tailwind.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Tailwind\\tailwind.js",
       "PackagePath": "staticwebassets\\Plugins\\Tailwind\\tailwind.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\Plugins\\Utils\\UtilityFunctions.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\Plugins\\Utils\\UtilityFunctions.js",
       "PackagePath": "staticwebassets\\Plugins\\Utils\\UtilityFunctions.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\dej.html",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\dej.html",
       "PackagePath": "staticwebassets\\dej.html"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\js\\Dashboard.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\Dashboard.js",
       "PackagePath": "staticwebassets\\js\\Dashboard.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

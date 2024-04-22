@@ -1010,7 +1010,6 @@
             let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
             return `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
         }
 
@@ -1025,7 +1024,6 @@
         // Function to handle previous button click
         function showPreviousAgm() {
             console.log("show previous clicked");
-
             if (currentIndex > 0) { // Check if not at the beginning of the array
                 currentIndex--; // Move to the previous AGM
                 updateAccordion(allAgm[currentIndex]); // Update accordion with new AGM data
@@ -1033,65 +1031,7 @@
         }
 
 
-        @*
-            document.getElementById("accordionNextButton").addEventListener("click", showNextAgm());
-            document.getElementById("accordionPreviousButton").addEventListener("click", showPreviousAgm); *@
 
-
-
-
-
-            /*
-
-
-            function updateAgmCountdownTime(startDateTime, endDateTime) {
-                const updateTimer = () => {
-                    const now = new Date();
-                    const start = new Date(startDateTime);
-                    const end = new Date(endDateTime);
-
-                    if (now > end) {
-                        document.getElementById('countdown').innerText = 'AGM has passed';
-                    } else if (now >= start && now <= end) {
-                        document.getElementById('countdown').innerText = 'AGM is currently ongoing';
-                    } else {
-                        const timeLeft = end - now;
-                        document.getElementById('countdown').innerText = formatTimeLeft(timeLeft) + ' till AGM';
-                    }
-
-                    // Call updateTimer again after 1 second
-                    setTimeout(updateTimer, 1000);
-                };
-
-                // Initial call to start the countdown
-                updateTimer();
-            }
-
-            */
-
-
-
-            function getAllAgmsPartialVieiws() {
-                // Create a new XMLHttpRequest object
-                var xhr = new XMLHttpRequest();
-
-                // Configure the request
-                xhr.open("GET", "/ShareHolder/GetAgmPartialViews", true);
-
-                // Set up a callback function to handle the response
-                xhr.onload = function () {
-                    if (xhr.status === 200) {
-                        // Update the container with the partial view HTML
-                        document.getElementById("partialContainer").innerHTML = xhr.responseText;
-                    } else {
-                        // Handle error if any
-                        console.error("Request failed. Status: " + xhr.status);
-                    }
-                };
-
-                // Send the request
-                xhr.send();
-            }
 
 
         function updateAgmCountdownTime(startDateTime, endDateTime) {
@@ -1139,37 +1079,48 @@
 
 
 
-        /*
-                    function formatAgmTime(datetimeString) {
-                        // Parse the datetime string to a Date object
-                        var datetime = new Date(datetimeString);
+            function getAllAgmsPartialVieiws() {
+                // Create a new XMLHttpRequest object
+                var xhr = new XMLHttpRequest();
 
-                        // Define options for formatting
-                        var options = {
-                            month: "long", // Full month name (e.g., "November")
-                            day: "numeric", // Numeric day of the month (e.g., "22")
-                            hour: "numeric", // Numeric hour (e.g., "10")
-                            minute: "2-digit", // Two-digit minute (e.g., "00")
-                            hour12: true, // Use 12-hour clock (true) or 24-hour clock (false)
-                            timeZoneName: "short" // Abbreviated time zone name (e.g., "GMT")
-                        };
+                // Configure the request
+                xhr.open("GET", "/ShareHolder/GetAgmPartialViews", true);
 
-                        // Format the datetime using Intl.DateTimeFormat
-                        return new Intl.DateTimeFormat("en-US", options).format(datetime);
+                // Set up a callback function to handle the response
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        // Update the container with the partial view HTML
+                        document.getElementById("partialContainer").innerHTML = xhr.responseText;
+                    } else {
+                        // Handle error if any
+                        console.error("Request failed. Status: " + xhr.status);
                     }
+                };
+
+                // Send the request
+                xhr.send();
+            }
 
 
-          */
-
-
+     
         // Assuming agms is an array containing AGM objects
         var currentIndex = 0; // Start with the first AGM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         var header = @Html.Raw(Json.Serialize(header));
 
-        console.log(header);
-
-
-        console.log("done");
         // Function to update the accordion content with AGM data
         function updateAccordion(agm) {
             console.log("statt")
@@ -1189,6 +1140,9 @@
         @* company: agm.company *@
                 company: "string"
         }
+
+
+
         var settings = ApiConsumeSettings("POST", object)
         var meetingLinkApiUrl = "MeetingAPI/FetchLiveMeetingAccessUrl";
         var requestToFetchMeetingUrl = consume(meetingLinkApiUrl, settings);

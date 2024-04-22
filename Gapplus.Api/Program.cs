@@ -23,7 +23,7 @@ var builder = WebApplication.CreateBuilder(args);
 #region ADDING AND REGISTERING OF SERVICES
 //ADDING AND INJECTING SERVICES NEEDED 
 builder.Services.AddHttpContextAccessor();
-
+builder.Services.AddHttpClient();
 builder.Services.AddSignalR();
 
 builder.Services.AddDistributedMemoryCache(); // Example: In-memory distributed cache
