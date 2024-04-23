@@ -54,6 +54,80 @@ public class ZoomController : ControllerBase
         }
     }
 
+       [HttpGet("generateSignature")]
+        public IActionResult GenerateJwt(string key, string secret, string meetingNumber, int role)
+        {
+            try
+            {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
+
+                var claims = new[]
+                {
+                    new Claim("appKey", key),
+                    new Claim("sdkKey", key),
+                    new Claim("mn", meetingNumber),
+                    new Claim("role", role.ToString()),
+                    new Claim("iat", DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString()),
+                    new Claim("exp", DateTimeOffset.UtcNow.AddHours(2).ToUnixTimeSeconds().ToString()),
+                    new Claim("tokenExp", DateTimeOffset.UtcNow.AddHours(2).ToUnixTimeSeconds().ToString())
+                };
+
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(claims),
+                    Expires = DateTime.UtcNow.AddHours(2), // Convert DateTimeOffset to DateTime
+                    SigningCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256Signature)
+                };
+
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                var jwt = tokenHandler.WriteToken(token);
+
+                return Ok(new { token = jwt });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "An error occurred while generating the JWT." });
+            }
+        }
+
+    //  [HttpGet("generateSignature")]
+    //     public IActionResult GenerateJwt(string key, string secret, string meetingNumber, int role)
+    //     {
+    //         try
+    //         {
+    //             var tokenHandler = new JwtSecurityTokenHandler();
+    //             var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
+
+    //             var claims = new[]
+    //             {
+    //                 new Claim("appKey", key),
+    //                 new Claim("sdkKey", key),
+    //                 new Claim("mn", meetingNumber),
+    //                 new Claim("role", role.ToString()),
+    //                 new Claim("iat", DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString()),
+    //                 new Claim("exp", DateTimeOffset.UtcNow.AddHours(2).ToUnixTimeSeconds().ToString()),
+    //                 new Claim("tokenExp", DateTimeOffset.UtcNow.AddHours(2).ToUnixTimeSeconds().ToString())
+    //             };
+
+    //             var tokenDescriptor = new SecurityTokenDescriptor
+    //             {
+    //                 Subject = new ClaimsIdentity(claims),
+    //                 Expires = DateTimeOffset.UtcNow.AddHours(2),
+    //                 SigningCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256Signature)
+    //             };
+
+    //             var token = tokenHandler.CreateToken(tokenDescriptor);
+    //             var jwt = tokenHandler.WriteToken(token);
+
+    //             return Ok(new { token = jwt });
+    //         }
+    //         catch (Exception ex)
+    //         {
+    //             return StatusCode(500, new { error = "An error occurred while generating the JWT." });
+    //         }
+    //     }
+
     [HttpPost("createMeeting")]
     public async Task<ActionResult<string>> CreateMeetingAsync(SimpleCreateMeetingDto meetingDto)
     {
