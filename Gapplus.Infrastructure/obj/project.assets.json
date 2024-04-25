@@ -7878,11 +7878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+      "projectUniqueName": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
       "projectName": "Gapplus.Infrastructure",
-      "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+      "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\obj\\",
+      "outputPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7903,11 +7903,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj"
+            "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Application\\Gapplus.Application.csproj": {
+              "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Application\\Gapplus.Application.csproj"
             },
-            "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj"
+            "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Domain\\Gapplus.Domain.csproj": {
+              "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Domain\\Gapplus.Domain.csproj"
             }
           }
         }
