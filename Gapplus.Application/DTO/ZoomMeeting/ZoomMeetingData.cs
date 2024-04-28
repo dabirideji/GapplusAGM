@@ -37,12 +37,21 @@ public class CreateMeetingDto
     public MeetingSettings Settings { get; set; }
 }
 
+// public class SimpleCreateMeetingDto
+// {
+//     public string Topic { get; set; }
+//     public int? StartTimeInMinutes { get; set; }
+//     public int Duration { get; set; }
+//     public string Agenda { get; set; }
+// }
+
 public class SimpleCreateMeetingDto
 {
     public string Topic { get; set; }
     public int? StartTimeInMinutes { get; set; }
     public int Duration { get; set; }
     public string Agenda { get; set; }
+    public string Password { get; set; } // New property for meeting password
 }
 
 

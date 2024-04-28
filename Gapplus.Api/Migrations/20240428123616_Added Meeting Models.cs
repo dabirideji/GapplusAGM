@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Gapplus.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class SwappedToSqlite : Migration
+    public partial class AddedMeetingModels : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -112,10 +112,13 @@ namespace Gapplus.Api.Migrations
                 columns: table => new
                 {
                     CompanyId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    CompanyName = table.Column<string>(type: "TEXT", nullable: true),
-                    CompanyAddress = table.Column<string>(type: "TEXT", nullable: true),
-                    CompanyStatus = table.Column<int>(type: "INTEGER", nullable: false),
-                    CompanyAddedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    CompanyName = table.Column<string>(type: "TEXT", nullable: false),
+                    CompanyDescription = table.Column<string>(type: "TEXT", nullable: false),
+                    CompanyImageUrl = table.Column<string>(type: "TEXT", nullable: false),
+                    CompanyRegNo = table.Column<string>(type: "TEXT", nullable: false),
+                    Tags = table.Column<string>(type: "TEXT", nullable: false),
+                    CompanyStatus = table.Column<string>(type: "TEXT", nullable: true),
+                    CompanyCreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
                     CompanyUpdatedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -213,6 +216,18 @@ namespace Gapplus.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_mailsettings", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MeetingRegistrations",
+                columns: table => new
+                {
+                    ShareHolderId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    MeetingId = table.Column<Guid>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MeetingRegistrations", x => new { x.ShareHolderId, x.MeetingId });
                 });
 
             migrationBuilder.CreateTable(
@@ -536,6 +551,18 @@ namespace Gapplus.Api.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ShareHolderCompanies",
+                columns: table => new
+                {
+                    ShareHolderId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    CompanyId = table.Column<Guid>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ShareHolderCompanies", x => new { x.ShareHolderId, x.CompanyId });
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ShareholderFeedback",
                 columns: table => new
                 {
@@ -588,6 +615,28 @@ namespace Gapplus.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_UserProfile", x => x.UserId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Meetings",
+                columns: table => new
+                {
+                    MeetingId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    CompanyId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    MeetingDetails = table.Column<string>(type: "TEXT", nullable: true),
+                    MeetingStatus = table.Column<string>(type: "TEXT", nullable: true),
+                    MeetingCreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    MeetingUpdatedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Meetings", x => x.MeetingId);
+                    table.ForeignKey(
+                        name: "FK_Meetings_Companies_CompanyId",
+                        column: x => x.CompanyId,
+                        principalTable: "Companies",
+                        principalColumn: "CompanyId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -710,6 +759,11 @@ namespace Gapplus.Api.Migrations
                 column: "Messagesid");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Meetings_CompanyId",
+                table: "Meetings",
+                column: "CompanyId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Result_QuestionId",
                 table: "Result",
                 column: "QuestionId");
@@ -738,9 +792,6 @@ namespace Gapplus.Api.Migrations
                 name: "BarcodeStore");
 
             migrationBuilder.DropTable(
-                name: "Companies");
-
-            migrationBuilder.DropTable(
                 name: "Destinations");
 
             migrationBuilder.DropTable(
@@ -754,6 +805,12 @@ namespace Gapplus.Api.Migrations
 
             migrationBuilder.DropTable(
                 name: "mailsettings");
+
+            migrationBuilder.DropTable(
+                name: "MeetingRegistrations");
+
+            migrationBuilder.DropTable(
+                name: "Meetings");
 
             migrationBuilder.DropTable(
                 name: "Present");
@@ -783,6 +840,9 @@ namespace Gapplus.Api.Migrations
                 name: "SettingsArchive");
 
             migrationBuilder.DropTable(
+                name: "ShareHolderCompanies");
+
+            migrationBuilder.DropTable(
                 name: "ShareholderFeedback");
 
             migrationBuilder.DropTable(
@@ -799,6 +859,9 @@ namespace Gapplus.Api.Migrations
 
             migrationBuilder.DropTable(
                 name: "Messages");
+
+            migrationBuilder.DropTable(
+                name: "Companies");
 
             migrationBuilder.DropTable(
                 name: "Question");

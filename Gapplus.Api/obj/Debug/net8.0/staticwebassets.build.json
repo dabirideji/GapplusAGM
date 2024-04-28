@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qSxxNSOS0IkFdXRSCPkoj0IJRR2+Bcokn7f/UmVjy7Q=",
+  "Hash": "cehHaA04WYvioIkwBr1vq8L/H1NpGlm2Q458CsWuR5w=",
   "Source": "Gapplus.Api",
   "BasePath": "_content/Gapplus.Api",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Gapplus.Api\\wwwroot",
       "Source": "Gapplus.Api",
-      "ContentRoot": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\wwwroot\\",
       "BasePath": "_content/Gapplus.Api",
       "Pattern": "**"
     }

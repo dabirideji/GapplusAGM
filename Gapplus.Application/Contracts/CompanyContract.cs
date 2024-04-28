@@ -4,6 +4,7 @@ using Gapplus.Application.DTO.Company.Response;
 using Gapplus.Application.Interfaces;
 using Gapplus.Application.Interfaces.Contracts;
 using Gapplus.Domain;
+using Gapplus.Domain.Models.Base;
 using Microsoft.Extensions.Logging;
 
 namespace Gapplus.Application.Services
@@ -68,18 +69,19 @@ namespace Gapplus.Application.Services
 
         public async Task<IEnumerable<ReadCompanyDto>> GetCompanyByField(string Field)
         {
-            var companies = await _unit.GetAll();
-            var filteredData = companies
-                .Where(
-                    x =>
-                        x.CompanyAddress.ToLower().Contains(Field)
-                        || x.CompanyName.ToLower().Contains(Field)
-                        || x.CompanyStatus.ToString().ToLower().Contains(Field)
-                        || x.CompanyId.ToString().ToLower().Contains(Field)
-                )
-                .ToList();
-            var filteredDataDto = _mapper.Map<List<ReadCompanyDto>>(filteredData);
-            return filteredDataDto;
+            // var companies = await _unit.GetAll();
+            // var filteredData = companies
+            //     .Where(
+            //         x =>
+            //             x.CompanyAddress.ToLower().Contains(Field)
+            //             || x.CompanyName.ToLower().Contains(Field)
+            //             || x.CompanyStatus.ToString().ToLower().Contains(Field)
+            //             || x.CompanyId.ToString().ToLower().Contains(Field)
+            //     )
+            //     .ToList();
+            // var filteredDataDto = _mapper.Map<List<ReadCompanyDto>>(filteredData);
+            // return filteredDataDto;
+            throw new NotImplementedException();
         }
 
         public async Task<ReadCompanyDto> GetCompanyById(Guid CompanyId)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Gapplus.Domain;
+using Gapplus.Domain.Models.Base;
 using Microsoft.EntityFrameworkCore;
 
 namespace BarcodeGenerator.Models
@@ -19,7 +20,12 @@ namespace BarcodeGenerator.Models
         ///////////////////////////////////////////////////////
         //  I RECENTLY JUST ADDED THE MODELS
         // public DbSet<User> Users { get; set; }
+        // public DbSet<Company> Companies { get; set; }
+        public DbSet<Meeting> Meetings { get; set; }
         public DbSet<Company> Companies { get; set; }
+        public DbSet<ShareHolderCompanyRelationShip> ShareHolderCompanies { get; set; }
+        public DbSet<MeetingRegistration> MeetingRegistrations { get; set; }
+
 
         ///////////////////////////////////////////////////////
         public DbSet<UserProfile> UserProfiles { get; set; }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ITfSu6HAA0XdzmyVUgpOugfY6enBg2FkaAZeqw/CWAV/cZDy2b2dpq473hKDnKcQD81Vn15+I/lCsSg4FeJG/w==",
+  "dgSpecHash": "o9rxvIhTdcZi4dmHKSJw3LYvWmuQYuVhbmFkj/zD/jNCAP7SyvUoKl4g666kVsXkL/rGId4GoWNUln/x+SjnRQ==",
   "success": true,
-  "projectFilePath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -176,6 +176,12 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

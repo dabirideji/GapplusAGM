@@ -22,6 +22,6 @@ namespace Gapplus.Application.DTO.User.Response
 
         // NAVIGATTON PROPERTY FOR THE USER COMPANY
         public Guid CompanyId { get; set; }
-        public Gapplus.Domain.Company? Company { get; set; }
+        // public Gapplus.Domain.Company? Company { get; set; }
     }
 }

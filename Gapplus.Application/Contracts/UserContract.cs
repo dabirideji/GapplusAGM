@@ -48,7 +48,7 @@ namespace Gapplus.Application.Services
                 }
                 await _unitOfWork.SaveAsync();
                 var userDto = _mapper.Map<ReadUserDto>(user);
-                userDto.Company = await _unitOfWork.Companies.GetById(userDto.CompanyId);
+                // userDto.Company = await _unitOfWork.Companies.GetById(userDto.CompanyId);
                 return userDto;
             }
             catch (System.Exception)
@@ -157,7 +157,7 @@ namespace Gapplus.Application.Services
                     throw new NullReferenceException("UNABLE TO LOCATE USER || INVALID USER ID");
                 }
                 var userDto = _mapper.Map<ReadUserDto>(user);
-                userDto.Company = await _unitOfWork.Companies.GetById(userDto.CompanyId);
+                // userDto.Company = await _unitOfWork.Companies.GetById(userDto.CompanyId);
                 return userDto;
             }
             catch (System.Exception)

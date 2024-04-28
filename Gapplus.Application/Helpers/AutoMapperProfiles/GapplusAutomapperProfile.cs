@@ -9,6 +9,7 @@ using Gapplus.Application.DTO.Company.Response;
 using Gapplus.Application.DTO.User.Request;
 using Gapplus.Application.DTO.User.Response;
 using Gapplus.Domain;
+using Gapplus.Domain.Models.Base;
 
 namespace Gapplus.Application.Helpers.AutoMapperProfiles
 {

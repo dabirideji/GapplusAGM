@@ -1,4 +1,5 @@
 using Gapplus.Domain;
+using Gapplus.Domain.Models.Base;
 
 namespace Gapplus.Application.Interfaces
 {

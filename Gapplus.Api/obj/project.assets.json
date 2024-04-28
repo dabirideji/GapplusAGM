@@ -8317,11 +8317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Api\\Gapplus.Api.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
       "projectName": "Gapplus.Api",
-      "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Api\\Gapplus.Api.csproj",
+      "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\Gapplus.Api.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Api\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8342,14 +8342,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Application\\Gapplus.Application.csproj": {
-              "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Application\\Gapplus.Application.csproj"
+            "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Application\\Gapplus.Application.csproj"
             },
-            "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Domain\\Gapplus.Domain.csproj": {
-              "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Domain\\Gapplus.Domain.csproj"
+            "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Domain\\Gapplus.Domain.csproj"
             },
-            "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj": {
-              "projectPath": "C:\\users\\user\\desktop\\GapplusAgm\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj"
+            "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\GapplusAGM\\Gapplus.Infrastructure\\Gapplus.Infrastructure.csproj"
             }
           }
         }
@@ -8512,6 +8512,12 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

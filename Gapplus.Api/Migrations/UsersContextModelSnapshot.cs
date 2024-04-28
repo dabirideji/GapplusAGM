@@ -1590,30 +1590,98 @@ namespace Gapplus.Api.Migrations
                     b.ToTable("UserProfile");
                 });
 
-            modelBuilder.Entity("Gapplus.Domain.Company", b =>
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.Company", b =>
                 {
                     b.Property<Guid>("CompanyId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("CompanyAddedAt")
+                    b.Property<DateTime>("CompanyCreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("CompanyAddress")
+                    b.Property<string>("CompanyDescription")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CompanyImageUrl")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("CompanyName")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("CompanyStatus")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("CompanyRegNo")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CompanyStatus")
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CompanyUpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Tags")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("CompanyId");
 
                     b.ToTable("Companies");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.Meeting", b =>
+                {
+                    b.Property<Guid>("MeetingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("CompanyId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("MeetingCreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MeetingDetails")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MeetingStatus")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("MeetingUpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MeetingId");
+
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("Meetings");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingRegistration", b =>
+                {
+                    b.Property<Guid>("ShareHolderId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("MeetingId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ShareHolderId", "MeetingId");
+
+                    b.ToTable("MeetingRegistrations");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.ShareHolderCompanyRelationShip", b =>
+                {
+                    b.Property<Guid>("ShareHolderId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("CompanyId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ShareHolderId", "CompanyId");
+
+                    b.ToTable("ShareHolderCompanies");
                 });
 
             modelBuilder.Entity("BarcodeGenerator.Models.Destination", b =>
@@ -1644,6 +1712,17 @@ namespace Gapplus.Api.Migrations
                     b.HasOne("BarcodeGenerator.Models.Question", null)
                         .WithMany("SMSResult")
                         .HasForeignKey("QuestionId");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.Meeting", b =>
+                {
+                    b.HasOne("Gapplus.Domain.Models.Base.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
                 });
 
             modelBuilder.Entity("BarcodeGenerator.Models.Messages", b =>
