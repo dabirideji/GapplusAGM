@@ -6,6 +6,8 @@ using AutoMapper;
 using BarcodeGenerator.Models;
 using Gapplus.Application.DTO.Company.Request;
 using Gapplus.Application.DTO.Company.Response;
+using Gapplus.Application.DTO.ShareHolder.Request;
+using Gapplus.Application.DTO.ShareHolder.Response;
 using Gapplus.Application.DTO.User.Request;
 using Gapplus.Application.DTO.User.Response;
 using Gapplus.Domain;
@@ -27,6 +29,12 @@ namespace Gapplus.Application.Helpers.AutoMapperProfiles
       CreateMap<CreateCompanyDto, Company>();
       CreateMap<UpdateCompanyDto, Company>();
       CreateMap<ReadCompanyDto, Company>().ReverseMap();
+
+      
+      //COMPANY MAPPINGS
+      CreateMap<CreateShareHolderDto, ShareHolder>();
+      CreateMap<UpdateShareHolderDto, ShareHolder>();
+      CreateMap<ReadShareHolderDto, ShareHolder>().ReverseMap();
     }
 
   }

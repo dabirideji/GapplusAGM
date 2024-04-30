@@ -10,9 +10,18 @@ namespace Gapplus.Application.DTO.Company.Response
     {
         public Guid CompanyId { get; set; }
         public String? CompanyName { get; set; }
-        public String? CompanyAddress { get; set; }
-        public CompanyStatus CompanyStatus { get; set; }
-        public DateTime CompanyAddedAt { get; set; }
-        public DateTime CompanyUpdatedAt { get; set; }
+    public String CompanyDescription { get; set; }
+       public String CompanyImageUrl { get; set; }
+       
+     public String CompanyRegNo { get; set; }
+    public List<String>? Tags { get; set; }
+    public CompanyStatus CompanyStatus { get; set; }
+    public DateTime CompanyCreatedAt { get; set; }
+    public DateTime CompanyUpdatedAt { get; set; }
     }
 }
+
+
+    
+
+

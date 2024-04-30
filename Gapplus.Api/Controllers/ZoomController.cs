@@ -10,16 +10,20 @@ using Gapplus.Application.DTO.ZoomMeeting;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
+using Gapplus.Application.Interfaces;
+using Gapplus.Domain.Models.Base;
 
 [ApiController]
 [Route("api/[controller]")]
 public class ZoomController : ControllerBase
 {
     private readonly IHttpClientFactory _httpClientFactory;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public ZoomController(IHttpClientFactory httpClientFactory)
+    public ZoomController(IHttpClientFactory httpClientFactory,IUnitOfWork unit)
     {
         _httpClientFactory = httpClientFactory;
+        _unitOfWork=unit;
     }
 
     [HttpPost("GetToken")]
@@ -231,8 +235,8 @@ public class ZoomController : ControllerBase
 
 
 
-[HttpPost("createMeeting")]
-public async Task<ActionResult<string>> CreateMeetingAsync(SimpleCreateMeetingDto meetingDto)
+[HttpPost("createMeeting/{CompanyId}")]
+public async Task<ActionResult<Meeting>> CreateMeetingAsync([FromRoute]Guid CompanyId,[FromBody]SimpleCreateMeetingDto meetingDto)
 {
     var token = await GetAccessTokenAsync();
 
@@ -272,7 +276,27 @@ public async Task<ActionResult<string>> CreateMeetingAsync(SimpleCreateMeetingDt
     if (response.IsSuccessStatusCode)
     {
         var responseContent = await response.Content.ReadAsStringAsync();
-        return Ok(responseContent);
+        var meetingObject=new Meeting();
+        meetingObject.MeetingDetails=JsonConvert.DeserializeObject<MeetingDetails>(responseContent);
+        try
+        {
+            var company=await _unitOfWork.Companies.GetById(CompanyId);
+            if(company==null){
+                return BadRequest("NVALID COMPANY ID || COMPANY COULD NOT BE FOUND");
+            }
+
+        meetingObject.CompanyId=CompanyId;
+        meetingObject.Company=company;
+
+            var save=await _unitOfWork.Meetings.Add(meetingObject);
+            await _unitOfWork.SaveAsync();
+            return Ok(meetingObject);
+        }
+        catch (System.Exception ex)
+        {
+             // TODO
+             return StatusCode(500,ex.Message);
+        }
     }
     else
     {

@@ -499,93 +499,91 @@ namespace BarcodeGenerator.Controllers
         // }
 
 
-        public ActionResult Create([FromBody] FakeBarCodeModelDto model, [FromServices] IMapper _mapper)
-        {
-            try
-            {
-                // TODO: Add insert logic here
+        // public ActionResult Create([FromBody] FakeBarCodeModelDto model, [FromServices] IMapper _mapper)
+        // {
+        //     try
+        //     {
+        //         // TODO: Add insert logic here
 
-                barcodecs objbar = new barcodecs(_webHostEnviroment);
+        //         barcodecs objbar = new barcodecs(_webHostEnviroment);
 
-                // BarcodeModel objprod = new BarcodeModel();
-                // objprod.Name = model.FirstName + " " + model.LastName; // Combine first name and last name
-                // objprod.Company = model.Company; // Map company
-                // objprod.Holding = model.Holding; // Map holding
-                // objprod.Address = model.Address; // Map address
-                // objprod.RegCode = model.RegCode; // Map registration code
-                // objprod.Barcode = objbar.generateBarcode(); // Generate barcode
-                // // objprod.BarcodeImage = objbar.getBarcodeImage(objprod.Barcode, model.LastName.ToUpper()); // Generate barcode image
-                // objprod.BarcodeImage = new byte []{};
-                // objprod.ImageUrl = model.ImageUrl; // Map image URL
-                // objprod.OnlineEventUrl = model.OnlineEventUrl; // Map online event URL
-                // objprod.Proxyupload = model.Proxyupload; // Map proxy upload
+        //         // BarcodeModel objprod = new BarcodeModel();
+        //         // objprod.Name = model.FirstName + " " + model.LastName; // Combine first name and last name
+        //         // objprod.Company = model.Company; // Map company
+        //         // objprod.Holding = model.Holding; // Map holding
+        //         // objprod.Address = model.Address; // Map address
+        //         // objprod.RegCode = model.RegCode; // Map registration code
+        //         // objprod.Barcode = objbar.generateBarcode(); // Generate barcode
+        //         // // objprod.BarcodeImage = objbar.getBarcodeImage(objprod.Barcode, model.LastName.ToUpper()); // Generate barcode image
+        //         // objprod.BarcodeImage = new byte []{};
+        //         // objprod.ImageUrl = model.ImageUrl; // Map image URL
+        //         // objprod.OnlineEventUrl = model.OnlineEventUrl; // Map online event URL
+        //         // objprod.Proxyupload = model.Proxyupload; // Map proxy upload
 
-                // // Map the rest of the properties accordingly
+        //         // // Map the rest of the properties accordingly
 
-                // objprod.accesscode = model.accesscode; // Map access code
-                // objprod.Date = model.Date; // Map date
-                // objprod.Sessionid = model.Sessionid; // Map session ID
-                // objprod.SessionVersion = model.SessionVersion; // Map session version
-
-
-
-                BarcodeModel objprod = new BarcodeModel();
-
-                // Combine first name and last name
-                objprod.Name = !string.IsNullOrEmpty(model.FirstName) && !string.IsNullOrEmpty(model.LastName)
-                    ? model.FirstName + " " + model.LastName
-                    : "null"; // Handle null case if either first name or last name is null or empty
-
-                // Map company
-                objprod.Company = model.Company;
-
-                // Map holding
-                objprod.Holding = model.Holding;
-
-                // Map address
-                objprod.Address = model.Address;
-
-                // Map registration code
-                objprod.RegCode = model.RegCode;
-
-                objprod.emailAddress = model.emailAddress;
-                objprod.password = model.password;
-                objprod.passwordToken = model.passwordToken;
-
-                // Generate barcode
-                objprod.Barcode = objbar.generateBarcode();
-
-                // Generate barcode image
-                // Note: Replace this line with your logic to generate barcode image
-                objprod.BarcodeImage = new byte[] { }; // Example: You can leave it empty for now
-
-                // Map image URL
-                objprod.ImageUrl = model.ImageUrl;
-
-                // Map online event URL
-                objprod.OnlineEventUrl = model.OnlineEventUrl;
-
-                // Map proxy upload
-                objprod.Proxyupload = model.Proxyupload;
-
-                // Map other properties similarly...
-
-                // Map access code
-                objprod.accesscode = model.accesscode;
-
-                // Map date
-                objprod.Date = model.Date;
-
-                // Map session ID
-                objprod.Sessionid = model.Sessionid;
-
-                // Map session version
-                objprod.SessionVersion = model.SessionVersion;
-
-                objprod.ConsolidatedValue = "";
-                objprod.ConsolidatedParent = "";
+        //         // objprod.accesscode = model.accesscode; // Map access code
+        //         // objprod.Date = model.Date; // Map date
+        //         // objprod.Sessionid = model.Sessionid; // Map session ID
+        //         // objprod.SessionVersion = model.SessionVersion; // Map session version
 
 
+
+        //         BarcodeModel objprod = new BarcodeModel();
+
+        //         // Combine first name and last name
+        //         objprod.Name = !string.IsNullOrEmpty(model.FirstName) && !string.IsNullOrEmpty(model.LastName)
+        //             ? model.FirstName + " " + model.LastName
+        //             : "null"; // Handle null case if either first name or last name is null or empty
+
+        //         // Map company
+        //         objprod.Company = model.Company;
+
+        //         // Map holding
+        //         objprod.Holding = model.Holding;
+
+        //         // Map address
+        //         objprod.Address = model.Address;
+
+        //         // Map registration code
+        //         objprod.RegCode = model.RegCode;
+
+        //         objprod.emailAddress = model.emailAddress;
+        //         objprod.password = model.password;
+        //         objprod.passwordToken = model.passwordToken;
+
+        //         // Generate barcode
+        //         objprod.Barcode = objbar.generateBarcode();
+
+        //         // Generate barcode image
+        //         // Note: Replace this line with your logic to generate barcode image
+        //         objprod.BarcodeImage = new byte[] { }; // Example: You can leave it empty for now
+
+        //         // Map image URL
+        //         objprod.ImageUrl = model.ImageUrl;
+
+        //         // Map online event URL
+        //         objprod.OnlineEventUrl = model.OnlineEventUrl;
+
+        //         // Map proxy upload
+        //         objprod.Proxyupload = model.Proxyupload;
+
+        //         // Map other properties similarly...
+
+        //         // Map access code
+        //         objprod.accesscode = model.accesscode;
+
+        //         // Map date
+        //         objprod.Date = model.Date;
+
+        //         // Map session ID
+        //         objprod.Sessionid = model.Sessionid;
+
+        //         // Map session version
+        //         objprod.SessionVersion = model.SessionVersion;
+
+        //         objprod.ConsolidatedValue = "";
+        //         objprod.ConsolidatedParent = "";
 
 
 
@@ -599,44 +597,46 @@ namespace BarcodeGenerator.Controllers
 
 
 
-                // Barcode = "",
-                // BarcodeImage = new byte[] { }
-                // };
-                // objprod.Company=ua.GetUserCompanyInfo();
-
-                // objprod.BarcodeImage = new byte[] {};
 
 
-                db.BarcodeStore.Add(objprod);
-                db.SaveChanges();
-                // return Json("Success", JsonRequestBehavior.AllowGet);
-                var x = new AutoDefaultResponse<BarcodeModel>();
-                // 
-                // return Ok("success");
-                return Ok(x.ConvertToGood("BarCode Model Created Successfully", objprod));
-            }
-            catch (Exception ex)
-            {
-                // return Json("Failed", JsonRequestBehavior.AllowGet);
-                var x = new AutoDefaultResponse<string>();
-                // 
-                // return Ok("success");
-                var response = x.ConvertToGood("BarCode Model Failed to Create");
-                return StatusCode((int)HttpStatusCode.InternalServerError, response);
-                // return BadRequest($"Failed: {ex.Message}");
-            }
-        }
+        //         // Barcode = "",
+        //         // BarcodeImage = new byte[] { }
+        //         // };
+        //         // objprod.Company=ua.GetUserCompanyInfo();
+
+        //         // objprod.BarcodeImage = new byte[] {};
 
 
-        [HttpGet]
-        public ActionResult CreateNonShareholder()
-        {
-            var agmid = ua.RetrieveAGMUniqueID();
-            Facilitators model = new Facilitators();
-            model.AGMID = agmid;
-            // return PartialView(model);
-            return Ok(model);
-        }
+        //         db.BarcodeStore.Add(objprod);
+        //         db.SaveChanges();
+        //         // return Json("Success", JsonRequestBehavior.AllowGet);
+        //         var x = new AutoDefaultResponse<BarcodeModel>();
+        //         // 
+        //         // return Ok("success");
+        //         return Ok(x.ConvertToGood("BarCode Model Created Successfully", objprod));
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         // return Json("Failed", JsonRequestBehavior.AllowGet);
+        //         var x = new AutoDefaultResponse<string>();
+        //         // 
+        //         // return Ok("success");
+        //         var response = x.ConvertToGood("BarCode Model Failed to Create");
+        //         return StatusCode((int)HttpStatusCode.InternalServerError, response);
+        //         // return BadRequest($"Failed: {ex.Message}");
+        //     }
+        // }
+
+
+        // [HttpGet]
+        // public ActionResult CreateNonShareholder()
+        // {
+        //         var agmid = ua.RetrieveAGMUniqueID();
+        //         Facilitators model = new Facilitators();
+        //         model.AGMID = agmid;
+        //         // return PartialView(model);
+        //         return Ok(model);
+        //     }
 
         //
         // POST: /Barcode/Create

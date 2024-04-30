@@ -22,6 +22,7 @@ namespace BarcodeGenerator.Models
         // public DbSet<User> Users { get; set; }
         // public DbSet<Company> Companies { get; set; }
         public DbSet<Meeting> Meetings { get; set; }
+        public DbSet<ShareHolder> ShareHolders { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<ShareHolderCompanyRelationShip> ShareHolderCompanies { get; set; }
         public DbSet<MeetingRegistration> MeetingRegistrations { get; set; }

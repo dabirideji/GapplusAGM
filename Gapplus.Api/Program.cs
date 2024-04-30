@@ -106,6 +106,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICompanyContract, CompanyContract>();
 builder.Services.AddScoped<IUserContract, UserContract>();
 builder.Services.AddScoped<IClikapadContract, ClikapadContract>();
+builder.Services.AddScoped<IShareHolderContract, ShareHolderContract>();
 
 
 //VITAL SERVICES

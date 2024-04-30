@@ -1615,14 +1615,13 @@ namespace Gapplus.Api.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("CompanyStatus")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("CompanyStatus")
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("CompanyUpdatedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Tags")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("CompanyId");
@@ -1642,11 +1641,11 @@ namespace Gapplus.Api.Migrations
                     b.Property<DateTime>("MeetingCreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("MeetingDetails")
-                        .HasColumnType("TEXT");
+                    b.Property<long>("MeetingDetailsid")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("MeetingStatus")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("MeetingStatus")
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("MeetingUpdatedAt")
                         .HasColumnType("TEXT");
@@ -1655,7 +1654,87 @@ namespace Gapplus.Api.Migrations
 
                     b.HasIndex("CompanyId");
 
+                    b.HasIndex("MeetingDetailsid");
+
                     b.ToTable("Meetings");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingDetails", b =>
+                {
+                    b.Property<long>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("agenda")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("created_at")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("duration")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("encrypted_password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("h323_password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("host_email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("host_id")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("join_url")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("pre_schedule")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("pstn_password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("start_time")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("start_url")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("timezone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("topic")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("type")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("uuid")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("id");
+
+                    b.ToTable("MeetingDetails");
                 });
 
             modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingRegistration", b =>
@@ -1666,9 +1745,70 @@ namespace Gapplus.Api.Migrations
                     b.Property<Guid>("MeetingId")
                         .HasColumnType("TEXT");
 
+                    b.Property<long>("MeetingNumber")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("ShareHolderId", "MeetingId");
 
                     b.ToTable("MeetingRegistrations");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.ShareHolder", b =>
+                {
+                    b.Property<Guid>("ShareHolderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ConsolidationStatus")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Interests")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SessionVersion")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Sessionid")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ShareHolderNum")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("emailAddress")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ShareHolderId");
+
+                    b.ToTable("ShareHolders");
                 });
 
             modelBuilder.Entity("Gapplus.Domain.Models.Base.ShareHolderCompanyRelationShip", b =>
@@ -1678,6 +1818,12 @@ namespace Gapplus.Api.Migrations
 
                     b.Property<Guid>("CompanyId")
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("Holdings")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("PercentageHolding")
+                        .HasColumnType("REAL");
 
                     b.HasKey("ShareHolderId", "CompanyId");
 
@@ -1722,7 +1868,15 @@ namespace Gapplus.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Gapplus.Domain.Models.Base.MeetingDetails", "MeetingDetails")
+                        .WithMany()
+                        .HasForeignKey("MeetingDetailsid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Company");
+
+                    b.Navigation("MeetingDetails");
                 });
 
             modelBuilder.Entity("BarcodeGenerator.Models.Messages", b =>
