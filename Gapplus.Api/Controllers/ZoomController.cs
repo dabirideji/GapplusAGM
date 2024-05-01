@@ -282,7 +282,7 @@ public async Task<ActionResult<Meeting>> CreateMeetingAsync([FromRoute]Guid Comp
         {
             var company=await _unitOfWork.Companies.GetById(CompanyId);
             if(company==null){
-                return BadRequest("NVALID COMPANY ID || COMPANY COULD NOT BE FOUND");
+                return BadRequest("INVALID COMPANY ID || COMPANY COULD NOT BE FOUND");
             }
 
         meetingObject.CompanyId=CompanyId;

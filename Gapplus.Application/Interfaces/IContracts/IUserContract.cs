@@ -41,6 +41,7 @@ namespace Gapplus.Application.Interfaces.Contracts
         Task<IEnumerable<ReadCompanyDto>> GetAllCompany();
         Task<ReadCompanyDto> GetCompanyById(Guid CompanyId);
         Task<IEnumerable<ReadCompanyDto>> GetCompanyByField(String Field);
+        Task<IEnumerable<ReadCompanyDto>> GetShareHolderCompanies(Guid ShareHolderId);
 
 
         //UPDATE

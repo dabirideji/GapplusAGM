@@ -12,10 +12,10 @@ using System.ComponentModel;
 namespace Gapplus.Domain.Models.Base;
 
 
-[Keyless]
 public class MeetingSettings
 {
-
+    [Key]
+    public Guid MeetingSettingsId { get; set; }=Guid.NewGuid();
     public bool host_video { get; set; }
     public bool participant_video { get; set; }
     public bool cn_meeting { get; set; }
@@ -86,10 +86,9 @@ public class SignLanguageInterpretation
 }
 
 public class MeetingDetails
-{
-    [ForeignKey("Meeting")]
-    public Guid MeetingId { get; set; }
-    public Meeting Meeting  {get;set;}
+{   
+    [Key]
+    public Guid MeetingDetailsId { get; set; }=Guid.NewGuid();
     public string uuid { get; set; }
     public long id { get; set; }
     public string host_id { get; set; }
@@ -108,8 +107,7 @@ public class MeetingDetails
     public string h323_password { get; set; }
     public string pstn_password { get; set; }
     public string encrypted_password { get; set; }
-    
-    public MeetingSettings settings { get; set; }
+        public MeetingSettings MeetingSettings { get; set; }
     public bool pre_schedule { get; set; }
 }
 
@@ -203,6 +201,7 @@ public class Meeting
     [ForeignKey("Company")]
     public Guid CompanyId { get; set; }
     public Company Company { get; set; }
+
     public MeetingDetails MeetingDetails { get; set; }
     public MeetingStatus MeetingStatus { get; set; }
     public DateTime MeetingCreatedAt { get; set; }
@@ -229,18 +228,12 @@ public class ShareHolder
 {
     public Guid ShareHolderId { get; set; } = Guid.NewGuid();
     public int ShareHolderNum { get; set; } = 0;
-
-
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Address { get; set; }
     public string emailAddress { get; set; }
     public string? PhoneNumber { get; set; }
     public string? ImageUrl { get; set; }
-
-
-
-
     public string Name
     {
         get => $"{FirstName} {LastName}";
@@ -263,6 +256,10 @@ public class ShareHolder
     }
     public List<int>? Interests { get; set; }
     public ConsolidationStatus ConsolidationStatus { get; set; }=ConsolidationStatus.NotConsolidated;
+    public string Password { get; set; }
+    public bool IsActive { get; set; }=true;
+    public bool IsDisabled { get; set; }=false;
+
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.MinValue;
     public string? Sessionid { get; set; }
@@ -302,6 +299,8 @@ public class ShareHolder
 
 
 
+
+
 [JsonConverter(typeof(JsonStringEnumConverter))]
 public enum CompanyStatus
 {
@@ -337,12 +336,15 @@ public class Company
 
 
 
+
 [PrimaryKey("ShareHolderId", "CompanyId")]
 public class ShareHolderCompanyRelationShip
 {
 
     public Guid ShareHolderId { get; set; }
+    [ForeignKey("Company")]
     public Guid CompanyId { get; set; }
+    public Company Company { get; set; }
     public double Holdings { get; set; }
     public double PercentageHolding { get; set; } = 0;
 }

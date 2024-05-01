@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gapplus.Api.Migrations
 {
     [DbContext(typeof(UsersContext))]
-    [Migration("20240428190123_Added Meeting Model Again")]
-    partial class AddedMeetingModelAgain
+    [Migration("20240430222241_Altered Model MeetingDetails Agains")]
+    partial class AlteredModelMeetingDetailsAgains
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1618,14 +1618,13 @@ namespace Gapplus.Api.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("CompanyStatus")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("CompanyStatus")
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("CompanyUpdatedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Tags")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("CompanyId");
@@ -1645,8 +1644,8 @@ namespace Gapplus.Api.Migrations
                     b.Property<DateTime>("MeetingCreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<long>("MeetingDetailsid")
-                        .HasColumnType("INTEGER");
+                    b.Property<Guid>("MeetingDetailsId")
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("MeetingStatus")
                         .HasColumnType("INTEGER");
@@ -1658,16 +1657,20 @@ namespace Gapplus.Api.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.HasIndex("MeetingDetailsid");
-
                     b.ToTable("Meetings");
                 });
 
             modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingDetails", b =>
                 {
-                    b.Property<long>("id")
+                    b.Property<Guid>("MeetingDetailsId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("MeetingId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("MeetingSettingsId")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("agenda")
                         .IsRequired()
@@ -1694,6 +1697,9 @@ namespace Gapplus.Api.Migrations
                     b.Property<string>("host_id")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<long>("id")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("join_url")
                         .IsRequired()
@@ -1736,7 +1742,12 @@ namespace Gapplus.Api.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("id");
+                    b.HasKey("MeetingDetailsId");
+
+                    b.HasIndex("MeetingId")
+                        .IsUnique();
+
+                    b.HasIndex("MeetingSettingsId");
 
                     b.ToTable("MeetingDetails");
                 });
@@ -1749,9 +1760,224 @@ namespace Gapplus.Api.Migrations
                     b.Property<Guid>("MeetingId")
                         .HasColumnType("TEXT");
 
+                    b.Property<long>("MeetingNumber")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("ShareHolderId", "MeetingId");
 
                     b.ToTable("MeetingRegistrations");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingSettings", b =>
+                {
+                    b.Property<Guid>("MeetingSettingsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("MeetingDetaildId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("allow_multiple_devices")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("alternative_host_update_polls")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("alternative_hosts")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("alternative_hosts_email_notification")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("approval_type")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("audio")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("auto_recording")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("auto_start_meeting_summary")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("close_registration")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("cn_meeting")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("device_testing")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("email_in_attendee_report")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("email_notification")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("enable_dedicated_group_chat")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("encryption_type")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("enforce_login")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("enforce_login_domains")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("focus_mode")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("host_save_video_order")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("host_video")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("in_meeting")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("internal_meeting")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("jbh_time")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("join_before_host")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("meeting_authentication")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("meeting_invitees")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("mute_upon_entry")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("participant_focused_meeting")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("participant_video")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("private_meeting")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("push_change_to_calendar")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("registrants_confirmation_email")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("registrants_email_notification")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("request_permission_to_unmute_participants")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("resources")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("show_join_info")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("show_share_button")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("use_pmi")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("waiting_room")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("watermark")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("MeetingSettingsId");
+
+                    b.HasIndex("MeetingDetaildId")
+                        .IsUnique();
+
+                    b.ToTable("MeetingSettings");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.ShareHolder", b =>
+                {
+                    b.Property<Guid>("ShareHolderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ConsolidationStatus")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Interests")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDisabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SessionVersion")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Sessionid")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ShareHolderNum")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("emailAddress")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ShareHolderId");
+
+                    b.ToTable("ShareHolders");
                 });
 
             modelBuilder.Entity("Gapplus.Domain.Models.Base.ShareHolderCompanyRelationShip", b =>
@@ -1761,6 +1987,12 @@ namespace Gapplus.Api.Migrations
 
                     b.Property<Guid>("CompanyId")
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("Holdings")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("PercentageHolding")
+                        .HasColumnType("REAL");
 
                     b.HasKey("ShareHolderId", "CompanyId");
 
@@ -1805,13 +2037,35 @@ namespace Gapplus.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Gapplus.Domain.Models.Base.MeetingDetails", "MeetingDetails")
-                        .WithMany()
-                        .HasForeignKey("MeetingDetailsid")
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingDetails", b =>
+                {
+                    b.HasOne("Gapplus.Domain.Models.Base.Meeting", "Meeting")
+                        .WithOne("MeetingDetails")
+                        .HasForeignKey("Gapplus.Domain.Models.Base.MeetingDetails", "MeetingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Company");
+                    b.HasOne("Gapplus.Domain.Models.Base.MeetingSettings", "MeetingSettings")
+                        .WithMany()
+                        .HasForeignKey("MeetingSettingsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Meeting");
+
+                    b.Navigation("MeetingSettings");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.MeetingSettings", b =>
+                {
+                    b.HasOne("Gapplus.Domain.Models.Base.MeetingDetails", "MeetingDetails")
+                        .WithOne()
+                        .HasForeignKey("Gapplus.Domain.Models.Base.MeetingSettings", "MeetingDetaildId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("MeetingDetails");
                 });
@@ -1828,6 +2082,12 @@ namespace Gapplus.Api.Migrations
                     b.Navigation("SMSdeliveryLog");
 
                     b.Navigation("result");
+                });
+
+            modelBuilder.Entity("Gapplus.Domain.Models.Base.Meeting", b =>
+                {
+                    b.Navigation("MeetingDetails")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

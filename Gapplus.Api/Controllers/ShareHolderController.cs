@@ -41,6 +41,70 @@ namespace Gapplus.Api.Controllers
                return StatusCode(500,x.ConvertToBad($"{ex.Message}"));
             }
          }
+         [HttpPut("{ShareHolderId}")]
+         public async Task<ActionResult<DefaultResponse<ReadShareHolderDto>>> UpdateShareHolder([FromRoute]Guid ShareHolderId,[FromBody] UpdateShareHolderDto dto)
+         {
+            if(!ModelState.IsValid){
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var responseFromService=await _service.UpdateShareHolder(ShareHolderId,dto);
+                if(responseFromService==null){
+                    return BadRequest(x.ConvertToBad("UNABLE TO UPDATE SHAREHOLDER"));
+                }
+                var response=x.ConvertToGood("SHAREHOLDER UPDATED  SUCCESSFULLY",responseFromService);
+                return Ok(response);
+            }
+             catch (System.Exception ex)
+            {
+               return StatusCode(500,x.ConvertToBad($"{ex.Message}"));
+            }
+         }
+
+
+         [HttpPost]
+         public async Task<ActionResult<DefaultResponse<string>>> RegisterShareHolderToCompany([FromBody] RegisterShareHolderToCompanyDto dto)
+         {
+            if(!ModelState.IsValid){
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var responseFromService=await _service.RegisterShareHolderToCompany(dto);
+                if(responseFromService==false){
+                    return BadRequest(x.ConvertToBad("REGISTRATION FAILED"));
+                }
+                var response=x.ConvertToGood("REGISTRATION SUCCESSFUL");
+                return Ok(response);
+            }
+             catch (System.Exception ex)
+            {
+               return StatusCode(500,x.ConvertToBad($"{ex.Message}"));
+            }
+         }
+
+
+         [HttpPost]
+         public async Task<ActionResult<DefaultResponse<ReadShareHolderDto>>> Login([FromBody] ShareHolderLoginDto dto)
+         {
+            if(!ModelState.IsValid){
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var responseFromService=await _service.ShareHolderLogin(dto);
+                if(responseFromService==null){
+                    return BadRequest(x.ConvertToBad("LOGIN FAILED"));
+                }
+                var response=x.ConvertToGood("LOGIN SUCCESSFULL",responseFromService);
+                return Ok(response);
+            }
+             catch (System.Exception ex)
+            {
+               return StatusCode(500,x.ConvertToBad($"{ex.Message}"));
+            }
+         }
 
 
 

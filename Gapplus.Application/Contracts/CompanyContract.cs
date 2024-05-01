@@ -1,10 +1,12 @@
 using AutoMapper;
+using BarcodeGenerator.Models;
 using Gapplus.Application.DTO.Company.Request;
 using Gapplus.Application.DTO.Company.Response;
 using Gapplus.Application.Interfaces;
 using Gapplus.Application.Interfaces.Contracts;
 using Gapplus.Domain;
 using Gapplus.Domain.Models.Base;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace Gapplus.Application.Services
@@ -14,16 +16,20 @@ namespace Gapplus.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICompanyService _unit;
         private readonly IMapper _mapper;
+        private readonly UsersContext _context;
         private readonly ILogger<CompanyContract> _logger;
+
 
         public CompanyContract(
             IUnitOfWork unitOfWork,
             IMapper mapper,
+            UsersContext context,
             ILogger<CompanyContract> logger
         )
         {
             _unitOfWork = unitOfWork;
             _unit = _unitOfWork.Companies;
+            _context=context;
             _mapper = mapper;
             _logger = logger;
         }
@@ -31,7 +37,10 @@ namespace Gapplus.Application.Services
         public async Task<ReadCompanyDto> CreateCompany(CreateCompanyDto dto)
         {
             var company = _mapper.Map<Company>(dto);
-
+            var check=await _context.Companies.AnyAsync(x=>x.CompanyRegNo==dto.CompanyRegNo);
+            if(check){
+                throw new Exception("UNABLE TO CREATE COOMPANY || DUPLICATE REG CODE || REG CODE ALREADY USED BY ANOTHER COMPANY");
+            }
             var createdCompany = await _unit.Add(company);
             if (createdCompany == null)
             {
@@ -58,6 +67,30 @@ namespace Gapplus.Application.Services
             try
             {
                 var companies = await _unit.GetAll();
+                var companiesDto = _mapper.Map<List<ReadCompanyDto>>(companies);
+                return companiesDto;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+        }
+        public async Task<IEnumerable<ReadCompanyDto>> GetShareHolderCompanies(Guid ShareHolderId)
+        {
+            try
+            {
+                var shareHolder = await _unitOfWork.ShareHolders.GetById(ShareHolderId);
+                if (shareHolder == null)
+                {
+                    throw new Exception("INVALID SHAREHOLDER ID || SHAREHOLDER DOES NOT EXIST");
+                }
+                // var ShareHolderCompanyRelationShips=await _context.ShareHolderCompanies.Where(x=>x.ShareHolderId==ShareHolderId).Include(x=>x.Company).ToList();
+                var ShareHolderCompanyRelationShips = _context.ShareHolderCompanies.Where(x => x.ShareHolderId == ShareHolderId).Include(x=>x.Company).ToList();
+                List<Company> companies = new();
+                ShareHolderCompanyRelationShips.ForEach(x =>
+                {
+                    companies.Add(x.Company);
+                });
                 var companiesDto = _mapper.Map<List<ReadCompanyDto>>(companies);
                 return companiesDto;
             }

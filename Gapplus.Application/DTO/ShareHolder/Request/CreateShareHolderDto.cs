@@ -14,10 +14,23 @@ namespace Gapplus.Application.DTO.ShareHolder.Request
     public string emailAddress { get; set; }
     public string? PhoneNumber { get; set; }
     public string? ImageUrl { get; set; }
+    public string Password {get;set;}
 
 
     }
+    public class ShareHolderLoginDto
+    { 
+    public string emailAddress { get; set; }
+    public string Password {get;set;}
 
+    }
+
+    public class RegisterShareHolderToCompanyDto
+    {
+        public Guid ShareHolderId { get; set; }
+        public string CompanyRegCode { get; set; }
+        public double Holdings { get; set; }
+    }
     public class UpdateShareHolderDto
     {
         
@@ -25,7 +38,6 @@ namespace Gapplus.Application.DTO.ShareHolder.Request
     public string LastName { get; set; }
     public string Address { get; set; }
     public string? ImageUrl { get; set; }
-
-
+    public string Password {get;set;}
     }
 }
