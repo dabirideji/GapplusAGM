@@ -185,7 +185,8 @@ namespace Gapplus.Application.Contracts
                 MeetingRegistration reg = new();
                 reg.MeetingId = MeetingId;
                 reg.ShareHolderId = ShareHolderId;
-                reg.MeetingNumber = meeting.MeetingDetails.id;
+                reg.MeetingNumber=12344444;
+                // reg.MeetingNumber = meeting.MeetingDetails.id;
                 await _unitOfWork.MeetingRegistrations.Add(reg);
                 await _unitOfWork.SaveAsync();
                 return true;

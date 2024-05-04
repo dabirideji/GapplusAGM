@@ -16,11 +16,7 @@ namespace BarcodeGenerator.Models
         public UsersContext(DbContextOptions<UsersContext> options) : base(options)
         {
         }
-
-        ///////////////////////////////////////////////////////
-        //  I RECENTLY JUST ADDED THE MODELS
-        // public DbSet<User> Users { get; set; }
-        // public DbSet<Company> Companies { get; set; }
+        
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<ShareHolder> ShareHolders { get; set; }
         public DbSet<Company> Companies { get; set; }

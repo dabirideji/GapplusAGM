@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Gapplus.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class AlteredModelMeetingDetailsAgains : Migration
+    public partial class AlteredModelMeetinghnvnmhhodel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -552,20 +552,6 @@ namespace Gapplus.Api.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ShareHolderCompanies",
-                columns: table => new
-                {
-                    ShareHolderId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    CompanyId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Holdings = table.Column<double>(type: "REAL", nullable: false),
-                    PercentageHolding = table.Column<double>(type: "REAL", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ShareHolderCompanies", x => new { x.ShareHolderId, x.CompanyId });
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ShareholderFeedback",
                 columns: table => new
                 {
@@ -597,7 +583,7 @@ namespace Gapplus.Api.Migrations
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Interests = table.Column<string>(type: "TEXT", nullable: true),
                     ConsolidationStatus = table.Column<int>(type: "INTEGER", nullable: false),
-                    PasswordHash = table.Column<string>(type: "TEXT", nullable: false),
+                    Password = table.Column<string>(type: "TEXT", nullable: false),
                     IsActive = table.Column<bool>(type: "INTEGER", nullable: false),
                     IsDisabled = table.Column<bool>(type: "INTEGER", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
@@ -654,7 +640,7 @@ namespace Gapplus.Api.Migrations
                 {
                     MeetingId = table.Column<Guid>(type: "TEXT", nullable: false),
                     CompanyId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    MeetingDetailsId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    MeetingDetails = table.Column<string>(type: "TEXT", nullable: false),
                     MeetingStatus = table.Column<int>(type: "INTEGER", nullable: false),
                     MeetingCreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
                     MeetingUpdatedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
@@ -664,6 +650,26 @@ namespace Gapplus.Api.Migrations
                     table.PrimaryKey("PK_Meetings", x => x.MeetingId);
                     table.ForeignKey(
                         name: "FK_Meetings_Companies_CompanyId",
+                        column: x => x.CompanyId,
+                        principalTable: "Companies",
+                        principalColumn: "CompanyId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ShareHolderCompanies",
+                columns: table => new
+                {
+                    ShareHolderId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    CompanyId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    Holdings = table.Column<double>(type: "REAL", nullable: false),
+                    PercentageHolding = table.Column<double>(type: "REAL", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ShareHolderCompanies", x => new { x.ShareHolderId, x.CompanyId });
+                    table.ForeignKey(
+                        name: "FK_ShareHolderCompanies_Companies_CompanyId",
                         column: x => x.CompanyId,
                         principalTable: "Companies",
                         principalColumn: "CompanyId",
@@ -784,117 +790,10 @@ namespace Gapplus.Api.Migrations
                         principalColumn: "Id");
                 });
 
-            migrationBuilder.CreateTable(
-                name: "MeetingDetails",
-                columns: table => new
-                {
-                    MeetingDetailsId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    MeetingId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    uuid = table.Column<string>(type: "TEXT", nullable: false),
-                    id = table.Column<long>(type: "INTEGER", nullable: false),
-                    host_id = table.Column<string>(type: "TEXT", nullable: false),
-                    host_email = table.Column<string>(type: "TEXT", nullable: false),
-                    topic = table.Column<string>(type: "TEXT", nullable: false),
-                    type = table.Column<int>(type: "INTEGER", nullable: false),
-                    status = table.Column<string>(type: "TEXT", nullable: false),
-                    start_time = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    duration = table.Column<int>(type: "INTEGER", nullable: false),
-                    timezone = table.Column<string>(type: "TEXT", nullable: false),
-                    agenda = table.Column<string>(type: "TEXT", nullable: false),
-                    created_at = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    start_url = table.Column<string>(type: "TEXT", nullable: false),
-                    join_url = table.Column<string>(type: "TEXT", nullable: false),
-                    password = table.Column<string>(type: "TEXT", nullable: false),
-                    h323_password = table.Column<string>(type: "TEXT", nullable: false),
-                    pstn_password = table.Column<string>(type: "TEXT", nullable: false),
-                    encrypted_password = table.Column<string>(type: "TEXT", nullable: false),
-                    MeetingSettingsId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    pre_schedule = table.Column<bool>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_MeetingDetails", x => x.MeetingDetailsId);
-                    table.ForeignKey(
-                        name: "FK_MeetingDetails_Meetings_MeetingId",
-                        column: x => x.MeetingId,
-                        principalTable: "Meetings",
-                        principalColumn: "MeetingId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "MeetingSettings",
-                columns: table => new
-                {
-                    MeetingSettingsId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    MeetingDetaildId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    host_video = table.Column<bool>(type: "INTEGER", nullable: false),
-                    participant_video = table.Column<bool>(type: "INTEGER", nullable: false),
-                    cn_meeting = table.Column<bool>(type: "INTEGER", nullable: false),
-                    in_meeting = table.Column<bool>(type: "INTEGER", nullable: false),
-                    join_before_host = table.Column<bool>(type: "INTEGER", nullable: false),
-                    jbh_time = table.Column<int>(type: "INTEGER", nullable: false),
-                    mute_upon_entry = table.Column<bool>(type: "INTEGER", nullable: false),
-                    watermark = table.Column<bool>(type: "INTEGER", nullable: false),
-                    use_pmi = table.Column<bool>(type: "INTEGER", nullable: false),
-                    approval_type = table.Column<int>(type: "INTEGER", nullable: false),
-                    audio = table.Column<string>(type: "TEXT", nullable: false),
-                    auto_recording = table.Column<string>(type: "TEXT", nullable: false),
-                    enforce_login = table.Column<bool>(type: "INTEGER", nullable: false),
-                    enforce_login_domains = table.Column<string>(type: "TEXT", nullable: false),
-                    alternative_hosts = table.Column<string>(type: "TEXT", nullable: false),
-                    alternative_host_update_polls = table.Column<bool>(type: "INTEGER", nullable: false),
-                    close_registration = table.Column<bool>(type: "INTEGER", nullable: false),
-                    show_share_button = table.Column<bool>(type: "INTEGER", nullable: false),
-                    allow_multiple_devices = table.Column<bool>(type: "INTEGER", nullable: false),
-                    registrants_confirmation_email = table.Column<bool>(type: "INTEGER", nullable: false),
-                    waiting_room = table.Column<bool>(type: "INTEGER", nullable: false),
-                    request_permission_to_unmute_participants = table.Column<bool>(type: "INTEGER", nullable: false),
-                    registrants_email_notification = table.Column<bool>(type: "INTEGER", nullable: false),
-                    meeting_authentication = table.Column<bool>(type: "INTEGER", nullable: false),
-                    encryption_type = table.Column<string>(type: "TEXT", nullable: false),
-                    internal_meeting = table.Column<bool>(type: "INTEGER", nullable: false),
-                    participant_focused_meeting = table.Column<bool>(type: "INTEGER", nullable: false),
-                    push_change_to_calendar = table.Column<bool>(type: "INTEGER", nullable: false),
-                    resources = table.Column<string>(type: "TEXT", nullable: false),
-                    auto_start_meeting_summary = table.Column<bool>(type: "INTEGER", nullable: false),
-                    alternative_hosts_email_notification = table.Column<bool>(type: "INTEGER", nullable: false),
-                    show_join_info = table.Column<bool>(type: "INTEGER", nullable: false),
-                    device_testing = table.Column<bool>(type: "INTEGER", nullable: false),
-                    focus_mode = table.Column<bool>(type: "INTEGER", nullable: false),
-                    meeting_invitees = table.Column<string>(type: "TEXT", nullable: false),
-                    enable_dedicated_group_chat = table.Column<bool>(type: "INTEGER", nullable: false),
-                    private_meeting = table.Column<bool>(type: "INTEGER", nullable: false),
-                    email_notification = table.Column<bool>(type: "INTEGER", nullable: false),
-                    host_save_video_order = table.Column<bool>(type: "INTEGER", nullable: false),
-                    email_in_attendee_report = table.Column<bool>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_MeetingSettings", x => x.MeetingSettingsId);
-                    table.ForeignKey(
-                        name: "FK_MeetingSettings_MeetingDetails_MeetingDetaildId",
-                        column: x => x.MeetingDetaildId,
-                        principalTable: "MeetingDetails",
-                        principalColumn: "MeetingDetailsId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Destinations_Messagesid",
                 table: "Destinations",
                 column: "Messagesid");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MeetingDetails_MeetingId",
-                table: "MeetingDetails",
-                column: "MeetingId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MeetingDetails_MeetingSettingsId",
-                table: "MeetingDetails",
-                column: "MeetingSettingsId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Meetings_CompanyId",
@@ -902,15 +801,14 @@ namespace Gapplus.Api.Migrations
                 column: "CompanyId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MeetingSettings_MeetingDetaildId",
-                table: "MeetingSettings",
-                column: "MeetingDetaildId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Result_QuestionId",
                 table: "Result",
                 column: "QuestionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ShareHolderCompanies_CompanyId",
+                table: "ShareHolderCompanies",
+                column: "CompanyId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_SMSDeliveryLog_QuestionId",
@@ -921,23 +819,11 @@ namespace Gapplus.Api.Migrations
                 name: "IX_SMSResult_QuestionId",
                 table: "SMSResult",
                 column: "QuestionId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_MeetingDetails_MeetingSettings_MeetingSettingsId",
-                table: "MeetingDetails",
-                column: "MeetingSettingsId",
-                principalTable: "MeetingSettings",
-                principalColumn: "MeetingSettingsId",
-                onDelete: ReferentialAction.Cascade);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_MeetingDetails_MeetingSettings_MeetingSettingsId",
-                table: "MeetingDetails");
-
             migrationBuilder.DropTable(
                 name: "AGMQuestions");
 
@@ -964,6 +850,9 @@ namespace Gapplus.Api.Migrations
 
             migrationBuilder.DropTable(
                 name: "MeetingRegistrations");
+
+            migrationBuilder.DropTable(
+                name: "Meetings");
 
             migrationBuilder.DropTable(
                 name: "Present");
@@ -1017,19 +906,10 @@ namespace Gapplus.Api.Migrations
                 name: "Messages");
 
             migrationBuilder.DropTable(
-                name: "Question");
-
-            migrationBuilder.DropTable(
-                name: "MeetingSettings");
-
-            migrationBuilder.DropTable(
-                name: "MeetingDetails");
-
-            migrationBuilder.DropTable(
-                name: "Meetings");
-
-            migrationBuilder.DropTable(
                 name: "Companies");
+
+            migrationBuilder.DropTable(
+                name: "Question");
         }
     }
 }

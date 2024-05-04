@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BarcodeGenerator.Models;
 using Gapplus.Application.DTO.ShareHolder.Request;
 using Gapplus.Application.DTO.ShareHolder.Response;
 using Gapplus.Application.Interfaces.IContracts;
 using Gapplus.Application.Response;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Gapplus.Api.Controllers
 {
@@ -86,7 +88,7 @@ namespace Gapplus.Api.Controllers
 
 
          [HttpPost]
-         public async Task<ActionResult<DefaultResponse<ReadShareHolderDto>>> Login([FromBody] ShareHolderLoginDto dto)
+         public async Task<ActionResult> Login([FromBody] ShareHolderLoginDto dto,[FromServices]UsersContext _context)
          {
             if(!ModelState.IsValid){
                 return BadRequest(ModelState);
@@ -97,7 +99,15 @@ namespace Gapplus.Api.Controllers
                 if(responseFromService==null){
                     return BadRequest(x.ConvertToBad("LOGIN FAILED"));
                 }
+                var companyRelationships=await _context.ShareHolderCompanies.Where(x=>x.ShareHolderId==responseFromService.ShareHolderId).Include(x=>x.Company).ToListAsync();
+                                responseFromService.CompanyRelationShips=companyRelationships;
                 var response=x.ConvertToGood("LOGIN SUCCESSFULL",responseFromService);
+                var objToReturn=new{
+                    status=true,
+                    responseCode="00",
+                    responseMessage="Login Successfull",
+                    data=companyRelationships
+                };
                 return Ok(response);
             }
              catch (System.Exception ex)

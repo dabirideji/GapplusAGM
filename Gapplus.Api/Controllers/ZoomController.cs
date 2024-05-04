@@ -12,6 +12,9 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using Gapplus.Application.Interfaces;
 using Gapplus.Domain.Models.Base;
+using BarcodeGenerator.Models;
+using Gapplus.Application.Response;
+using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -277,7 +280,7 @@ public async Task<ActionResult<Meeting>> CreateMeetingAsync([FromRoute]Guid Comp
     {
         var responseContent = await response.Content.ReadAsStringAsync();
         var meetingObject=new Meeting();
-        meetingObject.MeetingDetails=JsonConvert.DeserializeObject<MeetingDetails>(responseContent);
+        meetingObject.MeetingDetails=responseContent;
         try
         {
             var company=await _unitOfWork.Companies.GetById(CompanyId);
@@ -326,6 +329,17 @@ public async Task<ActionResult<Meeting>> CreateMeetingAsync([FromRoute]Guid Comp
         };
 
         return Ok(zoomMeetingsResponse);
+    }
+     [HttpGet("meetings/Agm")]
+    public async Task<ActionResult<DefaultResponse<List<Meeting>>>> GetAllMeetings([FromServices]UsersContext _context)
+    {
+        AutoDefaultResponse<List<Meeting>> x=new();
+        var meetings=await _context.Meetings.ToListAsync();
+        if(meetings.Count()==0){
+            return NotFound(x.ConvertToBad("NO MEETINGS CURRENTLY"));
+        }
+        var response=x.ConvertToGood("MEETINGS FETCHED SUCCESSFULLY",meetings);
+        return Ok(response);
     }
 
     [HttpPost("GenerateZoomSignature")]

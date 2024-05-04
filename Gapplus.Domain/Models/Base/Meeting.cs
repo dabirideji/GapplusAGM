@@ -11,11 +11,9 @@ using System.ComponentModel;
 
 namespace Gapplus.Domain.Models.Base;
 
-
-public class MeetingSettings
-{
-    [Key]
-    public Guid MeetingSettingsId { get; set; }=Guid.NewGuid();
+   [Keyless]
+    public class MeetingSettings
+    {
     public bool host_video { get; set; }
     public bool participant_video { get; set; }
     public bool cn_meeting { get; set; }
@@ -85,10 +83,7 @@ public class SignLanguageInterpretation
     public bool enable { get; set; }
 }
 
-public class MeetingDetails
-{   
-    [Key]
-    public Guid MeetingDetailsId { get; set; }=Guid.NewGuid();
+    public class MeetingDetails{
     public string uuid { get; set; }
     public long id { get; set; }
     public string host_id { get; set; }
@@ -107,7 +102,8 @@ public class MeetingDetails
     public string h323_password { get; set; }
     public string pstn_password { get; set; }
     public string encrypted_password { get; set; }
-        public MeetingSettings MeetingSettings { get; set; }
+    [NotMapped]
+    public MeetingSettings MeetingSettings { get; set; }
     public bool pre_schedule { get; set; }
 }
 
@@ -201,9 +197,8 @@ public class Meeting
     [ForeignKey("Company")]
     public Guid CompanyId { get; set; }
     public Company Company { get; set; }
-
-    public MeetingDetails MeetingDetails { get; set; }
-    public MeetingStatus MeetingStatus { get; set; }
+    public string MeetingDetails { get; set; }
+    public MeetingStatus MeetingStatus { get; set; }=MeetingStatus.Waiting;
     public DateTime MeetingCreatedAt { get; set; }
     public DateTime MeetingUpdatedAt { get; set; }
 }
@@ -255,10 +250,10 @@ public class ShareHolder
         }
     }
     public List<int>? Interests { get; set; }
-    public ConsolidationStatus ConsolidationStatus { get; set; }=ConsolidationStatus.NotConsolidated;
+    public ConsolidationStatus ConsolidationStatus { get; set; } = ConsolidationStatus.NotConsolidated;
     public string Password { get; set; }
-    public bool IsActive { get; set; }=true;
-    public bool IsDisabled { get; set; }=false;
+    public bool IsActive { get; set; } = true;
+    public bool IsDisabled { get; set; } = false;
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.MinValue;
@@ -319,7 +314,7 @@ public enum CompanyStatus
 public class Company
 {
     [Key]
-    public Guid CompanyId { get; set; }=Guid.NewGuid();
+    public Guid CompanyId { get; set; } = Guid.NewGuid();
 
     public String CompanyName { get; set; }
     public String CompanyDescription { get; set; }
@@ -328,7 +323,7 @@ public class Company
 
 
     public List<String>? Tags { get; set; }
-    public CompanyStatus CompanyStatus { get; set; }=CompanyStatus.Active;
+    public CompanyStatus CompanyStatus { get; set; } = CompanyStatus.Active;
     public DateTime CompanyCreatedAt { get; set; }
     public DateTime CompanyUpdatedAt { get; set; }
 }
