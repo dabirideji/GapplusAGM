@@ -136,8 +136,13 @@ namespace BarcodeGenerator.Service
                     return AGMID;
                 }
 
-                var agmid = adb.Settings.Where(s => s.CompanyName.ToLower() == companyinfo.ToLower() && s.ArchiveStatus == false).OrderByDescending(ai => ai.AGMID).First().AGMID;
-                if(agmid!=0)
+                // var agmid = adb.Settings.Where(s => s.CompanyName.ToLower() == companyinfo.ToLower() && s.ArchiveStatus == false).OrderByDescending(ai => ai.AGMID).First().AGMID;
+                
+                var FakeSettings=SettingsModelFakeData.GenerateFakeSettingsData();
+                
+                var agm = FakeSettings.Where(s => s.CompanyName.ToLower() == companyinfo.ToLower() && s.ArchiveStatus == false).OrderByDescending(ai => ai.AGMID).First();
+                var agmid=agm.AGMID;
+                if(agmid!=0 && agmid!=null)
                 {
                     return AGMID = agmid;
                 }

@@ -1,33 +1,42 @@
-﻿// using BarcodeGenerator.Filters;
-// using BarcodeGenerator.Models;
-// using Microsoft.Web.WebPages.OAuth;
+﻿// using BarcodeGenerator.Models;
+// using Microsoft.AspNetCore.Mvc;
+// using Microsoft.AspNetCore.Mvc.Rendering;
+// using Microsoft.EntityFrameworkCore;
 // using System;
 // using System.Collections.Generic;
 // using System.Data;
-// using System.Data.Entity;
 // using System.Linq;
 // using System.Net.Mail;
 // using System.Text;
 // using System.Web;
-// using System.Web.Configuration;
-// using System.Web.Mvc;
-// using System.Web.Security;
 // using WebMatrix.WebData;
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     [Authorize]
-//     [InitializeSimpleMembership]
-//     public class ManageUserController : Controller
+//     // [Authorize]
+//     // [InitializeSimpleMembership]
+//     [ApiController]
+//     [Route("api/[controller]/[action]")]
+//     public class ManageUserController : ControllerBase
 //     {
 //         //
 //         // GET: /ManageUser/
-//         private UsersContext db = new UsersContext();
+//         private UsersContext db;
+//         private readonly IViewBagManager _viewBagManager;
+//         private readonly ITempDataManager _tempDataManager;
 
+//         public ManageUserController(UsersContext _db,IViewBagManager viewBagManager,ITempDataManager tempDataManager)
+//         {
+//             db=_db;
+//             _viewBagManager=viewBagManager;
+//             _tempDataManager=tempDataManager;   
+//         }
+
+//     [HttpGet]
 //         public ActionResult Index()
 //         {
 //             var users = db.UserProfiles.ToList();
-//             return PartialView(users);
+//             return Ok(users);
 //         }
 
 //         //
@@ -35,7 +44,8 @@
 //         public ActionResult Create()
 //         {
 //             var identity = new SelectList(new[] { "Admin", "User","Guest", "Messaging" });
-//             ViewBag.Identity = identity;
+//             // ViewBag.Identity = identity;
+//             _viewBagManager.SetValue("Identity",identity);
 //             if (!WebSecurity.Initialized)
 //             {
 //                 WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
@@ -43,7 +53,7 @@
 
 //             RegisterModel model = new RegisterModel();
 
-//             return PartialView(model);
+//             return Ok(model);
 //         }
 
 //         //
@@ -88,19 +98,19 @@
 
 //                         userlist.Add(user);
 //                         GenerateLoginMail(user.UserName);
-//                         return PartialView("SearchIndex", userlist);
+//                         return Ok(userlist);
 //                     }
-//                     return PartialView("SearchIndex", userlist);
+//                     return Ok(userlist);
 //                 }
 //                 catch (MembershipCreateUserException e)
 //                 {
 //                     //ModelState.AddModelError("", ErrorCodeToString(e.StatusCode));
-//                     return PartialView("SearchIndex", new List<UserProfile>());
+//                     return Ok(new List<UserProfile>());
 //                 }
 //             }
 
 //             // If we got this far, something failed, redisplay form
-//             return PartialView("SearchIndex", new List<UserProfile>());
+//             return Ok("SearchIndex", new List<UserProfile>());
 //         }
 
 

@@ -4,16 +4,17 @@
 // using System;
 // using System.Collections.Generic;
 // using System.Data;
-// using System.Data.Entity;
 // using System.Linq;
 // using System.Threading.Tasks;
-// using System.Web;
-// using System.Web.Mvc;
+
 
 // namespace BarcodeGenerator.Controllers
 // {
-//      [Authorize]
-//     public class VerificationController : Controller
+//     //  [Authorize]
+//      [ApiController][
+//         Route("api/[controller]/[action]")
+//      ]
+//     public class VerificationController : ControllerBase
 //     {
 //         //
 //         // GET: /Verification/

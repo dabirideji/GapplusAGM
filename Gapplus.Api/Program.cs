@@ -1,3 +1,4 @@
+using BarcodeGenerator.Hubs;
 using BarcodeGenerator.Models;
 using BarcodeGenerator.Service;
 using Gapplus.Application.Contracts;
@@ -9,7 +10,9 @@ using Gapplus.Application.Services;
 using Gapplus.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using  Gapplus.Api.Services;
 using Swashbuckle.AspNetCore.Filters;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -67,6 +70,19 @@ builder.Services.AddCors(options =>
     });
 });
 
+
+builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowLocalhost5173",
+            builder =>
+            {
+                builder.WithOrigins("http://localhost:5173")
+                       .AllowAnyMethod()
+                       .AllowAnyHeader()
+                       .AllowCredentials(); // Allow credentials if needed
+            });
+    });
+
 #endregion
 
 #region DATABASE CONNECTIONS AND CONFIGURATIONS
@@ -85,6 +101,13 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<UsersContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Offline"),
 b => b.MigrationsAssembly("Gapplus.Api")));
+
+builder.Services.AddSingleton<IFakeResolutionService, FakeResolutionService>();
+
+
+// builder.Services.AddDbContext<FakeResolutionDbContext>(options =>
+//     options.UseSqlite(builder.Configuration.GetConnectionString("FakeResolutions"),
+// b => b.MigrationsAssembly("Gapplus.Api")));
 
 
 
@@ -135,11 +158,18 @@ SessionInitializer
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
-app.UseCors();
+// app.UseCors();
+app.UseCors("AllowLocalhost5173");
 app.UseSession();
+app.UseRouting(); // Add this line to use routing middleware
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<FakeResolutionHub>("/hub/fakeResolutionHub");
+    // Other endpoint mappings
+});
 app.Run();
 
 #endregion

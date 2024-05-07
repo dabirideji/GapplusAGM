@@ -1,31 +1,42 @@
 ﻿// using BarcodeGenerator.Models;
 // using BarcodeGenerator.Service;
 // using BarcodeGenerator.Util;
+// using Gapplus.Application.Helpers;
+// using Microsoft.AspNetCore.Mvc;
 // using System;
 // using System.Collections.Generic;
-// using System.Configuration;
-// using System.Data.Entity;
-// using System.Data.Entity.Infrastructure;
 // using System.Data.SqlClient;
 // using System.Diagnostics;
 // using System.Linq;
 // using System.Threading.Tasks;
-// using System.Web;
-// using System.Web.Mvc;
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     public class MobileVotingController : Controller
+//     [ApiController]
+//     [Route("api/[controller]/[action]")]
+//     public class MobileVotingController : ControllerBase
 //     {
-//         UsersContext db = new UsersContext();
+//         UsersContext db;
+//         private readonly IViewBagManager _viewBagManager;
 //         Stopwatch stopwatch = new Stopwatch();
-//         UserAdmin ua = new UserAdmin();
-//         AGMManager agmM = new AGMManager();
-//         WebVotingService _webVotingService = new WebVotingService();
+//         private readonly ITempDataManager _tempDataManager;
+
+//         public MobileVotingController(UsersContext _db,ITempDataManager tempDataManager,IViewBagManager viewBagManager){
+//             _tempDataManager = tempDataManager;
+//             db=_db;
+//             _viewBagManager = viewBagManager;
+//             ua = new UserAdmin(db);
+//              _webVotingService = new WebVotingService(db);
+//           agmM  = new AGMManager(db);
+//         }
+//         UserAdmin ua;
+//         AGMManager agmM ;
+//         WebVotingService _webVotingService;
 
 //         private static string currentYear = DateTime.Now.Year.ToString();
 
-//         private static string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+//         private static string connStr = DatabaseManager.GetConnectionString();
+//         // private static string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 //         SqlConnection conn =
 //                   new SqlConnection(connStr);
 
@@ -37,18 +48,23 @@
 
 //         // GET: Accreditation
 //         //[Authorize]
+//         [HttpGet]
 //         public async Task<ActionResult> Index()
 //         {
 //             var response = await IndexAsync();
-//             ViewBag.portal = "Welcome to AGMLive, your one-stop hybrid shareholder meeting solution";
+//             // ViewBag.portal = "Welcome to AGMLive, your one-stop hybrid shareholder meeting solution";
+//             _viewBagManager.SetValue("Portal","Welcome to AGMLive, your one-stop hybrid shareholder meeting solution");
 //             string changePortalText = "";
-//             changePortalText = TempData["Portal"] as string;
+//             // changePortalText = TempData["Portal"] as string;
+//             changePortalText =_tempDataManager.GetTempData<String>("Portal");
 //             if (!string.IsNullOrEmpty(changePortalText) || !string.IsNullOrWhiteSpace(changePortalText))
 //             {
-//                 ViewBag.portal = changePortalText;
+//                 // ViewBag.portal = changePortalText;
+//             _viewBagManager.SetValue("Portal",changePortalText);
+
 //             }
 
-//             return View(response);
+//             return Ok(response);
 //         }
 
 //         private Task<AccreditationResponse> IndexAsync()
@@ -71,7 +87,7 @@
 //             }
 
 //         }
-
+// [HttpGet]
 //         public ActionResult AccreditationIndex(string companyinfo)
 //         {
 //             var model = new accredationDto
@@ -79,36 +95,30 @@
 //                 company = companyinfo,
 //                 accesscode = ""
 //             };
-
-//             return PartialView(model);
+//             return Ok(model);
 //         }
 
 
+// [HttpGet]
 //         public ActionResult AGMStageLogin(string companyinfo)
 //         {
-//             ViewBag.Portal = "You have a current session on another browser.";
+//             // ViewBag.Portal = "You have a current session on another browser.";
+//             _viewBagManager.SetValue("Portal","You have a current session on another browser.");
 //             //var model = new accredationDto
 //             //{
 //             //    company = companyinfo,
 //             //    accesscode = ""
 //             //};
 
-//             return View();
+//             return Ok();
 //         }
 
-//         public ActionResult TermsCondition()
-//         {
-
-//             return View();
-//         }
-
-
-
+//       [HttpPost]
 //         public async Task<ActionResult> JoinOngoingVotingResolution(string company, string shareholdernum)
 //         {
 //             var response = await JoinOngoingVotingResolutionAsync(company, shareholdernum);
 
-//             return Json(response, JsonRequestBehavior.AllowGet);
+//             return Ok(response);
 //         }
 
 
@@ -286,7 +296,7 @@
 //         public async Task<ActionResult> aElapsedTime(string id)
 //         {
 //             var time = await aElapsedTimeAsync(id);
-//             return PartialView(time);
+//             return Ok(time);
 //         }
 
 
@@ -308,7 +318,7 @@
 //         public async Task<ActionResult> aElapsedTimeEventLoading(string id)
 //         {
 //             var time = await aElapsedTimeEventLoadingAsync(id);
-//             return PartialView(time);
+//             return Ok(time);
 //         }
 
 //         public Task<TimeSpan> aElapsedTimeEventLoadingAsync(string company)
@@ -347,11 +357,13 @@
 //         }
 
 
+//     [HttpGet]
 //         public async Task<ActionResult> Logout()
 //         {
 //             var response = await LogoutAsync();
 
-//             TempData["Portal"] = "Thank you for attending AGM";
+//             // TempData["Portal"] = "Thank you for attending AGM";
+//             _tempDataManager.SetTempData("Portal","Thank you for attending AGM");
 //             return RedirectToAction("Index");
 //         }
 
@@ -360,11 +372,14 @@
 //             try
 //             {
 //                 var companyNameList = db.Settings.Where(s => s.ArchiveStatus == false).Select(o => new AGMCompanies { company = o.CompanyName, description = o.Description, agmid = o.AGMID, venue = o.Venue, dateTime = o.AgmDateTime }).Distinct().OrderBy(k => k.company).ToList();
-//                 var session = Session["Authorize"] as APIMessageLog;
+//                 // var session = Session["Authorize"] as APIMessageLog;
+//                 var session = SessionManager.GetSessionData<APIMessageLog>("Authorize");
+                
 //                 //if (session.ResourceType != "Facilitator")
 //                 //{
 //                     MobileWebVotingSessionManager.LogoutUserLoginHistory(session.shareholder.Company, session.shareholder.ShareholderNum);
-//                     Session.Clear();
+//                     // Session.Clear();
+//                     SessionManager.ClearAllSessionData();
 //                     return Task.FromResult<List<AGMCompanies>>(companyNameList);
 //                 //}
 //                 //else
@@ -394,10 +409,13 @@
 //         }
 
 
-//         public async Task<ActionResult> Vote()
+// [HttpGet]        public async Task<ActionResult> Vote()
 //         {
-//             var sessionid = System.Web.HttpContext.Current.Session.SessionID;
-//             var model = (APIMessageLog)Session["Authorize"];
+//             // var sessionid = System.Web.HttpContext.Current.Session.SessionID;
+//             var sessionid =SessionManager.GetSessionData<string>("SessionID");
+
+//             // var model = (APIMessageLog)Session["Authorize"];
+//             var model = SessionManager.GetSessionData<APIMessageLog>("Authorize");
 //             var abstainbtnchoice = true;
 
 
@@ -486,7 +504,7 @@
 //                              Convert.ToBase64String((byte[])AgmEvent.Image) : "";
 
 //                         }
-//                     return View(model);
+//                     return Ok(model);
 //                 }               
 
 //             }
@@ -500,20 +518,21 @@
 //             return RedirectToAction("Index");
 //         }
 
-
+// [HttpGet]
 //         public async Task<ActionResult> LoginConfirmation(bool status)
 //         {
 //             //bool statuss = bool.Parse(status);
 
 //             bool response = false;
-//             var model = Session["Authorize"] as APIMessageLog;
+//             // var model = Session["Authorize"] as APIMessageLog;
+//             var model =SessionManager.GetSessionData<APIMessageLog>("Authorize");
 //             if (model != null && model.shareholder != null)
 //             {
 
 //                     response = await LoginConfirmationAsync(model.shareholder.Company, model.shareholder.ShareholderNum, status);
 
 //             }
-//             return Json(response, JsonRequestBehavior.AllowGet);
+//             return OK(response);
 
 
 //         }
@@ -532,10 +551,10 @@
 
 
 
-//         public async Task<ActionResult> EventLoadingPage(string id)
+// [HttpGet]        public async Task<ActionResult> EventLoadingPage(string id)
 //         {
 //             var response = await EventLoadingPageAsync(id);
-//             return View(response);
+//             return Ok(response);
 //         }
 
 //         public Task<EventLoadingDto> EventLoadingPageAsync(string company)

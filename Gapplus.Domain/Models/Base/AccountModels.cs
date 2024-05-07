@@ -10,13 +10,12 @@ namespace BarcodeGenerator.Models
 {
     public class UsersContext : DbContext
     {
-        private readonly DbContextOptions<UsersContext> options;
-
-
-        public UsersContext(DbContextOptions<UsersContext> options) : base(options)
+        public UsersContext(DbContextOptions options) : base(options)
         {
         }
         
+        public DbSet<FakeResolutionModel> FakeResolutions { get; set; }
+
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<ShareHolder> ShareHolders { get; set; }
         public DbSet<Company> Companies { get; set; }

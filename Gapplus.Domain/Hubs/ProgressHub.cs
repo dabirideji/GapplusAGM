@@ -6,11 +6,13 @@ using System.Web;
 
 namespace BarcodeGenerator.Hubs
 {
-    public class ProgressHub: Hub
+    public class ProgressHub : Hub
     {
     }
 
-    public class Dej:PersistentConnection{
+
+    public class Dej : PersistentConnection
+    {
 
     }
 }

@@ -8,6 +8,8 @@ using BarcodeGenerator.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using Microsoft.EntityFrameworkCore;
+using Gapplus.Application.Helpers;
 
 namespace BarcodeGenerator.Util
 {
@@ -363,25 +365,51 @@ namespace BarcodeGenerator.Util
             //throw new NotImplementedException();
         }
 
-        public static Task<bool> GetFacilatorLoginStatus(string companyinfo, string email)
-        {
-            try
-            {
+        // public static Task<bool> GetFacilatorLoginStatus(string companyinfo, string email)
+        // {
+        //     try
+        //     {
 
-                // var user = db.Facilitators.FirstOrDefault(x => x.Company == companyinfo && x.emailAddress == email);
-                var user = new Facilitators();
-                if (user != null)
-                {
-                    return Task.FromResult<bool>(user.UserLoginHistory);
-                }
-                return Task.FromResult<bool>(false);
-            }
-            catch (Exception e)
-            {
-                return Task.FromResult<bool>(false);
-            }
-            //throw new NotImplementedException();
-        }
+        //         var user = db.Facilitators.FirstOrDefault(x => x.Company == companyinfo && x.emailAddress == email);
+        //         // var user = new Facilitators();
+        //         if (user != null)
+        //         {
+        //             return Task.FromResult<bool>(user.UserLoginHistory);
+        //         }
+        //         return Task.FromResult<bool>(false);
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return Task.FromResult<bool>(false);
+        //     }
+        //     //throw new NotImplementedException();
+        // }
+
+
+        
+public static async Task<bool> GetFacilatorLoginStatus(string companyinfo, string email)
+{
+    // try
+    // {
+    //     var connectionString=DatabaseManager.GetConnectionString();
+    //     // using (var db = new UsersContext(new DbContextOptionsBuilder<UsersContext>().UseSqlite(connectionString).Options))
+    //     {
+    //         var user = db.Facilitators.FirstOrDefault(x => x.Company == companyinfo && x.emailAddress == email);
+    //         if (user != null)
+    //         {
+    //             return user.UserLoginHistory;
+    //         }
+    //         return false;
+    //     }
+    // }
+    // catch (Exception e)
+    // {
+    //     // Log or handle the exception appropriately
+    //     return false;
+    // }
+    throw new  NotImplementedException();
+}
+
 
 
 

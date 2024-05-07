@@ -80,3 +80,17 @@ c:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNet
 C:\GitRepo\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\GitRepo\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\GitRepo\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.forms.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.io.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.layout.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.pdfua.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.sign.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.svg.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\itext.commons.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\USER\Desktop\GapplusAGM\Gapplus.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll

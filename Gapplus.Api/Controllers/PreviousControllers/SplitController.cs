@@ -2,27 +2,38 @@
 // using BarcodeGenerator.Models;
 // using BarcodeGenerator.Service;
 // using BarcodeGenerator.Util;
+// using Microsoft.AspNetCore.Http.HttpResults;
+// using Microsoft.AspNetCore.Mvc;
+// using Microsoft.EntityFrameworkCore;
 // using System;
 // using System.Collections.Generic;
 // using System.Configuration;
 // using System.Data;
-// using System.Data.Entity;
 // using System.Data.SqlClient;
 // using System.Linq;
 // using System.Net;
 // using System.Net.Http;
 // using System.Threading.Tasks;
-// using System.Web;
-// using System.Web.Mvc;
+
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     public class SplitController : Controller
+//     [ApiController]
+//     [Route("api/[controller]/[action]")]
+//     public class SplitController : ControllerBase
 //     {
-//         //
-//         // GET: /Split/
-//         UsersContext db = new UsersContext();
-//         UserAdmin ua = new UserAdmin();
+//           UsersContext db ;
+//         UserAdmin ua;
+//        private readonly ITempDataManager _tempDataManager;
+//        private readonly IViewBagManager _viewBagManager;
+//         public SplitController(UsersContext _db,ITempDataManager tempDataManager,IViewBagManager viewBagManager)
+//         {
+//             db=_db;
+//             _tempDataManager=tempDataManager;
+//             _viewBagManager=viewBagManager;
+//             ua=new UserAdmin(db);     
+//         }
+
 
 //         //private static string companyinfo = UserAdmin.GetUserCompanyInfo();
 
@@ -600,16 +611,11 @@
 //             }
 //         }
 
-//         public ActionResult Create()
-//         {
-//             return View();
-//         }
-
 //         //
 //         // POST: /Split/Create
 
 //         [HttpPost]
-//         public ActionResult Create(FormCollection collection)
+//         public ActionResult Create(IFormFile collection)
 //         {
 //             try
 //             {
@@ -619,20 +625,10 @@
 //             }
 //             catch
 //             {
-//                 return View();
+//                 return Ok();
 //             }
 //         }
 
-//         //
-//         // GET: /Split/Edit/5
-
-//         public ActionResult Edit(int id)
-//         {
-//             return View();
-//         }
-
-//         //
-//         // POST: /Split/Edit/5
 
 //         [HttpPost]
 //         public ActionResult Edit(int id, FormCollection collection)
@@ -645,7 +641,7 @@
 //             }
 //             catch
 //             {
-//                 return View();
+//                 return Ok();
 //             }
 //         }
 

@@ -158,6 +158,10 @@
             "ZXing.Net": {
               "target": "Package",
               "version": "[0.16.9, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -345,6 +349,10 @@
             "ZXing.Net": {
               "target": "Package",
               "version": "[0.16.9, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -529,6 +537,10 @@
             "ZXing.Net": {
               "target": "Package",
               "version": "[0.16.9, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "log4net": {
               "target": "Package",
@@ -716,6 +728,10 @@
             "ZXing.Net": {
               "target": "Package",
               "version": "[0.16.9, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

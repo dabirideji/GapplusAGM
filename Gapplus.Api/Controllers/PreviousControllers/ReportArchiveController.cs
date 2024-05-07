@@ -1,6 +1,8 @@
 ﻿// using BarcodeGenerator.Models;
 // using BarcodeGenerator.Service;
 // using BarcodeGenerator.Util;
+// using Microsoft.AspNetCore.Mvc;
+// using Microsoft.AspNetCore.Mvc.Rendering;
 // using System;
 // using System.Collections.Generic;
 // using System.Configuration;
@@ -8,17 +10,28 @@
 // using System.Data.SqlClient;
 // using System.Linq;
 // using System.Threading.Tasks;
-// using System.Web.Mvc;
 
 // namespace BarcodeGenerator.Controllers
 // {
-//     public class ReportArchiveController : Controller
+//     [ApiController]
+//     [Route("api/[controller]/[action]")]
+//     public class ReportArchiveController : ControllerBase
 //     {
 //         // GET: ReportArchive
 //         // GET: /Report/
 
-//         UsersContext db = new UsersContext();
-//         UserAdmin ua = new UserAdmin();
+//     private readonly IViewBagManager _viewBagManager;
+//     private readonly ITempDataManager _tempDataManager;
+
+//         public ReportArchiveController(UsersContext _db,ITempDataManager tempDataManager,IViewBagManager viewBagManager)
+//         {
+//             db=_db;
+//              ua = new UserAdmin(db);
+//              _viewBagManager=viewBagManager;
+//              _tempDataManager=tempDataManager;
+//         }
+//         UsersContext db;
+//         UserAdmin ua;
 //         //private static string companyinfo = UserAdmin.GetUserCompanyInfo();
 
 //         //private static int RetrieveAGMUniqueID()
@@ -44,51 +57,134 @@
 
 
 
-//         public async Task<ActionResult> Index()
-//         {
-//             var returnUrl = HttpContext.Request.Url.AbsolutePath;
-//             //var companyinfo = ua.GetUserCompanyInfo();
+//         // [HttpGet]
+//         // public async Task<ActionResult> Index()
+//         // {
+//         //     var returnUrl = HttpContext.Request.Url.AbsolutePath;
+//         //     //var companyinfo = ua.GetUserCompanyInfo();
 
-//             string returnvalue = "";
-//             if (HttpContext.Request.QueryString.Count > 0)
-//             {
-//                 returnvalue = HttpContext.Request.QueryString["rel"].ToString();
-//             }
-//             ViewBag.value = returnvalue.Trim();
-//             //if (String.IsNullOrEmpty(companyinfo))
-//             //{
-//             //    return RedirectToAction("GetCompanyInfo", "Account", new { returnUrl = returnUrl, returnValue = returnvalue.Trim() });
-//             //}          
-//             var companies = db.SettingsArchive.Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList(); ;
-//             ViewBag.AGMHistory = new SelectList(companies ?? new List<string>());
-//             //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
-//             //ViewBag.Year = new SelectList(companies ?? new List<string>());
-//             var response = await IndexAsync();
+//         //     string returnvalue = "";
+//         //     if (HttpContext.Request.QueryString.Count > 0)
+//         //     {
+//         //         returnvalue = HttpContext.Request.QueryString["rel"].ToString();
+//         //     }
+//         //     // ViewBag.value = returnvalue.Trim();
+//         //     _viewBagManager.SetValue("value",returnvalue.Trim());
+//         //     //if (String.IsNullOrEmpty(companyinfo))
+//         //     //{
+//         //     //    return RedirectToAction("GetCompanyInfo", "Account", new { returnUrl = returnUrl, returnValue = returnvalue.Trim() });
+//         //     //}          
+//         //     var companies = db.SettingsArchive.Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList(); ;
+//         //     // ViewBag.AGMHistory = new SelectList(companies ?? new List<string>());
+//         //     _viewBagManager.SetValue("AGMHistory",new SelectList(companies ?? new List<string>()));
+//         //     //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
+//         //     //ViewBag.Year = new SelectList(companies ?? new List<string>());
+//         //     var response = await IndexAsync();
 
-//             return PartialView(response);
-//         }
-
-
-//         [HttpPost]
-//         public async Task<ActionResult> Index(CompanyModel pmodel)
-//         {
-//             var returnUrl = HttpContext.Request.Url.AbsolutePath;
-//             //var companyinfo = ua.GetUserCompanyInfo();
-//             //var UniqueAGMId = ua.RetrieveAGMUniqueID();
-
-//             //if (String.IsNullOrEmpty(pmodel.Year))
-//             //{
-//             //    return View(new ReportViewModelDto());
-//             //}
-//             //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
-//             var companies = db.SettingsArchive.Where(s=>s.ArchiveStatus==true).Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList(); ;
-//             ViewBag.AGMHistory = new SelectList(companies ?? new List<string>());
-//             ViewBag.value = "tab";
-//             var response = await IndexPostAsync(pmodel);
+//         //     return Ok(response);
+//         // }
 
 
-//             return PartialView(response);
-//         }
+
+// [HttpGet]
+// public async Task<ActionResult> Index()
+// {
+//     try
+//     {
+//         var returnUrl = HttpContext.Request.Path;
+//         string returnvalue = HttpContext.Request.Query["rel"].ToString();
+
+//         _viewBagManager.SetValue("value", returnvalue.Trim());
+
+//         var companies = db.SettingsArchive.Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList();
+//         _viewBagManager.SetValue("AGMHistory", new SelectList(companies ?? new List<string>()));
+
+//         var response = await IndexAsync();
+
+//         return Ok(response);
+//     }
+//     catch (Exception ex)
+//     {
+//         // Log the exception
+//         return StatusCode(500, "An error occurred while processing your request.");
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         // [HttpPost]
+//         // public async Task<ActionResult> Index(CompanyModel pmodel)
+//         // {
+//         //     var returnUrl = HttpContext.Request.Url.AbsolutePath;
+//         //     //var companyinfo = ua.GetUserCompanyInfo();
+//         //     //var UniqueAGMId = ua.RetrieveAGMUniqueID();
+
+//         //     //if (String.IsNullOrEmpty(pmodel.Year))
+//         //     //{
+//         //     //    return View(new ReportViewModelDto());
+//         //     //}
+//         //     //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
+//         //     var companies = db.SettingsArchive.Where(s=>s.ArchiveStatus==true).Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList(); ;
+//         //     // ViewBag.AGMHistory = new SelectList(companies ?? new List<string>());
+//         //     // ViewBag.value = "tab";
+//         //     _viewBagManager.SetValue("AGMHistory",new SelectList(companies ?? new List<string>()));
+//         //     _viewBagManager.SetValue("value","tab");
+
+//         //     var response = await IndexPostAsync(pmodel);
+
+
+//         //     return Ok(response);
+//         // }
+
+
+
+// [HttpPost]
+// public async Task<ActionResult> Index(CompanyModel pmodel)
+// {
+//     try
+//     {
+//         var returnUrl = HttpContext.Request.Path;
+
+//         var companies = db.SettingsArchive.Where(s => s.ArchiveStatus == true).Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList();
+//         _viewBagManager.SetValue("AGMHistory", new SelectList(companies ?? new List<string>()));
+//         _viewBagManager.SetValue("value", "tab");
+
+//         var response = await IndexPostAsync(pmodel);
+
+//         return Ok(response);
+//     }
+//     catch (Exception ex)
+//     {
+//         // Log the exception
+//         return StatusCode(500, "An error occurred while processing your request.");
+//     }
+// }
+
+
+
+
+
+
+
 
 //         private Task<ReportViewModelDto> IndexAsync()
 //         {
@@ -179,14 +275,14 @@
 //         [HttpPost]
 //         public ActionResult GetAGMID(CompanyModel pmodel)
 //         {
-//             return Json(db.SettingsArchive.Where(s=>s.CompanyName==pmodel.CompanyInfo).Select(x => new
+//             return Ok(db.SettingsArchive.Where(s=>s.CompanyName==pmodel.CompanyInfo).Select(x => new
 //             {
 //                 AGMID = x.AGMID,
 //                 Title = x.Title
-//             }).ToList(), JsonRequestBehavior.AllowGet);
+//             }).ToList());
 //         }
 
-//         public async Task<string> ArchiveAGMData(int id)
+//         private async Task<string> ArchiveAGMData(int id)
 //         {
 //             var response = await ArchiveAGMDataAsync(id);
 
@@ -199,7 +295,8 @@
 //             var UniqueAGMId = setting.AGMID;
 //             var companyinfo = setting.CompanyName.Trim();
 
-//             string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+//             // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+//             string connStr=DatabaseManager.GetConnectionString("DefaultConnection");
 //             SqlConnection conn =
 //                       new SqlConnection(connStr);
 //             try
@@ -378,10 +475,12 @@
 //             {
 //                 returnvalue = HttpContext.Request.QueryString["rel"].ToString();
 //             }
-//             ViewBag.value = returnvalue.Trim();
+//             // ViewBag.value = returnvalue.Trim();
+//             _viewBagManager.SetValue("value",returnvalue.Trim());
+
 //             var response = await PresentAnalysisIndexAsync(pmodel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public Task<ReportViewModelDto> PresentAnalysisIndexAsync(CompanyModel pmodel)
@@ -404,7 +503,9 @@
 //                 var proxy = db.PresentArchive.Where(p => p.AGMID == pmodel.AGMID && p.proxy == true).ToList();
 //                 var proxycount = proxy.Count();
 //                 model.proxycount = proxycount;
-//                 string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+//                 // string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+//                 string connStr = DatabaseManager.GetConnectionString();
+
 //                 SqlConnection conn =
 //                           new SqlConnection(connStr);
 //                 //string query = "select * from Results WHERE QuestionId='" + resolution.Id + "' AND For = FOR";
@@ -462,20 +563,56 @@
 //             return Task.FromResult<ReportViewModelDto>(model);
 //         }
 
-//         public async Task<ActionResult> Voted()
-//         {
-//             string returnvalue = "";
-//             if (HttpContext.Request.QueryString.Count > 0)
-//             {
-//                 returnvalue = HttpContext.Request.QueryString["rel"].ToString();
-//             }
-//             ViewBag.value = returnvalue.Trim();
-//             var response = await VotedAsync();
-//             return PartialView(response);
-//         }
 
 
-//         public Task<ReportViewModelDto> VotedAsync()
+// // [HttpGet]
+// //         public async Task<ActionResult> Voted()
+// //         {
+// //             string returnvalue = "";
+// //             if (HttpContext.Request.QueryString.Count > 0)
+// //             {
+// //                 returnvalue = HttpContext.Request.QueryString["rel"].ToString();
+// //             }
+// //             // ViewBag.value = returnvalue.Trim();
+// //             _viewBagMana //help me w this
+// //             var response = await VotedAsync();
+// //             return Ok(response);
+// //         }
+
+
+
+// [HttpGet]
+// public async Task<ActionResult> Voted([FromServices] IViewBagManager _viewBagManager)
+// {
+//     try
+//     {
+//         string returnvalue = HttpContext.Request.Query["rel"].ToString();
+//         _viewBagManager.SetValue("value", returnvalue.Trim());
+
+//         var response = await VotedAsync();
+
+//         return Ok(response);
+//     }
+//     catch (Exception ex)
+//     {
+//         // Log the exception
+//         return StatusCode(500, "An error occurred while processing your request.");
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         private Task<ReportViewModelDto> VotedAsync()
 //         {
 
 //             //Double TotalShareholding = 326700000;
@@ -531,18 +668,46 @@
 //         }
 
 
-//         public async Task<ActionResult> VotedPerQuestion(int id)
-//         {
-//             string returnvalue = "";
-//             if (HttpContext.Request.QueryString.Count > 0)
-//             {
-//                 returnvalue = HttpContext.Request.QueryString["rel"].ToString();
-//             }
-//             ViewBag.value = returnvalue.Trim();
-//             var response = await VotedPerQuestionAsync(id);
+//         // public async Task<ActionResult> VotedPerQuestion(int id)
+//         // {
+//         //     string returnvalue = "";
+//         //     if (HttpContext.Request.QueryString.Count > 0)
+//         //     {
+//         //         returnvalue = HttpContext.Request.QueryString["rel"].ToString();
+//         //     }
+//         //     ViewBag.value = returnvalue.Trim();
+//         //     var response = await VotedPerQuestionAsync(id);
 
-//             return View(response);
-//         }
+//         //     return View(response);
+//         // }
+
+// [HttpGet("{id}")]
+// public async Task<ActionResult> VotedPerQuestion(int id)
+// {
+//     try
+//     {
+//         string returnvalue = HttpContext.Request.Query["rel"].ToString();
+//         _viewBagManager.SetValue("value", returnvalue.Trim());
+
+//         var response = await VotedPerQuestionAsync(id);
+
+//         return View(response);
+//     }
+//     catch (Exception ex)
+//     {
+//         // Log the exception
+//         return StatusCode(500, "An error occurred while processing your request.");
+//     }
+// }
+
+
+
+
+
+
+
+
+
 
 //         public Task<ReportViewModelDto> VotedPerQuestionAsync(int id)
 //         {
@@ -610,7 +775,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await PresentAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         //[HttpPost]
@@ -624,7 +789,7 @@
 //             ViewBag.value = returnvalue.Trim();
 //             var response = await ResolutionAsync(id, pmodel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public Task<ReportViewModelDto> ResolutionAsync(int id, CompanyModel pmodel)
@@ -860,7 +1025,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             ViewBag.value = "tab";
 //             var response = await PresentPostAsync(pmodel);
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public Task<ReportViewModelDto> PresentAsync()
@@ -1042,8 +1207,8 @@
 //                     recordsTotal = allPresent.Count();
 
 
-//                     //Returning Json Data    
-//                     return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = shareholderpresent }, JsonRequestBehavior.AllowGet);
+//                     //Returning Ok Data    
+//                     return Ok(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = shareholderpresent });
 //                 }
 //             }
 //             catch (Exception)
@@ -1094,7 +1259,7 @@
 //             //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ProxyAsync();
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public Task<ReportViewModelDto> ProxyAsync()
@@ -1186,7 +1351,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await TotalAttendeesPostAsync(pmodel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public Task<ReportViewModelDto> TotalAttendeesAsync()
@@ -1304,7 +1469,7 @@
 //             //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await AttendeeSummaryAsync();
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         [HttpPost]
@@ -1319,7 +1484,7 @@
 //                 companies = db.SettingsArchive.Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList(); ;
 //                 ViewBag.AGMHistory = new SelectList(companies ?? new List<string>());
 //                 ViewBag.value = "tab";
-//                 return PartialView(new ReportViewModelDto());
+//                 return Ok(new ReportViewModelDto());
 //             }
 
 //             companies = db.SettingsArchive.Select(o => o.CompanyName).Distinct().OrderBy(k => k).ToList(); ;
@@ -1327,7 +1492,7 @@
 //             ViewBag.value = "tab";
 //             var response = await AttendeeSummaryPostAsync(pmodel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public Task<ReportViewModelDto> AttendeeSummaryAsync()
@@ -1788,7 +1953,7 @@
 //         {
 //             var response = await PrintIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         private Task<ReportViewModelDto> PrintIndexAsync()
@@ -1836,7 +2001,7 @@
 //         {
 //             var response = await EndPrintIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         private Task<ReportViewModelDto> EndPrintIndexAsync()
@@ -2107,7 +2272,7 @@
 //         //    ViewBag.value = returnvalue.Trim();
 //         //    var response = await ResolutionAsync(id);
 
-//         //    return PartialView(response);
+//         //    return Ok(response);
 //         //}
 
 
@@ -2247,12 +2412,12 @@
 
 
 
-//         public async Task<JsonResult> Notify(int id, CompanyModel pmodel)
+//         public async Task<OkResult> Notify(int id, CompanyModel pmodel)
 //         {
 
 //             var response = await NotifyAsync(id, pmodel);
 
-//             return Json(response, JsonRequestBehavior.AllowGet);
+//             return Ok(response);
 
 //         }
 
@@ -2306,7 +2471,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ResolutionIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 
@@ -2332,7 +2497,7 @@
 
 //             var response = await ResolutionIndexPostAsync(pmodel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 
@@ -2398,7 +2563,7 @@
 //         {
 //             var response = await ResolutionListAsync(id,pmodel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 
@@ -2569,7 +2734,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ChannelIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> SMSIndex()
@@ -2593,7 +2758,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ChannelIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> ClikapadIndex()
@@ -2616,7 +2781,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ChannelIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> ProxyIndex()
@@ -2639,7 +2804,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ChannelIndexAsync();
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> AllChannelsIndex()
@@ -2662,7 +2827,7 @@
 //             //var companies = db.Question.Select(o => o.Year).Distinct().OrderBy(k => k).ToList();
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 //             var response = await ChannelIndexAsync();
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         [HttpPost]
@@ -2683,7 +2848,7 @@
 //             //ViewBag.Year = new SelectList(companies ?? new List<string>());
 
 //             var response = await ChannelIndexPostAsync(pmodel);
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         private Task<ReportViewModelDto> ChannelIndexAsync()
@@ -2730,7 +2895,7 @@
 //             var response = await ChannelListAsync(id,pmodel, channel);
 
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> SMSList(int id, CompanyModel pmodel)
@@ -2738,7 +2903,7 @@
 //             string channel = "SMS";
 //             var response = await ChannelListAsync(id, pmodel, channel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> ClikapadList(int id, CompanyModel pmodel)
@@ -2746,7 +2911,7 @@
 //             string channel = "Pad";
 //             var response = await ChannelListAsync(id, pmodel, channel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> ProxyList(int id, CompanyModel pmodel)
@@ -2754,7 +2919,7 @@
 //             string channel = "Proxy";
 //             var response = await ChannelListAsync(id, pmodel, channel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         public async Task<ActionResult> AllChannelsList(int id, CompanyModel pmodel)
@@ -2762,7 +2927,7 @@
 //             string channel = "All";
 //             var response = await ChannelListAsync(id, pmodel, channel);
 
-//             return PartialView(response);
+//             return Ok(response);
 //         }
 
 //         private Task<ReportViewModelDto> ChannelListAsync(int id, CompanyModel pmodel, string channel)

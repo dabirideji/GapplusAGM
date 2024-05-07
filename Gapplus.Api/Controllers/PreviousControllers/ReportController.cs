@@ -22,7 +22,7 @@
 // namespace BarcodeGenerator.Controllers
 // {
 //     [Authorize]
-//     public class ReportController : Controller
+//     public class ReportController : ControllerBase
 //     {
 //         //
 //         // GET: /Report/
