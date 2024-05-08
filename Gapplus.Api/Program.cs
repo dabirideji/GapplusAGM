@@ -60,29 +60,50 @@ builder.Services.AddSwaggerGen(
 
 
     //  CORS FOR CROSS origin  RESOURCE SHARING
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
-});
+// builder.Services.AddCors(options =>
+// {
+//     options.AddDefaultPolicy(builder =>
+//     {
+//         builder.AllowAnyOrigin()
+//                .AllowAnyMethod()
+//                .AllowAnyHeader();
+//     });
+// });
+
+
+// builder.Services.AddCors(options =>
+//     {
+//         options.AddPolicy("AllowLocalhost5174",
+//             builder =>
+//             {
+//                 builder.WithOrigins("http://localhost:5174")
+//                        .AllowAnyMethod()
+//                        .AllowAnyHeader()
+//                        .AllowCredentials(); // Allow credentials if needed
+//             });
+//     });
+
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("AllowAny",
+//         builder =>
+//         {
+//             builder.AllowAnyOrigin()
+//                    .AllowAnyMethod()
+//                    .AllowAnyHeader();
+//         });
+// });
 
 
 builder.Services.AddCors(options =>
     {
-        options.AddPolicy("AllowLocalhost5173",
-            builder =>
-            {
-                builder.WithOrigins("http://localhost:5173")
-                       .AllowAnyMethod()
-                       .AllowAnyHeader()
-                       .AllowCredentials(); // Allow credentials if needed
-            });
+        options.AddPolicy("AllowMultipleOrigins", builder =>
+        {
+            builder.WithOrigins("http://localhost:5173", "http://localhost:5174")
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
     });
-
 #endregion
 
 #region DATABASE CONNECTIONS AND CONFIGURATIONS
@@ -159,7 +180,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 // app.UseCors();
-app.UseCors("AllowLocalhost5173");
+app.UseCors("AllowMultipleOrigins");
+// app.UseCors("AllowAny");
 app.UseSession();
 app.UseRouting(); // Add this line to use routing middleware
 app.UseAuthorization();

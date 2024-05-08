@@ -238,6 +238,85 @@ public class ZoomController : ControllerBase
 
 
 
+
+
+
+
+
+
+[HttpGet("GetMeetingById/{id}")]
+public async Task<ActionResult<Meeting>> GetMeetingById(long id)
+{
+    try
+    {
+        // Get the access token
+        var token = await GetAccessTokenAsync();
+
+        // Check if the token is valid
+        if (string.IsNullOrEmpty(token))
+        {
+            return BadRequest("Failed to retrieve access token");
+        }
+
+        // Create a HTTP client
+        var client = _httpClientFactory.CreateClient();
+
+        // Set the authorization header with the access token
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+        // Make a GET request to the Zoom API to retrieve the meeting details
+        var response = await client.GetAsync($"https://api.zoom.us/v2/meetings/{id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Read the response content as a string
+            var content = await response.Content.ReadAsStringAsync();
+
+            // Deserialize the JSON response into a Meeting object
+            var meeting = JsonConvert.DeserializeObject<SimpleMeetingDetails>(content);
+
+            return Ok(meeting);
+        }
+        else
+        {
+            // Return the error status code from Zoom API
+            return StatusCode((int)response.StatusCode);
+        }
+    }
+    catch (Exception ex)
+    {
+        // Log the exception and return a 500 Internal Server Error response
+        Console.WriteLine($"An error occurred: {ex.Message}");
+        return StatusCode(500, "An error occurred while processing your request.");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// [HttpPost("MeetingLogin")]
+// public async Task<ActionResult<Meeting>> MeetingLogin([FromBody]Gapplus.Application.DTO.ZoomMeeting.MeetingLoginDto meetingDto)
+// {
+//     var meetings=await _unitOfWork.Meetings.GetAll();
+//     var meeting=meetings.FirstOrDefault(x=>x.==meetingDto.MeetingId);
+//     if(meeting!=null){
+//         return Ok(meeting);
+//     }
+//     return BadRequest("Login Failed");
+       
+// }
+
+
+
 [HttpPost("createMeeting/{CompanyId}")]
 public async Task<ActionResult<Meeting>> CreateMeetingAsync([FromRoute]Guid CompanyId,[FromBody]SimpleCreateMeetingDto meetingDto)
 {
