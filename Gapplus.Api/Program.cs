@@ -94,16 +94,20 @@ builder.Services.AddSwaggerGen(
 //         });
 // });
 
-
 builder.Services.AddCors(options =>
-    {
-        options.AddPolicy("AllowMultipleOrigins", builder =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder =>
         {
-            builder.WithOrigins("http://localhost:5173", "http://localhost:5174")
-                   .AllowAnyMethod()
-                   .AllowAnyHeader();
+            builder
+                .WithOrigins("http://localhost:5173", "http://localhost:5174") // Add your allowed origins here
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();
         });
-    });
+});
+
+
 #endregion
 
 #region DATABASE CONNECTIONS AND CONFIGURATIONS
@@ -180,7 +184,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 // app.UseCors();
-app.UseCors("AllowMultipleOrigins");
+app.UseCors("AllowSpecificOrigins");
 // app.UseCors("AllowAny");
 app.UseSession();
 app.UseRouting(); // Add this line to use routing middleware
